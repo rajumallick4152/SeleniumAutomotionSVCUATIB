@@ -9,28 +9,34 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class BaseTest {
 
-    public WebDriver driver;
-    public WebDriverWait wait;
-    public Properties prop;
+	public WebDriver driver;
 
-    public void setup() throws IOException {
-        prop = new Properties();
-        FileInputStream fis = new FileInputStream("src/main/resources/resources/config.properties");
-        prop.load(fis);
+	public WebDriverWait wait;
+	public Properties prop;
 
-        String browser = prop.getProperty("browser");
-        driver = BrowserFactory.startBrowser(browser);
+	public void setup() throws IOException {
+		prop = new Properties();
+		FileInputStream fis = new FileInputStream("src/main/resources/resources/config.properties");
+		prop.load(fis);
 
-        if (driver != null) {
-            driver.manage().window().maximize();
-            driver.manage().deleteAllCookies();
-            wait = new WebDriverWait(driver, Duration.ofSeconds(15));
-        }
-    }
+		// String browser = prop.getProperty("browser");
+		// driver = BrowserFactory.startBrowser(browser);
 
-    public void tearDown() {
-        if (driver != null) {
-            driver.quit();
-        }
-    }
+		if (driver != null) {
+			driver.manage().window().maximize();
+			driver.manage().deleteAllCookies();
+			wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+
+		}
+	}
+
+	public void tearDown() {
+		if (driver != null) {
+			driver.quit();
+		}
+	}
+
+	public void executrTest() {
+
+	}
 }

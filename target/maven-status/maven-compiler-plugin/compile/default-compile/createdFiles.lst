@@ -1,0 +1,5 @@
+automationFramework\BaseTest.class
+automationFramework\ExecutionTask.class
+automationFramework\BrowserFactory.class
+automationFramework\LoginTestCase.class
+automationFramework\MultitreadedExecution.class

@@ -16,7 +16,7 @@ public class BaseTest {
 
 	public void setup() throws IOException {
 		prop = new Properties();
-		FileInputStream fis = new FileInputStream("src/main/resources/resources/config.properties");
+		FileInputStream fis = new FileInputStream("src/main/resources/config.properties");
 		prop.load(fis);
 
 		// String browser = prop.getProperty("browser");

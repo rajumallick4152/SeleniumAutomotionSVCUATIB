@@ -17,7 +17,7 @@ public class LoginPage {
 	public void performLogin(String url, String username, String password) throws InterruptedException {
 		driver.get(url);
 		wait.until(ExpectedConditions.elementToBeClickable(By.id("userid"))).sendKeys(username);
-		System.out.println("Waiting for manual captcha input...");
+		System.out.println("Waiting for manual captcha input, You have 30 Seconds...");
 		Thread.sleep(30000);
 
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[.//span[text()='Login']]"))).click();
@@ -25,6 +25,6 @@ public class LoginPage {
 				.sendKeys(password);
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[.//span[text()='Login']]"))).click();
 
-		System.out.println("Login successful");
+		System.out.println("Login Test Completed successfully");
 	}
 }

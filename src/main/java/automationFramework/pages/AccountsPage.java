@@ -18,25 +18,36 @@ public class AccountsPage {
 		this.wait = new WebDriverWait(driver, Duration.ofSeconds(60));
 	}
 
-	public void clickAccountsTab() {
-	    wait.until(ExpectedConditions.invisibilityOfElementLocated(By.className("ngx-spinner-overlay")));  // Wait before click
-	    WebElement accountsTab = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[text()='Accounts']")));
-	    accountsTab.click();
-	    wait.until(ExpectedConditions.invisibilityOfElementLocated(By.className("ngx-spinner-overlay")));  // Wait after click
+	// Centralized spinner wait
+	private void waitForSpinnerToDisappear() {
+		try {
+			wait.until(ExpectedConditions.invisibilityOfElementLocated(By.className("ngx-spinner-overlay")));
+		} catch (Exception e) {
+			System.out.println("Spinner may not have disappeared properly.");
+		}
 	}
 
+	public void clickAccountsTab() {
+		waitForSpinnerToDisappear();
+		WebElement accountsTab = wait
+				.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[text()='Accounts']")));
+		accountsTab.click();
+		waitForSpinnerToDisappear();
+	}
 
 	public void waitForDataToLoad() {
-		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.className("ngx-spinner-overlay")));
+		waitForSpinnerToDisappear();
 	}
 
 	public void scrollToViewBalanceButton() {
+		waitForSpinnerToDisappear();
 		WebElement viewBalanceBtn = wait.until(ExpectedConditions
 				.presenceOfElementLocated(By.xpath("//span[contains(text(),'View Balance Components')]")));
 		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block: 'center'});", viewBalanceBtn);
 	}
 
 	public void clickViewBalanceButton() {
+		waitForSpinnerToDisappear();
 		WebElement viewBalanceBtn = wait.until(ExpectedConditions
 				.elementToBeClickable(By.xpath("//span[contains(text(),'View Balance Components')]")));
 		try {
@@ -44,11 +55,13 @@ public class AccountsPage {
 		} catch (Exception e) {
 			((JavascriptExecutor) driver).executeScript("arguments[0].click();", viewBalanceBtn);
 		}
+		waitForSpinnerToDisappear();
 	}
 
 	public void closeBalanceModal() {
+		waitForSpinnerToDisappear();
 		try {
-			Thread.sleep(3000); // optional buffer for modal animation
+			Thread.sleep(3000); // Optional: allow modal animation to complete
 			WebElement closeBtn = wait.until(ExpectedConditions
 					.elementToBeClickable(By.xpath("//span[text()='Close' and contains(@class, 'p-button-label')]")));
 			try {
@@ -59,5 +72,6 @@ public class AccountsPage {
 		} catch (Exception ex) {
 			System.out.println("Failed to close balance modal.");
 		}
+		waitForSpinnerToDisappear();
 	}
 }

@@ -39,4 +39,7 @@ public class BaseTest {
 	public void executrTest() {
 
 	}
+	public void checkBalance() {
+
+	}
 }

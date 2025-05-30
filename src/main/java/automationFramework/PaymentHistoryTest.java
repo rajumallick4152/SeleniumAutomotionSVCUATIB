@@ -22,8 +22,8 @@ public class PaymentHistoryTest {
 
 			paymentHistoryPage.clickPaymentsTab();
 			paymentHistoryPage.waitForPaymentData();
-			// paymentHistoryPage.clickViewPaymentDetailsButton();
-			// paymentHistoryPage.closePaymentDetailsModal();
+			// paymentHistoryPage.Demooclass1();
+			// paymentHistoryPage.Demooclass2();
 
 			System.out.println("Payment History Test completed successfully.");
 

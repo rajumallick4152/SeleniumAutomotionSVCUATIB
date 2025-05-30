@@ -1,3 +1,4 @@
+
 package automationFramework.pages;
 
 import org.openqa.selenium.By;
@@ -11,13 +12,13 @@ import org.slf4j.LoggerFactory;
 
 import java.time.Duration;
 
-public class PaymentHistoryPage {
+public class ServicesPage {
 
 	private final WebDriver driver;
 	private final WebDriverWait wait;
-	private static final Logger logger = LoggerFactory.getLogger(PaymentHistoryPage.class);
+	private static final Logger logger = LoggerFactory.getLogger(ServicesPage.class);
 
-	public PaymentHistoryPage(WebDriver driver) {
+	public ServicesPage(WebDriver driver) {
 		this.driver = driver;
 		this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	}
@@ -53,9 +54,9 @@ public class PaymentHistoryPage {
 		}
 	}
 
-	public void clickPaymentsTab() {
+	public void clickServicesTab() {
 		logger.info("Clicking Payment Tab");
-		clickWithRetry(By.xpath("//span[@class='p-menuitem-text' and text()='Payment']"));
+		clickWithRetry(By.xpath("//span[@class='p-menuitem-text' and text()='Services']"));
 	}
 
 	public void waitForPaymentData() {

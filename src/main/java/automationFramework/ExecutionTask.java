@@ -23,5 +23,8 @@ public class ExecutionTask implements Runnable {
         
         PaymentHistoryTest objPaymentHistoryTest = new PaymentHistoryTest(driver);
         objPaymentHistoryTest.checkPaymentHistory();
+        
+        ServicesTest objServicesTest = new ServicesTest(driver);
+        objServicesTest.CheckServicesTab();
     }
 }

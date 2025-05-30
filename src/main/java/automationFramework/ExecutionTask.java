@@ -20,5 +20,8 @@ public class ExecutionTask implements Runnable {
         
         AccountsPageTestCase objAccountsPageTestCase = new AccountsPageTestCase(driver);
         objAccountsPageTestCase.checkAccountSummary();
+        
+        PaymentHistoryTest objPaymentHistoryTest = new PaymentHistoryTest(driver);
+        objPaymentHistoryTest.checkPaymentHistory();
     }
 }

@@ -26,7 +26,7 @@ public class LoginTestCase {
 		}
 	}
 
-	public void executrTest() {
+	public void LoginTest() {
 		try {
 			String url = prop.getProperty("appURL");
 			String username = prop.getProperty("username");

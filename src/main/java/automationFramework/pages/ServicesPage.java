@@ -55,7 +55,7 @@ public class ServicesPage {
 	}
 
 	public void clickServicesTab() {
-		logger.info("Clicking Payment Tab");
+		logger.info("Clicking Services Tab");
 		clickWithRetry(By.xpath("//span[@class='p-menuitem-text' and text()='Services']"));
 	}
 

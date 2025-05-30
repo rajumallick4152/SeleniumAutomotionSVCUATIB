@@ -28,7 +28,7 @@ public class ServicesTest {
 			System.out.println("Services Tab Test completed successfully.");
 
 		} catch (Exception e) {
-			System.out.println("Error during Payment History Test.");
+			System.out.println("Error during Services Tab Test.");
 			e.printStackTrace();
 		}
 	}

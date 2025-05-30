@@ -26,5 +26,8 @@ public class ExecutionTask implements Runnable {
         
         ServicesTest objServicesTest = new ServicesTest(driver);
         objServicesTest.CheckServicesTab();
+        
+        MyChequesTest objMyChequesTest = new MyChequesTest(driver);
+        objMyChequesTest.CheckMyChequesTabTab();
     }
 }

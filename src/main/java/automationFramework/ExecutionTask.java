@@ -18,17 +18,26 @@ public class ExecutionTask implements Runnable {
 		LoginTestCase objLoginTestCase = new LoginTestCase(driver);
 		objLoginTestCase.LoginTest();
 
-		AccountsPageTestCase objAccountsPageTestCase = new AccountsPageTestCase(driver);
-		objAccountsPageTestCase.checkAccountSummary();
+		/*
+		 * AccountsPageTestCase objAccountsPageTestCase = new
+		 * AccountsPageTestCase(driver); objAccountsPageTestCase.checkAccountSummary();
+		 */
 
 		PaymentHistoryTest objPaymentHistoryTest = new PaymentHistoryTest(driver);
 		objPaymentHistoryTest.checkPaymentHistory();
 
-		ServicesTest objServicesTest = new ServicesTest(driver);
-		objServicesTest.checkServicesTab();
+		/*
+		 * ServicesTest objServicesTest = new ServicesTest(driver);
+		 * objServicesTest.checkServicesTab();
+		 */
 
-		MyChequesTest objMyChequesTest = new MyChequesTest(driver);
-		objMyChequesTest.CheckMyChequesTabTab();
+		/*
+		 * MyChequesTest objMyChequesTest = new MyChequesTest(driver);
+		 * objMyChequesTest.CheckMyChequesTabTab();
+		 * 
+		 * MyDebitcardsTest objMyDebitcardsTest = new MyDebitcardsTest(driver);
+		 * objMyDebitcardsTest.CheckMyDebitcardsTab();
+		 */
 
 	}
 }

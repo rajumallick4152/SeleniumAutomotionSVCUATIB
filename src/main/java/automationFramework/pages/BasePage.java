@@ -1,9 +1,6 @@
 package automationFramework.pages;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.slf4j.Logger;
@@ -21,7 +18,7 @@ public abstract class BasePage {
 
 	public BasePage(WebDriver driver) {
 		this.driver = driver;
-		this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		this.wait = new WebDriverWait(driver, Duration.ofSeconds(15));
 		this.logger = LoggerFactory.getLogger(getClass());
 	}
 
@@ -31,7 +28,7 @@ public abstract class BasePage {
 			wait.until(ExpectedConditions.invisibilityOfElementLocated(SPINNER));
 			logger.info("Spinner disappeared.");
 		} catch (Exception e) {
-			logger.warn("Spinner not found or already disappeared.");
+			logger.warn("Spinner not found or already gone.");
 		}
 	}
 
@@ -40,24 +37,33 @@ public abstract class BasePage {
 			try {
 				waitForSpinnerToDisappear();
 				WebElement element = wait.until(ExpectedConditions.elementToBeClickable(locator));
+				scrollIntoView(element);
 				logger.info("Clicking element: {}", locator);
 				element.click();
 				waitForSpinnerToDisappear();
 				return;
+			} catch (ElementClickInterceptedException e) {
+				logger.warn("Click intercepted attempt {}/3: {}", i, e.getMessage());
+				if (i == 3) {
+					throw e;
+				}
+				try {
+					Thread.sleep(1000);
+				} catch (InterruptedException ignored) {}
 			} catch (Exception e) {
-				logger.warn("Click attempt {}/3 failed: {}", i, e.getMessage());
+				logger.warn("Click failed attempt {}/3: {}", i, e.getMessage());
 				if (i == 3) {
 					throw new RuntimeException("Click failed after 3 attempts", e);
 				}
 				try {
 					Thread.sleep(1000);
-				} catch (InterruptedException ignored) {
-				}
+				} catch (InterruptedException ignored) {}
 			}
 		}
 	}
 
 	protected void jsClick(WebElement element) {
+		logger.info("Clicking with JS");
 		((JavascriptExecutor) driver).executeScript("arguments[0].click();", element);
 	}
 

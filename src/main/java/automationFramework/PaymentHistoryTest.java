@@ -12,7 +12,7 @@ public class PaymentHistoryTest {
 
 	public PaymentHistoryTest(WebDriver driver) {
 		this.driver = driver;
-		this.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		this.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		this.paymentHistoryPage = new PaymentHistoryPage(driver);
 	}
 

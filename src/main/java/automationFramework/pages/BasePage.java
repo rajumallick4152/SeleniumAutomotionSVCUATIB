@@ -49,7 +49,8 @@ public abstract class BasePage {
 				}
 				try {
 					Thread.sleep(1000);
-				} catch (InterruptedException ignored) {}
+				} catch (InterruptedException ignored) {
+				}
 			} catch (Exception e) {
 				logger.warn("Click failed attempt {}/3: {}", i, e.getMessage());
 				if (i == 3) {
@@ -57,7 +58,8 @@ public abstract class BasePage {
 				}
 				try {
 					Thread.sleep(1000);
-				} catch (InterruptedException ignored) {}
+				} catch (InterruptedException ignored) {
+				}
 			}
 		}
 	}

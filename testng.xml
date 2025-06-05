@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="MySuite">
+	<test name="MultipleTest">
+		<classes>
+			<class name="automationFramework.tests.TesttestNG" />
+			<!-- This is a comment -->
+			<!-- <class name="automationFramework.tests.LoginTestNG" /> -->
+
+			<class name="automationFramework.tests.PaymentTestNG" />
+		</classes>
+	</test>
+</suite>

@@ -1,3 +1,4 @@
+
 package automationFramework;
 
 import automationFramework.pages.LoginPage;

@@ -17,16 +17,20 @@ public class ExecutionTask implements Runnable {
 	public void run() {
 		System.out.println("Running test on browser: " + driverName);
 
-		LoginTestCase objLoginTestCase = new LoginTestCase(driver);
-		objLoginTestCase.LoginTest();
+		/*
+		 * LoginTestCase objLoginTestCase = new LoginTestCase(driver);
+		 * objLoginTestCase.LoginTest();
+		 */
 
 		/*
 		 * AccountsPageTestCase objAccountsPageTestCase = new
 		 * AccountsPageTestCase(driver); objAccountsPageTestCase.checkAccountSummary();
 		 */
 
-		PaymentHistoryTest objPaymentHistoryTest = new PaymentHistoryTest(driver);
-		objPaymentHistoryTest.checkPaymentHistory();
+		/*
+		 * PaymentHistoryTest objPaymentHistoryTest = new PaymentHistoryTest(driver);
+		 * objPaymentHistoryTest.checkPaymentHistory();
+		 */
 
 		/*
 		 * ServicesTest objServicesTest = new ServicesTest(driver);

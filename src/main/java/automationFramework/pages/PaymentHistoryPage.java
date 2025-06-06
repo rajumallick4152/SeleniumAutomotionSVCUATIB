@@ -288,11 +288,16 @@ public class PaymentHistoryPage extends BasePage {
 			logger.info("Fetched account balance: ₹{}", accountBalance);
 			logger.info("Attempting to enter over-limit amount: ₹{}", overLimitAmount);
 
-			// Step 2: Set amount via JavaScript since it's contenteditable div
+			// Step 2: Set amount via JavaScript (contenteditable div) and trigger events
 			WebElement amountInput1 = wait
 					.until(ExpectedConditions.visibilityOfElementLocated(By.id("custom-amount-input")));
+
 			JavascriptExecutor js = (JavascriptExecutor) driver;
-			js.executeScript("arguments[0].innerText = arguments[1];", amountInput1, overLimitAmountStr);
+			js.executeScript(
+					"arguments[0].innerText = arguments[1];"
+							+ "arguments[0].dispatchEvent(new Event('input', { bubbles: true }));"
+							+ "arguments[0].dispatchEvent(new Event('blur', { bubbles: true }));",
+					amountInput1, overLimitAmountStr);
 			Thread.sleep(500);
 
 			// Step 3: Validate the value
@@ -306,8 +311,12 @@ public class PaymentHistoryPage extends BasePage {
 
 			logger.info("✅ Over-limit amount successfully typed: '{}'", currentValue);
 
-			// Step 4: Trigger validation
-			driver.findElement(By.tagName("body")).click();
+			// Step 4: Click outside the field to fully trigger validation
+			try {
+				driver.findElement(By.xpath("//header")).click(); // header or any non-input element
+			} catch (Exception e) {
+				driver.findElement(By.tagName("body")).click(); // fallback
+			}
 			Thread.sleep(1000);
 
 			// Step 5: Wait for the 'Insufficient balance' popup

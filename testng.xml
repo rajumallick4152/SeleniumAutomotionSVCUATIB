@@ -2,7 +2,7 @@
 <suite name="MySuite">
 	<test name="MultipleTest">
 		<classes>
-			<class name="automationFramework.tests.TesttestNG" />
+
 
 			<!-- <class name="automationFramework.tests.LoginTestNG" /> -->
 

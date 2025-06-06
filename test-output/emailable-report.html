@@ -9,43 +9,12 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">MySuite</th></tr>
-<tr><td><a href="#t0">MultipleTest</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">115,226</td><td></td><td></td></tr>
+<tr><td><a href="#t0">MultipleTest</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">36,441</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">MySuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">MultipleTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">automationFramework.tests.PaymentTestNG</td><td><a href="#m0">testInvalidAmountScenarios</a></td><td rowspan="1">1749210399611</td><td rowspan="1">47213</td></tr><tr class="failedeven"><td><a href="#m1">testPayment</a></td><td rowspan="1">1749210349615</td><td rowspan="1">49991</td></tr><tr><th colspan="4">MultipleTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">automationFramework.tests.PaymentTestNG</td><td><a href="#m2">loginBeforePayment</a></td><td rowspan="1">1749210335251</td><td rowspan="1">14358</td></tr><tr class="passedodd"><td rowspan="1">automationFramework.tests.TesttestNG</td><td><a href="#m3">verifyLogin</a></td><td rowspan="1">1749210331664</td><td rowspan="1">14</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">MySuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">MultipleTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">automationFramework.tests.PaymentTestNG</td><td><a href="#m0">loginBeforePayment</a></td><td rowspan="1">1749212002896</td><td rowspan="1">13783</td></tr><tr class="passedeven"><td><a href="#m1">testInvalidAmountScenarios</a></td><td rowspan="1">1749212029718</td><td rowspan="1">6726</td></tr><tr class="passedeven"><td><a href="#m2">testPayment</a></td><td rowspan="1">1749212016689</td><td rowspan="1">13026</td></tr></tbody>
 </table>
-<h2>MultipleTest</h2><h3 id="m0">automationFramework.tests.PaymentTestNG#testInvalidAmountScenarios</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: Click failed after 3 attempts
-	at automationFramework.pages.BasePage.clickWithRetry(BasePage.java:57)
-	at automationFramework.pages.PaymentHistoryPage.clickPaymentsTab(PaymentHistoryPage.java:34)
-	at automationFramework.tests.PaymentTestNG.testInvalidAmountScenarios(PaymentTestNG.java:51)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //span[@class=&apos;p-menuitem-text&apos; and text()=&apos;Payment&apos;] (tried for 15 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\rajum\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56105}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56105/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b2a9da11bf3f85bf5205d4d5fb9ae7d3
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at automationFramework.pages.BasePage.clickWithRetry(BasePage.java:39)
-	... 30 more
-... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">automationFramework.tests.PaymentTestNG#testPayment</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: Click failed after 3 attempts
-	at automationFramework.pages.BasePage.clickWithRetry(BasePage.java:57)
-	at automationFramework.pages.PaymentHistoryPage.clickPaymentsTab(PaymentHistoryPage.java:34)
-	at automationFramework.tests.PaymentTestNG.testPayment(PaymentTestNG.java:43)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //span[@class=&apos;p-menuitem-text&apos; and text()=&apos;Payment&apos;] (tried for 15 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\rajum\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56105}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56105/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b2a9da11bf3f85bf5205d4d5fb9ae7d3
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at automationFramework.pages.BasePage.clickWithRetry(BasePage.java:39)
-	... 30 more
-... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">automationFramework.tests.PaymentTestNG#loginBeforePayment</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">automationFramework.tests.TesttestNG#verifyLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>MultipleTest</h2><h3 id="m0">automationFramework.tests.PaymentTestNG#loginBeforePayment</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">automationFramework.tests.PaymentTestNG#testInvalidAmountScenarios</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">automationFramework.tests.PaymentTestNG#testPayment</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

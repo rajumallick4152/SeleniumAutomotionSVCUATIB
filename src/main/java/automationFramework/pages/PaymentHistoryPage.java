@@ -56,7 +56,7 @@ public class PaymentHistoryPage extends BasePage {
 			scrollIntoView(amountInput);
 			jsClick(amountInput);
 			amountInput.clear();
-			amountInput.sendKeys("1");
+			amountInput.sendKeys("2");
 			logger.info("Entered amount: ₹1");
 		} catch (Exception e) {
 			logger.error("Error entering amount: {}", e.getMessage());
@@ -267,10 +267,11 @@ public class PaymentHistoryPage extends BasePage {
 		logger.info("\n✅ All negative test cases executed.");
 
 		// 5️⃣ Amount Greater Than Balance
+
 		try {
 			logger.info("\n🔸 Test Case 5: Amount Greater Than Account Balance");
 
-			// Step 1: Locate and fetch account balance
+			// Step 1: Fetch account balance
 			By balanceLocator = By.xpath(
 					"//span[contains(@class, 'text-small') and contains(@class, 'font-semibold') and contains(@class, 'text-black-500')]");
 			WebElement balanceElement = wait.until(ExpectedConditions.visibilityOfElementLocated(balanceLocator));
@@ -287,38 +288,37 @@ public class PaymentHistoryPage extends BasePage {
 			logger.info("Fetched account balance: ₹{}", accountBalance);
 			logger.info("Attempting to enter over-limit amount: ₹{}", overLimitAmount);
 
-			// Step 2: Enter amount using sendKeys character by character
-			amountInput.clear();
-			for (char ch : overLimitAmountStr.toCharArray()) {
-				amountInput.sendKeys(String.valueOf(ch));
-				Thread.sleep(50); // mimicking real user typing
+			// Step 2: Set amount via JavaScript since it's contenteditable div
+			WebElement amountInput1 = wait
+					.until(ExpectedConditions.visibilityOfElementLocated(By.id("custom-amount-input")));
+			JavascriptExecutor js = (JavascriptExecutor) driver;
+			js.executeScript("arguments[0].innerText = arguments[1];", amountInput1, overLimitAmountStr);
+			Thread.sleep(500);
+
+			// Step 3: Validate the value
+			String currentValue = (String) js.executeScript("return arguments[0].innerText;", amountInput1);
+			currentValue = currentValue.replaceAll("[^\\d]", "");
+
+			if (!currentValue.equals(overLimitAmountStr)) {
+				throw new RuntimeException(
+						"Amount mismatch after setting: expected=" + overLimitAmountStr + ", actual=" + currentValue);
 			}
 
-			// Step 3: Confirm that the correct value was set
-			String currentValue = amountInput.getAttribute("value").replaceAll("[^\\d]", "");
-			if (!currentValue.equals(overLimitAmountStr)) {
-				logger.error("❌ Amount field mismatch. Expected: {}, Found: {}", overLimitAmountStr, currentValue);
-				throw new RuntimeException("Amount not set correctly.");
-			}
 			logger.info("✅ Over-limit amount successfully typed: '{}'", currentValue);
 
-			// Step 4: Click outside to trigger blur
+			// Step 4: Trigger validation
 			driver.findElement(By.tagName("body")).click();
 			Thread.sleep(1000);
 
-			// Step 5: Click Proceed
-			clickWithRetry(PROCEED_BUTTON_REMARKS);
-			waitForSpinnerToDisappear();
-			Thread.sleep(1500); // wait for popup to appear
+			// Step 5: Wait for the 'Insufficient balance' popup
+			By insufficientBalancePopup = By
+					.xpath("//div[contains(@class, 'popup-dialog-height')]//span[text()='Insufficient balance']");
+			WebElement popup = wait.until(ExpectedConditions.presenceOfElementLocated(insufficientBalancePopup));
 
-			// Step 6: Check for Insufficient Balance popup
-			By insufficientBalancePopup = By.xpath("//span[contains(text(),'Insufficient balance')]");
-			WebElement popup = wait.until(ExpectedConditions.visibilityOfElementLocated(insufficientBalancePopup));
-
-			if (popup.isDisplayed()) {
-				logger.info("✅ 'Insufficient balance' popup displayed successfully.");
+			if (popup != null && popup.isDisplayed()) {
+				logger.info("✅ 'Insufficient balance' popup displayed.");
 			} else {
-				logger.warn("⚠️ Popup not shown as expected.");
+				logger.warn("⚠️ Popup not displayed as expected.");
 			}
 
 		} catch (Exception e) {

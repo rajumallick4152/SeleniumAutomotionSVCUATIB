@@ -153,10 +153,21 @@
                   <a name="testInvalidAmountScenarios">
                   </a> <!-- testInvalidAmountScenarios -->
                   <span class="method-name">testInvalidAmountScenarios</span>
-                  <div class="stack-trace">java.lang.RuntimeException: Cannot continue without selecting a payee.
-	at automationFramework.pages.PaymentHistoryPage.testInvalidAmounts(PaymentHistoryPage.java:190)
-	at automationFramework.tests.PaymentTestNG.testInvalidAmountScenarios(PaymentTestNG.java:53)
+                  <div class="stack-trace">java.lang.RuntimeException: Click failed after 3 attempts
+	at automationFramework.pages.BasePage.clickWithRetry(BasePage.java:57)
+	at automationFramework.pages.PaymentHistoryPage.clickPaymentsTab(PaymentHistoryPage.java:34)
+	at automationFramework.tests.PaymentTestNG.testInvalidAmountScenarios(PaymentTestNG.java:51)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //span[@class=&apos;p-menuitem-text&apos; and text()=&apos;Payment&apos;] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\rajum\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56105}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56105/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b2a9da11bf3f85bf5205d4d5fb9ae7d3
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at automationFramework.pages.BasePage.clickWithRetry(BasePage.java:39)
+	... 30 more
 ... Removed 27 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -166,10 +177,21 @@
                   <a name="testPayment">
                   </a> <!-- testPayment -->
                   <span class="method-name">testPayment</span>
-                  <div class="stack-trace">java.lang.RuntimeException: Cannot proceed without selecting payee.
-	at automationFramework.pages.PaymentHistoryPage.makePaymentToPayee(PaymentHistoryPage.java:50)
-	at automationFramework.tests.PaymentTestNG.testPayment(PaymentTestNG.java:45)
+                  <div class="stack-trace">java.lang.RuntimeException: Click failed after 3 attempts
+	at automationFramework.pages.BasePage.clickWithRetry(BasePage.java:57)
+	at automationFramework.pages.PaymentHistoryPage.clickPaymentsTab(PaymentHistoryPage.java:34)
+	at automationFramework.tests.PaymentTestNG.testPayment(PaymentTestNG.java:43)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //span[@class=&apos;p-menuitem-text&apos; and text()=&apos;Payment&apos;] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\rajum\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56105}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56105/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b2a9da11bf3f85bf5205d4d5fb9ae7d3
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at automationFramework.pages.BasePage.clickWithRetry(BasePage.java:39)
+	... 30 more
 ... Removed 27 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -263,19 +285,19 @@ data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testPayment')
 data.setCell(0, 2, 'automationFramework.tests.PaymentTestNG')
-data.setCell(0, 3, 55106);
+data.setCell(0, 3, 49991);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'testInvalidAmountScenarios')
 data.setCell(1, 2, 'automationFramework.tests.PaymentTestNG')
-data.setCell(1, 3, 49049);
+data.setCell(1, 3, 47213);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'loginBeforePayment')
 data.setCell(2, 2, 'automationFramework.tests.PaymentTestNG')
-data.setCell(2, 3, 15101);
+data.setCell(2, 3, 14358);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'verifyLogin')
 data.setCell(3, 2, 'automationFramework.tests.TesttestNG')
-data.setCell(3, 3, 12);
+data.setCell(3, 3, 14);
 window.suiteTableData['MySuite']= { tableData: data, tableDiv: 'times-div-MySuite'}
 return data;
 }
@@ -320,23 +342,23 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">loginBeforePayment</span>
-                <span class="method-start">2517 ms</span>
+                <span class="method-start">3587 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testPayment</span>
-                <span class="method-start">17624 ms</span>
+                <span class="method-start">17951 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testInvalidAmountScenarios</span>
-                <span class="method-start">72734 ms</span>
+                <span class="method-start">67947 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">121785 ms</span>
+                <span class="method-start">115162 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -6,7 +6,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.Keys;
 
 public class PaymentHistoryPage extends BasePage {
 
@@ -30,23 +29,25 @@ public class PaymentHistoryPage extends BasePage {
 	}
 
 	public void clickPaymentsTab() {
-		logger.info("Clicking on the Payment tab.");
+		logger.info("🟦 [STEP] Clicking on the Payment tab.");
 		clickWithRetry(PAYMENT_TAB);
+		logger.info("✅ [SUCCESS] Payment tab clicked.");
 	}
 
 	public void waitForPaymentData() {
-		logger.info("Waiting for payment data to load.");
+		logger.info("⏳ [WAIT] Waiting for payment data to load.");
 		waitForSpinnerToDisappear();
+		logger.info("✅ [SUCCESS] Spinner disappeared, payment data loaded.");
 	}
 
 	public void makePaymentToPayee() {
-		logger.info("Initiating payment to payee: DXFCHGV");
+		logger.info("🚀 [START] Initiating payment to payee: DXFCHGV");
 
 		try {
 			clickWithRetry(PAYEE_NAME);
-			logger.info("Payee selected.");
+			logger.info("✅ [SUCCESS] Payee selected: DXFCHGV");
 		} catch (Exception e) {
-			logger.error("Failed to click payee name: {}", e.getMessage());
+			logger.error("❌ [FAIL] Failed to select payee: {}", e.getMessage());
 			throw new RuntimeException("Cannot proceed without selecting payee.");
 		}
 
@@ -56,15 +57,18 @@ public class PaymentHistoryPage extends BasePage {
 			scrollIntoView(amountInput);
 			jsClick(amountInput);
 			amountInput.clear();
-			amountInput.sendKeys("2");
-			logger.info("Entered amount: ₹1");
+			amountInput.sendKeys("1");
+			logger.info("✅ [SUCCESS] Entered amount: ₹2");
+
 		} catch (Exception e) {
-			logger.error("Error entering amount: {}", e.getMessage());
-			throw new RuntimeException("Cannot proceed without amount.");
+			logger.error("❌ [FAIL] Error entering amount: {}", e.getMessage());
+			throw new RuntimeException("Cannot proceed without entering amount.");
 		}
 
 		// Select NEFT option (retry logic with fresh fetch each time)
 		try {
+			logger.info("🟦 [STEP] Selecting NEFT option");
+
 			boolean selected = false;
 			int attempts = 0;
 
@@ -78,21 +82,25 @@ public class PaymentHistoryPage extends BasePage {
 
 					try {
 						new Actions(driver).moveToElement(neftOption).pause(200).click().perform();
-						logger.info("NEFT selected using Actions click.");
+						logger.info("🔄 [INFO] NEFT clicked via Actions.");
 					} catch (Exception e1) {
-						logger.warn("Actions click failed: {}. Trying JS click.", e1.getMessage());
+						logger.warn("⚠️ [WARN] Actions click failed: {}. Trying JS click.", e1.getMessage());
+
 						jsClick(neftOption);
-						logger.info("NEFT selected using JS click.");
+						logger.info("✅ [INFO] NEFT clicked via JS.");
+
 					}
 
 					Thread.sleep(500);
 					selected = driver.findElements(NEFT_SELECTED_ICON).size() > 0;
 
 					if (!selected) {
-						logger.warn("NEFT not selected yet. Will retry...");
+						logger.warn("⚠️ [WARN] NEFT not selected yet. Retrying...");
+
 					}
 				} catch (Exception e) {
-					logger.error("NEFT selection error on attempt {}: {}", attempts + 1, e.getMessage());
+					logger.error("❌ [FAIL] NEFT selection error: {}", e.getMessage());
+
 				}
 				attempts++;
 			}
@@ -100,10 +108,12 @@ public class PaymentHistoryPage extends BasePage {
 			if (!selected) {
 				throw new RuntimeException("NEFT could not be selected after multiple attempts.");
 			} else {
-				logger.info("NEFT selection confirmed.");
+				logger.info("✅ [SUCCESS] NEFT option selected successfully.");
+
 			}
 		} catch (Exception e) {
-			logger.error("NEFT selection failed: {}", e.getMessage());
+			logger.error("❌ [FAIL] NEFT selection failed: {}", e.getMessage());
+
 			throw new RuntimeException("Unable to select NEFT option.");
 		}
 
@@ -112,26 +122,32 @@ public class PaymentHistoryPage extends BasePage {
 			WebElement remarksInput = wait.until(ExpectedConditions.visibilityOfElementLocated(REMARKS_INPUT));
 			remarksInput.clear();
 			remarksInput.sendKeys("test value");
-			logger.info("Entered remarks: test value");
+			logger.info("✅ [SUCCESS] Entered remarks: test value");
+
 		} catch (Exception e) {
-			logger.warn("Unable to enter remarks: {}", e.getMessage());
+			logger.warn("⚠️ [WARN] Could not enter remarks: {}", e.getMessage());
+
 		}
 
 		// Click first Proceed button (after remarks)
 		try {
 			clickWithRetry(PROCEED_BUTTON_REMARKS);
-			logger.info("Clicked Proceed button after remarks.");
+			logger.info("✅ [SUCCESS] Clicked Proceed after remarks.");
+
 		} catch (Exception e) {
-			logger.error("Failed to click Proceed button after remarks: {}", e.getMessage());
+			logger.error("❌ [FAIL] Failed to click Proceed after remarks: {}", e.getMessage());
+
 			throw new RuntimeException("Unable to proceed after entering remarks.");
 		}
 
 		// Click Confirm button
 		try {
 			clickWithRetry(CONFIRM_BUTTON);
-			logger.info("Clicked Confirm button.");
+			logger.info("✅ [SUCCESS] Confirm button clicked.");
+
 		} catch (Exception e) {
-			logger.error("Confirm button click failed: {}", e.getMessage());
+			logger.error("❌ [FAIL] Confirm button click failed: {}", e.getMessage());
+
 			throw new RuntimeException("Unable to confirm payment.");
 		}
 
@@ -139,9 +155,11 @@ public class PaymentHistoryPage extends BasePage {
 		try {
 			WebElement otpInput = wait.until(ExpectedConditions.visibilityOfElementLocated(OTP_INPUT));
 			otpInput.sendKeys("123456");
-			logger.info("Entered OTP.");
+			logger.info("✅ [SUCCESS] OTP entered.");
+
 		} catch (Exception e) {
-			logger.warn("Failed to enter OTP: {}", e.getMessage());
+			logger.warn("⚠️ [WARN] Could not enter OTP: {}", e.getMessage());
+
 		}
 
 		// Wait for overlay/spinner to disappear before final Proceed
@@ -159,9 +177,11 @@ public class PaymentHistoryPage extends BasePage {
 			WebElement finalProceedBtn = wait.until(ExpectedConditions.elementToBeClickable(PROCEED_BUTTON_OTP));
 			scrollIntoView(finalProceedBtn);
 			jsClick(finalProceedBtn);
-			logger.info("Final Proceed button clicked after OTP.");
+			logger.info("✅ [SUCCESS] Final Proceed clicked after OTP.");
+
 		} catch (Exception e) {
-			logger.error("Final Proceed button click failed after overlay wait: {}", e.getMessage());
+			logger.error("❌ [FAIL] Final Proceed click failed: {}", e.getMessage());
+
 			throw new RuntimeException("Payment could not be finalized.");
 		}
 
@@ -170,12 +190,15 @@ public class PaymentHistoryPage extends BasePage {
 			WebElement closeBtn = wait.until(ExpectedConditions.elementToBeClickable(CLOSE_BUTTON));
 			scrollIntoView(closeBtn);
 			jsClick(closeBtn);
-			logger.info("Close button clicked successfully.");
+			logger.info("✅ [SUCCESS] Close button clicked.");
+
 		} catch (Exception e) {
-			logger.warn("Close button not found or could not be clicked: {}", e.getMessage());
+			logger.warn("⚠️ [WARN] Close button not found or failed to click: {}", e.getMessage());
+
 		}
 
-		logger.info("Payment to payee DXFCHGV completed successfully.");
+		logger.info("🎉 [DONE] Payment to payee DXFCHGV completed successfully.");
+
 	}
 
 	public void testInvalidAmounts() {
@@ -329,6 +352,12 @@ public class PaymentHistoryPage extends BasePage {
 			} else {
 				logger.warn("⚠️ Popup not displayed as expected.");
 			}
+
+			// Step 6: Click the "Okay" button on popup
+			By okButton = By.xpath("//span[text()='Okay']/ancestor::button");
+			WebElement okBtnElement = wait.until(ExpectedConditions.elementToBeClickable(okButton));
+			okBtnElement.click();
+			logger.info("✅ Clicked 'Okay' button on popup.");
 
 		} catch (Exception e) {
 			logger.error("❌ Error during Amount Greater Than Balance test: {}", e.getMessage());

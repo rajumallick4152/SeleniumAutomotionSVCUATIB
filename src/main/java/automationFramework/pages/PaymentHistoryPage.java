@@ -1,10 +1,12 @@
 package automationFramework.pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.Keys;
 
 public class PaymentHistoryPage extends BasePage {
 
@@ -61,18 +63,19 @@ public class PaymentHistoryPage extends BasePage {
 			throw new RuntimeException("Cannot proceed without amount.");
 		}
 
-		// Always click NEFT option and confirm selection
+		// Select NEFT option (retry logic with fresh fetch each time)
 		try {
-			WebElement neftOption = wait.until(ExpectedConditions.elementToBeClickable(NEFT_OPTION));
-			scrollIntoView(neftOption);
-			Thread.sleep(300); // ensure element visibility
-
 			boolean selected = false;
 			int attempts = 0;
 
-			while (!selected && attempts < 4) { // : It will try twice maximum to select NEFT
+			while (!selected && attempts < 4) {
 				try {
 					logger.info("Attempting to click NEFT option (Attempt " + (attempts + 1) + ")");
+
+					WebElement neftOption = wait.until(ExpectedConditions.elementToBeClickable(NEFT_OPTION));
+					scrollIntoView(neftOption);
+					Thread.sleep(300);
+
 					try {
 						new Actions(driver).moveToElement(neftOption).pause(200).click().perform();
 						logger.info("NEFT selected using Actions click.");
@@ -82,7 +85,7 @@ public class PaymentHistoryPage extends BasePage {
 						logger.info("NEFT selected using JS click.");
 					}
 
-					Thread.sleep(500); // wait for UI to reflect selection
+					Thread.sleep(500);
 					selected = driver.findElements(NEFT_SELECTED_ICON).size() > 0;
 
 					if (!selected) {
@@ -141,7 +144,7 @@ public class PaymentHistoryPage extends BasePage {
 			logger.warn("Failed to enter OTP: {}", e.getMessage());
 		}
 
-		// Wait for any overlay/spinner to disappear before final Proceed
+		// Wait for overlay/spinner to disappear before final Proceed
 		try {
 			logger.info("Waiting for any overlay/spinner to disappear before final Proceed.");
 			wait.until(driver -> {
@@ -149,7 +152,7 @@ public class PaymentHistoryPage extends BasePage {
 					WebElement overlay = driver.findElement(By.cssSelector("div[aria-hidden='false'].p-overlay"));
 					return !overlay.isDisplayed();
 				} catch (Exception e) {
-					return true; // overlay not found = ready
+					return true;
 				}
 			});
 
@@ -163,7 +166,6 @@ public class PaymentHistoryPage extends BasePage {
 		}
 
 		// Close button (optional)
-
 		try {
 			WebElement closeBtn = wait.until(ExpectedConditions.elementToBeClickable(CLOSE_BUTTON));
 			scrollIntoView(closeBtn);
@@ -262,20 +264,66 @@ public class PaymentHistoryPage extends BasePage {
 			logger.error("❌ Error during Zero Amount test: {}", e.getMessage());
 		}
 
-		logger.info("\n✅ All realistic negative test cases executed.");
-		logger.info("🔸 Now entering valid amount...");
+		logger.info("\n✅ All negative test cases executed.");
 
+		// 5️⃣ Amount Greater Than Balance
 		try {
+			logger.info("\n🔸 Test Case 5: Amount Greater Than Account Balance");
+
+			// Step 1: Locate and fetch account balance
+			By balanceLocator = By.xpath(
+					"//span[contains(@class, 'text-small') and contains(@class, 'font-semibold') and contains(@class, 'text-black-500')]");
+			WebElement balanceElement = wait.until(ExpectedConditions.visibilityOfElementLocated(balanceLocator));
+
+			String balanceText = balanceElement.getText().replaceAll("[^\\d]", "");
+			if (balanceText.isEmpty()) {
+				throw new RuntimeException("Balance text not found or empty.");
+			}
+
+			int accountBalance = Integer.parseInt(balanceText);
+			int overLimitAmount = accountBalance + 500;
+			String overLimitAmountStr = String.valueOf(overLimitAmount);
+
+			logger.info("Fetched account balance: ₹{}", accountBalance);
+			logger.info("Attempting to enter over-limit amount: ₹{}", overLimitAmount);
+
+			// Step 2: Enter amount using sendKeys character by character
 			amountInput.clear();
-			amountInput.sendKeys("1");
-			logger.info("✍️ Entered valid amount: ₹1");
+			for (char ch : overLimitAmountStr.toCharArray()) {
+				amountInput.sendKeys(String.valueOf(ch));
+				Thread.sleep(50); // mimicking real user typing
+			}
+
+			// Step 3: Confirm that the correct value was set
+			String currentValue = amountInput.getAttribute("value").replaceAll("[^\\d]", "");
+			if (!currentValue.equals(overLimitAmountStr)) {
+				logger.error("❌ Amount field mismatch. Expected: {}, Found: {}", overLimitAmountStr, currentValue);
+				throw new RuntimeException("Amount not set correctly.");
+			}
+			logger.info("✅ Over-limit amount successfully typed: '{}'", currentValue);
+
+			// Step 4: Click outside to trigger blur
+			driver.findElement(By.tagName("body")).click();
+			Thread.sleep(1000);
+
+			// Step 5: Click Proceed
 			clickWithRetry(PROCEED_BUTTON_REMARKS);
-			logger.info("👆 Proceeded with valid amount successfully.");
+			waitForSpinnerToDisappear();
+			Thread.sleep(1500); // wait for popup to appear
+
+			// Step 6: Check for Insufficient Balance popup
+			By insufficientBalancePopup = By.xpath("//span[contains(text(),'Insufficient balance')]");
+			WebElement popup = wait.until(ExpectedConditions.visibilityOfElementLocated(insufficientBalancePopup));
+
+			if (popup.isDisplayed()) {
+				logger.info("✅ 'Insufficient balance' popup displayed successfully.");
+			} else {
+				logger.warn("⚠️ Popup not shown as expected.");
+			}
+
 		} catch (Exception e) {
-			logger.error("❌ Error during valid amount entry: {}", e.getMessage());
+			logger.error("❌ Error during Amount Greater Than Balance test: {}", e.getMessage());
 		}
 
-		logger.info("🧪=== Completed Negative Tests for Amount Field ===");
 	}
-
 }

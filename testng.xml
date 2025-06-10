@@ -3,10 +3,7 @@
 	<test name="MultipleTest">
 		<classes>
 
-
-			<!-- <class name="automationFramework.tests.LoginTestNG" /> -->
-
-			<class name="automationFramework.tests.PaymentTestNG" />
+<class name="automationFramework.tests.PaymentTestNG" />
 		</classes>
 	</test>
 </suite>

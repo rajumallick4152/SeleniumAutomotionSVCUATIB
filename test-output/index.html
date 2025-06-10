@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-MySuite" class="navigator-link">
-              <span class="suite-name border-failed">MySuite</span>
+              <span class="suite-name border-passed">MySuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,40 +92,31 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 1 failed,  2 skipped,  </span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-MySuite" class="hide-methods failed suite-MySuite"> (hide)</a> <!-- hide-methods failed suite-MySuite -->
-                      <a href="#" panel-name="suite-MySuite" class="show-methods failed suite-MySuite"> (show)</a> <!-- show-methods failed suite-MySuite -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-MySuite" class="hide-methods passed suite-MySuite"> (hide)</a> <!-- hide-methods passed suite-MySuite -->
+                      <a href="#" panel-name="suite-MySuite" class="show-methods passed suite-MySuite"> (show)</a> <!-- show-methods passed suite-MySuite -->
                     </span>
-                    <div class="method-list-content failed suite-MySuite">
+                    <div class="method-list-content passed suite-MySuite">
                       <span>
-                        <img src="failed.png" width="3%"/>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-MySuite" title="automationFramework.tests.PaymentTestNG" class="method navigator-link" hash-for-method="loginBeforePayment">loginBeforePayment</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-MySuite -->
-                  </li>
-                  <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-MySuite" class="hide-methods skipped suite-MySuite"> (hide)</a> <!-- hide-methods skipped suite-MySuite -->
-                      <a href="#" panel-name="suite-MySuite" class="show-methods skipped suite-MySuite"> (show)</a> <!-- show-methods skipped suite-MySuite -->
-                    </span>
-                    <div class="method-list-content skipped suite-MySuite">
                       <span>
-                        <img src="skipped.png" width="3%"/>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-MySuite" title="automationFramework.tests.PaymentTestNG" class="method navigator-link" hash-for-method="testInvalidAmountScenarios">testInvalidAmountScenarios</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-MySuite" title="automationFramework.tests.PaymentTestNG" class="method navigator-link" hash-for-method="testPayment">testPayment</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content skipped suite-MySuite -->
+                    </div> <!-- method-list-content passed suite-MySuite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -137,9 +128,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-MySuite" class="panel MySuite">
-          <div class="suite-MySuite-class-failed">
+          <div class="suite-MySuite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">automationFramework.tests.PaymentTestNG</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -148,39 +139,13 @@
                   <a name="loginBeforePayment">
                   </a> <!-- loginBeforePayment -->
                   <span class="method-name">loginBeforePayment</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[@type=&apos;password&apos;] (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\rajum\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59812}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59812/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b0344a5a11bce27dda38b4eca35ca72b
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at automationFramework.pages.LoginPage.performLogin(LoginPage.java:24)
-	at automationFramework.tests.PaymentTestNG.loginBeforePayment(PaymentTestNG.java:37)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-MySuite-class-failed -->
-          <div class="suite-MySuite-class-skipped">
-            <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">automationFramework.tests.PaymentTestNG</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
                   <a name="testInvalidAmountScenarios">
                   </a> <!-- testInvalidAmountScenarios -->
                   <span class="method-name">testInvalidAmountScenarios</span>
-                  <div class="stack-trace">java.lang.Throwable: Method automationFramework.tests.PaymentTestNG.testInvalidAmountScenarios() on instance automationFramework.tests.PaymentTestNG@75437611 depends on not successfully finished methods 
-[automationFramework.tests.PaymentTestNG.loginBeforePayment() on instance automationFramework.tests.PaymentTestNG@75437611]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 18 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -188,15 +153,10 @@ Session ID: b0344a5a11bce27dda38b4eca35ca72b
                   <a name="testPayment">
                   </a> <!-- testPayment -->
                   <span class="method-name">testPayment</span>
-                  <div class="stack-trace">java.lang.Throwable: Method automationFramework.tests.PaymentTestNG.testPayment() on instance automationFramework.tests.PaymentTestNG@75437611 depends on not successfully finished methods 
-[automationFramework.tests.PaymentTestNG.loginBeforePayment() on instance automationFramework.tests.PaymentTestNG@75437611]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 18 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-MySuite-class-skipped -->
+          </div> <!-- suite-MySuite-class-passed -->
         </div> <!-- panel MySuite -->
         <div panel-name="test-xml-MySuite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -253,20 +213,20 @@ data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'loginBeforePayment')
 data.setCell(0, 2, 'automationFramework.tests.PaymentTestNG')
-data.setCell(0, 3, 23413);
+data.setCell(0, 3, 46517);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testInvalidAmountScenarios')
+data.setCell(1, 1, 'testPayment')
 data.setCell(1, 2, 'automationFramework.tests.PaymentTestNG')
-data.setCell(1, 3, 0);
+data.setCell(1, 3, 18952);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testPayment')
+data.setCell(2, 1, 'testInvalidAmountScenarios')
 data.setCell(2, 2, 'automationFramework.tests.PaymentTestNG')
-data.setCell(2, 3, 0);
+data.setCell(2, 3, 16758);
 window.suiteTableData['MySuite']= { tableData: data, tableDiv: 'times-div-MySuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 23 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-MySuite">
               </div> <!-- times-div-MySuite -->
             </div> <!-- times-div -->
@@ -298,14 +258,20 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">loginBeforePayment</span>
-                <span class="method-start">2619 ms</span>
+                <span class="method-start">2936 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testPayment</span>
+                <span class="method-start">49463 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testInvalidAmountScenarios</span>
+                <span class="method-start">68418 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">26057 ms</span>
+                <span class="method-start">85196 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

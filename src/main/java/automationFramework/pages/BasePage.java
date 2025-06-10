@@ -24,9 +24,9 @@ public abstract class BasePage {
 
 	protected void waitForSpinnerToDisappear() {
 		try {
-			logger.info("Waiting for spinner to disappear...");
+			//logger.info("Waiting for spinner to disappear...");
 			wait.until(ExpectedConditions.invisibilityOfElementLocated(SPINNER));
-			logger.info("Spinner disappeared.");
+			//logger.info("Spinner disappeared.");
 		} catch (Exception e) {
 			logger.warn("Spinner not found or already gone.");
 		}
@@ -38,7 +38,7 @@ public abstract class BasePage {
 				waitForSpinnerToDisappear();
 				WebElement element = wait.until(ExpectedConditions.elementToBeClickable(locator));
 				scrollIntoView(element);
-				logger.info("Clicking element: {}", locator);
+				//logger.info("Clicking element: {}", locator);
 				element.click();
 				waitForSpinnerToDisappear();
 				return;
@@ -65,7 +65,7 @@ public abstract class BasePage {
 	}
 
 	protected void jsClick(WebElement element) {
-		logger.info("Clicking with JS");
+		//logger.info("Clicking with JS");
 		((JavascriptExecutor) driver).executeScript("arguments[0].click();", element);
 	}
 

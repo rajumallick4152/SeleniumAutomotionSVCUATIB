@@ -29,18 +29,20 @@ public class PaymentHistoryPage extends BasePage {
 	}
 
 	public void clickPaymentsTab() {
+
 		logger.info("🟦 [STEP] Clicking on the Payment tab.");
 		clickWithRetry(PAYMENT_TAB);
 		logger.info("✅ [SUCCESS] Payment tab clicked.");
 	}
 
 	public void waitForPaymentData() {
-		logger.info("⏳ [WAIT] Waiting for payment data to load.");
+		// logger.info("⏳ [WAIT] Waiting for payment data to load.");
 		waitForSpinnerToDisappear();
-		logger.info("✅ [SUCCESS] Spinner disappeared, payment data loaded.");
+		// logger.info("Spinner disappeared, payment data loaded.");
 	}
 
 	public void makePaymentToPayee() {
+		logger.info("🧪=== Starting Postivie Test Cases for NETF transaction for Payment to payee ===");
 		logger.info("🚀 [START] Initiating payment to payee: DXFCHGV");
 
 		try {
@@ -72,13 +74,13 @@ public class PaymentHistoryPage extends BasePage {
 			boolean selected = false;
 			int attempts = 0;
 
-			while (!selected && attempts < 10) {
+			while (!selected && attempts < 7) {
 				try {
 					logger.info("Attempting to click NEFT option (Attempt " + (attempts + 1) + ")");
 
 					WebElement neftOption = wait.until(ExpectedConditions.elementToBeClickable(NEFT_OPTION));
 					scrollIntoView(neftOption);
-					Thread.sleep(300);
+					Thread.sleep(500);
 
 					try {
 						new Actions(driver).moveToElement(neftOption).pause(200).click().perform();
@@ -164,7 +166,8 @@ public class PaymentHistoryPage extends BasePage {
 
 		// Wait for overlay/spinner to disappear before final Proceed
 		try {
-			logger.info("Waiting for any overlay/spinner to disappear before final Proceed.");
+			// logger.info("Waiting for any overlay/spinner to disappear before final
+			// Proceed.");
 			wait.until(driver -> {
 				try {
 					WebElement overlay = driver.findElement(By.cssSelector("div[aria-hidden='false'].p-overlay"));
@@ -197,15 +200,15 @@ public class PaymentHistoryPage extends BasePage {
 
 		}
 
-		logger.info("🎉 [DONE] Payment to payee DXFCHGV completed successfully.");
+		logger.info("🎉 [DONE] ✅ Positive test cases for Payment to payee DXFCHGV successfully executed.");
 
 	}
 
 	public void testInvalidAmounts() {
-		logger.info("🧪=== Starting Negative Test Cases for Amount & Remarks Field ===");
+		logger.info("🧪=== Starting Negative Test Cases for NETF transaction for Payment to payee ===");
 
 		try {
-			logger.info("🔹 Step 1: Selecting payee: DXFCHGV");
+			logger.info("🔹 Step : Selecting payee: DXFCHGV");
 			clickWithRetry(PAYEE_NAME);
 			logger.info("✅ Payee selected successfully.");
 		} catch (Exception e) {
@@ -226,7 +229,7 @@ public class PaymentHistoryPage extends BasePage {
 
 			boolean errorShown = driver.getPageSource().contains("Amount is required");
 			if (errorShown) {
-				logger.info("✅ Correct error displayed: 'Amount is required'");
+				logger.info("[SUCCESS] ✅ Correct error displayed: 'Amount is required'");
 			} else {
 				logger.warn("⚠️ Expected error not found for blank input.");
 			}
@@ -242,7 +245,7 @@ public class PaymentHistoryPage extends BasePage {
 			String fieldValue = amountInput.getAttribute("value");
 
 			if (fieldValue == null || fieldValue.isEmpty()) {
-				logger.info("✅ Special characters were blocked as expected.");
+				logger.info("[SUCCESS] ✅ Special characters were blocked as expected.");
 			} else {
 				logger.warn("⚠️ Unexpected behavior: Field accepted special characters '{}'", fieldValue);
 			}
@@ -258,7 +261,7 @@ public class PaymentHistoryPage extends BasePage {
 			String fieldValue = amountInput.getAttribute("value");
 
 			if (fieldValue == null) {
-				logger.info("✅ Field blocked alphanumeric input completely.");
+				logger.info("[SUCCESS] ✅ Field blocked alphanumeric input completely.");
 			} else if (fieldValue.matches("\\d+")) {
 				logger.info("✅ Field auto-filtered to digits: '{}'", fieldValue);
 			} else {
@@ -278,7 +281,7 @@ public class PaymentHistoryPage extends BasePage {
 
 			boolean errorShown = driver.getPageSource().contains("Minimum Amount is ");
 			if (errorShown) {
-				logger.info("✅ Correct validation message shown: 'Minimum amount is 1.00'");
+				logger.info("[SUCCESS] ✅ Correct validation message shown: 'Minimum amount is 1.00'");
 			} else {
 				logger.warn("⚠️ Validation error for zero amount not found.");
 			}
@@ -347,6 +350,9 @@ public class PaymentHistoryPage extends BasePage {
 			WebElement okBtnElement = wait.until(ExpectedConditions.elementToBeClickable(okButton));
 			okBtnElement.click();
 			logger.info("✅ Clicked 'Okay' button on popup.");
+			logger.info(
+					"[SUCCESS] ✅ Error Pop up Shown while Putting greater amount of account balance as Insufficient balance ");
+
 		} catch (Exception e) {
 			logger.error("❌ Error during Amount Greater Than Balance test: {}", e.getMessage());
 		}
@@ -369,7 +375,7 @@ public class PaymentHistoryPage extends BasePage {
 			boolean selected = false;
 			int attempts = 0;
 
-			while (!selected && attempts < 10) {
+			while (!selected && attempts < 5) {
 				try {
 					logger.info("Attempting to click NEFT option (Attempt {})", attempts + 1);
 					WebElement neftOption = wait.until(ExpectedConditions.elementToBeClickable(NEFT_OPTION));
@@ -450,7 +456,7 @@ public class PaymentHistoryPage extends BasePage {
 
 			}
 
-			logger.info("✅ Transaction successful without remarks as expected. No error displayed.");
+			logger.info(" [SUCCESS] ✅ Transaction successful without remarks as expected. No error displayed.");
 
 		} catch (Exception e) {
 			logger.error("❌ Error during Remarks blank test: {}", e.getMessage());

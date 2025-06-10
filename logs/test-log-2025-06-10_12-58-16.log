@@ -1,0 +1,133 @@
+2025-06-10 12:58:16 [main] WARN  org.testng.xml.TestNGContentHandler - It is strongly recommended to add "<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.1.dtd" >" at the top of the suite file [C:\Users\rajum\eclipse-workspace\ToolsQA\SeleniumAutomotionSVCUATIB\testng.xml] otherwise TestNG may fail or not work as expected.
+2025-06-10 12:58:17 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\rajum\eclipse-workspace\ToolsQA\SeleniumAutomotionSVCUATIB\testng.xml
+
+2025-06-10 12:58:17 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 137.0.7151.68 (resolved driver for Chrome 137)
+2025-06-10 12:58:17 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\rajum\.cache\selenium\chromedriver\win64\137.0.7151.68\chromedriver.exe
+2025-06-10 12:58:35 [main] INFO  a.pages.PaymentHistoryPage - 🟦 [STEP] Clicking on the Payment tab.
+2025-06-10 12:58:35 [main] INFO  a.pages.PaymentHistoryPage - Waiting for spinner to disappear...
+2025-06-10 12:58:43 [main] INFO  a.pages.PaymentHistoryPage - Spinner disappeared.
+2025-06-10 12:58:43 [main] INFO  a.pages.PaymentHistoryPage - Clicking element: By.xpath: //span[@class='p-menuitem-text' and text()='Payment']
+2025-06-10 12:58:43 [main] INFO  a.pages.PaymentHistoryPage - Waiting for spinner to disappear...
+2025-06-10 12:58:44 [main] INFO  a.pages.PaymentHistoryPage - Spinner disappeared.
+2025-06-10 12:58:44 [main] INFO  a.pages.PaymentHistoryPage - ✅ [SUCCESS] Payment tab clicked.
+2025-06-10 12:58:44 [main] INFO  a.pages.PaymentHistoryPage - ⏳ [WAIT] Waiting for payment data to load.
+2025-06-10 12:58:44 [main] INFO  a.pages.PaymentHistoryPage - Waiting for spinner to disappear...
+2025-06-10 12:58:44 [main] INFO  a.pages.PaymentHistoryPage - Spinner disappeared.
+2025-06-10 12:58:44 [main] INFO  a.pages.PaymentHistoryPage - ✅ [SUCCESS] Spinner disappeared, payment data loaded.
+2025-06-10 12:58:44 [main] INFO  a.pages.PaymentHistoryPage - 🚀 [START] Initiating payment to payee: DXFCHGV
+2025-06-10 12:58:44 [main] INFO  a.pages.PaymentHistoryPage - Waiting for spinner to disappear...
+2025-06-10 12:58:44 [main] INFO  a.pages.PaymentHistoryPage - Spinner disappeared.
+2025-06-10 12:58:44 [main] INFO  a.pages.PaymentHistoryPage - Clicking element: By.xpath: //span[contains(@class, 'font-semibold') and text()='DXFCHGV']
+2025-06-10 12:58:45 [main] INFO  a.pages.PaymentHistoryPage - Waiting for spinner to disappear...
+2025-06-10 12:58:45 [main] INFO  a.pages.PaymentHistoryPage - Spinner disappeared.
+2025-06-10 12:58:45 [main] INFO  a.pages.PaymentHistoryPage - ✅ [SUCCESS] Payee selected: DXFCHGV
+2025-06-10 12:58:45 [main] INFO  a.pages.PaymentHistoryPage - Clicking with JS
+2025-06-10 12:58:45 [main] INFO  a.pages.PaymentHistoryPage - ✅ [SUCCESS] Entered amount: ₹2
+2025-06-10 12:58:45 [main] INFO  a.pages.PaymentHistoryPage - 🟦 [STEP] Selecting NEFT option
+2025-06-10 12:58:45 [main] INFO  a.pages.PaymentHistoryPage - Attempting to click NEFT option (Attempt 1)
+2025-06-10 12:58:46 [main] INFO  a.pages.PaymentHistoryPage - 🔄 [INFO] NEFT clicked via Actions.
+2025-06-10 12:58:46 [main] WARN  a.pages.PaymentHistoryPage - ⚠️ [WARN] NEFT not selected yet. Retrying...
+2025-06-10 12:58:46 [main] INFO  a.pages.PaymentHistoryPage - Attempting to click NEFT option (Attempt 2)
+2025-06-10 12:58:58 [main] ERROR a.pages.PaymentHistoryPage - ❌ [FAIL] NEFT selection error: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=137.0.7151.69)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [59498cb8dcf91d0217643df7fc25e821, findElement {using=xpath, value=//*[normalize-space(text())='NEFT']/ancestor::*[self::div or self::label or self::button][1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\rajum\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60297}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60297/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 59498cb8dcf91d0217643df7fc25e821
+2025-06-10 12:58:58 [main] INFO  a.pages.PaymentHistoryPage - Attempting to click NEFT option (Attempt 3)
+2025-06-10 12:58:58 [main] ERROR a.pages.PaymentHistoryPage - ❌ [FAIL] NEFT selection error: invalid session id
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [59498cb8dcf91d0217643df7fc25e821, findElement {using=xpath, value=//*[normalize-space(text())='NEFT']/ancestor::*[self::div or self::label or self::button][1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\rajum\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60297}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60297/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 59498cb8dcf91d0217643df7fc25e821
+2025-06-10 12:58:58 [main] INFO  a.pages.PaymentHistoryPage - Attempting to click NEFT option (Attempt 4)
+2025-06-10 12:58:58 [main] ERROR a.pages.PaymentHistoryPage - ❌ [FAIL] NEFT selection error: invalid session id
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [59498cb8dcf91d0217643df7fc25e821, findElement {using=xpath, value=//*[normalize-space(text())='NEFT']/ancestor::*[self::div or self::label or self::button][1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\rajum\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60297}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60297/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 59498cb8dcf91d0217643df7fc25e821
+2025-06-10 12:58:58 [main] INFO  a.pages.PaymentHistoryPage - Attempting to click NEFT option (Attempt 5)
+2025-06-10 12:58:58 [main] ERROR a.pages.PaymentHistoryPage - ❌ [FAIL] NEFT selection error: invalid session id
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [59498cb8dcf91d0217643df7fc25e821, findElement {using=xpath, value=//*[normalize-space(text())='NEFT']/ancestor::*[self::div or self::label or self::button][1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\rajum\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60297}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60297/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 59498cb8dcf91d0217643df7fc25e821
+2025-06-10 12:58:58 [main] INFO  a.pages.PaymentHistoryPage - Attempting to click NEFT option (Attempt 6)
+2025-06-10 12:58:58 [main] ERROR a.pages.PaymentHistoryPage - ❌ [FAIL] NEFT selection error: invalid session id
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [59498cb8dcf91d0217643df7fc25e821, findElement {using=xpath, value=//*[normalize-space(text())='NEFT']/ancestor::*[self::div or self::label or self::button][1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\rajum\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60297}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60297/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 59498cb8dcf91d0217643df7fc25e821
+2025-06-10 12:58:58 [main] INFO  a.pages.PaymentHistoryPage - Attempting to click NEFT option (Attempt 7)
+2025-06-10 12:58:58 [main] ERROR a.pages.PaymentHistoryPage - ❌ [FAIL] NEFT selection error: invalid session id
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [59498cb8dcf91d0217643df7fc25e821, findElement {using=xpath, value=//*[normalize-space(text())='NEFT']/ancestor::*[self::div or self::label or self::button][1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\rajum\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60297}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60297/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 59498cb8dcf91d0217643df7fc25e821
+2025-06-10 12:58:58 [main] INFO  a.pages.PaymentHistoryPage - Attempting to click NEFT option (Attempt 8)
+2025-06-10 12:58:58 [main] ERROR a.pages.PaymentHistoryPage - ❌ [FAIL] NEFT selection error: invalid session id
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [59498cb8dcf91d0217643df7fc25e821, findElement {using=xpath, value=//*[normalize-space(text())='NEFT']/ancestor::*[self::div or self::label or self::button][1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\rajum\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60297}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60297/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 59498cb8dcf91d0217643df7fc25e821
+2025-06-10 12:58:58 [main] INFO  a.pages.PaymentHistoryPage - Attempting to click NEFT option (Attempt 9)
+2025-06-10 12:58:58 [main] ERROR a.pages.PaymentHistoryPage - ❌ [FAIL] NEFT selection error: invalid session id
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [59498cb8dcf91d0217643df7fc25e821, findElement {using=xpath, value=//*[normalize-space(text())='NEFT']/ancestor::*[self::div or self::label or self::button][1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\rajum\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60297}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60297/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 59498cb8dcf91d0217643df7fc25e821
+2025-06-10 12:58:58 [main] INFO  a.pages.PaymentHistoryPage - Attempting to click NEFT option (Attempt 10)
+2025-06-10 12:58:58 [main] ERROR a.pages.PaymentHistoryPage - ❌ [FAIL] NEFT selection error: invalid session id
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [59498cb8dcf91d0217643df7fc25e821, findElement {using=xpath, value=//*[normalize-space(text())='NEFT']/ancestor::*[self::div or self::label or self::button][1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\rajum\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60297}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60297/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 59498cb8dcf91d0217643df7fc25e821
+2025-06-10 12:58:58 [main] ERROR a.pages.PaymentHistoryPage - ❌ [FAIL] NEFT selection failed: NEFT could not be selected after multiple attempts.
+2025-06-10 12:58:58 [main] INFO  a.pages.PaymentHistoryPage - 🟦 [STEP] Clicking on the Payment tab.
+2025-06-10 12:58:58 [main] INFO  a.pages.PaymentHistoryPage - Waiting for spinner to disappear...
+2025-06-10 12:58:58 [main] WARN  a.pages.PaymentHistoryPage - Spinner not found or already gone.
+2025-06-10 12:58:58 [main] WARN  a.pages.PaymentHistoryPage - Click failed attempt 1/3: invalid session id
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [59498cb8dcf91d0217643df7fc25e821, findElement {using=xpath, value=//span[@class='p-menuitem-text' and text()='Payment']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\rajum\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60297}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60297/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 59498cb8dcf91d0217643df7fc25e821
+2025-06-10 12:58:59 [main] INFO  a.pages.PaymentHistoryPage - Waiting for spinner to disappear...
+2025-06-10 12:58:59 [main] WARN  a.pages.PaymentHistoryPage - Spinner not found or already gone.
+2025-06-10 12:58:59 [main] WARN  a.pages.PaymentHistoryPage - Click failed attempt 2/3: invalid session id
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [59498cb8dcf91d0217643df7fc25e821, findElement {using=xpath, value=//span[@class='p-menuitem-text' and text()='Payment']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\rajum\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60297}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60297/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 59498cb8dcf91d0217643df7fc25e821
+2025-06-10 12:59:00 [main] INFO  a.pages.PaymentHistoryPage - Waiting for spinner to disappear...
+2025-06-10 12:59:00 [main] WARN  a.pages.PaymentHistoryPage - Spinner not found or already gone.
+2025-06-10 12:59:00 [main] WARN  a.pages.PaymentHistoryPage - Click failed attempt 3/3: invalid session id
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [59498cb8dcf91d0217643df7fc25e821, findElement {using=xpath, value=//span[@class='p-menuitem-text' and text()='Payment']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\rajum\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60297}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60297/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 59498cb8dcf91d0217643df7fc25e821

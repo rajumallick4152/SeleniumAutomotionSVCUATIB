@@ -1,0 +1,86 @@
+2025-06-10 13:16:14 [main] WARN  org.testng.xml.TestNGContentHandler - It is strongly recommended to add "<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.1.dtd" >" at the top of the suite file [C:\Users\rajum\eclipse-workspace\ToolsQA\SeleniumAutomotionSVCUATIB\testng.xml] otherwise TestNG may fail or not work as expected.
+2025-06-10 13:16:14 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\rajum\eclipse-workspace\ToolsQA\SeleniumAutomotionSVCUATIB\testng.xml
+
+2025-06-10 13:16:15 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 137.0.7151.68 (resolved driver for Chrome 137)
+2025-06-10 13:16:15 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\rajum\.cache\selenium\chromedriver\win64\137.0.7151.68\chromedriver.exe
+2025-06-10 13:16:32 [main] INFO  a.pages.PaymentHistoryPage - 🟦 [STEP] Clicking on the Payment tab.
+2025-06-10 13:16:32 [main] INFO  a.pages.PaymentHistoryPage - Waiting for spinner to disappear...
+2025-06-10 13:16:37 [main] INFO  a.pages.PaymentHistoryPage - Spinner disappeared.
+2025-06-10 13:16:38 [main] INFO  a.pages.PaymentHistoryPage - Clicking element: By.xpath: //span[@class='p-menuitem-text' and text()='Payment']
+2025-06-10 13:16:38 [main] INFO  a.pages.PaymentHistoryPage - Waiting for spinner to disappear...
+2025-06-10 13:16:38 [main] INFO  a.pages.PaymentHistoryPage - Spinner disappeared.
+2025-06-10 13:16:38 [main] INFO  a.pages.PaymentHistoryPage - ✅ [SUCCESS] Payment tab clicked.
+2025-06-10 13:16:38 [main] INFO  a.pages.PaymentHistoryPage - ⏳ [WAIT] Waiting for payment data to load.
+2025-06-10 13:16:38 [main] INFO  a.pages.PaymentHistoryPage - Waiting for spinner to disappear...
+2025-06-10 13:16:38 [main] INFO  a.pages.PaymentHistoryPage - Spinner disappeared.
+2025-06-10 13:16:38 [main] INFO  a.pages.PaymentHistoryPage - Spinner disappeared, payment data loaded.
+2025-06-10 13:16:38 [main] INFO  a.pages.PaymentHistoryPage - 🚀 [START] Initiating payment to payee: DXFCHGV
+2025-06-10 13:16:38 [main] INFO  a.pages.PaymentHistoryPage - Waiting for spinner to disappear...
+2025-06-10 13:16:38 [main] INFO  a.pages.PaymentHistoryPage - Spinner disappeared.
+2025-06-10 13:16:38 [main] INFO  a.pages.PaymentHistoryPage - Clicking element: By.xpath: //span[contains(@class, 'font-semibold') and text()='DXFCHGV']
+2025-06-10 13:16:38 [main] INFO  a.pages.PaymentHistoryPage - Waiting for spinner to disappear...
+2025-06-10 13:16:38 [main] INFO  a.pages.PaymentHistoryPage - Spinner disappeared.
+2025-06-10 13:16:38 [main] INFO  a.pages.PaymentHistoryPage - ✅ [SUCCESS] Payee selected: DXFCHGV
+2025-06-10 13:16:38 [main] INFO  a.pages.PaymentHistoryPage - Clicking with JS
+2025-06-10 13:16:39 [main] INFO  a.pages.PaymentHistoryPage - ✅ [SUCCESS] Entered amount: ₹2
+2025-06-10 13:16:39 [main] INFO  a.pages.PaymentHistoryPage - 🟦 [STEP] Selecting NEFT option
+2025-06-10 13:16:39 [main] INFO  a.pages.PaymentHistoryPage - Attempting to click NEFT option (Attempt 1)
+2025-06-10 13:16:39 [main] INFO  a.pages.PaymentHistoryPage - 🔄 [INFO] NEFT clicked via Actions.
+2025-06-10 13:16:40 [main] WARN  a.pages.PaymentHistoryPage - ⚠️ [WARN] NEFT not selected yet. Retrying...
+2025-06-10 13:16:40 [main] INFO  a.pages.PaymentHistoryPage - Attempting to click NEFT option (Attempt 2)
+2025-06-10 13:16:40 [main] WARN  a.pages.PaymentHistoryPage - ⚠️ [WARN] Actions click failed: stale element reference: stale element not found in the current frame
+  (Session info: chrome=137.0.7151.69)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [546b086fa8aa238592bd337a7154aa92, actions {actions=[org.openqa.selenium.interactions.Sequence@3f93e4a8]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\rajum\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60509}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60509/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 546b086fa8aa238592bd337a7154aa92. Trying JS click.
+2025-06-10 13:16:40 [main] INFO  a.pages.PaymentHistoryPage - Clicking with JS
+2025-06-10 13:16:40 [main] ERROR a.pages.PaymentHistoryPage - ❌ [FAIL] NEFT selection error: stale element reference: stale element not found in the current frame
+  (Session info: chrome=137.0.7151.69)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [546b086fa8aa238592bd337a7154aa92, executeScript {script=arguments[0].click();, args=[{element-6066-11e4-a52e-4f735466cecf=f.E5C45835B234C3231CF328A5130FF8DC.d.E69312079A9B0054BA66D678559B86C7.e.130}]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\rajum\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60509}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60509/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 546b086fa8aa238592bd337a7154aa92
+2025-06-10 13:16:40 [main] INFO  a.pages.PaymentHistoryPage - Attempting to click NEFT option (Attempt 3)
+2025-06-10 13:16:55 [main] ERROR a.pages.PaymentHistoryPage - ❌ [FAIL] NEFT selection error: Expected condition failed: waiting for element to be clickable: By.xpath: //*[normalize-space(text())='NEFT']/ancestor::*[self::div or self::label or self::button][1] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\rajum\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60509}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60509/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 546b086fa8aa238592bd337a7154aa92
+2025-06-10 13:16:55 [main] INFO  a.pages.PaymentHistoryPage - Attempting to click NEFT option (Attempt 4)
+2025-06-10 13:17:10 [main] ERROR a.pages.PaymentHistoryPage - ❌ [FAIL] NEFT selection error: Expected condition failed: waiting for element to be clickable: By.xpath: //*[normalize-space(text())='NEFT']/ancestor::*[self::div or self::label or self::button][1] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\rajum\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60509}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60509/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 546b086fa8aa238592bd337a7154aa92
+2025-06-10 13:17:10 [main] INFO  a.pages.PaymentHistoryPage - Attempting to click NEFT option (Attempt 5)
+2025-06-10 13:17:26 [main] ERROR a.pages.PaymentHistoryPage - ❌ [FAIL] NEFT selection error: Expected condition failed: waiting for element to be clickable: By.xpath: //*[normalize-space(text())='NEFT']/ancestor::*[self::div or self::label or self::button][1] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\rajum\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60509}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60509/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 546b086fa8aa238592bd337a7154aa92
+2025-06-10 13:17:26 [main] INFO  a.pages.PaymentHistoryPage - Attempting to click NEFT option (Attempt 6)
+2025-06-10 13:17:41 [main] ERROR a.pages.PaymentHistoryPage - ❌ [FAIL] NEFT selection error: Expected condition failed: waiting for element to be clickable: By.xpath: //*[normalize-space(text())='NEFT']/ancestor::*[self::div or self::label or self::button][1] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\rajum\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60509}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60509/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 546b086fa8aa238592bd337a7154aa92
+2025-06-10 13:17:41 [main] INFO  a.pages.PaymentHistoryPage - Attempting to click NEFT option (Attempt 7)
+2025-06-10 13:17:56 [main] ERROR a.pages.PaymentHistoryPage - ❌ [FAIL] NEFT selection error: Expected condition failed: waiting for element to be clickable: By.xpath: //*[normalize-space(text())='NEFT']/ancestor::*[self::div or self::label or self::button][1] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\rajum\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60509}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60509/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 546b086fa8aa238592bd337a7154aa92
+2025-06-10 13:17:56 [main] INFO  a.pages.PaymentHistoryPage - Attempting to click NEFT option (Attempt 8)

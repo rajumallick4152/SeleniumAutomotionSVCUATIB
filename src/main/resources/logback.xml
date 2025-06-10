@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
 
-	<!-- Enable color output on Windows -->
+	<!-- Timestamp for file name -->
+	<timestamp key="LOG_TIME" datePattern="yyyy-MM-dd_HH-mm-ss" />
+
+	<!-- Patterns -->
 	<property name="CONSOLE_LOG_PATTERN"
 		value="%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %cyan(%logger{36}) - %msg%n" />
+	<property name="FILE_LOG_PATTERN"
+		value="%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n" />
+	<property name="LOG_FILE"
+		value="logs/Payment tab -log-${LOG_TIME}.log" />
 
+	<!-- Console appender -->
 	<appender name="STDOUT"
 		class="ch.qos.logback.core.ConsoleAppender">
 		<withJansi>true</withJansi>
@@ -14,12 +22,23 @@
 		</encoder>
 	</appender>
 
+	<!-- File appender -->
+	<appender name="FILE" class="ch.qos.logback.core.FileAppender">
+		<file>${LOG_FILE}</file>
+		<append>false</append> <!-- Always create new -->
+		<encoder
+			class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+			<pattern>${FILE_LOG_PATTERN}</pattern>
+		</encoder>
+	</appender>
+
 	<!-- Root logger -->
 	<root level="info">
 		<appender-ref ref="STDOUT" />
+		<appender-ref ref="FILE" />
 	</root>
 
-	<!-- Enable debug logs for your package only -->
+	<!-- Custom package level -->
 	<logger name="automationFramework" level="debug" />
 
 </configuration>

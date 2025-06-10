@@ -50,16 +50,14 @@ public class PaymentTestNG {
 		PaymentHistoryPage paymentPage = new PaymentHistoryPage(driver);
 		paymentPage.clickPaymentsTab();
 		paymentPage.waitForPaymentData();
-		paymentPage.testInvalidAmounts();  // Make sure this method exists in your PaymentHistoryPage
+		paymentPage.testInvalidAmounts(); // Make sure this method exists in your PaymentHistoryPage
 	}
 
 	@AfterClass
 	public void tearDown() {
 		// Uncomment when you want to close the browser after tests
 		/*
-		if (driver != null) {
-			driver.quit();
-		}
-		*/
+		 * if (driver != null) { driver.quit(); }
+		 */
 	}
 }

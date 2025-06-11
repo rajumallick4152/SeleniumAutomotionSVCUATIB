@@ -2,7 +2,7 @@ package automationFramework;
 
 import org.openqa.selenium.WebDriver;
 
-import automationFramework.pages.LogoutPage;
+//import automationFramework.pages.LogoutPage;
 
 public class ExecutionTask implements Runnable {
 	private String driverName;

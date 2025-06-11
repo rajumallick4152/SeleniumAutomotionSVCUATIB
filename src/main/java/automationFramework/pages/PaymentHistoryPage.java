@@ -6,6 +6,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+/*import ch.qos.logback.core.util.Duration;*/
+import java.time.Duration;
 
 public class PaymentHistoryPage extends BasePage {
 
@@ -27,6 +31,9 @@ public class PaymentHistoryPage extends BasePage {
 	private static final By INSUFFICIENT_BALANCE_POPUP = By
 			.xpath("//div[contains(@class, 'popup-dialog-height')]//span[text()='Insufficient balance']");
 	private static final By OK_BUTTON = By.xpath("//span[text()='Okay']/ancestor::button");
+
+	private static final By INVALID_OTP_MESSAGE = By.xpath("//div[contains(text(), 'Invalid OTP')]");
+	private static final By CANCEL_BUTTON = By.xpath("//span[text()='Cancel']/ancestor::button");
 
 	public PaymentHistoryPage(WebDriver driver) {
 		super(driver);
@@ -292,7 +299,11 @@ public class PaymentHistoryPage extends BasePage {
 		// 6️⃣ Remarks field left blank, transaction should succeed
 		testRemarksFieldBlank();
 
+		// 7️⃣ Invalid OTP
+		testInvalidOTP();
+
 		logger.info("\n✅ All negative test cases executed.");
+
 	}
 
 	private void testAmountGreaterThanBalance() {
@@ -392,8 +403,50 @@ public class PaymentHistoryPage extends BasePage {
 
 			logger.info("[SUCCESS] ✅ Transaction succeeded with blank remarks.");
 
+			clickCloseButton();
+
 		} catch (Exception e) {
 			logger.error("❌ Error during Remarks Field Blank test: {}", e.getMessage());
 		}
 	}
+
+	private void testInvalidOTP() {
+		try {
+			logger.info("\n🔸 Test Case 7: Enter Invalid OTP");
+
+			// Navigate to the OTP entry screen
+			clickWithRetry(PAYEE_NAME);
+			enterAmount("3");
+			selectNEFTOption();
+			enterRemarks("test value");
+			clickProceedButtonRemarks();
+			clickConfirmButton();
+
+			// Enter an invalid OTP
+			String invalidOTP = "123321";
+			enterOTP(invalidOTP);
+			clickFinalProceedButton();
+
+			// Wait for the "Invalid OTP" message to appear
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+			WebElement invalidOTPMessage = wait
+					.until(ExpectedConditions.visibilityOfElementLocated(INVALID_OTP_MESSAGE));
+
+			// Verify that the "Invalid OTP" message is displayed
+			if (invalidOTPMessage.isDisplayed()) {
+				logger.info("✅ Correct error message displayed: 'Invalid OTP'");
+			} else {
+				logger.warn("⚠️ Expected error message 'Invalid OTP' not found.");
+			}
+
+			// Wait for a short time before clicking Cancel
+			Thread.sleep(500); // Wait for 500 milliseconds (adjust as needed)
+			clickWithRetry(CANCEL_BUTTON);
+			clickWithRetry(CANCEL_BUTTON);
+
+		} catch (Exception e) {
+			logger.error("❌ Error during Invalid OTP test: {}", e.getMessage());
+		}
+	}
+
 }

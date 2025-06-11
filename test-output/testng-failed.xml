@@ -6,10 +6,8 @@
       <class name="automationFramework.tests.PaymentTestNG">
         <methods>
           <include name="testInvalidAmountScenarios"/>
-          <include name="testPayment"/>
           <include name="loginBeforePayment"/>
           <include name="setUp"/>
-          <include name="tearDown"/>
         </methods>
       </class> <!-- automationFramework.tests.PaymentTestNG -->
     </classes>

@@ -10,7 +10,7 @@
 	<property name="FILE_LOG_PATTERN"
 		value="%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n" />
 	<property name="LOG_FILE"
-		value="logs/Payment tab -log-${LOG_TIME}.log" />
+		value="logs/Accounts tab -log-${LOG_TIME}.log" />
 
 	<!-- Console appender -->
 	<appender name="STDOUT"

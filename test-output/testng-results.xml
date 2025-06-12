@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-11T17:25:32 IST" name="MySuite" finished-at="2025-06-11T17:26:42 IST" duration-ms="69832">
+  <suite started-at="2025-06-13T00:57:13 IST" name="MySuite" finished-at="2025-06-13T00:58:15 IST" duration-ms="62258">
     <groups>
     </groups>
-    <test started-at="2025-06-11T17:25:32 IST" name="MultipleTest" finished-at="2025-06-11T17:26:42 IST" duration-ms="69832">
+    <test started-at="2025-06-13T00:57:13 IST" name="MultipleTest" finished-at="2025-06-13T00:58:15 IST" duration-ms="62258">
       <class name="automationFramework.tests.PaymentTestNG">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:automationFramework.tests.PaymentTestNG@48075da3]" started-at="2025-06-11T17:25:32 IST" name="setUp" finished-at="2025-06-11T17:25:35 IST" duration-ms="3467" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:automationFramework.tests.PaymentTestNG@16eb3ea3]" started-at="2025-06-13T00:57:13 IST" name="setUp" finished-at="2025-06-13T00:57:16 IST" duration-ms="3234" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginBeforePayment()[pri:0, instance:automationFramework.tests.PaymentTestNG@48075da3]" started-at="2025-06-11T17:25:35 IST" name="loginBeforePayment" finished-at="2025-06-11T17:25:49 IST" duration-ms="14233" status="PASS">
+        <test-method signature="loginBeforePayment()[pri:0, instance:automationFramework.tests.PaymentTestNG@16eb3ea3]" started-at="2025-06-13T00:57:16 IST" name="loginBeforePayment" finished-at="2025-06-13T00:57:31 IST" duration-ms="14333" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginBeforePayment -->
-        <test-method signature="testPayment()[pri:1, instance:automationFramework.tests.PaymentTestNG@48075da3]" started-at="2025-06-11T17:25:49 IST" name="testPayment" finished-at="2025-06-11T17:26:10 IST" depends-on-methods="automationFramework.tests.PaymentTestNG.loginBeforePayment" duration-ms="20966" status="PASS">
+        <test-method signature="testPayment()[pri:1, instance:automationFramework.tests.PaymentTestNG@16eb3ea3]" started-at="2025-06-13T00:57:31 IST" name="testPayment" finished-at="2025-06-13T00:57:47 IST" depends-on-methods="automationFramework.tests.PaymentTestNG.loginBeforePayment" duration-ms="16513" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPayment -->
-        <test-method signature="testInvalidAmountScenarios()[pri:2, instance:automationFramework.tests.PaymentTestNG@48075da3]" started-at="2025-06-11T17:26:10 IST" name="testInvalidAmountScenarios" finished-at="2025-06-11T17:26:42 IST" depends-on-methods="automationFramework.tests.PaymentTestNG.loginBeforePayment" duration-ms="31048" status="PASS">
+        <test-method signature="testInvalidAmountScenarios()[pri:2, instance:automationFramework.tests.PaymentTestNG@16eb3ea3]" started-at="2025-06-13T00:57:47 IST" name="testInvalidAmountScenarios" finished-at="2025-06-13T00:58:15 IST" depends-on-methods="automationFramework.tests.PaymentTestNG.loginBeforePayment" duration-ms="28089" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testInvalidAmountScenarios -->

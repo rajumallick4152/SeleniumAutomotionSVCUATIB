@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [MySuite]">
+<suite name="Failed suite [MySuite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="MultipleTest(failed)">
     <classes>
-      <class name="automationFramework.tests.PaymentTestNG">
+      <class name="automationFramework.tests.AccountsTestNG">
         <methods>
-          <include name="testInvalidAmountScenarios"/>
-          <include name="loginBeforePayment"/>
+          <include name="downloadThreeMonthStatement"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- automationFramework.tests.PaymentTestNG -->
+      </class> <!-- automationFramework.tests.AccountsTestNG -->
     </classes>
   </test> <!-- MultipleTest(failed) -->
 </suite> <!-- Failed suite [MySuite] -->

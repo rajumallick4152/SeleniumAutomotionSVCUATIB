@@ -16,6 +16,6 @@ public class MorePage extends BasePage {
 	}
 
 	public void waitForPaymentData() {
-		waitForSpinnerToDisappear();
+		waitForSpinnerToFullyDisappear();
 	}
 }

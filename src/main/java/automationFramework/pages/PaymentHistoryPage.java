@@ -47,7 +47,7 @@ public class PaymentHistoryPage extends BasePage {
 	}
 
 	public void waitForPaymentData() {
-		waitForSpinnerToDisappear();
+		waitForSpinnerToFullyDisappear();
 	}
 
 	private void enterAmount(String amount) {

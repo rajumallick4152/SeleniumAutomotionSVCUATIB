@@ -17,6 +17,6 @@ public class MyChequesPage extends BasePage {
 	}
 
 	public void waitForPaymentData() {
-		waitForSpinnerToDisappear();
+		waitForSpinnerToFullyDisappear();
 	}
 }

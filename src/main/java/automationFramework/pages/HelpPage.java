@@ -17,6 +17,6 @@ public class HelpPage extends BasePage {
 	}
 
 	public void waitForPaymentData() {
-		waitForSpinnerToDisappear();
+		waitForSpinnerToFullyDisappear();
 	}
 }

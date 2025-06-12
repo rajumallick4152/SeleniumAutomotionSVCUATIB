@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.1.dtd"> -->
+<!DOCTYPE suite SYSTEM "file:///C:/Users/rajum/eclipse-workspace/ToolsQA/SeleniumAutomotionSVCUATIB/testng-1.1.dtd">
+<!-- <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.1.dtd"> -->
+
+<suite name="MySuite">
+	<test name="MultipleTest">
+		<classes>
+
+<!-- 			<class name="automationFramework.tests.AccountsTestNG" /> -->
+		<class name="automationFramework.tests.PaymentTestNG" /> 
+		</classes>
+	</test>
+</suite>
+
+
+

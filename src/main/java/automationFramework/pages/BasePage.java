@@ -1,6 +1,7 @@
 package automationFramework.pages;
 
 import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.slf4j.Logger;
@@ -22,54 +23,77 @@ public abstract class BasePage {
 		this.logger = LoggerFactory.getLogger(getClass());
 	}
 
-	protected void waitForSpinnerToDisappear() {
+	// ✅ Enhanced Spinner Wait (Handles ng-animating class issue)
+	protected void waitForSpinnerToFullyDisappear() {
 		try {
-			//logger.info("Waiting for spinner to disappear...");
+			logger.info("⏳ Waiting for spinner to fully disappear...");
+
 			wait.until(ExpectedConditions.invisibilityOfElementLocated(SPINNER));
-			//logger.info("Spinner disappeared.");
+
+			wait.until(driver -> {
+				try {
+					WebElement spinner = driver.findElement(SPINNER);
+					String classAttr = spinner.getAttribute("class");
+					return !classAttr.contains("ng-animating");
+				} catch (NoSuchElementException e) {
+					return true;
+				}
+			});
+
+			Thread.sleep(300);
+			logger.info("✅ Spinner disappeared.");
 		} catch (Exception e) {
-			logger.warn("Spinner not found or already gone.");
+			logger.warn("⚠️ Spinner wait skipped or failed gracefully.");
 		}
 	}
 
+	// ✅ Retry Click with Spinner Handling and Scroll
 	protected void clickWithRetry(By locator) {
 		for (int i = 1; i <= 3; i++) {
 			try {
-				waitForSpinnerToDisappear();
+				waitForSpinnerToFullyDisappear();
 				WebElement element = wait.until(ExpectedConditions.elementToBeClickable(locator));
 				scrollIntoView(element);
-				//logger.info("Clicking element: {}", locator);
 				element.click();
-				waitForSpinnerToDisappear();
+				waitForSpinnerToFullyDisappear();
 				return;
 			} catch (ElementClickInterceptedException e) {
-				logger.warn("Click intercepted attempt {}/3: {}", i, e.getMessage());
-				if (i == 3) {
-					throw e;
-				}
-				try {
-					Thread.sleep(1000);
-				} catch (InterruptedException ignored) {
-				}
+				logger.warn("⚠️ Click intercepted attempt {}/3: {}", i, e.getMessage());
 			} catch (Exception e) {
-				logger.warn("Click failed attempt {}/3: {}", i, e.getMessage());
-				if (i == 3) {
-					throw new RuntimeException("Click failed after 3 attempts", e);
-				}
-				try {
-					Thread.sleep(1000);
-				} catch (InterruptedException ignored) {
-				}
+				logger.warn("⚠️ Click failed attempt {}/3: {}", i, e.getMessage());
 			}
+			sleep(500);
 		}
+		throw new RuntimeException("❌ Click failed after 3 attempts: " + locator);
 	}
 
+	// ✅ JavaScript Click
 	protected void jsClick(WebElement element) {
-		//logger.info("Clicking with JS");
 		((JavascriptExecutor) driver).executeScript("arguments[0].click();", element);
 	}
 
+	// ✅ Scroll to Element
 	protected void scrollIntoView(WebElement element) {
 		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block: 'center'});", element);
+	}
+
+	// ✅ Safe Direct Click on Element
+	public void clickElement(WebElement element) {
+		waitForSpinnerToFullyDisappear();
+		wait.until(ExpectedConditions.elementToBeClickable(element)).click();
+		waitForSpinnerToFullyDisappear();
+	}
+
+	// ✅ Utility: Safe Sleep
+	protected void sleep(long millis) {
+		try {
+			Thread.sleep(millis);
+		} catch (InterruptedException ignored) {
+		}
+	}
+
+	// ✅ Helper: presenceOf (used in AccountsPage)
+	protected ExpectedCondition<WebElement> presenceOf(By locator) {
+		return ExpectedConditions.presenceOfElementLocated(locator);
 	}
 }

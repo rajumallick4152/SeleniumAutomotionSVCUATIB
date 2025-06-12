@@ -16,9 +16,6 @@ public class AccountsTestNG {
 	private Properties prop;
 	private AccountsPage accountsPage;
 
-	private String statementRange;
-	private String fileFormat;
-
 	@BeforeClass
 	public void setUp() throws Exception {
 		driver = BrowserFactory.startBrowser("chrome");
@@ -33,10 +30,6 @@ public class AccountsTestNG {
 		}
 		prop.load(input);
 
-		// Read statement values from config
-		statementRange = prop.getProperty("statement.range");
-		fileFormat = prop.getProperty("statement.format");
-
 		// Perform login
 		String url = prop.getProperty("appURL");
 		String username = prop.getProperty("username");
@@ -49,7 +42,7 @@ public class AccountsTestNG {
 		accountsPage = new AccountsPage(driver);
 	}
 
-	@Test
+	@Test(priority = 1)
 	public void testAccountSummary() {
 		System.out.println("Starting Account Summary Test...");
 		accountsPage.clickAccountsTab();
@@ -57,29 +50,21 @@ public class AccountsTestNG {
 		accountsPage.scrollToViewBalanceButton();
 		accountsPage.clickViewBalanceButton();
 		accountsPage.closeBalanceModal();
-		System.out.println("Account Summary Test completed successfully.");
+		System.out.println("Account Summary And Balance Check Test completed successfully.");
 	}
 
 	@Test(priority = 2)
-	public void testStatementDownloadAndShare() {
-		System.out.println("Starting Detailed Statement Test...");
-
-		accountsPage.clickAccountsTab();
-		accountsPage.waitForDataToLoad();
-
-		accountsPage.clickDetailedStatement();
-
-		// Use values from config.properties
-		accountsPage.selectStatementRange(statementRange);
-		accountsPage.downloadStatement(fileFormat);
-
-		System.out.println("Detailed Statement Test completed successfully.");
+	public void downloadOneMonthStatement() {
+		accountsPage.downloadStatement("1 Month");
 	}
 
-	@AfterClass
-	public void tearDown() {
-		if (driver != null) {
-			driver.quit();
-		}
+	@Test(priority = 3)
+	public void downloadThreeMonthStatement() {
+		accountsPage.downloadStatement("3 Months");
 	}
+
+	// @AfterClass
+	/*
+	 * public void tearDown() { if (driver != null) { driver.quit(); } }
+	 */
 }

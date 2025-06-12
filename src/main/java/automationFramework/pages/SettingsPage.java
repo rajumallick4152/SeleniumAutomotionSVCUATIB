@@ -16,6 +16,6 @@ public class SettingsPage extends BasePage {
 	}
 
 	public void waitForPaymentData() {
-		waitForSpinnerToDisappear();
+		waitForSpinnerToFullyDisappear();
 	}
 }

@@ -53,7 +53,7 @@ public class LogoutPage extends BasePage {
 			clickWithRetry(ARROW_BUTTON);
 			clickWithRetry(LOGOUT_BUTTON);
 
-			waitForSpinnerToDisappear(); // Optional: in case spinner shows after logout
+			waitForSpinnerToFullyDisappear(); // Optional: in case spinner shows after logout
 
 			List<WebElement> okayButtons = driver.findElements(ALL_OKAY_BUTTONS);
 			for (WebElement btn : okayButtons) {

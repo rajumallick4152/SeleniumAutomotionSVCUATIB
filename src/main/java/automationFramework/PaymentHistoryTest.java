@@ -1,7 +1,8 @@
 package automationFramework;
 
-import automationFramework.pages.PaymentHistoryPage;
 import org.openqa.selenium.WebDriver;
+
+import automationFramework.pages.PaymentHistoryPage;
 
 import java.time.Duration;
 

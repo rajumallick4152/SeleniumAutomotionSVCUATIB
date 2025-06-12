@@ -17,7 +17,7 @@ public class ServicesPage extends BasePage {
 	}
 
 	public void waitForPaymentData() {
-		waitForSpinnerToDisappear();
+		waitForSpinnerToFullyDisappear();
 	}
 
 	public void demoMethod1() {

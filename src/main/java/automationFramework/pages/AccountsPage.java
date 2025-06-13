@@ -29,16 +29,19 @@ public class AccountsPage extends BasePage {
 		logger.info("Clicking Accounts Tab");
 		clickWithRetry(ACCOUNTS_TAB);
 		waitForSpinnerToFullyDisappear();
+		detectAndLogServiceErrors(); // ✅ Added
 		logger.info("✅ Accounts Tab Clicked");
 	}
 
 	public void waitForDataToLoad() {
 		waitForSpinnerToFullyDisappear();
+		detectAndLogServiceErrors(); // ✅ Added
 	}
 
 	public void scrollToViewBalanceButton() {
 		logger.info("Scrolling to 'View Balance Components' button");
 		waitForSpinnerToFullyDisappear();
+		detectAndLogServiceErrors(); // ✅ Added
 		WebElement viewBalanceBtn = wait.until(presenceOf(VIEW_BALANCE_BUTTON));
 		scrollIntoView(viewBalanceBtn);
 	}
@@ -48,6 +51,7 @@ public class AccountsPage extends BasePage {
 		waitForSpinnerToFullyDisappear();
 		clickWithRetry(VIEW_BALANCE_BUTTON);
 		waitForSpinnerToFullyDisappear();
+		detectAndLogServiceErrors(); // ✅ Added
 	}
 
 	public void closeBalanceModal() {
@@ -60,39 +64,47 @@ public class AccountsPage extends BasePage {
 			logger.error("❌ Failed to close balance modal: {}", ex.getMessage());
 		}
 		waitForSpinnerToFullyDisappear();
+		detectAndLogServiceErrors(); // ✅ Added
 	}
 
 	public void downloadStatement(String duration, FileType fileType) {
 		try {
 			logger.info("▶️ Starting: Download {} Statement in {} format", duration, fileType.name());
 
-			clickAccountsTab();
+			clickAccountsTab(); // already has error detection
 
 			clickWithRetry(DETAILED_STATEMENT);
 			waitForSpinnerToFullyDisappear();
+			detectAndLogServiceErrors(); // ✅ Added
 			logger.info("✅ Detailed Account Statement Button Clicked");
 
 			if (!duration.equalsIgnoreCase("1 Month")) {
 				By durationButton = By.xpath("//button[contains(text(),'" + duration + "')]");
 				clickWithRetry(durationButton);
 				waitForSpinnerToFullyDisappear();
+				detectAndLogServiceErrors(); // ✅ Added
 				logger.info("✅ {} Button Clicked", duration);
 			}
 
 			clickWithRetry(DOWNLOAD_BUTTON);
+			waitForSpinnerToFullyDisappear();
+			detectAndLogServiceErrors(); // ✅ Added
 			logger.info("✅ Download Button Clicked");
 
 			if (fileType == FileType.XLS) {
 				clickWithRetry(XLS_ICON);
+				waitForSpinnerToFullyDisappear();
+				detectAndLogServiceErrors(); // ✅ Added
 				logger.info("✅ XLS Format Selected");
 			} else {
 				logger.info("✅ Default Format (PDF) Selected");
 			}
 
 			clickWithRetry(DOWNLOAD_STATEMENT_BUTTON);
+			waitForSpinnerToFullyDisappear();
+			detectAndLogServiceErrors(); // ✅ Added
 			logger.info("✅ Download Statement Button Clicked");
 
-			waitForSpinnerToFullyDisappear();
 			logger.info("🎉 Statement download for {} ({} format) triggered successfully.", duration, fileType.name());
 
 		} catch (Exception e) {

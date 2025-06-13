@@ -6,11 +6,9 @@
       <class name="automationFramework.tests.AccountsTestNG">
         <methods>
           <include name="downloadThreeMonthStatementPdf"/>
-          <include name="downloadOneMonthStatementPdf"/>
           <include name="downloadThreeMonthStatementXls"/>
           <include name="setUp"/>
           <include name="downloadOneMonthStatementXls"/>
-          <include name="testAccountSummary"/>
         </methods>
       </class> <!-- automationFramework.tests.AccountsTestNG -->
     </classes>

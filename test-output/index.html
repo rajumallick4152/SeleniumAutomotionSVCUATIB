@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-MySuite" class="navigator-link">
-              <span class="suite-name border-passed">MySuite</span>
+              <span class="suite-name border-failed">MySuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,31 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">5 methods, 3 failed,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-MySuite" class="hide-methods failed suite-MySuite"> (hide)</a> <!-- hide-methods failed suite-MySuite -->
+                      <a href="#" panel-name="suite-MySuite" class="show-methods failed suite-MySuite"> (show)</a> <!-- show-methods failed suite-MySuite -->
+                    </span>
+                    <div class="method-list-content failed suite-MySuite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MySuite" title="automationFramework.tests.AccountsTestNG" class="method navigator-link" hash-for-method="downloadOneMonthStatementXls">downloadOneMonthStatementXls</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MySuite" title="automationFramework.tests.AccountsTestNG" class="method navigator-link" hash-for-method="downloadThreeMonthStatementPdf">downloadThreeMonthStatementPdf</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MySuite" title="automationFramework.tests.AccountsTestNG" class="method navigator-link" hash-for-method="downloadThreeMonthStatementXls">downloadThreeMonthStatementXls</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-MySuite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,21 +128,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-MySuite" title="automationFramework.tests.AccountsTestNG" class="method navigator-link" hash-for-method="downloadOneMonthStatementPdf">downloadOneMonthStatementPdf</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-MySuite" title="automationFramework.tests.AccountsTestNG" class="method navigator-link" hash-for-method="downloadOneMonthStatementXls">downloadOneMonthStatementXls</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-MySuite" title="automationFramework.tests.AccountsTestNG" class="method navigator-link" hash-for-method="downloadThreeMonthStatementPdf">downloadThreeMonthStatementPdf</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-MySuite" title="automationFramework.tests.AccountsTestNG" class="method navigator-link" hash-for-method="downloadThreeMonthStatementXls">downloadThreeMonthStatementXls</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -138,6 +147,66 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-MySuite" class="panel MySuite">
+          <div class="suite-MySuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">automationFramework.tests.AccountsTestNG</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="downloadOneMonthStatementXls">
+                  </a> <!-- downloadOneMonthStatementXls -->
+                  <span class="method-name">downloadOneMonthStatementXls</span>
+                  <div class="stack-trace">java.lang.RuntimeException: Failed to download 1 Month statement in XLS
+	at automationFramework.pages.AccountsPage.downloadStatement(AccountsPage.java:100)
+	at automationFramework.tests.AccountsTestNG.downloadOneMonthStatementXls(AccountsTestNG.java:69)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: java.lang.RuntimeException: ❌ Click failed after 3 attempts: By.xpath: //span[contains(@class,&apos;text-blue-500&apos;) and contains(text(),&apos;Download&apos;)]
+	at automationFramework.pages.BasePage.clickWithRetry(BasePage.java:67)
+	at automationFramework.pages.AccountsPage.downloadStatement(AccountsPage.java:82)
+	... 29 more
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="downloadThreeMonthStatementPdf">
+                  </a> <!-- downloadThreeMonthStatementPdf -->
+                  <span class="method-name">downloadThreeMonthStatementPdf</span>
+                  <div class="stack-trace">java.lang.RuntimeException: Failed to download 3 Months statement in PDF
+	at automationFramework.pages.AccountsPage.downloadStatement(AccountsPage.java:100)
+	at automationFramework.tests.AccountsTestNG.downloadThreeMonthStatementPdf(AccountsTestNG.java:64)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: java.lang.RuntimeException: ❌ Click failed after 3 attempts: By.xpath: //button[contains(text(),&apos;3 Months&apos;)]
+	at automationFramework.pages.BasePage.clickWithRetry(BasePage.java:67)
+	at automationFramework.pages.AccountsPage.downloadStatement(AccountsPage.java:77)
+	... 29 more
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="downloadThreeMonthStatementXls">
+                  </a> <!-- downloadThreeMonthStatementXls -->
+                  <span class="method-name">downloadThreeMonthStatementXls</span>
+                  <div class="stack-trace">java.lang.RuntimeException: Failed to download 3 Months statement in XLS
+	at automationFramework.pages.AccountsPage.downloadStatement(AccountsPage.java:100)
+	at automationFramework.tests.AccountsTestNG.downloadThreeMonthStatementXls(AccountsTestNG.java:74)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: java.lang.RuntimeException: ❌ Click failed after 3 attempts: By.xpath: //span[@class=&apos;p-menuitem-text&apos; and text()=&apos;Accounts&apos;]
+	at automationFramework.pages.BasePage.clickWithRetry(BasePage.java:67)
+	at automationFramework.pages.AccountsPage.clickAccountsTab(AccountsPage.java:30)
+	at automationFramework.pages.AccountsPage.downloadStatement(AccountsPage.java:69)
+	... 29 more
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MySuite-class-failed -->
           <div class="suite-MySuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -149,27 +218,6 @@
                   <a name="downloadOneMonthStatementPdf">
                   </a> <!-- downloadOneMonthStatementPdf -->
                   <span class="method-name">downloadOneMonthStatementPdf</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="downloadOneMonthStatementXls">
-                  </a> <!-- downloadOneMonthStatementXls -->
-                  <span class="method-name">downloadOneMonthStatementXls</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="downloadThreeMonthStatementPdf">
-                  </a> <!-- downloadThreeMonthStatementPdf -->
-                  <span class="method-name">downloadThreeMonthStatementPdf</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="downloadThreeMonthStatementXls">
-                  </a> <!-- downloadThreeMonthStatementXls -->
-                  <span class="method-name">downloadThreeMonthStatementXls</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -235,30 +283,30 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'downloadThreeMonthStatementXls')
+data.setCell(0, 1, 'downloadOneMonthStatementPdf')
 data.setCell(0, 2, 'automationFramework.tests.AccountsTestNG')
-data.setCell(0, 3, 266828);
+data.setCell(0, 3, 253169);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'downloadThreeMonthStatementPdf')
+data.setCell(1, 1, 'testAccountSummary')
 data.setCell(1, 2, 'automationFramework.tests.AccountsTestNG')
-data.setCell(1, 3, 266790);
+data.setCell(1, 3, 234681);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testAccountSummary')
+data.setCell(2, 1, 'downloadOneMonthStatementXls')
 data.setCell(2, 2, 'automationFramework.tests.AccountsTestNG')
-data.setCell(2, 3, 256667);
+data.setCell(2, 3, 174007);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'downloadOneMonthStatementXls')
+data.setCell(3, 1, 'downloadThreeMonthStatementPdf')
 data.setCell(3, 2, 'automationFramework.tests.AccountsTestNG')
-data.setCell(3, 3, 214070);
+data.setCell(3, 3, 144136);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'downloadOneMonthStatementPdf')
+data.setCell(4, 1, 'downloadThreeMonthStatementXls')
 data.setCell(4, 2, 'automationFramework.tests.AccountsTestNG')
-data.setCell(4, 3, 206908);
+data.setCell(4, 3, 50547);
 window.suiteTableData['MySuite']= { tableData: data, tableDiv: 'times-div-MySuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 20 minutes</span>
+              <span class="suite-total-time">Total running time: 14 minutes</span>
               <div id="times-div-MySuite">
               </div> <!-- times-div-MySuite -->
             </div> <!-- times-div -->
@@ -291,23 +339,29 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">testAccountSummary</span>
-                <span class="method-start">17734 ms</span>
+                <span class="method-start">18623 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">downloadOneMonthStatementPdf</span>
-                <span class="method-start">274444 ms</span>
+                <span class="method-start">253304 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">downloadThreeMonthStatementPdf</span>
-                <span class="method-start">481358 ms</span>
+                <span class="method-start">506473 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">downloadOneMonthStatementXls</span>
-                <span class="method-start">748156 ms</span>
+                <span class="method-start">650614 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">downloadThreeMonthStatementXls</span>
-                <span class="method-start">962229 ms</span>
+                <span class="method-start">824625 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

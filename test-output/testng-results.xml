@@ -1,33 +1,163 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="2" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-13T13:21:07 IST" name="MySuite" finished-at="2025-06-13T13:41:36 IST" duration-ms="1229109">
+  <suite started-at="2025-06-13T14:48:47 IST" name="MySuite" finished-at="2025-06-13T15:03:22 IST" duration-ms="875225">
     <groups>
     </groups>
-    <test started-at="2025-06-13T13:21:07 IST" name="MultipleTest" finished-at="2025-06-13T13:41:36 IST" duration-ms="1229109">
+    <test started-at="2025-06-13T14:48:47 IST" name="MultipleTest" finished-at="2025-06-13T15:03:22 IST" duration-ms="875225">
       <class name="automationFramework.tests.AccountsTestNG">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:automationFramework.tests.AccountsTestNG@16eb3ea3]" started-at="2025-06-13T13:21:07 IST" name="setUp" finished-at="2025-06-13T13:21:25 IST" duration-ms="17705" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:automationFramework.tests.AccountsTestNG@16eb3ea3]" started-at="2025-06-13T14:48:47 IST" name="setUp" finished-at="2025-06-13T14:49:06 IST" duration-ms="18573" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testAccountSummary()[pri:1, instance:automationFramework.tests.AccountsTestNG@16eb3ea3]" started-at="2025-06-13T13:21:25 IST" name="testAccountSummary" finished-at="2025-06-13T13:25:41 IST" duration-ms="256667" status="PASS">
+        <test-method signature="testAccountSummary()[pri:1, instance:automationFramework.tests.AccountsTestNG@16eb3ea3]" started-at="2025-06-13T14:49:06 IST" name="testAccountSummary" finished-at="2025-06-13T14:53:00 IST" duration-ms="234681" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAccountSummary -->
-        <test-method signature="downloadOneMonthStatementPdf()[pri:2, instance:automationFramework.tests.AccountsTestNG@16eb3ea3]" started-at="2025-06-13T13:25:42 IST" name="downloadOneMonthStatementPdf" finished-at="2025-06-13T13:29:08 IST" duration-ms="206908" status="PASS">
+        <test-method signature="downloadOneMonthStatementPdf()[pri:2, instance:automationFramework.tests.AccountsTestNG@16eb3ea3]" started-at="2025-06-13T14:53:00 IST" name="downloadOneMonthStatementPdf" finished-at="2025-06-13T14:57:13 IST" duration-ms="253169" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- downloadOneMonthStatementPdf -->
-        <test-method signature="downloadThreeMonthStatementPdf()[pri:3, instance:automationFramework.tests.AccountsTestNG@16eb3ea3]" started-at="2025-06-13T13:29:08 IST" name="downloadThreeMonthStatementPdf" finished-at="2025-06-13T13:33:35 IST" duration-ms="266790" status="PASS">
+        <test-method signature="downloadThreeMonthStatementPdf()[pri:3, instance:automationFramework.tests.AccountsTestNG@16eb3ea3]" started-at="2025-06-13T14:57:13 IST" name="downloadThreeMonthStatementPdf" finished-at="2025-06-13T14:59:38 IST" duration-ms="144136" status="FAIL">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[Failed to download 3 Months statement in PDF]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: Failed to download 3 Months statement in PDF
+at automationFramework.pages.AccountsPage.downloadStatement(AccountsPage.java:100)
+at automationFramework.tests.AccountsTestNG.downloadThreeMonthStatementPdf(AccountsTestNG.java:64)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: java.lang.RuntimeException: ❌ Click failed after 3 attempts: By.xpath: //button[contains(text(),'3 Months')]
+at automationFramework.pages.BasePage.clickWithRetry(BasePage.java:67)
+at automationFramework.pages.AccountsPage.downloadStatement(AccountsPage.java:77)
+... 29 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- downloadThreeMonthStatementPdf -->
-        <test-method signature="downloadOneMonthStatementXls()[pri:4, instance:automationFramework.tests.AccountsTestNG@16eb3ea3]" started-at="2025-06-13T13:33:35 IST" name="downloadOneMonthStatementXls" finished-at="2025-06-13T13:37:09 IST" duration-ms="214070" status="PASS">
+        <test-method signature="downloadOneMonthStatementXls()[pri:4, instance:automationFramework.tests.AccountsTestNG@16eb3ea3]" started-at="2025-06-13T14:59:38 IST" name="downloadOneMonthStatementXls" finished-at="2025-06-13T15:02:32 IST" duration-ms="174007" status="FAIL">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[Failed to download 1 Month statement in XLS]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: Failed to download 1 Month statement in XLS
+at automationFramework.pages.AccountsPage.downloadStatement(AccountsPage.java:100)
+at automationFramework.tests.AccountsTestNG.downloadOneMonthStatementXls(AccountsTestNG.java:69)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: java.lang.RuntimeException: ❌ Click failed after 3 attempts: By.xpath: //span[contains(@class,'text-blue-500') and contains(text(),'Download')]
+at automationFramework.pages.BasePage.clickWithRetry(BasePage.java:67)
+at automationFramework.pages.AccountsPage.downloadStatement(AccountsPage.java:82)
+... 29 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- downloadOneMonthStatementXls -->
-        <test-method signature="downloadThreeMonthStatementXls()[pri:5, instance:automationFramework.tests.AccountsTestNG@16eb3ea3]" started-at="2025-06-13T13:37:09 IST" name="downloadThreeMonthStatementXls" finished-at="2025-06-13T13:41:36 IST" duration-ms="266828" status="PASS">
+        <test-method signature="downloadThreeMonthStatementXls()[pri:5, instance:automationFramework.tests.AccountsTestNG@16eb3ea3]" started-at="2025-06-13T15:02:32 IST" name="downloadThreeMonthStatementXls" finished-at="2025-06-13T15:03:22 IST" duration-ms="50547" status="FAIL">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[Failed to download 3 Months statement in XLS]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: Failed to download 3 Months statement in XLS
+at automationFramework.pages.AccountsPage.downloadStatement(AccountsPage.java:100)
+at automationFramework.tests.AccountsTestNG.downloadThreeMonthStatementXls(AccountsTestNG.java:74)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: java.lang.RuntimeException: ❌ Click failed after 3 attempts: By.xpath: //span[@class='p-menuitem-text' and text()='Accounts']
+at automationFramework.pages.BasePage.clickWithRetry(BasePage.java:67)
+at automationFramework.pages.AccountsPage.clickAccountsTab(AccountsPage.java:30)
+at automationFramework.pages.AccountsPage.downloadStatement(AccountsPage.java:69)
+... 29 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- downloadThreeMonthStatementXls -->

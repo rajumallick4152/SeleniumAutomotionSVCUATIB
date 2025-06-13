@@ -1,6 +1,8 @@
 package automationFramework.pages;
 
 import org.openqa.selenium.*;
+import automationFramework.utils.ConfigReader;
+
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -65,6 +67,35 @@ public abstract class BasePage {
 			sleep(500);
 		}
 		throw new RuntimeException("❌ Click failed after 3 attempts: " + locator);
+	}
+
+	public void detectAndLogServiceErrors() {
+		// Config check first
+		if (!ConfigReader.getBoolean("error.detection.enabled")) {
+			logger.info("⚠️ Error detection is disabled via config.");
+			return;
+		}
+
+		try {
+			// 🔴 503 Error
+			By error503 = By.xpath("//*[contains(text(),'503 The service is currently unavailable')]");
+			if (!driver.findElements(error503).isEmpty()) {
+				logger.error("❌ [503 Error] Service is currently unavailable.");
+				throw new RuntimeException("503 Service Unavailable");
+			}
+
+			// ⚠️ Add more error locators below (optional in future)
+			/*
+			 * By error504 = By.xpath("//*[contains(text(),'Gateway Timeout')]"); if
+			 * (!driver.findElements(error504).isEmpty()) {
+			 * logger.error("❌ [504 Error] Gateway Timeout."); throw new
+			 * RuntimeException("504 Gateway Timeout"); }
+			 */
+
+		} catch (Exception e) {
+			logger.error("❌ Error Detection Triggered: {}", e.getMessage());
+			throw e;
+		}
 	}
 
 	// ✅ JavaScript Click

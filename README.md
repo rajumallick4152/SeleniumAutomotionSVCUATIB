@@ -35,8 +35,8 @@ internet-banking-automation/
 - ✅ Login Test
 - ✅ View Balance
 - ✅ Fund Transfer
+- ⏳ Accounts Tab (In Progress)
 - ⏳ Transaction History (In Progress)
-
 ---
 
 

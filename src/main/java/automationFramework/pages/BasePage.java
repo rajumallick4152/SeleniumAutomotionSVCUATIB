@@ -84,6 +84,13 @@ public abstract class BasePage {
 				throw new RuntimeException("503 Service Unavailable");
 			}
 
+			// 🔴 Generic technical issue (new locator from your message)
+			By technicalIssue = By.xpath("//*[contains(text(),'We are currently facing some technical issue')]");
+			if (!driver.findElements(technicalIssue).isEmpty()) {
+				logger.error("❌ [Generic Technical Error] Facing some technical issue. Try again later.");
+				throw new RuntimeException("Generic Technical Error");
+			}
+
 			// ⚠️ Add more error locators below (optional in future)
 			/*
 			 * By error504 = By.xpath("//*[contains(text(),'Gateway Timeout')]"); if

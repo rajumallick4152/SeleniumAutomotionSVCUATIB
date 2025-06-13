@@ -63,6 +63,18 @@ public class AccountsTestNG {
 		accountsPage.downloadStatement("3 Months");
 	}
 
+	@Test(priority = 4)
+	public void testDownloadOneMonthXlsStatement() {
+		AccountsPage accountsPage = new AccountsPage(driver);
+		accountsPage.downloadStatementXls("1 Month");
+	}
+
+	@Test(priority = 5)
+	public void testDownloadLast3MonthsStatementXls() {
+		AccountsPage accountsPage = new AccountsPage(driver);
+		accountsPage.downloadStatementXls("3 Months");
+	}
+
 	// @AfterClass
 	/*
 	 * public void tearDown() { if (driver != null) { driver.quit(); } }

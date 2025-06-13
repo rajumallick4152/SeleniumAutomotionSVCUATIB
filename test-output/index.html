@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">5 methods,   5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,17 +103,27 @@
                     <div class="method-list-content passed suite-MySuite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-MySuite" title="automationFramework.tests.PaymentTestNG" class="method navigator-link" hash-for-method="loginBeforePayment">loginBeforePayment</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-MySuite" title="automationFramework.tests.AccountsTestNG" class="method navigator-link" hash-for-method="downloadOneMonthStatement">downloadOneMonthStatement</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-MySuite" title="automationFramework.tests.PaymentTestNG" class="method navigator-link" hash-for-method="testInvalidAmountScenarios">testInvalidAmountScenarios</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-MySuite" title="automationFramework.tests.AccountsTestNG" class="method navigator-link" hash-for-method="downloadThreeMonthStatement">downloadThreeMonthStatement</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-MySuite" title="automationFramework.tests.PaymentTestNG" class="method navigator-link" hash-for-method="testPayment">testPayment</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-MySuite" title="automationFramework.tests.AccountsTestNG" class="method navigator-link" hash-for-method="testAccountSummary">testAccountSummary</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MySuite" title="automationFramework.tests.AccountsTestNG" class="method navigator-link" hash-for-method="testDownloadLast3MonthsStatementXls">testDownloadLast3MonthsStatementXls</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MySuite" title="automationFramework.tests.AccountsTestNG" class="method navigator-link" hash-for-method="testDownloadOneMonthXlsStatement">testDownloadOneMonthXlsStatement</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-MySuite -->
@@ -131,28 +141,42 @@
           <div class="suite-MySuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">automationFramework.tests.PaymentTestNG</span>
+              <span class="class-name">automationFramework.tests.AccountsTestNG</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="loginBeforePayment">
-                  </a> <!-- loginBeforePayment -->
-                  <span class="method-name">loginBeforePayment</span>
+                  <a name="downloadOneMonthStatement">
+                  </a> <!-- downloadOneMonthStatement -->
+                  <span class="method-name">downloadOneMonthStatement</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testInvalidAmountScenarios">
-                  </a> <!-- testInvalidAmountScenarios -->
-                  <span class="method-name">testInvalidAmountScenarios</span>
+                  <a name="downloadThreeMonthStatement">
+                  </a> <!-- downloadThreeMonthStatement -->
+                  <span class="method-name">downloadThreeMonthStatement</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testPayment">
-                  </a> <!-- testPayment -->
-                  <span class="method-name">testPayment</span>
+                  <a name="testAccountSummary">
+                  </a> <!-- testAccountSummary -->
+                  <span class="method-name">testAccountSummary</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDownloadLast3MonthsStatementXls">
+                  </a> <!-- testDownloadLast3MonthsStatementXls -->
+                  <span class="method-name">testDownloadLast3MonthsStatementXls</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDownloadOneMonthXlsStatement">
+                  </a> <!-- testDownloadOneMonthXlsStatement -->
+                  <span class="method-name">testDownloadOneMonthXlsStatement</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -169,7 +193,7 @@
 &lt;suite name=&quot;MySuite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;MultipleTest&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;automationFramework.tests.PaymentTestNG&quot;/&gt;
+      &lt;class name=&quot;automationFramework.tests.AccountsTestNG&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- MultipleTest --&gt;
 &lt;/suite&gt; &lt;!-- MySuite --&gt;
@@ -209,24 +233,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testInvalidAmountScenarios')
-data.setCell(0, 2, 'automationFramework.tests.PaymentTestNG')
-data.setCell(0, 3, 28089);
+data.setCell(0, 1, 'testDownloadLast3MonthsStatementXls')
+data.setCell(0, 2, 'automationFramework.tests.AccountsTestNG')
+data.setCell(0, 3, 266428);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testPayment')
-data.setCell(1, 2, 'automationFramework.tests.PaymentTestNG')
-data.setCell(1, 3, 16513);
+data.setCell(1, 1, 'testAccountSummary')
+data.setCell(1, 2, 'automationFramework.tests.AccountsTestNG')
+data.setCell(1, 3, 255268);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'loginBeforePayment')
-data.setCell(2, 2, 'automationFramework.tests.PaymentTestNG')
-data.setCell(2, 3, 14333);
+data.setCell(2, 1, 'downloadThreeMonthStatement')
+data.setCell(2, 2, 'automationFramework.tests.AccountsTestNG')
+data.setCell(2, 3, 243106);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testDownloadOneMonthXlsStatement')
+data.setCell(3, 2, 'automationFramework.tests.AccountsTestNG')
+data.setCell(3, 3, 224793);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'downloadOneMonthStatement')
+data.setCell(4, 2, 'automationFramework.tests.AccountsTestNG')
+data.setCell(4, 3, 162356);
 window.suiteTableData['MySuite']= { tableData: data, tableDiv: 'times-div-MySuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 58 seconds</span>
+              <span class="suite-total-time">Total running time: 19 minutes</span>
               <div id="times-div-MySuite">
               </div> <!-- times-div-MySuite -->
             </div> <!-- times-div -->
@@ -252,22 +284,30 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">automationFramework.tests.PaymentTestNG</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">automationFramework.tests.AccountsTestNG</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">loginBeforePayment</span>
-                <span class="method-start">3260 ms</span>
+                <span class="method-name">testAccountSummary</span>
+                <span class="method-start">18572 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">testPayment</span>
-                <span class="method-start">17601 ms</span>
+                <span class="method-name">downloadOneMonthStatement</span>
+                <span class="method-start">273840 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">testInvalidAmountScenarios</span>
-                <span class="method-start">34119 ms</span>
+                <span class="method-name">downloadThreeMonthStatement</span>
+                <span class="method-start">436199 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDownloadOneMonthXlsStatement</span>
+                <span class="method-start">679308 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDownloadLast3MonthsStatementXls</span>
+                <span class="method-start">904104 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

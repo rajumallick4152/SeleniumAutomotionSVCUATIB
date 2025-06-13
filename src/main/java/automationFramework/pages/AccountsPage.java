@@ -87,4 +87,44 @@ public class AccountsPage extends BasePage {
 			throw new RuntimeException("Failed to download " + duration + " statement", e);
 		}
 	}
+
+	// new method for xsl download 1 and 3 months
+	public void downloadStatementXls(String duration) {
+		try {
+			logger.info("▶️ Starting: Download {} Statement in XLS format", duration);
+
+			clickAccountsTab();
+
+			clickWithRetry(DETAILED_STATEMENT);
+			waitForSpinnerToFullyDisappear();
+			logger.info("✅ Detailed Account Statement Button Clicked");
+
+			if (!duration.equalsIgnoreCase("1 Month")) {
+				By durationButton = By.xpath("//button[contains(text(),'" + duration + "')]");
+				clickWithRetry(durationButton);
+				waitForSpinnerToFullyDisappear();
+				logger.info("✅ {} Button Clicked", duration);
+			}
+
+			clickWithRetry(DOWNLOAD_BUTTON);
+			logger.info("✅ Download Button Clicked");
+
+			// Wait for file format popup and click XLS icon
+			By XLS_ICON = By.xpath("//img[contains(@src,'ic_excel_file.svg') and @alt='excel']");
+			clickWithRetry(XLS_ICON);
+			logger.info("✅ XLS Format Selected");
+
+			clickWithRetry(DOWNLOAD_STATEMENT_BUTTON);
+			logger.info("✅ Download Statement Button Clicked");
+
+			waitForSpinnerToFullyDisappear();
+
+			logger.info("🎉 Statement download for {} (XLS) triggered successfully.", duration);
+
+		} catch (Exception e) {
+			logger.error("❌ Error during {} statement download (XLS): {}", duration, e.getMessage());
+			throw new RuntimeException("Failed to download " + duration + " statement in XLS", e);
+		}
+	}
+
 }

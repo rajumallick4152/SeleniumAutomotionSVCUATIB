@@ -1,29 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-13T00:57:13 IST" name="MySuite" finished-at="2025-06-13T00:58:15 IST" duration-ms="62258">
+  <suite started-at="2025-06-13T12:15:59 IST" name="MySuite" finished-at="2025-06-13T12:35:29 IST" duration-ms="1170583">
     <groups>
     </groups>
-    <test started-at="2025-06-13T00:57:13 IST" name="MultipleTest" finished-at="2025-06-13T00:58:15 IST" duration-ms="62258">
-      <class name="automationFramework.tests.PaymentTestNG">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:automationFramework.tests.PaymentTestNG@16eb3ea3]" started-at="2025-06-13T00:57:13 IST" name="setUp" finished-at="2025-06-13T00:57:16 IST" duration-ms="3234" status="PASS">
+    <test started-at="2025-06-13T12:15:59 IST" name="MultipleTest" finished-at="2025-06-13T12:35:29 IST" duration-ms="1170583">
+      <class name="automationFramework.tests.AccountsTestNG">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:automationFramework.tests.AccountsTestNG@16eb3ea3]" started-at="2025-06-13T12:15:59 IST" name="setUp" finished-at="2025-06-13T12:16:17 IST" duration-ms="18566" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginBeforePayment()[pri:0, instance:automationFramework.tests.PaymentTestNG@16eb3ea3]" started-at="2025-06-13T00:57:16 IST" name="loginBeforePayment" finished-at="2025-06-13T00:57:31 IST" duration-ms="14333" status="PASS">
+        <test-method signature="testAccountSummary()[pri:1, instance:automationFramework.tests.AccountsTestNG@16eb3ea3]" started-at="2025-06-13T12:16:17 IST" name="testAccountSummary" finished-at="2025-06-13T12:20:32 IST" duration-ms="255268" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginBeforePayment -->
-        <test-method signature="testPayment()[pri:1, instance:automationFramework.tests.PaymentTestNG@16eb3ea3]" started-at="2025-06-13T00:57:31 IST" name="testPayment" finished-at="2025-06-13T00:57:47 IST" depends-on-methods="automationFramework.tests.PaymentTestNG.loginBeforePayment" duration-ms="16513" status="PASS">
+        </test-method> <!-- testAccountSummary -->
+        <test-method signature="downloadOneMonthStatement()[pri:2, instance:automationFramework.tests.AccountsTestNG@16eb3ea3]" started-at="2025-06-13T12:20:32 IST" name="downloadOneMonthStatement" finished-at="2025-06-13T12:23:15 IST" duration-ms="162356" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testPayment -->
-        <test-method signature="testInvalidAmountScenarios()[pri:2, instance:automationFramework.tests.PaymentTestNG@16eb3ea3]" started-at="2025-06-13T00:57:47 IST" name="testInvalidAmountScenarios" finished-at="2025-06-13T00:58:15 IST" depends-on-methods="automationFramework.tests.PaymentTestNG.loginBeforePayment" duration-ms="28089" status="PASS">
+        </test-method> <!-- downloadOneMonthStatement -->
+        <test-method signature="downloadThreeMonthStatement()[pri:3, instance:automationFramework.tests.AccountsTestNG@16eb3ea3]" started-at="2025-06-13T12:23:15 IST" name="downloadThreeMonthStatement" finished-at="2025-06-13T12:27:18 IST" duration-ms="243106" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testInvalidAmountScenarios -->
-      </class> <!-- automationFramework.tests.PaymentTestNG -->
+        </test-method> <!-- downloadThreeMonthStatement -->
+        <test-method signature="testDownloadOneMonthXlsStatement()[pri:4, instance:automationFramework.tests.AccountsTestNG@16eb3ea3]" started-at="2025-06-13T12:27:18 IST" name="testDownloadOneMonthXlsStatement" finished-at="2025-06-13T12:31:03 IST" duration-ms="224793" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDownloadOneMonthXlsStatement -->
+        <test-method signature="testDownloadLast3MonthsStatementXls()[pri:5, instance:automationFramework.tests.AccountsTestNG@16eb3ea3]" started-at="2025-06-13T12:31:03 IST" name="testDownloadLast3MonthsStatementXls" finished-at="2025-06-13T12:35:29 IST" duration-ms="266428" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDownloadLast3MonthsStatementXls -->
+      </class> <!-- automationFramework.tests.AccountsTestNG -->
     </test> <!-- MultipleTest -->
   </suite> <!-- MySuite -->
 </testng-results>

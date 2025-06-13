@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>MultipleTest</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/3/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>9/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Jun 13 14:48:47 IST 2025</td>
+<td>Started on:</td><td>Fri Jun 13 17:38:49 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>875 seconds (875225 ms)</td>
+<tr><td>Total time:</td><td>4313 seconds (4313016 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,164 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='automationFramework.tests.AccountsTestNG.downloadThreeMonthStatementPdf()'><b>downloadThreeMonthStatementPdf</b><br>Test class: automationFramework.tests.AccountsTestNG</td>
-<td><div><pre>java.lang.RuntimeException: Failed to download 3 Months statement in PDF
-	at automationFramework.pages.AccountsPage.downloadStatement(AccountsPage.java:100)
-	at automationFramework.tests.AccountsTestNG.downloadThreeMonthStatementPdf(AccountsTestNG.java:64)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: java.lang.RuntimeException: ❌ Click failed after 3 attempts: By.xpath: //button[contains(text(),&apos;3 Months&apos;)]
-	at automationFramework.pages.BasePage.clickWithRetry(BasePage.java:67)
-	at automationFramework.pages.AccountsPage.downloadStatement(AccountsPage.java:77)
-	... 29 more
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1267115606", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1267115606'><pre>java.lang.RuntimeException: Failed to download 3 Months statement in PDF
-	at automationFramework.pages.AccountsPage.downloadStatement(AccountsPage.java:100)
-	at automationFramework.tests.AccountsTestNG.downloadThreeMonthStatementPdf(AccountsTestNG.java:64)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: java.lang.RuntimeException: ❌ Click failed after 3 attempts: By.xpath: //button[contains(text(),&apos;3 Months&apos;)]
-	at automationFramework.pages.BasePage.clickWithRetry(BasePage.java:67)
-	at automationFramework.pages.AccountsPage.downloadStatement(AccountsPage.java:77)
-	... 29 more
-</pre></div></td>
-<td>144</td>
-<td>automationFramework.tests.AccountsTestNG@16eb3ea3</td></tr>
-<tr>
-<td title='automationFramework.tests.AccountsTestNG.downloadThreeMonthStatementXls()'><b>downloadThreeMonthStatementXls</b><br>Test class: automationFramework.tests.AccountsTestNG</td>
-<td><div><pre>java.lang.RuntimeException: Failed to download 3 Months statement in XLS
-	at automationFramework.pages.AccountsPage.downloadStatement(AccountsPage.java:100)
-	at automationFramework.tests.AccountsTestNG.downloadThreeMonthStatementXls(AccountsTestNG.java:74)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: java.lang.RuntimeException: ❌ Click failed after 3 attempts: By.xpath: //span[@class=&apos;p-menuitem-text&apos; and text()=&apos;Accounts&apos;]
-	at automationFramework.pages.BasePage.clickWithRetry(BasePage.java:67)
-	at automationFramework.pages.AccountsPage.clickAccountsTab(AccountsPage.java:30)
-	at automationFramework.pages.AccountsPage.downloadStatement(AccountsPage.java:69)
-	... 29 more
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace98102770", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace98102770'><pre>java.lang.RuntimeException: Failed to download 3 Months statement in XLS
-	at automationFramework.pages.AccountsPage.downloadStatement(AccountsPage.java:100)
-	at automationFramework.tests.AccountsTestNG.downloadThreeMonthStatementXls(AccountsTestNG.java:74)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: java.lang.RuntimeException: ❌ Click failed after 3 attempts: By.xpath: //span[@class=&apos;p-menuitem-text&apos; and text()=&apos;Accounts&apos;]
-	at automationFramework.pages.BasePage.clickWithRetry(BasePage.java:67)
-	at automationFramework.pages.AccountsPage.clickAccountsTab(AccountsPage.java:30)
-	at automationFramework.pages.AccountsPage.downloadStatement(AccountsPage.java:69)
-	... 29 more
-</pre></div></td>
-<td>50</td>
-<td>automationFramework.tests.AccountsTestNG@16eb3ea3</td></tr>
-<tr>
-<td title='automationFramework.tests.AccountsTestNG.downloadOneMonthStatementXls()'><b>downloadOneMonthStatementXls</b><br>Test class: automationFramework.tests.AccountsTestNG</td>
-<td><div><pre>java.lang.RuntimeException: Failed to download 1 Month statement in XLS
-	at automationFramework.pages.AccountsPage.downloadStatement(AccountsPage.java:100)
-	at automationFramework.tests.AccountsTestNG.downloadOneMonthStatementXls(AccountsTestNG.java:69)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: java.lang.RuntimeException: ❌ Click failed after 3 attempts: By.xpath: //span[contains(@class,&apos;text-blue-500&apos;) and contains(text(),&apos;Download&apos;)]
-	at automationFramework.pages.BasePage.clickWithRetry(BasePage.java:67)
-	at automationFramework.pages.AccountsPage.downloadStatement(AccountsPage.java:82)
-	... 29 more
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1235193859", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1235193859'><pre>java.lang.RuntimeException: Failed to download 1 Month statement in XLS
-	at automationFramework.pages.AccountsPage.downloadStatement(AccountsPage.java:100)
-	at automationFramework.tests.AccountsTestNG.downloadOneMonthStatementXls(AccountsTestNG.java:69)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: java.lang.RuntimeException: ❌ Click failed after 3 attempts: By.xpath: //span[contains(@class,&apos;text-blue-500&apos;) and contains(text(),&apos;Download&apos;)]
-	at automationFramework.pages.BasePage.clickWithRetry(BasePage.java:67)
-	at automationFramework.pages.AccountsPage.downloadStatement(AccountsPage.java:82)
-	... 29 more
-</pre></div></td>
-<td>174</td>
-<td>automationFramework.tests.AccountsTestNG@16eb3ea3</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -234,15 +76,50 @@ Caused by: java.lang.RuntimeException: ❌ Click failed after 3 attempts: By.xpa
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='automationFramework.tests.AccountsTestNG.testAccountSummary()'><b>testAccountSummary</b><br>Test class: automationFramework.tests.AccountsTestNG</td>
-<td></td>
-<td>234</td>
-<td>automationFramework.tests.AccountsTestNG@16eb3ea3</td></tr>
-<tr>
 <td title='automationFramework.tests.AccountsTestNG.downloadOneMonthStatementPdf()'><b>downloadOneMonthStatementPdf</b><br>Test class: automationFramework.tests.AccountsTestNG</td>
 <td></td>
-<td>253</td>
-<td>automationFramework.tests.AccountsTestNG@16eb3ea3</td></tr>
+<td>320</td>
+<td>automationFramework.tests.AccountsTestNG@48bb62</td></tr>
+<tr>
+<td title='automationFramework.tests.AccountsTestNG.downloadThreeMonthStatementXls()'><b>downloadThreeMonthStatementXls</b><br>Test class: automationFramework.tests.AccountsTestNG</td>
+<td></td>
+<td>428</td>
+<td>automationFramework.tests.AccountsTestNG@48bb62</td></tr>
+<tr>
+<td title='automationFramework.tests.AccountsTestNG.downloaddownloadCustomStatement6MonthsXsl()'><b>downloaddownloadCustomStatement6MonthsXsl</b><br>Test class: automationFramework.tests.AccountsTestNG</td>
+<td></td>
+<td>648</td>
+<td>automationFramework.tests.AccountsTestNG@48bb62</td></tr>
+<tr>
+<td title='automationFramework.tests.AccountsTestNG.downloadOneMonthStatementXls()'><b>downloadOneMonthStatementXls</b><br>Test class: automationFramework.tests.AccountsTestNG</td>
+<td></td>
+<td>402</td>
+<td>automationFramework.tests.AccountsTestNG@48bb62</td></tr>
+<tr>
+<td title='automationFramework.tests.AccountsTestNG.downloaddownloadCustomStatement12MonthsXsl()'><b>downloaddownloadCustomStatement12MonthsXsl</b><br>Test class: automationFramework.tests.AccountsTestNG</td>
+<td></td>
+<td>630</td>
+<td>automationFramework.tests.AccountsTestNG@48bb62</td></tr>
+<tr>
+<td title='automationFramework.tests.AccountsTestNG.testAccountSummary()'><b>testAccountSummary</b><br>Test class: automationFramework.tests.AccountsTestNG</td>
+<td></td>
+<td>356</td>
+<td>automationFramework.tests.AccountsTestNG@48bb62</td></tr>
+<tr>
+<td title='automationFramework.tests.AccountsTestNG.downloaddownloadCustomStatement6MonthsPdf()'><b>downloaddownloadCustomStatement6MonthsPdf</b><br>Test class: automationFramework.tests.AccountsTestNG</td>
+<td></td>
+<td>577</td>
+<td>automationFramework.tests.AccountsTestNG@48bb62</td></tr>
+<tr>
+<td title='automationFramework.tests.AccountsTestNG.downloadThreeMonthStatementPdf()'><b>downloadThreeMonthStatementPdf</b><br>Test class: automationFramework.tests.AccountsTestNG</td>
+<td></td>
+<td>404</td>
+<td>automationFramework.tests.AccountsTestNG@48bb62</td></tr>
+<tr>
+<td title='automationFramework.tests.AccountsTestNG.downloaddownloadCustomStatement12MonthsPdf()'><b>downloaddownloadCustomStatement12MonthsPdf</b><br>Test class: automationFramework.tests.AccountsTestNG</td>
+<td></td>
+<td>520</td>
+<td>automationFramework.tests.AccountsTestNG@48bb62</td></tr>
 </table><p>
 </body>
 </html>

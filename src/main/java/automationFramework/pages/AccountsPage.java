@@ -112,4 +112,71 @@ public class AccountsPage extends BasePage {
 			throw new RuntimeException("Failed to download " + duration + " statement in " + fileType.name(), e);
 		}
 	}
+
+	public void downloadCustomStatement(String months, FileType fileType) {
+		try {
+			logger.info("▶️ Starting: Download Custom Statement for {} in {} format", months, fileType.name());
+
+			clickAccountsTab(); // already has error detection
+
+			clickWithRetry(DETAILED_STATEMENT);
+			waitForSpinnerToFullyDisappear();
+			detectAndLogServiceErrors();
+			logger.info("✅ Detailed Account Statement Button Clicked");
+
+			// Step 1: Click "Custom"
+			By customButton = By.xpath("//button[contains(text(),'Custom')]");
+			clickWithRetry(customButton);
+			waitForSpinnerToFullyDisappear();
+			detectAndLogServiceErrors();
+			logger.info("✅ Custom Button Clicked");
+
+			// Step 2: Wait and click "6 months" or "12 months"
+			String labelFor = months.equals("6") ? "6months" : "12months";
+			By monthOption = By.xpath("//label[@for='" + labelFor + "']");
+			waitForSeconds(2); // wait for UI to load
+			clickWithRetry(monthOption);
+			waitForSpinnerToFullyDisappear();
+			detectAndLogServiceErrors();
+			logger.info("✅ {} Months Option Selected", months);
+
+			// Step 3: Click Done
+			By doneButton = By.xpath("//span[text()='Done' and contains(@class,'p-button-label')]");
+			waitForSeconds(1);
+			clickWithRetry(doneButton);
+			waitForSpinnerToFullyDisappear();
+			detectAndLogServiceErrors();
+			logger.info("✅ Done Button Clicked");
+
+			// Step 4: Click Download
+			clickWithRetry(DOWNLOAD_BUTTON);
+			waitForSpinnerToFullyDisappear();
+			detectAndLogServiceErrors();
+			logger.info("✅ Download Button Clicked");
+
+			if (fileType == FileType.XLS) {
+				clickWithRetry(XLS_ICON);
+				waitForSpinnerToFullyDisappear();
+				detectAndLogServiceErrors();
+				logger.info("✅ XLS Format Selected");
+			} else {
+				logger.info("✅ Default Format (PDF) Selected");
+			}
+
+			clickWithRetry(DOWNLOAD_STATEMENT_BUTTON);
+			waitForSpinnerToFullyDisappear();
+			detectAndLogServiceErrors();
+			logger.info("✅ Download Statement Button Clicked");
+
+			logger.info("🎉 Custom statement download for {} months ({} format) triggered successfully.", months,
+					fileType.name());
+
+		} catch (Exception e) {
+			logger.error("❌ Error during custom statement download ({} months - {}): {}", months, fileType.name(),
+					e.getMessage());
+			throw new RuntimeException(
+					"Failed to download custom statement for " + months + " months in " + fileType.name(), e);
+		}
+	}
+
 }

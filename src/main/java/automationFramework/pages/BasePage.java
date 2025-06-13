@@ -69,6 +69,7 @@ public abstract class BasePage {
 		throw new RuntimeException("❌ Click failed after 3 attempts: " + locator);
 	}
 
+// For checking server and technical error 
 	public void detectAndLogServiceErrors() {
 		// Config check first
 		if (!ConfigReader.getBoolean("error.detection.enabled")) {
@@ -134,4 +135,14 @@ public abstract class BasePage {
 	protected ExpectedCondition<WebElement> presenceOf(By locator) {
 		return ExpectedConditions.presenceOfElementLocated(locator);
 	}
+
+	// wait for second to load account statement for 6 months and 12 months
+	public void waitForSeconds(int seconds) {
+		try {
+			Thread.sleep(seconds * 1000L);
+		} catch (InterruptedException e) {
+			Thread.currentThread().interrupt();
+		}
+	}
+
 }

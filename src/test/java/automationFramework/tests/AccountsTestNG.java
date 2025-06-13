@@ -74,6 +74,30 @@ public class AccountsTestNG {
 		accountsPage.downloadStatement("3 Months", FileType.XLS);
 	}
 
+	@Test(priority = 6)
+	public void downloaddownloadCustomStatement6MonthsXsl() {
+		accountsPage.downloadCustomStatement("6", FileType.XLS);
+
+	}
+
+	@Test(priority = 7)
+	public void downloaddownloadCustomStatement12MonthsPdf() {
+		accountsPage.downloadCustomStatement("12", FileType.PDF);
+
+	}
+
+	@Test(priority = 8)
+	public void downloaddownloadCustomStatement6MonthsPdf() {
+		accountsPage.downloadCustomStatement("6", FileType.PDF);
+
+	}
+
+	@Test(priority = 9)
+	public void downloaddownloadCustomStatement12MonthsXsl() {
+		accountsPage.downloadCustomStatement("12", FileType.XLS);
+
+	}
+
 	// @AfterClass
 	/*
 	 * public void tearDown() { if (driver != null) { driver.quit(); } }

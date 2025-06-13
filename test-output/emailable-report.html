@@ -9,39 +9,18 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">MySuite</th></tr>
-<tr><td><a href="#t0">MultipleTest</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num">875,225</td><td></td><td></td></tr>
+<tr><td><a href="#t0">MultipleTest</a></td><td class="num">9</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">4,313,016</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">MySuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">MultipleTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">automationFramework.tests.AccountsTestNG</td><td><a href="#m0">downloadOneMonthStatementXls</a></td><td rowspan="1">1749806978122</td><td rowspan="1">174007</td></tr><tr class="failedeven"><td><a href="#m1">downloadThreeMonthStatementPdf</a></td><td rowspan="1">1749806833981</td><td rowspan="1">144136</td></tr><tr class="failedeven"><td><a href="#m2">downloadThreeMonthStatementXls</a></td><td rowspan="1">1749807152133</td><td rowspan="1">50547</td></tr><tr><th colspan="4">MultipleTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">automationFramework.tests.AccountsTestNG</td><td><a href="#m3">downloadOneMonthStatementPdf</a></td><td rowspan="1">1749806580812</td><td rowspan="1">253169</td></tr><tr class="passedeven"><td><a href="#m4">testAccountSummary</a></td><td rowspan="1">1749806346131</td><td rowspan="1">234681</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">MySuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">MultipleTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="9">automationFramework.tests.AccountsTestNG</td><td><a href="#m0">downloadOneMonthStatementPdf</a></td><td rowspan="1">1749816908774</td><td rowspan="1">320404</td></tr><tr class="passedeven"><td><a href="#m1">downloadOneMonthStatementXls</a></td><td rowspan="1">1749817633873</td><td rowspan="1">402950</td></tr><tr class="passedeven"><td><a href="#m2">downloadThreeMonthStatementPdf</a></td><td rowspan="1">1749817229180</td><td rowspan="1">404691</td></tr><tr class="passedeven"><td><a href="#m3">downloadThreeMonthStatementXls</a></td><td rowspan="1">1749818036827</td><td rowspan="1">428573</td></tr><tr class="passedeven"><td><a href="#m4">downloaddownloadCustomStatement12MonthsPdf</a></td><td rowspan="1">1749819113856</td><td rowspan="1">520214</td></tr><tr class="passedeven"><td><a href="#m5">downloaddownloadCustomStatement12MonthsXsl</a></td><td rowspan="1">1749820211882</td><td rowspan="1">630193</td></tr><tr class="passedeven"><td><a href="#m6">downloaddownloadCustomStatement6MonthsPdf</a></td><td rowspan="1">1749819634073</td><td rowspan="1">577807</td></tr><tr class="passedeven"><td><a href="#m7">downloaddownloadCustomStatement6MonthsXsl</a></td><td rowspan="1">1749818465402</td><td rowspan="1">648451</td></tr><tr class="passedeven"><td><a href="#m8">testAccountSummary</a></td><td rowspan="1">1749816551822</td><td rowspan="1">356944</td></tr></tbody>
 </table>
-<h2>MultipleTest</h2><h3 id="m0">automationFramework.tests.AccountsTestNG#downloadOneMonthStatementXls</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: Failed to download 1 Month statement in XLS
-	at automationFramework.pages.AccountsPage.downloadStatement(AccountsPage.java:100)
-	at automationFramework.tests.AccountsTestNG.downloadOneMonthStatementXls(AccountsTestNG.java:69)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: java.lang.RuntimeException: ❌ Click failed after 3 attempts: By.xpath: //span[contains(@class,&apos;text-blue-500&apos;) and contains(text(),&apos;Download&apos;)]
-	at automationFramework.pages.BasePage.clickWithRetry(BasePage.java:67)
-	at automationFramework.pages.AccountsPage.downloadStatement(AccountsPage.java:82)
-	... 29 more
-... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">automationFramework.tests.AccountsTestNG#downloadThreeMonthStatementPdf</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: Failed to download 3 Months statement in PDF
-	at automationFramework.pages.AccountsPage.downloadStatement(AccountsPage.java:100)
-	at automationFramework.tests.AccountsTestNG.downloadThreeMonthStatementPdf(AccountsTestNG.java:64)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: java.lang.RuntimeException: ❌ Click failed after 3 attempts: By.xpath: //button[contains(text(),&apos;3 Months&apos;)]
-	at automationFramework.pages.BasePage.clickWithRetry(BasePage.java:67)
-	at automationFramework.pages.AccountsPage.downloadStatement(AccountsPage.java:77)
-	... 29 more
-... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">automationFramework.tests.AccountsTestNG#downloadThreeMonthStatementXls</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: Failed to download 3 Months statement in XLS
-	at automationFramework.pages.AccountsPage.downloadStatement(AccountsPage.java:100)
-	at automationFramework.tests.AccountsTestNG.downloadThreeMonthStatementXls(AccountsTestNG.java:74)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: java.lang.RuntimeException: ❌ Click failed after 3 attempts: By.xpath: //span[@class=&apos;p-menuitem-text&apos; and text()=&apos;Accounts&apos;]
-	at automationFramework.pages.BasePage.clickWithRetry(BasePage.java:67)
-	at automationFramework.pages.AccountsPage.clickAccountsTab(AccountsPage.java:30)
-	at automationFramework.pages.AccountsPage.downloadStatement(AccountsPage.java:69)
-	... 29 more
-... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">automationFramework.tests.AccountsTestNG#downloadOneMonthStatementPdf</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">automationFramework.tests.AccountsTestNG#testAccountSummary</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>MultipleTest</h2><h3 id="m0">automationFramework.tests.AccountsTestNG#downloadOneMonthStatementPdf</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">automationFramework.tests.AccountsTestNG#downloadOneMonthStatementXls</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">automationFramework.tests.AccountsTestNG#downloadThreeMonthStatementPdf</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">automationFramework.tests.AccountsTestNG#downloadThreeMonthStatementXls</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">automationFramework.tests.AccountsTestNG#downloaddownloadCustomStatement12MonthsPdf</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">automationFramework.tests.AccountsTestNG#downloaddownloadCustomStatement12MonthsXsl</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">automationFramework.tests.AccountsTestNG#downloaddownloadCustomStatement6MonthsPdf</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">automationFramework.tests.AccountsTestNG#downloaddownloadCustomStatement6MonthsXsl</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">automationFramework.tests.AccountsTestNG#testAccountSummary</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

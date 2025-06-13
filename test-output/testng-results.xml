@@ -2,35 +2,35 @@
 <testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-13T12:15:59 IST" name="MySuite" finished-at="2025-06-13T12:35:29 IST" duration-ms="1170583">
+  <suite started-at="2025-06-13T13:21:07 IST" name="MySuite" finished-at="2025-06-13T13:41:36 IST" duration-ms="1229109">
     <groups>
     </groups>
-    <test started-at="2025-06-13T12:15:59 IST" name="MultipleTest" finished-at="2025-06-13T12:35:29 IST" duration-ms="1170583">
+    <test started-at="2025-06-13T13:21:07 IST" name="MultipleTest" finished-at="2025-06-13T13:41:36 IST" duration-ms="1229109">
       <class name="automationFramework.tests.AccountsTestNG">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:automationFramework.tests.AccountsTestNG@16eb3ea3]" started-at="2025-06-13T12:15:59 IST" name="setUp" finished-at="2025-06-13T12:16:17 IST" duration-ms="18566" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:automationFramework.tests.AccountsTestNG@16eb3ea3]" started-at="2025-06-13T13:21:07 IST" name="setUp" finished-at="2025-06-13T13:21:25 IST" duration-ms="17705" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testAccountSummary()[pri:1, instance:automationFramework.tests.AccountsTestNG@16eb3ea3]" started-at="2025-06-13T12:16:17 IST" name="testAccountSummary" finished-at="2025-06-13T12:20:32 IST" duration-ms="255268" status="PASS">
+        <test-method signature="testAccountSummary()[pri:1, instance:automationFramework.tests.AccountsTestNG@16eb3ea3]" started-at="2025-06-13T13:21:25 IST" name="testAccountSummary" finished-at="2025-06-13T13:25:41 IST" duration-ms="256667" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAccountSummary -->
-        <test-method signature="downloadOneMonthStatement()[pri:2, instance:automationFramework.tests.AccountsTestNG@16eb3ea3]" started-at="2025-06-13T12:20:32 IST" name="downloadOneMonthStatement" finished-at="2025-06-13T12:23:15 IST" duration-ms="162356" status="PASS">
+        <test-method signature="downloadOneMonthStatementPdf()[pri:2, instance:automationFramework.tests.AccountsTestNG@16eb3ea3]" started-at="2025-06-13T13:25:42 IST" name="downloadOneMonthStatementPdf" finished-at="2025-06-13T13:29:08 IST" duration-ms="206908" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- downloadOneMonthStatement -->
-        <test-method signature="downloadThreeMonthStatement()[pri:3, instance:automationFramework.tests.AccountsTestNG@16eb3ea3]" started-at="2025-06-13T12:23:15 IST" name="downloadThreeMonthStatement" finished-at="2025-06-13T12:27:18 IST" duration-ms="243106" status="PASS">
+        </test-method> <!-- downloadOneMonthStatementPdf -->
+        <test-method signature="downloadThreeMonthStatementPdf()[pri:3, instance:automationFramework.tests.AccountsTestNG@16eb3ea3]" started-at="2025-06-13T13:29:08 IST" name="downloadThreeMonthStatementPdf" finished-at="2025-06-13T13:33:35 IST" duration-ms="266790" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- downloadThreeMonthStatement -->
-        <test-method signature="testDownloadOneMonthXlsStatement()[pri:4, instance:automationFramework.tests.AccountsTestNG@16eb3ea3]" started-at="2025-06-13T12:27:18 IST" name="testDownloadOneMonthXlsStatement" finished-at="2025-06-13T12:31:03 IST" duration-ms="224793" status="PASS">
+        </test-method> <!-- downloadThreeMonthStatementPdf -->
+        <test-method signature="downloadOneMonthStatementXls()[pri:4, instance:automationFramework.tests.AccountsTestNG@16eb3ea3]" started-at="2025-06-13T13:33:35 IST" name="downloadOneMonthStatementXls" finished-at="2025-06-13T13:37:09 IST" duration-ms="214070" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testDownloadOneMonthXlsStatement -->
-        <test-method signature="testDownloadLast3MonthsStatementXls()[pri:5, instance:automationFramework.tests.AccountsTestNG@16eb3ea3]" started-at="2025-06-13T12:31:03 IST" name="testDownloadLast3MonthsStatementXls" finished-at="2025-06-13T12:35:29 IST" duration-ms="266428" status="PASS">
+        </test-method> <!-- downloadOneMonthStatementXls -->
+        <test-method signature="downloadThreeMonthStatementXls()[pri:5, instance:automationFramework.tests.AccountsTestNG@16eb3ea3]" started-at="2025-06-13T13:37:09 IST" name="downloadThreeMonthStatementXls" finished-at="2025-06-13T13:41:36 IST" duration-ms="266828" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testDownloadLast3MonthsStatementXls -->
+        </test-method> <!-- downloadThreeMonthStatementXls -->
       </class> <!-- automationFramework.tests.AccountsTestNG -->
     </test> <!-- MultipleTest -->
   </suite> <!-- MySuite -->

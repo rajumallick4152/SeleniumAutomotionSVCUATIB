@@ -2,6 +2,7 @@ package automationFramework.tests;
 
 import automationFramework.BrowserFactory;
 import automationFramework.pages.AccountsPage;
+import automationFramework.pages.AccountsPage.FileType;
 import automationFramework.pages.LoginPage;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.*;
@@ -54,25 +55,23 @@ public class AccountsTestNG {
 	}
 
 	@Test(priority = 2)
-	public void downloadOneMonthStatement() {
-		accountsPage.downloadStatement("1 Month");
+	public void downloadOneMonthStatementPdf() {
+		accountsPage.downloadStatement("1 Month", FileType.PDF);
 	}
 
 	@Test(priority = 3)
-	public void downloadThreeMonthStatement() {
-		accountsPage.downloadStatement("3 Months");
+	public void downloadThreeMonthStatementPdf() {
+		accountsPage.downloadStatement("3 Months", FileType.PDF);
 	}
 
 	@Test(priority = 4)
-	public void testDownloadOneMonthXlsStatement() {
-		AccountsPage accountsPage = new AccountsPage(driver);
-		accountsPage.downloadStatementXls("1 Month");
+	public void downloadOneMonthStatementXls() {
+		accountsPage.downloadStatement("1 Month", FileType.XLS);
 	}
 
 	@Test(priority = 5)
-	public void testDownloadLast3MonthsStatementXls() {
-		AccountsPage accountsPage = new AccountsPage(driver);
-		accountsPage.downloadStatementXls("3 Months");
+	public void downloadThreeMonthStatementXls() {
+		accountsPage.downloadStatement("3 Months", FileType.XLS);
 	}
 
 	// @AfterClass

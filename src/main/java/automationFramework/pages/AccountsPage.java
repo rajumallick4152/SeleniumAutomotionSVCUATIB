@@ -15,6 +15,11 @@ public class AccountsPage extends BasePage {
 	private static final By DOWNLOAD_BUTTON = By
 			.xpath("//span[contains(@class,'text-blue-500') and contains(text(),'Download')]");
 	private static final By DOWNLOAD_STATEMENT_BUTTON = By.xpath("//span[text()='Download statement']");
+	private static final By XLS_ICON = By.xpath("//img[contains(@src,'ic_excel_file.svg') and @alt='excel']");
+
+	public enum FileType {
+		PDF, XLS
+	}
 
 	public AccountsPage(WebDriver driver) {
 		super(driver);
@@ -57,9 +62,9 @@ public class AccountsPage extends BasePage {
 		waitForSpinnerToFullyDisappear();
 	}
 
-	public void downloadStatement(String duration) {
+	public void downloadStatement(String duration, FileType fileType) {
 		try {
-			logger.info("▶️ Starting: Download {} Statement in PDF format", duration);
+			logger.info("▶️ Starting: Download {} Statement in {} format", duration, fileType.name());
 
 			clickAccountsTab();
 
@@ -77,54 +82,22 @@ public class AccountsPage extends BasePage {
 			clickWithRetry(DOWNLOAD_BUTTON);
 			logger.info("✅ Download Button Clicked");
 
-			clickWithRetry(DOWNLOAD_STATEMENT_BUTTON);
-			logger.info("✅ Download Statement Button Clicked");
-
-			logger.info("🎉 Statement download for {} (PDF) triggered successfully.", duration);
-
-		} catch (Exception e) {
-			logger.error("❌ Error during {} statement download: {}", duration, e.getMessage());
-			throw new RuntimeException("Failed to download " + duration + " statement", e);
-		}
-	}
-
-	// new method for xsl download 1 and 3 months
-	public void downloadStatementXls(String duration) {
-		try {
-			logger.info("▶️ Starting: Download {} Statement in XLS format", duration);
-
-			clickAccountsTab();
-
-			clickWithRetry(DETAILED_STATEMENT);
-			waitForSpinnerToFullyDisappear();
-			logger.info("✅ Detailed Account Statement Button Clicked");
-
-			if (!duration.equalsIgnoreCase("1 Month")) {
-				By durationButton = By.xpath("//button[contains(text(),'" + duration + "')]");
-				clickWithRetry(durationButton);
-				waitForSpinnerToFullyDisappear();
-				logger.info("✅ {} Button Clicked", duration);
+			if (fileType == FileType.XLS) {
+				clickWithRetry(XLS_ICON);
+				logger.info("✅ XLS Format Selected");
+			} else {
+				logger.info("✅ Default Format (PDF) Selected");
 			}
 
-			clickWithRetry(DOWNLOAD_BUTTON);
-			logger.info("✅ Download Button Clicked");
-
-			// Wait for file format popup and click XLS icon
-			By XLS_ICON = By.xpath("//img[contains(@src,'ic_excel_file.svg') and @alt='excel']");
-			clickWithRetry(XLS_ICON);
-			logger.info("✅ XLS Format Selected");
-
 			clickWithRetry(DOWNLOAD_STATEMENT_BUTTON);
 			logger.info("✅ Download Statement Button Clicked");
 
 			waitForSpinnerToFullyDisappear();
-
-			logger.info("🎉 Statement download for {} (XLS) triggered successfully.", duration);
+			logger.info("🎉 Statement download for {} ({} format) triggered successfully.", duration, fileType.name());
 
 		} catch (Exception e) {
-			logger.error("❌ Error during {} statement download (XLS): {}", duration, e.getMessage());
-			throw new RuntimeException("Failed to download " + duration + " statement in XLS", e);
+			logger.error("❌ Error during {} statement download ({}): {}", duration, fileType.name(), e.getMessage());
+			throw new RuntimeException("Failed to download " + duration + " statement in " + fileType.name(), e);
 		}
 	}
-
 }

@@ -81,6 +81,6 @@ public class LoginPage {
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[.//span[text()='Login']]"))).click();
 		logger.info("✅ [SUCCESS] Clicked final Login button.");
 
-		logger.info("🎉 [DONE] Login Test Completed successfully for user: {}.", username);
+		//logger.info("🎉 [DONE] Login Test Completed successfully for user: {}.", username);
 	}
 }

@@ -1,53 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-13T17:38:49 IST" name="MySuite" finished-at="2025-06-13T18:50:42 IST" duration-ms="4313016">
+  <suite started-at="2025-06-16T13:09:35 IST" name="Default suite" finished-at="2025-06-16T13:10:52 IST" duration-ms="77482">
     <groups>
     </groups>
-    <test started-at="2025-06-13T17:38:49 IST" name="MultipleTest" finished-at="2025-06-13T18:50:42 IST" duration-ms="4313016">
-      <class name="automationFramework.tests.AccountsTestNG">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:automationFramework.tests.AccountsTestNG@48bb62]" started-at="2025-06-13T17:38:49 IST" name="setUp" finished-at="2025-06-13T17:39:11 IST" duration-ms="22688" status="PASS">
+    <test started-at="2025-06-16T13:09:35 IST" name="Default test" finished-at="2025-06-16T13:10:52 IST" duration-ms="77482">
+      <class name="automationFramework.tests.PaymentTestNG">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:automationFramework.tests.PaymentTestNG@6e9a5ed8]" started-at="2025-06-16T13:09:35 IST" name="setUp" finished-at="2025-06-16T13:09:39 IST" duration-ms="4574" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testAccountSummary()[pri:1, instance:automationFramework.tests.AccountsTestNG@48bb62]" started-at="2025-06-13T17:39:11 IST" name="testAccountSummary" finished-at="2025-06-13T17:45:08 IST" duration-ms="356944" status="PASS">
+        <test-method signature="loginBeforePayment()[pri:0, instance:automationFramework.tests.PaymentTestNG@6e9a5ed8]" started-at="2025-06-16T13:09:39 IST" name="loginBeforePayment" finished-at="2025-06-16T13:09:58 IST" duration-ms="18621" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testAccountSummary -->
-        <test-method signature="downloadOneMonthStatementPdf()[pri:2, instance:automationFramework.tests.AccountsTestNG@48bb62]" started-at="2025-06-13T17:45:08 IST" name="downloadOneMonthStatementPdf" finished-at="2025-06-13T17:50:29 IST" duration-ms="320404" status="PASS">
+        </test-method> <!-- loginBeforePayment -->
+        <test-method is-config="true" signature="logResult(org.testng.ITestResult)[pri:0, instance:automationFramework.tests.PaymentTestNG@6e9a5ed8]" started-at="2025-06-16T13:09:58 IST" name="logResult" finished-at="2025-06-16T13:09:58 IST" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginBeforePayment status=SUCCESS method=PaymentTestNG.loginBeforePayment()[pri:0, instance:automationFramework.tests.PaymentTestNG@6e9a5ed8] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- downloadOneMonthStatementPdf -->
-        <test-method signature="downloadThreeMonthStatementPdf()[pri:3, instance:automationFramework.tests.AccountsTestNG@48bb62]" started-at="2025-06-13T17:50:29 IST" name="downloadThreeMonthStatementPdf" finished-at="2025-06-13T17:57:13 IST" duration-ms="404691" status="PASS">
+        </test-method> <!-- logResult -->
+        <test-method signature="testPayment()[pri:1, instance:automationFramework.tests.PaymentTestNG@6e9a5ed8]" started-at="2025-06-16T13:09:58 IST" name="testPayment" finished-at="2025-06-16T13:10:19 IST" depends-on-methods="automationFramework.tests.PaymentTestNG.loginBeforePayment" duration-ms="20641" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- downloadThreeMonthStatementPdf -->
-        <test-method signature="downloadOneMonthStatementXls()[pri:4, instance:automationFramework.tests.AccountsTestNG@48bb62]" started-at="2025-06-13T17:57:13 IST" name="downloadOneMonthStatementXls" finished-at="2025-06-13T18:03:56 IST" duration-ms="402950" status="PASS">
+        </test-method> <!-- testPayment -->
+        <test-method is-config="true" signature="logResult(org.testng.ITestResult)[pri:0, instance:automationFramework.tests.PaymentTestNG@6e9a5ed8]" started-at="2025-06-16T13:10:19 IST" name="logResult" finished-at="2025-06-16T13:10:19 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testPayment status=SUCCESS method=PaymentTestNG.testPayment()[pri:1, instance:automationFramework.tests.PaymentTestNG@6e9a5ed8] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- downloadOneMonthStatementXls -->
-        <test-method signature="downloadThreeMonthStatementXls()[pri:5, instance:automationFramework.tests.AccountsTestNG@48bb62]" started-at="2025-06-13T18:03:56 IST" name="downloadThreeMonthStatementXls" finished-at="2025-06-13T18:11:05 IST" duration-ms="428573" status="PASS">
+        </test-method> <!-- logResult -->
+        <test-method signature="testInvalidAmountScenarios()[pri:2, instance:automationFramework.tests.PaymentTestNG@6e9a5ed8]" started-at="2025-06-16T13:10:19 IST" name="testInvalidAmountScenarios" finished-at="2025-06-16T13:10:52 IST" depends-on-methods="automationFramework.tests.PaymentTestNG.loginBeforePayment" duration-ms="33133" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- downloadThreeMonthStatementXls -->
-        <test-method signature="downloaddownloadCustomStatement6MonthsXsl()[pri:6, instance:automationFramework.tests.AccountsTestNG@48bb62]" started-at="2025-06-13T18:11:05 IST" name="downloaddownloadCustomStatement6MonthsXsl" finished-at="2025-06-13T18:21:53 IST" duration-ms="648451" status="PASS">
+        </test-method> <!-- testInvalidAmountScenarios -->
+        <test-method is-config="true" signature="logResult(org.testng.ITestResult)[pri:0, instance:automationFramework.tests.PaymentTestNG@6e9a5ed8]" started-at="2025-06-16T13:10:52 IST" name="logResult" finished-at="2025-06-16T13:10:52 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testInvalidAmountScenarios status=SUCCESS method=PaymentTestNG.testInvalidAmountScenarios()[pri:2, instance:automationFramework.tests.PaymentTestNG@6e9a5ed8] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- downloaddownloadCustomStatement6MonthsXsl -->
-        <test-method signature="downloaddownloadCustomStatement12MonthsPdf()[pri:7, instance:automationFramework.tests.AccountsTestNG@48bb62]" started-at="2025-06-13T18:21:53 IST" name="downloaddownloadCustomStatement12MonthsPdf" finished-at="2025-06-13T18:30:34 IST" duration-ms="520214" status="PASS">
+        </test-method> <!-- logResult -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationFramework.tests.PaymentTestNG@6e9a5ed8]" started-at="2025-06-16T13:10:52 IST" name="tearDown" finished-at="2025-06-16T13:10:52 IST" duration-ms="393" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- downloaddownloadCustomStatement12MonthsPdf -->
-        <test-method signature="downloaddownloadCustomStatement6MonthsPdf()[pri:8, instance:automationFramework.tests.AccountsTestNG@48bb62]" started-at="2025-06-13T18:30:34 IST" name="downloaddownloadCustomStatement6MonthsPdf" finished-at="2025-06-13T18:40:11 IST" duration-ms="577807" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- downloaddownloadCustomStatement6MonthsPdf -->
-        <test-method signature="downloaddownloadCustomStatement12MonthsXsl()[pri:9, instance:automationFramework.tests.AccountsTestNG@48bb62]" started-at="2025-06-13T18:40:11 IST" name="downloaddownloadCustomStatement12MonthsXsl" finished-at="2025-06-13T18:50:42 IST" duration-ms="630193" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- downloaddownloadCustomStatement12MonthsXsl -->
-      </class> <!-- automationFramework.tests.AccountsTestNG -->
-    </test> <!-- MultipleTest -->
-  </suite> <!-- MySuite -->
+        </test-method> <!-- tearDown -->
+      </class> <!-- automationFramework.tests.PaymentTestNG -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

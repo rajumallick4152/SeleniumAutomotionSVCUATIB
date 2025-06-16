@@ -91,6 +91,14 @@ public abstract class BasePage {
 				logger.error("❌ [Generic Technical Error] Facing some technical issue. Try again later.");
 				throw new RuntimeException("Generic Technical Error");
 			}
+			
+
+			// 🔴 Error From CBS
+			By errorCBS = By.xpath("//div[contains(text(), 'We are unable to retrieve a response from CBS')]");
+			if (!driver.findElements(errorCBS).isEmpty()) {
+				logger.error("❌ [CBS Error] Not Getting responses from CBS.");
+				throw new RuntimeException("Generic Technical Error");
+			}
 
 			// ⚠️ Add more error locators below (optional in future)
 			/*

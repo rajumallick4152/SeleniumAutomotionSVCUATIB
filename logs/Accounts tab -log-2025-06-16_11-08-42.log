@@ -1,0 +1,177 @@
+2025-06-16 11:08:42 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
+2025-06-16 11:08:42 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 2 ms.
+2025-06-16 11:08:42 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-16 11:08:42 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-16 11:08:42 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-16 11:08:42 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-16 11:08:42 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-16 11:08:42 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-16 11:08:42 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 4 ms.
+2025-06-16 11:08:42 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 23 ms.
+2025-06-16 11:08:42 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-16 11:08:42 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+2025-06-16 11:08:42 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-16 11:08:42 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-16 11:08:42 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-16 11:08:42 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-16 11:08:42 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-16 11:08:42 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-16 11:08:42 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-16 11:08:42 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+2025-06-16 11:08:43 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-16 11:08:43 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-16 11:08:43 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-16 11:08:43 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-16 11:08:43 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
+2025-06-16 11:08:43 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 17 ms.
+2025-06-16 11:08:43 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-16 11:08:43 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-16 11:08:43 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-16 11:08:43 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-16 11:08:43 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\rajum\AppData\Local\Temp\testng-eclipse--1007102837\testng-customsuite.xml
+
+2025-06-16 11:08:43 [main] INFO  org.testng.internal.Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 12 ms.
+2025-06-16 11:08:43 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 137.0.7151.70 (resolved driver for Chrome 137)
+2025-06-16 11:08:43 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\rajum\.cache\selenium\chromedriver\win64\137.0.7151.70\chromedriver.exe
+2025-06-16 11:08:46 [main] INFO  automationFramework.pages.LoginPage - ✅ [SUCCESS] Config loaded from 'config.properties': captcha.wait.seconds = 10 seconds.
+2025-06-16 11:09:02 [main] INFO  automationFramework.pages.LoginPage - 🟦 [STEP] Navigated to URL: https://uatnet.svcbank.com/ReachSVCInet/SVC-web/inet/netbanking
+2025-06-16 11:09:02 [main] INFO  automationFramework.pages.LoginPage - ✅ [SUCCESS] Entered username: TEST001
+2025-06-16 11:09:02 [main] INFO  automationFramework.pages.LoginPage - ⏳ [WAIT] Waiting for manual captcha input. You have 10 seconds.
+2025-06-16 11:09:12 [main] INFO  automationFramework.pages.LoginPage - ✅ [SUCCESS] Clicked first Login button (after captcha).
+2025-06-16 11:09:14 [main] INFO  automationFramework.pages.LoginPage - ✅ [SUCCESS] Entered password.
+2025-06-16 11:09:14 [main] INFO  automationFramework.pages.LoginPage - ✅ [SUCCESS] Clicked final Login button.
+2025-06-16 11:09:14 [main] INFO  a.pages.PaymentHistoryPage - 🟦 [STEP] Clicking on the Payment tab.
+2025-06-16 11:09:14 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-16 11:09:23 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.
+2025-06-16 11:09:23 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-16 11:09:25 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.
+2025-06-16 11:09:25 [main] INFO  a.pages.PaymentHistoryPage - ✅ [SUCCESS] Payment tab clicked.
+2025-06-16 11:09:25 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-16 11:09:25 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.
+2025-06-16 11:09:25 [main] INFO  a.pages.PaymentHistoryPage - 🧪=== Starting Positive Test Cases for NETF transaction for Payment to payee ===
+2025-06-16 11:09:25 [main] INFO  a.pages.PaymentHistoryPage - 🚀 [START] Initiating payment to payee: DXFCHGV
+2025-06-16 11:09:25 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-16 11:09:25 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.
+2025-06-16 11:09:25 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-16 11:09:26 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.
+2025-06-16 11:09:26 [main] INFO  a.pages.PaymentHistoryPage - ✅ [SUCCESS] Payee selected: DXFCHGV
+2025-06-16 11:09:27 [main] INFO  a.pages.PaymentHistoryPage - ✅ [SUCCESS] Entered amount: ₹1
+2025-06-16 11:09:27 [main] INFO  a.pages.PaymentHistoryPage - 🟦 [STEP] Selecting NEFT option
+2025-06-16 11:09:27 [main] INFO  a.pages.PaymentHistoryPage - Attempting to click NEFT option (Attempt 1)
+2025-06-16 11:09:27 [main] INFO  a.pages.PaymentHistoryPage - 🔄 NEFT clicked via Actions.
+2025-06-16 11:09:28 [main] WARN  a.pages.PaymentHistoryPage - ⚠️ NEFT not selected yet. Retrying...
+2025-06-16 11:09:28 [main] INFO  a.pages.PaymentHistoryPage - Attempting to click NEFT option (Attempt 2)
+2025-06-16 11:09:28 [main] INFO  a.pages.PaymentHistoryPage - 🔄 NEFT clicked via Actions.
+2025-06-16 11:09:29 [main] INFO  a.pages.PaymentHistoryPage - ✅ NEFT option selected successfully.
+2025-06-16 11:09:29 [main] INFO  a.pages.PaymentHistoryPage - ✅ [SUCCESS] Entered remarks: test value
+2025-06-16 11:09:29 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-16 11:09:30 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.
+2025-06-16 11:09:30 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-16 11:09:30 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.
+2025-06-16 11:09:30 [main] INFO  a.pages.PaymentHistoryPage - ✅ [SUCCESS] Clicked Proceed after remarks.
+2025-06-16 11:09:30 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-16 11:09:30 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.
+2025-06-16 11:09:30 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-16 11:09:31 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.
+2025-06-16 11:09:31 [main] INFO  a.pages.PaymentHistoryPage - ✅ [SUCCESS] Confirm button clicked.
+2025-06-16 11:09:33 [main] INFO  a.pages.PaymentHistoryPage - ✅ [SUCCESS] OTP entered.
+2025-06-16 11:09:33 [main] INFO  a.pages.PaymentHistoryPage - Waiting for any overlay/spinner to disappear.
+2025-06-16 11:09:33 [main] INFO  a.pages.PaymentHistoryPage - ✅ [SUCCESS] Final Proceed clicked after OTP.
+2025-06-16 11:09:40 [main] INFO  a.pages.PaymentHistoryPage - ✅ [SUCCESS] Close button clicked.
+2025-06-16 11:09:40 [main] INFO  a.pages.PaymentHistoryPage - 🎉 [DONE] ✅ Positive test cases for Payment to payee DXFCHGV successfully executed.
+2025-06-16 11:09:40 [main] INFO  a.pages.PaymentHistoryPage - 🟦 [STEP] Clicking on the Payment tab.
+2025-06-16 11:09:40 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-16 11:09:41 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.
+2025-06-16 11:09:42 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-16 11:09:43 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.
+2025-06-16 11:09:43 [main] INFO  a.pages.PaymentHistoryPage - ✅ [SUCCESS] Payment tab clicked.
+2025-06-16 11:09:43 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-16 11:09:43 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.
+2025-06-16 11:09:43 [main] INFO  a.pages.PaymentHistoryPage - 🧪=== Starting Negative Test Cases for NETF transaction for Payment to payee ===
+2025-06-16 11:09:43 [main] INFO  a.pages.PaymentHistoryPage - 🔹 Step : Selecting payee: DXFCHGV
+2025-06-16 11:09:43 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-16 11:09:44 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.
+2025-06-16 11:09:44 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-16 11:09:45 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.
+2025-06-16 11:09:45 [main] INFO  a.pages.PaymentHistoryPage - ✅ Payee selected successfully.
+2025-06-16 11:09:45 [main] INFO  a.pages.PaymentHistoryPage - 
+🔸 Test Case 1: Blank Amount
+2025-06-16 11:09:45 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-16 11:09:46 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.
+2025-06-16 11:09:46 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-16 11:09:47 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.
+2025-06-16 11:09:47 [main] INFO  a.pages.PaymentHistoryPage - [SUCCESS] ✅ Correct error displayed: 'Amount is required'
+2025-06-16 11:09:47 [main] INFO  a.pages.PaymentHistoryPage - 
+🔸 Test Case 2: Special Characters (@#$%)
+2025-06-16 11:09:47 [main] INFO  a.pages.PaymentHistoryPage - [SUCCESS] ✅ Special characters were blocked as expected.
+2025-06-16 11:09:47 [main] INFO  a.pages.PaymentHistoryPage - 
+🔸 Test Case 3: Alphanumeric Characters (123abc)
+2025-06-16 11:09:47 [main] INFO  a.pages.PaymentHistoryPage - [SUCCESS] ✅ Field blocked alphanumeric input completely.
+2025-06-16 11:09:47 [main] INFO  a.pages.PaymentHistoryPage - 
+🔸 Test Case 4: Zero Amount (0)
+2025-06-16 11:09:48 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-16 11:09:48 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.
+2025-06-16 11:09:48 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-16 11:09:48 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.
+2025-06-16 11:09:49 [main] INFO  a.pages.PaymentHistoryPage - [SUCCESS] ✅ Correct validation message shown: 'Minimum amount is 1.00'
+2025-06-16 11:09:49 [main] INFO  a.pages.PaymentHistoryPage - 
+🔸 Test Case 5: Amount Greater Than Account Balance
+2025-06-16 11:09:49 [main] INFO  a.pages.PaymentHistoryPage - Fetched account balance: ₹2791834
+2025-06-16 11:09:49 [main] INFO  a.pages.PaymentHistoryPage - Attempting to enter over-limit amount: ₹2792334
+2025-06-16 11:09:49 [main] INFO  a.pages.PaymentHistoryPage - ✅ Over-limit amount successfully typed: '2792334'
+2025-06-16 11:09:51 [main] INFO  a.pages.PaymentHistoryPage - ✅ 'Insufficient balance' popup displayed.
+2025-06-16 11:09:51 [main] INFO  a.pages.PaymentHistoryPage - ✅ Clicked 'Okay' button on popup.
+2025-06-16 11:09:51 [main] INFO  a.pages.PaymentHistoryPage - [SUCCESS] ✅ Error Pop up Shown while Putting greater amount of account balance as Insufficient balance 
+2025-06-16 11:09:51 [main] INFO  a.pages.PaymentHistoryPage - 
+🔸 Test Case 6: Leave Remarks Field Blank and Proceed
+2025-06-16 11:09:51 [main] INFO  a.pages.PaymentHistoryPage - ✅ Remarks field cleared (left blank).
+2025-06-16 11:09:51 [main] INFO  a.pages.PaymentHistoryPage - 🟦 [STEP] Selecting NEFT option
+2025-06-16 11:09:51 [main] INFO  a.pages.PaymentHistoryPage - Attempting to click NEFT option (Attempt 1)
+2025-06-16 11:09:52 [main] INFO  a.pages.PaymentHistoryPage - 🔄 NEFT clicked via Actions.
+2025-06-16 11:09:52 [main] WARN  a.pages.PaymentHistoryPage - ⚠️ NEFT not selected yet. Retrying...
+2025-06-16 11:09:52 [main] INFO  a.pages.PaymentHistoryPage - Attempting to click NEFT option (Attempt 2)
+2025-06-16 11:09:53 [main] INFO  a.pages.PaymentHistoryPage - 🔄 NEFT clicked via Actions.
+2025-06-16 11:09:53 [main] WARN  a.pages.PaymentHistoryPage - ⚠️ NEFT not selected yet. Retrying...
+2025-06-16 11:09:53 [main] INFO  a.pages.PaymentHistoryPage - Attempting to click NEFT option (Attempt 3)
+2025-06-16 11:09:54 [main] INFO  a.pages.PaymentHistoryPage - 🔄 NEFT clicked via Actions.
+2025-06-16 11:09:55 [main] INFO  a.pages.PaymentHistoryPage - ✅ NEFT option selected successfully.
+2025-06-16 11:09:55 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-16 11:09:55 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.
+2025-06-16 11:09:56 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-16 11:09:56 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.
+2025-06-16 11:09:56 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-16 11:09:56 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.
+2025-06-16 11:09:56 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-16 11:09:57 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.
+2025-06-16 11:09:57 [main] INFO  a.pages.PaymentHistoryPage - ✅ [SUCCESS] OTP entered.
+2025-06-16 11:09:57 [main] INFO  a.pages.PaymentHistoryPage - Waiting for any overlay/spinner to disappear.
+2025-06-16 11:09:57 [main] INFO  a.pages.PaymentHistoryPage - ✅ Final Proceed button clicked.
+2025-06-16 11:09:59 [main] INFO  a.pages.PaymentHistoryPage - [SUCCESS] ✅ Transaction succeeded with blank remarks.
+2025-06-16 11:10:03 [main] INFO  a.pages.PaymentHistoryPage - ✅ [SUCCESS] Close button clicked.
+2025-06-16 11:10:03 [main] INFO  a.pages.PaymentHistoryPage - 
+🔸 Test Case 7: Enter Invalid OTP
+2025-06-16 11:10:03 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-16 11:10:05 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.
+2025-06-16 11:10:05 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-16 11:10:06 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.
+2025-06-16 11:10:06 [main] INFO  a.pages.PaymentHistoryPage - ✅ [SUCCESS] Entered amount: ₹3
+2025-06-16 11:10:06 [main] INFO  a.pages.PaymentHistoryPage - 🟦 [STEP] Selecting NEFT option
+2025-06-16 11:10:06 [main] INFO  a.pages.PaymentHistoryPage - Attempting to click NEFT option (Attempt 1)
+2025-06-16 11:10:06 [main] INFO  a.pages.PaymentHistoryPage - 🔄 NEFT clicked via Actions.
+2025-06-16 11:10:07 [main] WARN  a.pages.PaymentHistoryPage - ⚠️ NEFT not selected yet. Retrying...
+2025-06-16 11:10:07 [main] INFO  a.pages.PaymentHistoryPage - Attempting to click NEFT option (Attempt 2)
+2025-06-16 11:10:22 [main] ERROR a.pages.PaymentHistoryPage - ❌ NEFT selection error: Expected condition failed: waiting for element to be clickable: By.xpath: //*[normalize-space(text())='NEFT']/ancestor::*[self::div or self::label or self::button][1] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\rajum\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57768}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57768/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0b5ac638b849d0c548be1cf602787985
+2025-06-16 11:10:22 [main] INFO  a.pages.PaymentHistoryPage - Attempting to click NEFT option (Attempt 3)
+2025-06-16 11:10:37 [main] ERROR a.pages.PaymentHistoryPage - ❌ NEFT selection error: Expected condition failed: waiting for element to be clickable: By.xpath: //*[normalize-space(text())='NEFT']/ancestor::*[self::div or self::label or self::button][1] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\rajum\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57768}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57768/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0b5ac638b849d0c548be1cf602787985
+2025-06-16 11:10:37 [main] INFO  a.pages.PaymentHistoryPage - Attempting to click NEFT option (Attempt 4)

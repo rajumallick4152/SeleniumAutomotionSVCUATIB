@@ -71,7 +71,7 @@ public class AccountsPage extends BasePage {
 		try {
 			logger.info("▶️ Starting: Download {} Statement in {} format", duration, fileType.name());
 
-			clickAccountsTab(); // already has error detection
+			clickAccountsTab(); // this is not required
 
 			clickWithRetry(DETAILED_STATEMENT);
 			waitForSpinnerToFullyDisappear();
@@ -117,7 +117,7 @@ public class AccountsPage extends BasePage {
 		try {
 			logger.info("▶️ Starting: Download Custom Statement for {} in {} format", months, fileType.name());
 
-			clickAccountsTab(); // already has error detection
+			clickAccountsTab();
 
 			clickWithRetry(DETAILED_STATEMENT);
 			waitForSpinnerToFullyDisappear();

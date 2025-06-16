@@ -387,6 +387,8 @@ public class PaymentHistoryPage extends BasePage {
 			WebElement amountInputField = wait.until(ExpectedConditions.visibilityOfElementLocated(AMOUNT_INPUT));
 			amountInputField.clear();
 			amountInputField.sendKeys("2");
+			waitForSpinnerToFullyDisappear(); // added by raju on 16-06-2025 for clicking neft
+			detectAndLogServiceErrors(); //// added by raju on 16-06-2025 for clicking neft
 
 			selectNEFTOption();
 			clickWithRetry(PROCEED_BUTTON_REMARKS);

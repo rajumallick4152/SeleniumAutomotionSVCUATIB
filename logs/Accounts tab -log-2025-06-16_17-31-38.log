@@ -1,0 +1,92 @@
+2025-06-16 17:31:39 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 2 ms.
+2025-06-16 17:31:39 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 3 ms.
+2025-06-16 17:31:39 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-16 17:31:39 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-16 17:31:39 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-16 17:31:39 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+2025-06-16 17:31:39 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-16 17:31:39 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-16 17:31:39 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 5 ms.
+2025-06-16 17:31:39 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 29 ms.
+2025-06-16 17:31:39 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-16 17:31:39 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-16 17:31:39 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-16 17:31:39 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-16 17:31:39 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-16 17:31:39 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-16 17:31:39 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-16 17:31:39 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-16 17:31:39 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
+2025-06-16 17:31:39 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+2025-06-16 17:31:39 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-16 17:31:39 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-16 17:31:39 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-16 17:31:39 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-16 17:31:39 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 3 ms.
+2025-06-16 17:31:39 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 24 ms.
+2025-06-16 17:31:39 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-16 17:31:39 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-16 17:31:39 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-16 17:31:39 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-16 17:31:39 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\rajum\AppData\Local\Temp\testng-eclipse--746762452\testng-customsuite.xml
+
+2025-06-16 17:31:39 [main] INFO  org.testng.internal.Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 10 ms.
+2025-06-16 17:31:39 [main] INFO  automationFramework.utils.LoggerUtil - Initializing browser and report...
+2025-06-16 17:31:40 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 137.0.7151.70 (resolved driver for Chrome 137)
+2025-06-16 17:31:40 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\rajum\.cache\selenium\chromedriver\win64\137.0.7151.70\chromedriver.exe
+2025-06-16 17:31:43 [main] INFO  automationFramework.utils.LoggerUtil - Setup complete.
+2025-06-16 17:31:43 [main] INFO  automationFramework.pages.LoginPage - ✅ [SUCCESS] Config loaded from 'config.properties': captcha.wait.seconds = 10 seconds.
+2025-06-16 17:31:46 [main] INFO  automationFramework.pages.LoginPage - 🟦 [STEP] Navigated to URL: https://uatnet.svcbank.com/ReachSVCInet/SVC-web/inet/netbanking
+2025-06-16 17:31:46 [main] INFO  automationFramework.pages.LoginPage - ✅ [SUCCESS] Entered username: TEST001
+2025-06-16 17:31:46 [main] INFO  automationFramework.pages.LoginPage - ⏳ [WAIT] Waiting for manual captcha input. You have 10 seconds.
+2025-06-16 17:31:56 [main] INFO  automationFramework.pages.LoginPage - ✅ [SUCCESS] Clicked first Login button (after captcha).
+2025-06-16 17:31:58 [main] INFO  automationFramework.pages.LoginPage - ✅ [SUCCESS] Entered password.
+2025-06-16 17:31:58 [main] INFO  automationFramework.pages.LoginPage - ✅ [SUCCESS] Clicked final Login button.
+2025-06-16 17:31:58 [main] INFO  a.pages.PaymentHistoryPage - 🟦 [STEP] Clicking on the Payment tab.
+2025-06-16 17:31:58 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-16 17:32:04 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.
+2025-06-16 17:32:04 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-16 17:32:05 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.
+2025-06-16 17:32:05 [main] INFO  a.pages.PaymentHistoryPage - ✅ [SUCCESS] Payment tab clicked.
+2025-06-16 17:32:05 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-16 17:32:05 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.
+2025-06-16 17:32:05 [main] INFO  a.pages.PaymentHistoryPage - 🧪=== Starting Positive Test Cases for NETF transaction for Payment to payee ===
+2025-06-16 17:32:05 [main] INFO  a.pages.PaymentHistoryPage - 🚀 [START] Initiating payment to payee: DXFCHGV
+2025-06-16 17:32:05 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-16 17:32:05 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.
+2025-06-16 17:32:06 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-16 17:32:07 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.
+2025-06-16 17:32:07 [main] INFO  a.pages.PaymentHistoryPage - ✅ [SUCCESS] Payee selected: DXFCHGV
+2025-06-16 17:32:07 [main] INFO  a.pages.PaymentHistoryPage - ✅ [SUCCESS] Entered amount: ₹1
+2025-06-16 17:32:07 [main] INFO  a.pages.PaymentHistoryPage - 🟦 [STEP] Selecting NEFT option
+2025-06-16 17:32:07 [main] INFO  a.pages.PaymentHistoryPage - Attempting to click NEFT option (Attempt 1)
+2025-06-16 17:32:07 [main] INFO  a.pages.PaymentHistoryPage - 🔄 NEFT clicked via Actions.
+2025-06-16 17:32:08 [main] WARN  a.pages.PaymentHistoryPage - ⚠️ NEFT not selected yet. Retrying...
+2025-06-16 17:32:08 [main] INFO  a.pages.PaymentHistoryPage - Attempting to click NEFT option (Attempt 2)
+2025-06-16 17:32:09 [main] INFO  a.pages.PaymentHistoryPage - 🔄 NEFT clicked via Actions.
+2025-06-16 17:32:09 [main] INFO  a.pages.PaymentHistoryPage - ✅ NEFT option selected successfully.
+2025-06-16 17:32:09 [main] INFO  a.pages.PaymentHistoryPage - ✅ [SUCCESS] Entered remarks: test value
+2025-06-16 17:32:09 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-16 17:32:10 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.
+2025-06-16 17:32:10 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-16 17:32:10 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.
+2025-06-16 17:32:10 [main] INFO  a.pages.PaymentHistoryPage - ✅ [SUCCESS] Clicked Proceed after remarks.
+2025-06-16 17:32:10 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-16 17:32:11 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.
+2025-06-16 17:32:11 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-16 17:32:12 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.
+2025-06-16 17:32:12 [main] INFO  a.pages.PaymentHistoryPage - ✅ [SUCCESS] Confirm button clicked.
+2025-06-16 17:32:12 [main] INFO  a.pages.PaymentHistoryPage - ✅ [SUCCESS] OTP entered.
+2025-06-16 17:32:12 [main] INFO  a.pages.PaymentHistoryPage - Waiting for any overlay/spinner to disappear.
+2025-06-16 17:32:12 [main] INFO  a.pages.PaymentHistoryPage - ✅ [SUCCESS] Final Proceed clicked after OTP.
+2025-06-16 17:32:18 [main] INFO  a.pages.PaymentHistoryPage - ✅ [SUCCESS] Close button clicked.
+2025-06-16 17:32:18 [main] INFO  a.pages.PaymentHistoryPage - 🎉 [DONE] ✅ Positive test cases for Payment to payee DXFCHGV successfully executed.
+2025-06-16 17:32:18 [main] INFO  automationFramework.utils.LoggerUtil - Flushing extent report...
+2025-06-16 17:32:19 [main] INFO  automationFramework.utils.LoggerUtil - 📧 Sending report via email...
+2025-06-16 17:32:24 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.jq.Main@3946075: 69 ms
+2025-06-16 17:32:24 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.FailedReporter@3d53e6f7: 2 ms
+2025-06-16 17:32:24 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.XMLReporter@68ef01a5: 11 ms
+2025-06-16 17:32:24 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@4d705112: 8 ms
+2025-06-16 17:32:24 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@193bb809: 6 ms
+2025-06-16 17:32:24 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@64b018f3: 0 ms

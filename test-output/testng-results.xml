@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-16T16:48:50 IST" name="Default suite" finished-at="2025-06-16T16:49:34 IST" duration-ms="43640">
+  <suite started-at="2025-06-16T17:31:39 IST" name="Default suite" finished-at="2025-06-16T17:32:24 IST" duration-ms="44590">
     <groups>
     </groups>
-    <test started-at="2025-06-16T16:48:50 IST" name="Default test" finished-at="2025-06-16T16:49:34 IST" duration-ms="43640">
+    <test started-at="2025-06-16T17:31:39 IST" name="Default test" finished-at="2025-06-16T17:32:24 IST" duration-ms="44590">
       <class name="automationFramework.tests.PaymentTestNG">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:automationFramework.tests.PaymentTestNG@5890e879]" started-at="2025-06-16T16:48:50 IST" name="setUp" finished-at="2025-06-16T16:48:54 IST" duration-ms="4425" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:automationFramework.tests.PaymentTestNG@5890e879]" started-at="2025-06-16T17:31:39 IST" name="setUp" finished-at="2025-06-16T17:31:43 IST" duration-ms="4295" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginBeforePayment()[pri:0, instance:automationFramework.tests.PaymentTestNG@5890e879]" started-at="2025-06-16T16:48:54 IST" name="loginBeforePayment" finished-at="2025-06-16T16:49:09 IST" duration-ms="14537" status="PASS">
+        <test-method signature="loginBeforePayment()[pri:0, instance:automationFramework.tests.PaymentTestNG@5890e879]" started-at="2025-06-16T17:31:43 IST" name="loginBeforePayment" finished-at="2025-06-16T17:31:58 IST" duration-ms="14365" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginBeforePayment -->
-        <test-method is-config="true" signature="logResult(org.testng.ITestResult)[pri:0, instance:automationFramework.tests.PaymentTestNG@5890e879]" started-at="2025-06-16T16:49:09 IST" name="logResult" finished-at="2025-06-16T16:49:09 IST" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="logResult(org.testng.ITestResult)[pri:0, instance:automationFramework.tests.PaymentTestNG@5890e879]" started-at="2025-06-16T17:31:58 IST" name="logResult" finished-at="2025-06-16T17:31:58 IST" duration-ms="5" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -26,11 +26,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logResult -->
-        <test-method signature="testPayment()[pri:1, instance:automationFramework.tests.PaymentTestNG@5890e879]" started-at="2025-06-16T16:49:09 IST" name="testPayment" finished-at="2025-06-16T16:49:28 IST" depends-on-methods="automationFramework.tests.PaymentTestNG.loginBeforePayment" duration-ms="19014" status="PASS">
+        <test-method signature="testPayment()[pri:1, instance:automationFramework.tests.PaymentTestNG@5890e879]" started-at="2025-06-16T17:31:58 IST" name="testPayment" finished-at="2025-06-16T17:32:18 IST" depends-on-methods="automationFramework.tests.PaymentTestNG.loginBeforePayment" duration-ms="20430" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPayment -->
-        <test-method is-config="true" signature="logResult(org.testng.ITestResult)[pri:0, instance:automationFramework.tests.PaymentTestNG@5890e879]" started-at="2025-06-16T16:49:28 IST" name="logResult" finished-at="2025-06-16T16:49:28 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="logResult(org.testng.ITestResult)[pri:0, instance:automationFramework.tests.PaymentTestNG@5890e879]" started-at="2025-06-16T17:32:18 IST" name="logResult" finished-at="2025-06-16T17:32:18 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -41,7 +41,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logResult -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationFramework.tests.PaymentTestNG@5890e879]" started-at="2025-06-16T16:49:28 IST" name="tearDown" finished-at="2025-06-16T16:49:34 IST" duration-ms="5547" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationFramework.tests.PaymentTestNG@5890e879]" started-at="2025-06-16T17:32:18 IST" name="tearDown" finished-at="2025-06-16T17:32:24 IST" duration-ms="5381" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -67,6 +67,13 @@
 			<version>5.1.2</version>
 		</dependency>
 
+		<dependency>
+			<groupId>com.sun.mail</groupId>
+			<artifactId>jakarta.mail</artifactId>
+			<version>2.0.1</version>
+		</dependency>
+
+
 		<!--		<dependency>-->
 		<!--			<groupId>org.fusesource.jansi</groupId>-->
 		<!--			<artifactId>jansi</artifactId>-->

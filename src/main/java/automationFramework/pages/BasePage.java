@@ -85,28 +85,28 @@ public abstract class BasePage {
 				throw new RuntimeException("503 Service Unavailable");
 			}
 
-			// 🔴 Generic technical issue (new locator from your message)
+			// 🔴 Generic technical issue
 			By technicalIssue = By.xpath("//*[contains(text(),'We are currently facing some technical issue')]");
 			if (!driver.findElements(technicalIssue).isEmpty()) {
 				logger.error("❌ [Generic Technical Error] Facing some technical issue. Try again later.");
 				throw new RuntimeException("Generic Technical Error");
 			}
-			
 
-			// 🔴 Error From CBS
+			// 🔴 CBS Error
 			By errorCBS = By.xpath("//div[contains(text(), 'We are unable to retrieve a response from CBS')]");
 			if (!driver.findElements(errorCBS).isEmpty()) {
 				logger.error("❌ [CBS Error] Not Getting responses from CBS.");
-				throw new RuntimeException("Generic Technical Error");
+				throw new RuntimeException("CBS Response Error");
 			}
 
-			// ⚠️ Add more error locators below (optional in future)
-			/*
-			 * By error504 = By.xpath("//*[contains(text(),'Gateway Timeout')]"); if
-			 * (!driver.findElements(error504).isEmpty()) {
-			 * logger.error("❌ [504 Error] Gateway Timeout."); throw new
-			 * RuntimeException("504 Gateway Timeout"); }
-			 */
+			// 🔴 Logged Out Error
+			By loggedOut = By.xpath("//div[contains(text(),'You have been logged out')]");
+			if (!driver.findElements(loggedOut).isEmpty()) {
+				logger.error("❌ [Session Error] User has been logged out.");
+				throw new RuntimeException("User session has expired or user is logged out.");
+			}
+
+			// ⚠️ Add more error locators here if needed
 
 		} catch (Exception e) {
 			logger.error("❌ Error Detection Triggered: {}", e.getMessage());
@@ -150,6 +150,37 @@ public abstract class BasePage {
 			Thread.sleep(seconds * 1000L);
 		} catch (InterruptedException e) {
 			Thread.currentThread().interrupt();
+		}
+	}
+
+// wait for second to load account statement for 6 months and 12 months
+	protected void waitForElementToBeVisible(By locator) {
+		wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+	}
+
+	protected void waitForElementToBeVisible(By locator, int seconds) {
+		new WebDriverWait(driver, Duration.ofSeconds(seconds))
+				.until(ExpectedConditions.visibilityOfElementLocated(locator));
+	}
+
+	protected void waitForElementToBeClickable(By locator) {
+		wait.until(ExpectedConditions.elementToBeClickable(locator));
+	}
+
+	protected boolean isElementPresent(By locator) {
+		try {
+			return driver.findElement(locator).isDisplayed();
+		} catch (Exception e) {
+			return false;
+		}
+	}
+
+	protected boolean isElementVisible(By locator) {
+		try {
+			WebElement element = driver.findElement(locator);
+			return element != null && element.isDisplayed();
+		} catch (Exception e) {
+			return false;
 		}
 	}
 

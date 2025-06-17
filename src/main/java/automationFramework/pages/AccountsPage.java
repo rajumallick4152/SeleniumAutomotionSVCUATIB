@@ -1,5 +1,6 @@
 package automationFramework.pages;
 
+import com.aventstack.extentreports.ExtentTest;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -25,158 +26,171 @@ public class AccountsPage extends BasePage {
 		super(driver);
 	}
 
-	public void clickAccountsTab() {
+	public void clickAccountsTab(ExtentTest test) {
 		logger.info("Clicking Accounts Tab");
+		test.info("🔘 Clicking Accounts Tab");
 		clickWithRetry(ACCOUNTS_TAB);
 		waitForSpinnerToFullyDisappear();
-		detectAndLogServiceErrors(); // ✅ Added
+		detectAndLogServiceErrors();
 		logger.info("✅ Accounts Tab Clicked");
+		test.pass("✅ Accounts Tab clicked successfully.");
 	}
 
-	public void waitForDataToLoad() {
+	public void waitForDataToLoad(ExtentTest test) {
+		test.info("⌛ Waiting for data to load...");
 		waitForSpinnerToFullyDisappear();
-		detectAndLogServiceErrors(); // ✅ Added
+		detectAndLogServiceErrors();
+		test.pass("✅ Data loaded successfully.");
 	}
 
-	public void scrollToViewBalanceButton() {
-		logger.info("Scrolling to 'View Balance Components' button");
+	public void scrollToViewBalanceButton(ExtentTest test) {
+		test.info("📜 Scrolling to 'View Balance Components' button");
 		waitForSpinnerToFullyDisappear();
-		detectAndLogServiceErrors(); // ✅ Added
+		detectAndLogServiceErrors();
 		WebElement viewBalanceBtn = wait.until(presenceOf(VIEW_BALANCE_BUTTON));
 		scrollIntoView(viewBalanceBtn);
+		test.pass("✅ Scrolled to View Balance button.");
 	}
 
-	public void clickViewBalanceButton() {
-		logger.info("Clicking 'View Balance Components' button");
+	public void clickViewBalanceButton(ExtentTest test) {
+		test.info("🖱️ Clicking 'View Balance Components' button");
 		waitForSpinnerToFullyDisappear();
 		clickWithRetry(VIEW_BALANCE_BUTTON);
 		waitForSpinnerToFullyDisappear();
-		detectAndLogServiceErrors(); // ✅ Added
+		detectAndLogServiceErrors();
+		test.pass("✅ View Balance modal opened.");
 	}
 
-	public void closeBalanceModal() {
-		logger.info("Closing balance modal");
+	public void closeBalanceModal(ExtentTest test) {
+		test.info("🧩 Closing balance modal");
 		waitForSpinnerToFullyDisappear();
 		try {
 			clickWithRetry(CLOSE_BALANCE_MODAL);
-			logger.info("✅ Modal closed.");
+			test.pass("✅ Modal closed.");
 		} catch (Exception ex) {
-			logger.error("❌ Failed to close balance modal: {}", ex.getMessage());
+			test.fail("❌ Failed to close balance modal: " + ex.getMessage());
 		}
 		waitForSpinnerToFullyDisappear();
-		detectAndLogServiceErrors(); // ✅ Added
+		detectAndLogServiceErrors();
 	}
 
-	public void downloadStatement(String duration, FileType fileType) {
+	private void ensureDetailedStatementVisible() {
 		try {
-			logger.info("▶️ Starting: Download {} Statement in {} format", duration, fileType.name());
+			logger.info("🔍 Checking if 'Detailed Statement' is visible.");
+			waitForElementToBeVisible(DETAILED_STATEMENT, 3);
+			logger.info("✅ 'Detailed Statement' is visible.");
+		} catch (Exception e) {
+			logger.warn("⚠️ 'Detailed Statement' not visible. Clicking Accounts Tab first.");
+			clickWithRetry(ACCOUNTS_TAB);
+			waitForElementToBeVisible(DETAILED_STATEMENT);
+			logger.info("✅ 'Detailed Statement' found after clicking Accounts Tab.");
+		}
+	}
 
-			clickAccountsTab(); // this is not required
-
+	public void downloadStatement(String duration, FileType fileType, ExtentTest test) {
+		try {
+			test.info("▶️ Downloading " + duration + " statement in " + fileType.name());
+			ensureDetailedStatementVisible();
 			clickWithRetry(DETAILED_STATEMENT);
 			waitForSpinnerToFullyDisappear();
-			detectAndLogServiceErrors(); // ✅ Added
-			logger.info("✅ Detailed Account Statement Button Clicked");
+			detectAndLogServiceErrors();
 
-			if (!duration.equalsIgnoreCase("1 Month")) {
-				By durationButton = By.xpath("//button[contains(text(),'" + duration + "')]");
-				clickWithRetry(durationButton);
+			if (!"1 Month".equalsIgnoreCase(duration)) {
+				clickWithRetry(By.xpath("//button[contains(text(),'" + duration + "')]"));
 				waitForSpinnerToFullyDisappear();
-				detectAndLogServiceErrors(); // ✅ Added
-				logger.info("✅ {} Button Clicked", duration);
+				detectAndLogServiceErrors();
 			}
 
 			clickWithRetry(DOWNLOAD_BUTTON);
 			waitForSpinnerToFullyDisappear();
-			detectAndLogServiceErrors(); // ✅ Added
-			logger.info("✅ Download Button Clicked");
 
 			if (fileType == FileType.XLS) {
 				clickWithRetry(XLS_ICON);
 				waitForSpinnerToFullyDisappear();
-				detectAndLogServiceErrors(); // ✅ Added
-				logger.info("✅ XLS Format Selected");
-			} else {
-				logger.info("✅ Default Format (PDF) Selected");
 			}
 
 			clickWithRetry(DOWNLOAD_STATEMENT_BUTTON);
 			waitForSpinnerToFullyDisappear();
-			detectAndLogServiceErrors(); // ✅ Added
-			logger.info("✅ Download Statement Button Clicked");
 
-			logger.info("🎉 Statement download for {} ({} format) triggered successfully.", duration, fileType.name());
+			test.pass("🎉 " + duration + " Statement (" + fileType.name() + ") download triggered.");
 
 		} catch (Exception e) {
-			logger.error("❌ Error during {} statement download ({}): {}", duration, fileType.name(), e.getMessage());
+			test.fail(
+					"❌ Error during " + duration + " statement download (" + fileType.name() + "): " + e.getMessage());
 			throw new RuntimeException("Failed to download " + duration + " statement in " + fileType.name(), e);
 		}
 	}
 
-	public void downloadCustomStatement(String months, FileType fileType) {
+	public void downloadCustomStatement(String months, FileType fileType, ExtentTest test) {
 		try {
-			logger.info("▶️ Starting: Download Custom Statement for {} in {} format", months, fileType.name());
+			test.info("▶️ Starting Custom Statement download for " + months + " months in " + fileType.name());
 
-			clickAccountsTab();
-
+			ensureDetailedStatementVisible();
 			clickWithRetry(DETAILED_STATEMENT);
-			waitForSpinnerToFullyDisappear();
 			detectAndLogServiceErrors();
-			logger.info("✅ Detailed Account Statement Button Clicked");
+			waitForSpinnerToFullyDisappear();
 
-			// Step 1: Click "Custom"
 			By customButton = By.xpath("//button[contains(text(),'Custom')]");
-			clickWithRetry(customButton);
-			waitForSpinnerToFullyDisappear();
-			detectAndLogServiceErrors();
-			logger.info("✅ Custom Button Clicked");
-
-			// Step 2: Wait and click "6 months" or "12 months"
+			By doneButton = By.xpath("//span[text()='Done' and contains(@class,'p-button-label')]");
+			By noRecordsText = By.xpath("//span[contains(text(),'No records found')]");
+			By okayButton = By.xpath("//span[@class='p-button-label ng-star-inserted' and text()='Okay']");
 			String labelFor = months.equals("6") ? "6months" : "12months";
 			By monthOption = By.xpath("//label[@for='" + labelFor + "']");
-			waitForSeconds(2); // wait for UI to load
-			clickWithRetry(monthOption);
-			waitForSpinnerToFullyDisappear();
-			detectAndLogServiceErrors();
-			logger.info("✅ {} Months Option Selected", months);
 
-			// Step 3: Click Done
-			By doneButton = By.xpath("//span[text()='Done' and contains(@class,'p-button-label')]");
-			waitForSeconds(1);
-			clickWithRetry(doneButton);
-			waitForSpinnerToFullyDisappear();
-			detectAndLogServiceErrors();
-			logger.info("✅ Done Button Clicked");
+			boolean dataFound = false;
 
-			// Step 4: Click Download
+			for (int attempt = 1; attempt <= 3; attempt++) {
+				test.info("🔁 Attempt " + attempt + " to fetch custom statement data");
+
+				clickWithRetry(customButton);
+				detectAndLogServiceErrors();
+
+				clickWithRetry(monthOption);
+				detectAndLogServiceErrors();
+
+				clickWithRetry(doneButton);
+				detectAndLogServiceErrors();
+
+				wait.until(driver -> isElementPresent(noRecordsText) || isElementVisible(DOWNLOAD_BUTTON));
+				waitForSpinnerToFullyDisappear();
+				detectAndLogServiceErrors();
+
+				if (isElementPresent(noRecordsText)) {
+					test.warning("⚠️ No records found on attempt " + attempt);
+
+					if (attempt < 3) {
+						clickWithRetry(okayButton);
+						waitForSpinnerToFullyDisappear();
+						detectAndLogServiceErrors();
+					} else {
+						test.fail("❌ No data found after 3 attempts. Aborting download.");
+						return;
+					}
+				} else {
+					dataFound = true;
+					break;
+				}
+			}
+
+			if (!dataFound) {
+				test.warning("⚠️ No records found after 3 retries. Exiting.");
+				return;
+			}
+
 			clickWithRetry(DOWNLOAD_BUTTON);
 			waitForSpinnerToFullyDisappear();
-			detectAndLogServiceErrors();
-			logger.info("✅ Download Button Clicked");
 
 			if (fileType == FileType.XLS) {
 				clickWithRetry(XLS_ICON);
-				waitForSpinnerToFullyDisappear();
-				detectAndLogServiceErrors();
-				logger.info("✅ XLS Format Selected");
-			} else {
-				logger.info("✅ Default Format (PDF) Selected");
 			}
 
 			clickWithRetry(DOWNLOAD_STATEMENT_BUTTON);
-			waitForSpinnerToFullyDisappear();
-			detectAndLogServiceErrors();
-			logger.info("✅ Download Statement Button Clicked");
-
-			logger.info("🎉 Custom statement download for {} months ({} format) triggered successfully.", months,
-					fileType.name());
+			test.pass("🎉 Custom statement download triggered for " + months + " months in " + fileType.name());
 
 		} catch (Exception e) {
-			logger.error("❌ Error during custom statement download ({} months - {}): {}", months, fileType.name(),
-					e.getMessage());
-			throw new RuntimeException(
-					"Failed to download custom statement for " + months + " months in " + fileType.name(), e);
+			test.fail("❌ Custom statement download failed (" + months + " months - " + fileType.name() + "): "
+					+ e.getMessage());
+			throw new RuntimeException("Custom statement download failed for " + months + " months", e);
 		}
 	}
-
 }

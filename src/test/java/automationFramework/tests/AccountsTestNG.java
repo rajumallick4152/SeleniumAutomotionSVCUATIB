@@ -34,94 +34,89 @@ public class AccountsTestNG {
 		LoggerUtil.log("🔧 Starting browser and loading properties...");
 		driver = BrowserFactory.startBrowser("chrome");
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 
 		extent = ExtentReportManager.getReportInstance();
 
 		prop = new Properties();
-		InputStream input = getClass().getClassLoader().getResourceAsStream("config.properties");
-		if (input == null)
-			throw new Exception("config.properties not found!");
-		prop.load(input);
+		try (InputStream input = getClass().getClassLoader().getResourceAsStream("config.properties")) {
+			if (input == null)
+				throw new Exception("config.properties not found!");
+			prop.load(input);
+		}
 
 		String url = prop.getProperty("appURL");
 		String username = prop.getProperty("username");
 		String password = prop.getProperty("password");
 
 		test = extent.createTest("Login to Application");
-		LoginPage loginPage = new LoginPage(driver);
-		loginPage.performLogin(url, username, password,test);
+		new LoginPage(driver).performLogin(url, username, password, test);
 		test.pass("✅ Login successful");
 
 		accountsPage = new AccountsPage(driver);
 		LoggerUtil.log("✅ Setup complete.");
 	}
 
+	private void runDownloadTest(String description, Runnable action) {
+		test = extent.createTest(description);
+		long start = System.currentTimeMillis();
+		action.run();
+		test.pass("✅ " + description + " completed in " + (System.currentTimeMillis() - start) + " ms");
+	}
+
 	@Test(priority = 1)
 	public void testAccountSummary() {
-		test = extent.createTest("Account Summary Test");
-		accountsPage.clickAccountsTab();
-		accountsPage.waitForDataToLoad();
-		accountsPage.scrollToViewBalanceButton();
-		accountsPage.clickViewBalanceButton();
-		accountsPage.closeBalanceModal();
-		test.pass("✅ Account Summary verified.");
+		runDownloadTest("Account Summary Test", () -> {
+			accountsPage.clickAccountsTab(test);
+			accountsPage.waitForDataToLoad(test);
+			accountsPage.scrollToViewBalanceButton(test);
+			accountsPage.clickViewBalanceButton(test);
+			accountsPage.closeBalanceModal(test);
+		});
 	}
 
 	@Test(priority = 2)
 	public void downloadOneMonthStatementPdf() {
-		test = extent.createTest("Download 1 Month PDF");
-		accountsPage.downloadStatement("1 Month", FileType.PDF);
-		test.pass("✅ 1 month PDF downloaded");
+		runDownloadTest("Download 1 Month PDF", () -> accountsPage.downloadStatement("1 Month", FileType.PDF, test));
 	}
 
 	@Test(priority = 3)
 	public void downloadThreeMonthStatementPdf() {
-		test = extent.createTest("Download 3 Month PDF");
-		accountsPage.downloadStatement("3 Months", FileType.PDF);
-		test.pass("✅ 3 months PDF downloaded");
+		runDownloadTest("Download 3 Months PDF", () -> accountsPage.downloadStatement("3 Months", FileType.PDF, test));
 	}
 
 	@Test(priority = 4)
 	public void downloadOneMonthStatementXls() {
-		test = extent.createTest("Download 1 Month XLS");
-		accountsPage.downloadStatement("1 Month", FileType.XLS);
-		test.pass("✅ 1 month XLS downloaded");
+		runDownloadTest("Download 1 Month XLS", () -> accountsPage.downloadStatement("1 Month", FileType.XLS, test));
 	}
 
 	@Test(priority = 5)
 	public void downloadThreeMonthStatementXls() {
-		test = extent.createTest("Download 3 Month XLS");
-		accountsPage.downloadStatement("3 Months", FileType.XLS);
-		test.pass("✅ 3 months XLS downloaded");
+		runDownloadTest("Download 3 Months XLS", () -> accountsPage.downloadStatement("3 Months", FileType.XLS, test));
 	}
 
 	@Test(priority = 6)
 	public void downloadCustom6MonthsXsl() {
-		test = extent.createTest("Download Custom 6 Months XLS");
-		accountsPage.downloadCustomStatement("6", FileType.XLS);
-		test.pass("✅ Custom 6 months XLS downloaded");
+		runDownloadTest("Download Custom 6 Months XLS",
+				() -> accountsPage.downloadCustomStatement("6", FileType.XLS, test));
 	}
 
 	@Test(priority = 7)
 	public void downloadCustom12MonthsPdf() {
-		test = extent.createTest("Download Custom 12 Months PDF");
-		accountsPage.downloadCustomStatement("12", FileType.PDF);
-		test.pass("✅ Custom 12 months PDF downloaded");
+		runDownloadTest("Download Custom 12 Months PDF",
+				() -> accountsPage.downloadCustomStatement("12", FileType.PDF, test));
 	}
 
 	@Test(priority = 8)
 	public void downloadCustom6MonthsPdf() {
-		test = extent.createTest("Download Custom 6 Months PDF");
-		accountsPage.downloadCustomStatement("6", FileType.PDF);
-		test.pass("✅ Custom 6 months PDF downloaded");
+		runDownloadTest("Download Custom 6 Months PDF",
+				() -> accountsPage.downloadCustomStatement("6", FileType.PDF, test));
 	}
 
 	@Test(priority = 9)
 	public void downloadCustom12MonthsXsl() {
-		test = extent.createTest("Download Custom 12 Months XLS");
-		accountsPage.downloadCustomStatement("12", FileType.XLS);
-		test.pass("✅ Custom 12 months XLS downloaded");
+		runDownloadTest("Download Custom 12 Months XLS",
+				() -> accountsPage.downloadCustomStatement("12", FileType.XLS, test));
 	}
 
 	@AfterMethod
@@ -145,15 +140,9 @@ public class AccountsTestNG {
 		extent.flush();
 
 		try {
-			String reportPath = System.getProperty("user.dir") + "/test-output/ExtentReports/ExtentReport.html";
-			File reportFile = new File(reportPath);
-
-			// Wait up to 5 seconds for file to be generated
-			int wait = 0;
-			while (!reportFile.exists() && wait < 5000) {
+			File reportFile = new File(System.getProperty("user.dir") + "/test-output/ExtentReports/ExtentReport.html");
+			for (int i = 0; i < 10 && !reportFile.exists(); i++)
 				Thread.sleep(500);
-				wait += 500;
-			}
 
 			if (reportFile.exists()) {
 				LoggerUtil.log("📧 Sending report via email...");
@@ -163,7 +152,7 @@ public class AccountsTestNG {
 						"Hi,\n\nPlease find the attached Accounts module automation report.\n\nThanks,\nSupriya",
 						reportFile);
 			} else {
-				LoggerUtil.log("❌ Report file not found at path: " + reportPath);
+				LoggerUtil.log("❌ Report file not found.");
 			}
 		} catch (Exception e) {
 			LoggerUtil.log("❌ Email sending failed: " + e.getMessage());

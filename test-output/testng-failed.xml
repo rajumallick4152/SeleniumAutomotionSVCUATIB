@@ -3,16 +3,22 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="automationFramework.tests.PaymentTestNG">
+      <class name="automationFramework.tests.AccountsTestNG">
         <methods>
-          <include name="logResult"/>
-          <include name="testInvalidAmountScenarios"/>
-          <include name="testPayment"/>
-          <include name="loginBeforePayment"/>
-          <include name="setUp"/>
+          <include name="downloadThreeMonthStatementPdf"/>
           <include name="tearDown"/>
+          <include name="downloadCustom6MonthsXsl"/>
+          <include name="downloadCustom12MonthsPdf"/>
+          <include name="downloadOneMonthStatementPdf"/>
+          <include name="downloadCustom6MonthsPdf"/>
+          <include name="downloadThreeMonthStatementXls"/>
+          <include name="setUp"/>
+          <include name="downloadOneMonthStatementXls"/>
+          <include name="downloadCustom12MonthsXsl"/>
+          <include name="captureFailureScreenshot"/>
+          <include name="testAccountSummary"/>
         </methods>
-      </class> <!-- automationFramework.tests.PaymentTestNG -->
+      </class> <!-- automationFramework.tests.AccountsTestNG -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

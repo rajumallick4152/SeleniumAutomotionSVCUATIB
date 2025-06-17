@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\rajum\AppData\Local\Temp\testng-eclipse--746762452\testng-customsuite.xml</span>
+                    <span>C:\Users\rajum\AppData\Local\Temp\testng-eclipse--1173321595\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,6 +104,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="automationFramework.tests.PaymentTestNG" class="method navigator-link" hash-for-method="loginBeforePayment">loginBeforePayment</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="automationFramework.tests.PaymentTestNG" class="method navigator-link" hash-for-method="testInvalidAmountScenarios">testInvalidAmountScenarios</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -138,6 +143,13 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="testInvalidAmountScenarios">
+                  </a> <!-- testInvalidAmountScenarios -->
+                  <span class="method-name">testInvalidAmountScenarios</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="testPayment">
                   </a> <!-- testPayment -->
                   <span class="method-name">testPayment</span>
@@ -148,7 +160,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\rajum\AppData\Local\Temp\testng-eclipse--746762452\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\rajum\AppData\Local\Temp\testng-eclipse--1173321595\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -197,20 +209,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testPayment')
+data.setCell(0, 1, 'testInvalidAmountScenarios')
 data.setCell(0, 2, 'automationFramework.tests.PaymentTestNG')
-data.setCell(0, 3, 20430);
+data.setCell(0, 3, 36688);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'loginBeforePayment')
+data.setCell(1, 1, 'testPayment')
 data.setCell(1, 2, 'automationFramework.tests.PaymentTestNG')
-data.setCell(1, 3, 14365);
+data.setCell(1, 3, 22241);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'loginBeforePayment')
+data.setCell(2, 2, 'automationFramework.tests.PaymentTestNG')
+data.setCell(2, 3, 19145);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 34 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -243,23 +259,31 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">loginBeforePayment</span>
-                <span class="method-start">4332 ms</span>
+                <span class="method-start">3274 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">logResult([TestResult name=loginBeforePayment status=SUCCESS method=PaymentTestNG.loginBeforePayment()[pri:0, ...)</span>
-                <span class="method-start">18702 ms</span>
+                <span class="method-start">22423 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">testPayment</span>
-                <span class="method-start">18714 ms</span>
+                <span class="method-start">22434 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">logResult([TestResult name=testPayment status=SUCCESS method=PaymentTestNG.testPayment()[pri:1, instance:autom...)</span>
-                <span class="method-start">39147 ms</span>
+                <span class="method-start">44677 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testInvalidAmountScenarios</span>
+                <span class="method-start">44680 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">logResult([TestResult name=testInvalidAmountScenarios status=SUCCESS method=PaymentTestNG.testInvalidAmountSce...)</span>
+                <span class="method-start">81369 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">39151 ms</span>
+                <span class="method-start">81370 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

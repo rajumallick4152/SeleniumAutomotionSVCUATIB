@@ -7,10 +7,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+//import org.openqa.selenium.support.ui.WebDriverWait;
+
+import com.aventstack.extentreports.ExtentTest;
 
 /*import ch.qos.logback.core.util.Duration;*/
-import java.time.Duration;
+//import java.time.Duration;
 
 public class PaymentHistoryPage extends BasePage {
 
@@ -185,39 +187,87 @@ public class PaymentHistoryPage extends BasePage {
 		}
 	}
 
-	public void makePaymentToPayee() {
-		logger.info("🧪=== Starting Positive Test Cases for NETF transaction for Payment to payee ===");
+	public void makePaymentToPayee(ExtentTest test) {
+		logger.info("🧪=== Starting Positive Test Cases for NEFT transaction for Payment to Payee ===");
+		test.info("🧪=== Starting Positive Test Cases for NEFT transaction for Payment to Payee ===");
+
 		logger.info("🚀 [START] Initiating payment to payee: DXFCHGV");
+		test.info("🚀 [START] Initiating payment to payee: DXFCHGV");
 
 		try {
 			clickWithRetry(PAYEE_NAME);
 			logger.info("✅ [SUCCESS] Payee selected: DXFCHGV");
+			test.pass("✅ [SUCCESS] Payee selected: DXFCHGV");
 		} catch (Exception e) {
 			logger.error("❌ [FAIL] Failed to select payee: {}", e.getMessage());
+			test.fail("❌ [FAIL] Failed to select payee: " + e.getMessage());
 			throw new RuntimeException("Cannot proceed without selecting payee.");
 		}
 
-		enterAmount("1");
-		selectNEFTOption();
-		enterRemarks("test value");
-		clickProceedButtonRemarks();
-		clickConfirmButton();
-		enterOTP("123456");
-		clickFinalProceedButton();
-		clickCloseButton();
+		try {
+			enterAmount("1");
+			logger.info("✅ Amount '1' entered successfully.");
+			test.pass("✅ Amount '1' entered successfully.");
 
-		logger.info("🎉 [DONE] ✅ Positive test cases for Payment to payee DXFCHGV successfully executed.");
+			waitForSpinnerToFullyDisappear();
+			logger.info("✅ Spinner disappeared after entering amount.");
+
+			detectAndLogServiceErrors();
+			logger.info("✅ No critical service errors detected.");
+
+			selectNEFTOption();
+			logger.info("✅ NEFT option selected.");
+			test.pass("✅ NEFT option selected.");
+
+			enterRemarks("test value");
+			logger.info("✅ Remarks entered.");
+			test.pass("✅ Remarks entered.");
+
+			clickProceedButtonRemarks();
+			logger.info("✅ Clicked on Proceed button after entering remarks.");
+			test.pass("✅ Clicked on Proceed button after entering remarks.");
+
+			clickConfirmButton();
+			logger.info("✅ Confirm button clicked.");
+			test.pass("✅ Confirm button clicked.");
+
+			enterOTP("123456");
+			logger.info("✅ OTP entered.");
+			test.pass("✅ OTP entered.");
+
+			clickFinalProceedButton();
+			logger.info("✅ Final Proceed button clicked.");
+			test.pass("✅ Final Proceed button clicked.");
+
+			clickCloseButton();
+			logger.info("✅ Close button clicked after transaction.");
+			test.pass("✅ Close button clicked after transaction.");
+
+			logger.info("🎉 [DONE] ✅ Positive test case for Payment to payee 'DXFCHGV' successfully executed.");
+			test.pass("🎉 [DONE] ✅ Positive test case for Payment to payee 'DXFCHGV' successfully executed.");
+		} catch (Exception e) {
+			logger.error("❌ [ERROR] Exception during positive payment flow: {}", e.getMessage());
+			test.fail("❌ [ERROR] Exception during positive payment flow: " + e.getMessage());
+			throw new RuntimeException("Payment to payee failed during positive test flow.");
+		}
 	}
 
-	public void testInvalidAmounts() {
+	public void testInvalidAmounts(ExtentTest test) {
 		logger.info("🧪=== Starting Negative Test Cases for NETF transaction for Payment to payee ===");
+		test.info("🧪 Starting Negative Test Cases for NETF transaction");
 
 		try {
 			logger.info("🔹 Step : Selecting payee: DXFCHGV");
+			test.info("🔹 Step: Selecting payee DXFCHGV");
+
 			clickWithRetry(PAYEE_NAME);
 			logger.info("✅ Payee selected successfully.");
+			test.pass("✅ Payee selected successfully.");
+
 		} catch (Exception e) {
 			logger.error("❌ Failed to select payee. Error: {}", e.getMessage());
+			test.fail("❌ Failed to select payee: " + e.getMessage());
+
 			throw new RuntimeException("Cannot continue without selecting a payee.");
 		}
 
@@ -228,6 +278,8 @@ public class PaymentHistoryPage extends BasePage {
 		// 1️⃣ Blank input
 		try {
 			logger.info("\n🔸 Test Case 1: Blank Amount");
+			test.info("🔸 Test Case 1: Blank Amount");
+
 			amountInput.clear();
 			clickWithRetry(PROCEED_BUTTON_REMARKS);
 			Thread.sleep(500);
@@ -235,50 +287,76 @@ public class PaymentHistoryPage extends BasePage {
 			boolean errorShown = driver.getPageSource().contains("Amount is required");
 			if (errorShown) {
 				logger.info("[SUCCESS] ✅ Correct error displayed: 'Amount is required'");
+				test.pass("✅ Correct error displayed: 'Amount is required'");
+
 			} else {
 				logger.warn("⚠️ Expected error not found for blank input.");
+				test.warning("⚠️ Expected error not found for blank input.");
+
 			}
 		} catch (Exception e) {
 			logger.error("❌ Error during Blank input test: {}", e.getMessage());
+			test.fail("❌ Error during Blank input test: " + e.getMessage());
+
 		}
 
 		// 2️⃣ Special Characters
 		try {
 			logger.info("\n🔸 Test Case 2: Special Characters (@#$%)");
+			test.info("🔸 Test Case 2: Special Characters (@#$%)");
+
 			amountInput.clear();
 			amountInput.sendKeys("@#$%");
 			String fieldValue = amountInput.getAttribute("value");
 
 			if (fieldValue == null || fieldValue.isEmpty()) {
 				logger.info("[SUCCESS] ✅ Special characters were blocked as expected.");
+				test.pass("✅ Special characters were blocked as expected.");
+
 			} else {
 				logger.warn("⚠️ Unexpected behavior: Field accepted special characters '{}'", fieldValue);
+				test.warning("⚠️ Unexpected behavior: Field accepted special characters → '" + fieldValue + "'");
+
 			}
 		} catch (Exception e) {
 			logger.error("❌ Error during Special Characters test: {}", e.getMessage());
+			test.fail("❌ Error during Special Characters test: " + e.getMessage());
+
 		}
 
 		// 3️⃣ Alphanumeric
 		try {
 			logger.info("\n🔸 Test Case 3: Alphanumeric Characters (123abc)");
+			test.info("🔸 Test Case 3: Alphanumeric Characters (123abc)");
+
 			amountInput.clear();
 			amountInput.sendKeys("123abc");
 			String fieldValue = amountInput.getAttribute("value");
 
 			if (fieldValue == null) {
 				logger.info("[SUCCESS] ✅ Field blocked alphanumeric input completely.");
+				test.pass("✅ Field blocked alphanumeric input completely.");
+
 			} else if (fieldValue.matches("\\d+")) {
 				logger.info("✅ Field auto-filtered to digits: '{}'", fieldValue);
+				test.pass("✅ Field auto-filtered to digits: '" + fieldValue + "'");
+
 			} else {
 				logger.warn("⚠️ Unexpected value stored in field: '{}'", fieldValue);
+				test.warning("⚠️ Unexpected value stored in field: '" + fieldValue + "'");
+
 			}
 		} catch (Exception e) {
 			logger.error("❌ Error during Alphanumeric test: {}", e.getMessage());
+			test.fail("❌ Error during Alphanumeric test: " + e.getMessage());
+
 		}
 
 		// 4️⃣ Zero amount
 		try {
 			logger.info("\n🔸 Test Case 4: Zero Amount (0)");
+			test.info("🔸 Test Case 4: Zero Amount (0)");
+
 			amountInput.clear();
 			amountInput.sendKeys("0");
 			clickWithRetry(PROCEED_BUTTON_REMARKS);
@@ -287,37 +365,49 @@ public class PaymentHistoryPage extends BasePage {
 			boolean errorShown = driver.getPageSource().contains("Minimum Amount is ");
 			if (errorShown) {
 				logger.info("[SUCCESS] ✅ Correct validation message shown: 'Minimum amount is 1.00'");
+				test.pass("✅ Correct validation message shown: 'Minimum amount is 1.00'");
+
 			} else {
 				logger.warn("⚠️ Validation error for zero amount not found.");
+				test.warning("⚠️ Validation error for zero amount not found.");
+
 			}
 		} catch (Exception e) {
 			logger.error("❌ Error during Zero Amount test: {}", e.getMessage());
+			test.fail("❌ Error during Zero Amount test: " + e.getMessage());
+
 		}
 
 		// 5️⃣ Amount Greater Than Balance
-		testAmountGreaterThanBalance();
+		testAmountGreaterThanBalance(test);
 
 		// 6️⃣ Remarks field left blank, transaction should succeed
-		testRemarksFieldBlank();
+		testRemarksFieldBlank(test);
 
 		// 7️⃣ Invalid OTP
-		testInvalidOTP();
+		testInvalidOTP(test);
 
 		logger.info("\n✅ All negative test cases executed.");
 
 	}
 
-	private void testAmountGreaterThanBalance() {
+	private void testAmountGreaterThanBalance(ExtentTest test) {
 		try {
 			logger.info("\n🔸 Test Case 5: Amount Greater Than Account Balance");
+			test.info("🔸 Test Case 5: Amount Greater Than Account Balance");
 
 			By balanceLocator = By.xpath(
 					"//span[contains(@class, 'text-small') and contains(@class, 'font-semibold') and contains(@class, 'text-black-500')]");
 			WebElement balanceElement = wait.until(ExpectedConditions.visibilityOfElementLocated(balanceLocator));
 
-			String balanceText = balanceElement.getText().replaceAll("[^\\d]", "");
+			String balanceTextRaw = balanceElement.getText();
+			if (balanceTextRaw == null || balanceTextRaw.isEmpty()) {
+				throw new RuntimeException("Balance text not found or is empty.");
+			}
+
+			String balanceText = balanceTextRaw.replaceAll("[^\\d]", "");
 			if (balanceText.isEmpty()) {
-				throw new RuntimeException("Balance text not found or empty.");
+				throw new RuntimeException("Parsed balance value is empty after cleanup.");
 			}
 
 			int accountBalance = Integer.parseInt(balanceText);
@@ -325,7 +415,7 @@ public class PaymentHistoryPage extends BasePage {
 			String overLimitAmountStr = String.valueOf(overLimitAmount);
 
 			logger.info("Fetched account balance: ₹{}", accountBalance);
-			logger.info("Attempting to enter over-limit amount: ₹{}", overLimitAmount);
+			test.info("Fetched account balance: ₹" + accountBalance);
 
 			WebElement amountInput1 = wait
 					.until(ExpectedConditions.visibilityOfElementLocated(By.id("custom-amount-input")));
@@ -337,15 +427,16 @@ public class PaymentHistoryPage extends BasePage {
 					amountInput1, overLimitAmountStr);
 			Thread.sleep(500);
 
-			String currentValue = (String) js.executeScript("return arguments[0].innerText;", amountInput1);
-			currentValue = currentValue.replaceAll("[^\\d]", "");
+			Object innerTextObj = js.executeScript("return arguments[0].innerText;", amountInput1);
+			String currentValue = (innerTextObj != null) ? innerTextObj.toString().replaceAll("[^\\d]", "") : "";
 
 			if (!currentValue.equals(overLimitAmountStr)) {
 				throw new RuntimeException(
 						"Amount mismatch: expected=" + overLimitAmountStr + ", actual=" + currentValue);
 			}
 
-			logger.info("✅ Over-limit amount successfully typed: '{}'", currentValue);
+			logger.info("✅ Over-limit amount typed: '{}'", currentValue);
+			test.pass("✅ Over-limit amount typed: '" + currentValue + "'");
 
 			try {
 				driver.findElement(By.xpath("//header")).click();
@@ -356,39 +447,42 @@ public class PaymentHistoryPage extends BasePage {
 			Thread.sleep(1000);
 
 			WebElement popup = wait.until(ExpectedConditions.presenceOfElementLocated(INSUFFICIENT_BALANCE_POPUP));
-
 			if (popup != null && popup.isDisplayed()) {
 				logger.info("✅ 'Insufficient balance' popup displayed.");
+				test.pass("✅ 'Insufficient balance' popup displayed.");
 			} else {
 				logger.warn("⚠️ Popup not displayed as expected.");
+				test.warning("⚠️ Popup not displayed as expected.");
 			}
 
 			WebElement okBtnElement = wait.until(ExpectedConditions.elementToBeClickable(OK_BUTTON));
 			okBtnElement.click();
-			logger.info("✅ Clicked 'Okay' button on popup.");
-			logger.info(
-					"[SUCCESS] ✅ Error Pop up Shown while Putting greater amount of account balance as Insufficient balance ");
+			logger.info("✅ Clicked OK.");
+			test.info("✅ Clicked OK on popup.");
 
 		} catch (Exception e) {
-			logger.error("❌ Error during Amount Greater Than Balance test: {}", e.getMessage());
+			logger.error("❌ Error in Amount Greater Than Balance: {}", e.getMessage());
+			test.fail("❌ Error in Amount Greater Than Balance: " + e.getMessage());
 		}
 	}
 
-	private void testRemarksFieldBlank() {
-		// 6️⃣ Remarks field left blank, transaction should succeed
+	private void testRemarksFieldBlank(ExtentTest test) {
 		try {
 			logger.info("\n🔸 Test Case 6: Leave Remarks Field Blank and Proceed");
+			test.info("🔸 Test Case 6: Leave Remarks Field Blank and Proceed");
 
 			WebElement remarksInput = wait.until(ExpectedConditions.visibilityOfElementLocated(REMARKS_INPUT));
 			scrollIntoView(remarksInput);
 			remarksInput.clear();
-			logger.info("✅ Remarks field cleared (left blank).");
+			logger.info("✅ Remarks field cleared.");
+			test.info("✅ Remarks field cleared.");
 
 			WebElement amountInputField = wait.until(ExpectedConditions.visibilityOfElementLocated(AMOUNT_INPUT));
 			amountInputField.clear();
 			amountInputField.sendKeys("2");
-			waitForSpinnerToFullyDisappear(); // added by raju on 16-06-2025 for clicking neft
-			detectAndLogServiceErrors(); //// added by raju on 16-06-2025 for clicking neft
+
+			waitForSpinnerToFullyDisappear();
+			detectAndLogServiceErrors();
 
 			selectNEFTOption();
 			clickWithRetry(PROCEED_BUTTON_REMARKS);
@@ -401,54 +495,56 @@ public class PaymentHistoryPage extends BasePage {
 			scrollIntoView(finalProceedBtn);
 			jsClick(finalProceedBtn);
 
-			logger.info("✅ Final Proceed button clicked.");
+			logger.info("✅ Final Proceed clicked.");
+			test.info("✅ Final Proceed clicked.");
+
 			Thread.sleep(2000);
 
-			logger.info("[SUCCESS] ✅ Transaction succeeded with blank remarks.");
+			logger.info("[SUCCESS] ✅ Transaction succeeded.");
+			test.pass("✅ Transaction succeeded with blank remarks.");
 
 			clickCloseButton();
-
 		} catch (Exception e) {
-			logger.error("❌ Error during Remarks Field Blank test: {}", e.getMessage());
+			logger.error("❌ Error in Remarks Blank Test: {}", e.getMessage());
+			test.fail("❌ Error in Remarks Blank Test: " + e.getMessage());
 		}
 	}
 
-	private void testInvalidOTP() {
+	private void testInvalidOTP(ExtentTest test) {
 		try {
-			logger.info("\n🔸 Test Case 7: Enter Invalid OTP");
+			logger.info("\n🔸 Test Case 7: Invalid OTP");
+			test.info("🔸 Test Case 7: Invalid OTP");
 
-			// Navigate to the OTP entry screen
 			clickWithRetry(PAYEE_NAME);
 			enterAmount("3");
+
+			waitForSpinnerToFullyDisappear();
+			detectAndLogServiceErrors();
+
 			selectNEFTOption();
 			enterRemarks("test value");
 			clickProceedButtonRemarks();
 			clickConfirmButton();
 
-			// Enter an invalid OTP
-			String invalidOTP = "123321";
-			enterOTP(invalidOTP);
+			enterOTP("123321");
 			clickFinalProceedButton();
 
-			// Wait for the "Invalid OTP" message to appear
-			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 			WebElement invalidOTPMessage = wait
 					.until(ExpectedConditions.visibilityOfElementLocated(INVALID_OTP_MESSAGE));
-
-			// Verify that the "Invalid OTP" message is displayed
 			if (invalidOTPMessage.isDisplayed()) {
-				logger.info("✅ Correct error message displayed: 'Invalid OTP'");
+				logger.info("✅ Correct error: 'Invalid OTP'");
+				test.pass("✅ Correct error displayed: 'Invalid OTP'");
 			} else {
-				logger.warn("⚠️ Expected error message 'Invalid OTP' not found.");
+				logger.warn("⚠️ Error message not shown.");
+				test.warning("⚠️ Expected error 'Invalid OTP' not found.");
 			}
 
-			// Wait for a short time before clicking Cancel
-			Thread.sleep(500); // Wait for 500 milliseconds (adjust as needed)
+			Thread.sleep(500);
 			clickWithRetry(CANCEL_BUTTON);
 			clickWithRetry(CANCEL_BUTTON);
-
 		} catch (Exception e) {
-			logger.error("❌ Error during Invalid OTP test: {}", e.getMessage());
+			logger.error("❌ Error in Invalid OTP Test: {}", e.getMessage());
+			test.fail("❌ Error in Invalid OTP Test: " + e.getMessage());
 		}
 	}
 

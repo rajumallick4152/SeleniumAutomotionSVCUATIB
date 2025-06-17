@@ -1,0 +1,87 @@
+2025-06-17 10:49:55 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 2 ms.
+2025-06-17 10:49:55 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 3 ms.
+2025-06-17 10:49:55 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-17 10:49:55 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-17 10:49:55 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-17 10:49:55 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-17 10:49:55 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-17 10:49:55 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-17 10:49:55 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 6 ms.
+2025-06-17 10:49:55 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 24 ms.
+2025-06-17 10:49:55 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-17 10:49:55 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-17 10:49:55 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-17 10:49:55 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-17 10:49:55 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-17 10:49:55 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-17 10:49:55 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-17 10:49:55 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-17 10:49:55 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-17 10:49:55 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-17 10:49:55 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-17 10:49:55 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-17 10:49:55 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-17 10:49:55 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-17 10:49:55 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 2 ms.
+2025-06-17 10:49:55 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 25 ms.
+2025-06-17 10:49:55 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-17 10:49:55 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-17 10:49:55 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-17 10:49:55 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-17 10:49:55 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\rajum\AppData\Local\Temp\testng-eclipse-1294608998\testng-customsuite.xml
+
+2025-06-17 10:49:55 [main] INFO  org.testng.internal.Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 15 ms.
+2025-06-17 10:49:55 [main] INFO  automationFramework.utils.LoggerUtil - Initializing browser and report...
+2025-06-17 10:49:57 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 137.0.7151.70 (resolved driver for Chrome 137)
+2025-06-17 10:49:57 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\rajum\.cache\selenium\chromedriver\win64\137.0.7151.70\chromedriver.exe
+2025-06-17 10:50:00 [main] INFO  automationFramework.utils.LoggerUtil - Setup complete.
+2025-06-17 10:50:00 [main] INFO  automationFramework.pages.LoginPage - ✅ [SUCCESS] Config loaded from 'config.properties': captcha.wait.seconds = 10 seconds.
+2025-06-17 10:50:08 [main] INFO  automationFramework.pages.LoginPage - 🟦 [STEP] Navigated to URL: https://uatnet.svcbank.com/ReachSVCInet/SVC-web/inet/netbanking
+2025-06-17 10:50:09 [main] INFO  automationFramework.pages.LoginPage - ✅ [SUCCESS] Entered username: TEST001
+2025-06-17 10:50:09 [main] INFO  automationFramework.pages.LoginPage - ⏳ [WAIT] Waiting for manual captcha input. You have 10 seconds.
+2025-06-17 10:50:19 [main] INFO  automationFramework.pages.LoginPage - ✅ [SUCCESS] Clicked first Login button (after captcha).
+2025-06-17 10:50:20 [main] INFO  automationFramework.pages.LoginPage - ✅ [SUCCESS] Entered password.
+2025-06-17 10:50:21 [main] INFO  automationFramework.pages.LoginPage - ✅ [SUCCESS] Clicked final Login button.
+2025-06-17 10:50:21 [main] INFO  a.pages.PaymentHistoryPage - 🟦 [STEP] Clicking on the Payment tab.
+2025-06-17 10:50:21 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 10:50:28 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.
+2025-06-17 10:50:28 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 10:50:29 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.
+2025-06-17 10:50:29 [main] INFO  a.pages.PaymentHistoryPage - ✅ [SUCCESS] Payment tab clicked.
+2025-06-17 10:50:29 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 10:50:30 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.
+2025-06-17 10:50:30 [main] INFO  a.pages.PaymentHistoryPage - 🧪=== Starting Positive Test Cases for NETF transaction for Payment to payee ===
+2025-06-17 10:50:30 [main] INFO  a.pages.PaymentHistoryPage - 🚀 [START] Initiating payment to payee: DXFCHGV
+2025-06-17 10:50:30 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 10:50:30 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.
+2025-06-17 10:50:30 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 10:50:31 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.
+2025-06-17 10:50:31 [main] INFO  a.pages.PaymentHistoryPage - ✅ [SUCCESS] Payee selected: DXFCHGV
+2025-06-17 10:50:31 [main] INFO  a.pages.PaymentHistoryPage - ✅ [SUCCESS] Entered amount: ₹1
+2025-06-17 10:50:31 [main] INFO  a.pages.PaymentHistoryPage - 🟦 [STEP] Selecting NEFT option
+2025-06-17 10:50:31 [main] INFO  a.pages.PaymentHistoryPage - Attempting to click NEFT option (Attempt 1)
+2025-06-17 10:50:32 [main] INFO  a.pages.PaymentHistoryPage - 🔄 NEFT clicked via Actions.
+2025-06-17 10:50:33 [main] WARN  a.pages.PaymentHistoryPage - ⚠️ NEFT not selected yet. Retrying...
+2025-06-17 10:50:33 [main] INFO  a.pages.PaymentHistoryPage - Attempting to click NEFT option (Attempt 2)
+2025-06-17 10:50:33 [main] INFO  a.pages.PaymentHistoryPage - 🔄 NEFT clicked via Actions.
+2025-06-17 10:50:34 [main] INFO  a.pages.PaymentHistoryPage - ✅ NEFT option selected successfully.
+2025-06-17 10:50:34 [main] INFO  a.pages.PaymentHistoryPage - ✅ [SUCCESS] Entered remarks: test value
+2025-06-17 10:50:34 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 10:50:34 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.
+2025-06-17 10:50:50 [main] WARN  a.pages.PaymentHistoryPage - ⚠️ Click failed attempt 1/3: Expected condition failed: waiting for element to be clickable: By.xpath: (//span[text()='Proceed'])[1] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\rajum\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50864}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50864/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e51c4301aaf26a909df55abeb87af9c6
+2025-06-17 10:50:50 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 10:50:50 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.
+2025-06-17 10:51:06 [main] WARN  a.pages.PaymentHistoryPage - ⚠️ Click failed attempt 2/3: Expected condition failed: waiting for element to be clickable: By.xpath: (//span[text()='Proceed'])[1] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\rajum\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50864}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50864/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e51c4301aaf26a909df55abeb87af9c6
+2025-06-17 10:51:06 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 10:51:06 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.

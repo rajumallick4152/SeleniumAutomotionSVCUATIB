@@ -1,0 +1,115 @@
+2025-06-17 12:57:58 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
+2025-06-17 12:57:58 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 2 ms.
+2025-06-17 12:57:58 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-17 12:57:58 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-17 12:57:58 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-17 12:57:58 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-17 12:57:58 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-17 12:57:58 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-17 12:57:58 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 5 ms.
+2025-06-17 12:57:58 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 18 ms.
+2025-06-17 12:57:58 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-17 12:57:58 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+2025-06-17 12:57:58 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-17 12:57:58 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-17 12:57:58 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-17 12:57:58 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-17 12:57:58 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-17 12:57:58 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-17 12:57:58 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-17 12:57:58 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-17 12:57:58 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-17 12:57:58 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-17 12:57:58 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-17 12:57:58 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-17 12:57:58 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
+2025-06-17 12:57:58 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 15 ms.
+2025-06-17 12:57:58 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-17 12:57:58 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-17 12:57:58 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-17 12:57:58 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-17 12:57:58 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\rajum\AppData\Local\Temp\testng-eclipse--663604278\testng-customsuite.xml
+
+2025-06-17 12:57:58 [main] INFO  org.testng.internal.Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 11 ms.
+2025-06-17 12:57:58 [main] INFO  automationFramework.utils.LoggerUtil - Initializing browser and report...
+2025-06-17 12:58:00 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 137.0.7151.70 (resolved driver for Chrome 137)
+2025-06-17 12:58:00 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\rajum\.cache\selenium\chromedriver\win64\137.0.7151.70\chromedriver.exe
+2025-06-17 12:58:01 [main] INFO  automationFramework.utils.LoggerUtil - Setup complete.
+2025-06-17 12:58:01 [main] INFO  automationFramework.pages.LoginPage - ✅ Captcha wait time loaded: 10 seconds
+2025-06-17 12:58:17 [main] INFO  automationFramework.pages.LoginPage - 🟦 Navigated to URL: https://uatnet.svcbank.com/ReachSVCInet/SVC-web/inet/netbanking
+2025-06-17 12:58:17 [main] INFO  automationFramework.pages.LoginPage - ✅ Entered username: TEST001
+2025-06-17 12:58:17 [main] INFO  automationFramework.pages.LoginPage - ⏳ Waiting for manual captcha input (10 seconds)
+2025-06-17 12:58:27 [main] INFO  automationFramework.pages.LoginPage - ✅ Clicked first Login button
+2025-06-17 12:58:28 [main] INFO  automationFramework.pages.LoginPage - ✅ Entered password
+2025-06-17 12:58:28 [main] INFO  automationFramework.pages.LoginPage - ✅ Clicked final Login button
+2025-06-17 12:58:31 [main] INFO  automationFramework.pages.LoginPage - 🎉 Login successful for user: TEST001
+2025-06-17 12:58:31 [main] INFO  a.pages.PaymentHistoryPage - 🟦 [STEP] Clicking on the Payment tab.
+2025-06-17 12:58:31 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 12:58:35 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.
+2025-06-17 12:58:35 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 12:58:36 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.
+2025-06-17 12:58:36 [main] INFO  a.pages.PaymentHistoryPage - ✅ [SUCCESS] Payment tab clicked.
+2025-06-17 12:58:36 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 12:58:37 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.
+2025-06-17 12:58:37 [main] INFO  a.pages.PaymentHistoryPage - 🧪=== Starting Positive Test Cases for NEFT transaction for Payment to Payee ===
+2025-06-17 12:58:37 [main] INFO  a.pages.PaymentHistoryPage - 🚀 [START] Initiating payment to payee: DXFCHGV
+2025-06-17 12:58:37 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 12:58:37 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.
+2025-06-17 12:58:37 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 12:58:38 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.
+2025-06-17 12:58:38 [main] INFO  a.pages.PaymentHistoryPage - ✅ [SUCCESS] Payee selected: DXFCHGV
+2025-06-17 12:58:38 [main] INFO  a.pages.PaymentHistoryPage - ✅ [SUCCESS] Entered amount: ₹1
+2025-06-17 12:58:38 [main] INFO  a.pages.PaymentHistoryPage - ✅ Amount '1' entered successfully.
+2025-06-17 12:58:38 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 12:58:40 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.
+2025-06-17 12:58:40 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared after entering amount.
+2025-06-17 12:58:40 [main] INFO  a.pages.PaymentHistoryPage - ✅ No critical service errors detected.
+2025-06-17 12:58:40 [main] INFO  a.pages.PaymentHistoryPage - 🟦 [STEP] Selecting NEFT option
+2025-06-17 12:58:40 [main] INFO  a.pages.PaymentHistoryPage - Attempting to click NEFT option (Attempt 1)
+2025-06-17 12:58:55 [main] ERROR a.pages.PaymentHistoryPage - ❌ NEFT selection error: Expected condition failed: waiting for element to be clickable: By.xpath: //*[normalize-space(text())='NEFT']/ancestor::*[self::div or self::label or self::button][1] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\rajum\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53993}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53993/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7923611c54e2cf33ee3798dd69d4dfa8
+2025-06-17 12:58:55 [main] INFO  a.pages.PaymentHistoryPage - Attempting to click NEFT option (Attempt 2)
+2025-06-17 12:59:11 [main] ERROR a.pages.PaymentHistoryPage - ❌ NEFT selection error: Expected condition failed: waiting for element to be clickable: By.xpath: //*[normalize-space(text())='NEFT']/ancestor::*[self::div or self::label or self::button][1] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\rajum\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53993}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53993/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7923611c54e2cf33ee3798dd69d4dfa8
+2025-06-17 12:59:11 [main] INFO  a.pages.PaymentHistoryPage - Attempting to click NEFT option (Attempt 3)
+2025-06-17 12:59:21 [main] ERROR a.pages.PaymentHistoryPage - ❌ NEFT selection error: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=137.0.7151.104)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7923611c54e2cf33ee3798dd69d4dfa8, findElement {value=//*[normalize-space(text())='NEFT']/ancestor::*[self::div or self::label or self::button][1], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\rajum\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53993}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53993/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7923611c54e2cf33ee3798dd69d4dfa8
+2025-06-17 12:59:21 [main] INFO  a.pages.PaymentHistoryPage - Attempting to click NEFT option (Attempt 4)
+2025-06-17 12:59:21 [main] ERROR a.pages.PaymentHistoryPage - ❌ NEFT selection error: invalid session id
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7923611c54e2cf33ee3798dd69d4dfa8, findElement {value=//*[normalize-space(text())='NEFT']/ancestor::*[self::div or self::label or self::button][1], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\rajum\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53993}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53993/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7923611c54e2cf33ee3798dd69d4dfa8
+2025-06-17 12:59:21 [main] INFO  a.pages.PaymentHistoryPage - Attempting to click NEFT option (Attempt 5)
+2025-06-17 12:59:21 [main] ERROR a.pages.PaymentHistoryPage - ❌ NEFT selection error: invalid session id
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7923611c54e2cf33ee3798dd69d4dfa8, findElement {value=//*[normalize-space(text())='NEFT']/ancestor::*[self::div or self::label or self::button][1], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\rajum\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53993}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53993/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7923611c54e2cf33ee3798dd69d4dfa8
+2025-06-17 12:59:21 [main] ERROR a.pages.PaymentHistoryPage - ❌ [ERROR] Exception during positive payment flow: NEFT could not be selected after multiple attempts.
+2025-06-17 12:59:21 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.jq.Main@7a9eccc4: 87 ms
+2025-06-17 12:59:21 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.FailedReporter@80b122b: 21 ms
+2025-06-17 12:59:21 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.XMLReporter@483b0690: 21 ms
+2025-06-17 12:59:21 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@59b32539: 15 ms
+2025-06-17 12:59:21 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@787508ca: 12 ms
+2025-06-17 12:59:21 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@3d24420b: 0 ms

@@ -23,7 +23,7 @@ public class PaymentHistoryTest {
 
 			paymentHistoryPage.clickPaymentsTab();
 			paymentHistoryPage.waitForPaymentData();
-			paymentHistoryPage.makePaymentToPayee();
+			//paymentHistoryPage.makePaymentToPayee(test);
 			// paymentHistoryPage.demoClass1();
 			// paymentHistoryPage.demoClass2();
 

@@ -1,0 +1,238 @@
+2025-06-18 17:45:00 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-18 17:45:00 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 2 ms.
+2025-06-18 17:45:00 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-18 17:45:00 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-18 17:45:00 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-18 17:45:00 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-18 17:45:00 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-18 17:45:00 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-18 17:45:00 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 6 ms.
+2025-06-18 17:45:00 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 21 ms.
+2025-06-18 17:45:00 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
+2025-06-18 17:45:00 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+2025-06-18 17:45:00 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-18 17:45:00 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-18 17:45:00 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-18 17:45:00 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-18 17:45:00 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-18 17:45:00 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-18 17:45:00 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-18 17:45:00 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+2025-06-18 17:45:00 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-18 17:45:00 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-18 17:45:00 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-18 17:45:00 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-18 17:45:00 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
+2025-06-18 17:45:00 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 14 ms.
+2025-06-18 17:45:00 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-18 17:45:00 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-18 17:45:00 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-18 17:45:00 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-18 17:45:00 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\rajum\AppData\Local\Temp\testng-eclipse-1920323831\testng-customsuite.xml
+
+2025-06-18 17:45:00 [main] INFO  org.testng.internal.Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 8 ms.
+2025-06-18 17:45:01 [main] INFO  automationFramework.utils.LoggerUtil - 🔧 Launching browser and loading properties...
+2025-06-18 17:45:02 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 137.0.7151.119 (resolved driver for Chrome 137)
+2025-06-18 17:45:02 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\rajum\.cache\selenium\chromedriver\win64\137.0.7151.119\chromedriver.exe
+2025-06-18 17:45:04 [main] INFO  automationFramework.pages.LoginPage - ✅ Captcha wait time loaded: 10 seconds
+2025-06-18 17:45:07 [main] INFO  automationFramework.pages.LoginPage - 🟦 Navigated to URL: https://uatnet.svcbank.com/ReachSVCInet/SVC-web/inet/netbanking
+2025-06-18 17:45:07 [main] INFO  automationFramework.pages.LoginPage - ✅ Entered username: TEST001
+2025-06-18 17:45:07 [main] INFO  automationFramework.pages.LoginPage - ⏳ Waiting for manual captcha input (10 seconds)
+2025-06-18 17:45:17 [main] INFO  automationFramework.pages.LoginPage - ✅ Clicked first Login button
+2025-06-18 17:45:18 [main] INFO  automationFramework.pages.LoginPage - ✅ Entered password
+2025-06-18 17:45:18 [main] INFO  automationFramework.pages.LoginPage - ✅ Clicked final Login button
+2025-06-18 17:45:19 [main] INFO  automationFramework.pages.LoginPage - 🎉 Login successful for user: TEST001
+2025-06-18 17:45:19 [main] INFO  automationFramework.utils.LoggerUtil - ✅ Login successful
+2025-06-18 17:45:19 [main] INFO  automationFramework.utils.LoggerUtil - ✅ Setup complete.
+2025-06-18 17:45:20 [main] INFO  a.pages.ServicesPage - 🔄 Navigating to Services > Manage SMS...
+2025-06-18 17:45:20 [main] INFO  a.pages.ServicesPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-18 17:45:33 [main] INFO  a.pages.ServicesPage - ✅ Spinner disappeared.
+2025-06-18 17:45:33 [main] INFO  a.pages.ServicesPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-18 17:45:46 [main] INFO  a.pages.ServicesPage - ✅ Spinner disappeared.
+2025-06-18 17:45:46 [main] INFO  a.pages.ServicesPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-18 17:45:56 [main] INFO  a.pages.ServicesPage - ✅ Spinner disappeared.
+2025-06-18 17:45:57 [main] INFO  a.pages.ServicesPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-18 17:46:08 [main] INFO  a.pages.ServicesPage - ✅ Spinner disappeared.
+2025-06-18 17:46:08 [main] INFO  a.pages.ServicesPage - ✅ Reached Manage SMS section.
+2025-06-18 17:46:08 [main] INFO  a.pages.ServicesPage - 🔄 Generating random credit and debit amounts...
+2025-06-18 17:46:08 [main] INFO  a.pages.ServicesPage - ✏️ Entering SMS thresholds - Credit: 467, Debit: 357
+2025-06-18 17:46:08 [main] INFO  a.pages.ServicesPage - ✅ Amounts entered successfully with Credit: 467, Debit: 357
+2025-06-18 17:46:08 [main] INFO  a.pages.ServicesPage - 💾 Clicking Save button...
+2025-06-18 17:46:08 [main] INFO  a.pages.ServicesPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-18 17:46:19 [main] INFO  a.pages.ServicesPage - ✅ Spinner disappeared.
+2025-06-18 17:46:19 [main] INFO  a.pages.ServicesPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-18 17:46:20 [main] INFO  a.pages.ServicesPage - ✅ Spinner disappeared.
+2025-06-18 17:46:20 [main] INFO  a.pages.ServicesPage - 🔐 Entering OTP: 123456
+2025-06-18 17:46:20 [main] INFO  a.pages.ServicesPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-18 17:46:25 [main] INFO  a.pages.ServicesPage - ✅ Spinner disappeared.
+2025-06-18 17:46:25 [main] INFO  a.pages.ServicesPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-18 17:46:36 [main] INFO  a.pages.ServicesPage - ✅ Spinner disappeared.
+2025-06-18 17:46:36 [main] INFO  a.pages.ServicesPage - ✅ OTP entered.
+2025-06-18 17:46:36 [main] INFO  a.pages.ServicesPage - ➡️ Clicking Proceed...
+2025-06-18 17:46:36 [main] INFO  a.pages.ServicesPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-18 17:46:46 [main] INFO  a.pages.ServicesPage - ✅ Spinner disappeared.
+2025-06-18 17:46:46 [main] INFO  a.pages.ServicesPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-18 17:46:47 [main] INFO  a.pages.ServicesPage - ✅ Spinner disappeared.
+2025-06-18 17:46:47 [main] INFO  a.pages.ServicesPage - ✅ Success popup visibility: true
+2025-06-18 17:46:47 [main] INFO  a.pages.ServicesPage - 🆗 Clicking Okay on success popup...
+2025-06-18 17:46:47 [main] INFO  a.pages.ServicesPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-18 17:46:53 [main] INFO  a.pages.ServicesPage - ✅ Spinner disappeared.
+2025-06-18 17:46:53 [main] INFO  a.pages.ServicesPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-18 17:47:03 [main] INFO  a.pages.ServicesPage - ✅ Spinner disappeared.
+2025-06-18 17:47:03 [main] INFO  automationFramework.utils.LoggerUtil - ✅ Threshold saved and verified successfully.
+2025-06-18 17:47:03 [main] INFO  a.pages.ServicesPage - 🔄 Navigating to Services > Manage SMS...
+2025-06-18 17:47:03 [main] INFO  a.pages.ServicesPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-18 17:47:14 [main] INFO  a.pages.ServicesPage - ✅ Spinner disappeared.
+2025-06-18 17:47:14 [main] INFO  a.pages.ServicesPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-18 17:47:30 [main] WARN  a.pages.ServicesPage - ⚠️ Spinner wait skipped or failed gracefully.
+2025-06-18 17:47:30 [main] INFO  a.pages.ServicesPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-18 17:47:45 [main] WARN  a.pages.ServicesPage - ⚠️ Spinner wait skipped or failed gracefully.
+2025-06-18 17:47:46 [main] WARN  a.pages.ServicesPage - ⚠️ Click intercepted attempt 1/3: element click intercepted: Element <span class="font-semibold cursor-pointer h-fit align-self-center text-large">...</span> is not clickable at point (163, 291). Other element would receive the click: <div _ngcontent-ng-c587276320="" class="ngx-spinner-overlay ng-tns-c587276320-1 ng-trigger ng-trigger-fadeIn ng-star-inserted ng-animating" style="background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed;">...</div>
+  (Session info: chrome=137.0.7151.104)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d1e39a2ae1d3bfcba9f1938499037a31, clickElement {id=f.F6B3E2CCBD358199B0D21202B43197EE.d.30A4D9AE54CE9A7419A41786612BA3DC.e.162}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\rajum\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59401}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59401/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (d1e39a2ae1d3bfcba9f1938499037a31)] -> xpath: //span[text()='Manage SMS']]
+Session ID: d1e39a2ae1d3bfcba9f1938499037a31
+2025-06-18 17:47:47 [main] INFO  a.pages.ServicesPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-18 17:47:54 [main] INFO  a.pages.ServicesPage - ✅ Spinner disappeared.
+2025-06-18 17:47:54 [main] INFO  a.pages.ServicesPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-18 17:48:02 [main] INFO  a.pages.ServicesPage - ✅ Spinner disappeared.
+2025-06-18 17:48:02 [main] INFO  a.pages.ServicesPage - ✅ Reached Manage SMS section.
+2025-06-18 17:48:02 [main] INFO  a.pages.ServicesPage - 🔄 Setting invalid threshold values: empty=true, negative=false
+2025-06-18 17:48:11 [main] INFO  a.pages.ServicesPage - ✏️ Invalid thresholds set - Credit: , Debit: 
+2025-06-18 17:48:11 [main] INFO  a.pages.ServicesPage - 💾 Clicking Save button...
+2025-06-18 17:48:11 [main] INFO  a.pages.ServicesPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-18 17:48:22 [main] INFO  a.pages.ServicesPage - ✅ Spinner disappeared.
+2025-06-18 17:48:22 [main] INFO  a.pages.ServicesPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-18 17:48:32 [main] INFO  a.pages.ServicesPage - ✅ Spinner disappeared.
+2025-06-18 17:48:32 [main] INFO  a.pages.ServicesPage - ✅ Validation messages found for both empty thresholds.
+2025-06-18 17:48:32 [main] INFO  a.pages.ServicesPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-18 17:48:43 [main] INFO  a.pages.ServicesPage - ✅ Spinner disappeared.
+2025-06-18 17:48:43 [main] INFO  a.pages.ServicesPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-18 17:48:53 [main] INFO  a.pages.ServicesPage - ✅ Spinner disappeared.
+2025-06-18 17:48:53 [main] INFO  a.pages.ServicesPage - ❎ Closed the validation popup.
+2025-06-18 17:48:53 [main] INFO  a.pages.ServicesPage - 🔄 Navigating to Services > Manage SMS...
+2025-06-18 17:48:53 [main] INFO  a.pages.ServicesPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-18 17:49:04 [main] INFO  a.pages.ServicesPage - ✅ Spinner disappeared.
+2025-06-18 17:49:04 [main] INFO  a.pages.ServicesPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-18 17:49:10 [main] INFO  a.pages.ServicesPage - ✅ Spinner disappeared.
+2025-06-18 17:49:10 [main] INFO  a.pages.ServicesPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-18 17:49:20 [main] INFO  a.pages.ServicesPage - ✅ Spinner disappeared.
+2025-06-18 17:49:20 [main] INFO  a.pages.ServicesPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-18 17:49:32 [main] INFO  a.pages.ServicesPage - ✅ Spinner disappeared.
+2025-06-18 17:49:32 [main] INFO  a.pages.ServicesPage - ✅ Reached Manage SMS section.
+2025-06-18 17:49:33 [main] INFO  a.pages.ServicesPage - 🔄 Navigating to Services > Manage SMS...
+2025-06-18 17:49:33 [main] INFO  a.pages.ServicesPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-18 17:49:43 [main] INFO  a.pages.ServicesPage - ✅ Spinner disappeared.
+2025-06-18 17:49:44 [main] WARN  a.pages.ServicesPage - ⚠️ Click intercepted attempt 1/3: element click intercepted: Element <span class="p-menuitem-text">...</span> is not clickable at point (354, 101). Other element would receive the click: <div class="ng-tns-c1946505645-27 p-dialog-mask p-component-overlay p-component-overlay-enter p-dialog-mask-scrollblocker ng-star-inserted" style="z-index: 1101;">...</div>
+  (Session info: chrome=137.0.7151.104)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d1e39a2ae1d3bfcba9f1938499037a31, clickElement {id=f.F6B3E2CCBD358199B0D21202B43197EE.d.30A4D9AE54CE9A7419A41786612BA3DC.e.92}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\rajum\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59401}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59401/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (d1e39a2ae1d3bfcba9f1938499037a31)] -> xpath: //span[text()='Services']]
+Session ID: d1e39a2ae1d3bfcba9f1938499037a31
+2025-06-18 17:49:45 [main] INFO  a.pages.ServicesPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-18 17:49:55 [main] INFO  a.pages.ServicesPage - ✅ Spinner disappeared.
+2025-06-18 17:49:56 [main] WARN  a.pages.ServicesPage - ⚠️ Click intercepted attempt 2/3: element click intercepted: Element <span class="p-menuitem-text">...</span> is not clickable at point (354, 100). Other element would receive the click: <div class="ng-tns-c1946505645-27 p-dialog-mask p-component-overlay p-component-overlay-enter p-dialog-mask-scrollblocker ng-star-inserted" style="z-index: 1101;">...</div>
+  (Session info: chrome=137.0.7151.104)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d1e39a2ae1d3bfcba9f1938499037a31, clickElement {id=f.F6B3E2CCBD358199B0D21202B43197EE.d.30A4D9AE54CE9A7419A41786612BA3DC.e.92}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\rajum\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59401}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59401/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (d1e39a2ae1d3bfcba9f1938499037a31)] -> xpath: //span[text()='Services']]
+Session ID: d1e39a2ae1d3bfcba9f1938499037a31
+2025-06-18 17:49:57 [main] INFO  a.pages.ServicesPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-18 17:50:07 [main] INFO  a.pages.ServicesPage - ✅ Spinner disappeared.
+2025-06-18 17:50:08 [main] WARN  a.pages.ServicesPage - ⚠️ Click intercepted attempt 3/3: element click intercepted: Element <span class="p-menuitem-text">...</span> is not clickable at point (354, 100). Other element would receive the click: <div class="ng-tns-c1946505645-27 p-dialog-mask p-component-overlay p-component-overlay-enter p-dialog-mask-scrollblocker ng-star-inserted" style="z-index: 1101;">...</div>
+  (Session info: chrome=137.0.7151.104)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d1e39a2ae1d3bfcba9f1938499037a31, clickElement {id=f.F6B3E2CCBD358199B0D21202B43197EE.d.30A4D9AE54CE9A7419A41786612BA3DC.e.92}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\rajum\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59401}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59401/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (d1e39a2ae1d3bfcba9f1938499037a31)] -> xpath: //span[text()='Services']]
+Session ID: d1e39a2ae1d3bfcba9f1938499037a31
+2025-06-18 17:50:09 [main] INFO  a.pages.ServicesPage - 🔄 Navigating to Services > Manage SMS...
+2025-06-18 17:50:09 [main] INFO  a.pages.ServicesPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-18 17:50:19 [main] INFO  a.pages.ServicesPage - ✅ Spinner disappeared.
+2025-06-18 17:50:21 [main] WARN  a.pages.ServicesPage - ⚠️ Click intercepted attempt 1/3: element click intercepted: Element <span class="p-menuitem-text">...</span> is not clickable at point (354, 100). Other element would receive the click: <div class="ng-tns-c1946505645-27 p-dialog-mask p-component-overlay p-component-overlay-enter p-dialog-mask-scrollblocker ng-star-inserted" style="z-index: 1101;">...</div>
+  (Session info: chrome=137.0.7151.104)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d1e39a2ae1d3bfcba9f1938499037a31, clickElement {id=f.F6B3E2CCBD358199B0D21202B43197EE.d.30A4D9AE54CE9A7419A41786612BA3DC.e.92}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\rajum\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59401}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59401/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (d1e39a2ae1d3bfcba9f1938499037a31)] -> xpath: //span[text()='Services']]
+Session ID: d1e39a2ae1d3bfcba9f1938499037a31
+2025-06-18 17:50:21 [main] INFO  a.pages.ServicesPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-18 17:50:31 [main] INFO  a.pages.ServicesPage - ✅ Spinner disappeared.
+2025-06-18 17:50:33 [main] WARN  a.pages.ServicesPage - ⚠️ Click intercepted attempt 2/3: element click intercepted: Element <span class="p-menuitem-text">...</span> is not clickable at point (354, 100). Other element would receive the click: <div class="ng-tns-c1946505645-27 p-dialog-mask p-component-overlay p-component-overlay-enter p-dialog-mask-scrollblocker ng-star-inserted" style="z-index: 1101;">...</div>
+  (Session info: chrome=137.0.7151.104)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d1e39a2ae1d3bfcba9f1938499037a31, clickElement {id=f.F6B3E2CCBD358199B0D21202B43197EE.d.30A4D9AE54CE9A7419A41786612BA3DC.e.92}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\rajum\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59401}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59401/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (d1e39a2ae1d3bfcba9f1938499037a31)] -> xpath: //span[text()='Services']]
+Session ID: d1e39a2ae1d3bfcba9f1938499037a31
+2025-06-18 17:50:33 [main] INFO  a.pages.ServicesPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-18 17:50:43 [main] INFO  a.pages.ServicesPage - ✅ Spinner disappeared.
+2025-06-18 17:50:45 [main] WARN  a.pages.ServicesPage - ⚠️ Click intercepted attempt 3/3: element click intercepted: Element <span class="p-menuitem-text">...</span> is not clickable at point (354, 100). Other element would receive the click: <div class="ng-tns-c1946505645-27 p-dialog-mask p-component-overlay p-component-overlay-enter p-dialog-mask-scrollblocker ng-star-inserted" style="z-index: 1101;">...</div>
+  (Session info: chrome=137.0.7151.104)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d1e39a2ae1d3bfcba9f1938499037a31, clickElement {id=f.F6B3E2CCBD358199B0D21202B43197EE.d.30A4D9AE54CE9A7419A41786612BA3DC.e.92}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\rajum\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59401}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59401/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (d1e39a2ae1d3bfcba9f1938499037a31)] -> xpath: //span[text()='Services']]
+Session ID: d1e39a2ae1d3bfcba9f1938499037a31
+2025-06-18 17:50:46 [main] INFO  a.pages.ServicesPage - 🔄 Navigating to Services > Manage SMS...
+2025-06-18 17:50:46 [main] INFO  a.pages.ServicesPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-18 17:50:56 [main] INFO  a.pages.ServicesPage - ✅ Spinner disappeared.
+2025-06-18 17:50:57 [main] WARN  a.pages.ServicesPage - ⚠️ Click intercepted attempt 1/3: element click intercepted: Element <span class="p-menuitem-text">...</span> is not clickable at point (354, 100). Other element would receive the click: <div class="ng-tns-c1946505645-27 p-dialog-mask p-component-overlay p-component-overlay-enter p-dialog-mask-scrollblocker ng-star-inserted" style="z-index: 1101;">...</div>
+  (Session info: chrome=137.0.7151.104)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d1e39a2ae1d3bfcba9f1938499037a31, clickElement {id=f.F6B3E2CCBD358199B0D21202B43197EE.d.30A4D9AE54CE9A7419A41786612BA3DC.e.92}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\rajum\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59401}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59401/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (d1e39a2ae1d3bfcba9f1938499037a31)] -> xpath: //span[text()='Services']]
+Session ID: d1e39a2ae1d3bfcba9f1938499037a31
+2025-06-18 17:50:58 [main] INFO  a.pages.ServicesPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-18 17:51:08 [main] INFO  a.pages.ServicesPage - ✅ Spinner disappeared.
+2025-06-18 17:51:09 [main] WARN  a.pages.ServicesPage - ⚠️ Click intercepted attempt 2/3: element click intercepted: Element <span class="p-menuitem-text">...</span> is not clickable at point (354, 100). Other element would receive the click: <div class="ng-tns-c1946505645-27 p-dialog-mask p-component-overlay p-component-overlay-enter p-dialog-mask-scrollblocker ng-star-inserted" style="z-index: 1101;">...</div>
+  (Session info: chrome=137.0.7151.104)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d1e39a2ae1d3bfcba9f1938499037a31, clickElement {id=f.F6B3E2CCBD358199B0D21202B43197EE.d.30A4D9AE54CE9A7419A41786612BA3DC.e.92}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\rajum\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59401}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59401/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (d1e39a2ae1d3bfcba9f1938499037a31)] -> xpath: //span[text()='Services']]
+Session ID: d1e39a2ae1d3bfcba9f1938499037a31
+2025-06-18 17:51:10 [main] INFO  a.pages.ServicesPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-18 17:51:20 [main] INFO  a.pages.ServicesPage - ✅ Spinner disappeared.
+2025-06-18 17:51:21 [main] WARN  a.pages.ServicesPage - ⚠️ Click intercepted attempt 3/3: element click intercepted: Element <span class="p-menuitem-text">...</span> is not clickable at point (354, 100). Other element would receive the click: <div class="ng-tns-c1946505645-27 p-dialog-mask p-component-overlay p-component-overlay-enter p-dialog-mask-scrollblocker ng-star-inserted" style="z-index: 1101;">...</div>
+  (Session info: chrome=137.0.7151.104)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d1e39a2ae1d3bfcba9f1938499037a31, clickElement {id=f.F6B3E2CCBD358199B0D21202B43197EE.d.30A4D9AE54CE9A7419A41786612BA3DC.e.92}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\rajum\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59401}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59401/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (d1e39a2ae1d3bfcba9f1938499037a31)] -> xpath: //span[text()='Services']]
+Session ID: d1e39a2ae1d3bfcba9f1938499037a31
+2025-06-18 17:51:22 [main] INFO  automationFramework.utils.LoggerUtil - 🧹 Finalizing report...
+2025-06-18 17:51:22 [main] INFO  automationFramework.utils.LoggerUtil - 📧 Sending report via email...
+2025-06-18 17:51:28 [main] INFO  automationFramework.utils.LoggerUtil - ✅ Browser closed successfully.
+2025-06-18 17:51:28 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.jq.Main@47c96f2c: 107 ms
+2025-06-18 17:51:28 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.FailedReporter@481ed95c: 27 ms
+2025-06-18 17:51:28 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.XMLReporter@984de01: 25 ms
+2025-06-18 17:51:28 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@2913ca3e: 13 ms
+2025-06-18 17:51:28 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@4a04ca74: 23 ms
+2025-06-18 17:51:28 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@455cbf18: 0 ms

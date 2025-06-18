@@ -52,21 +52,19 @@ public class ServicesTestNG {
 		new LoginPage(driver).performLogin(url, username, password, test);
 		test.pass("✅ Login successful");
 		LoggerUtil.log("✅ Login successful");
-
 		LoggerUtil.log("✅ Setup complete.");
 	}
 
 	@Test(priority = 1)
 	public void testManageSMSFlow() {
 		test = extent.createTest("💼 Manage SMS Threshold Test");
-		servicesPage = new ServicesPage(driver, test); // ✅ Pass current test instance
+		servicesPage = new ServicesPage(driver, test);
 
 		try {
 			servicesPage.navigateToManageSMS();
-			servicesPage.enterAmountThresholds(); // No argument needed now
-
+			servicesPage.enterAmountThresholds();
 			servicesPage.clickSave();
-			servicesPage.enterOTP("123456"); // Replace with real OTP if needed
+			servicesPage.enterOTP("123456");
 			servicesPage.clickProceed();
 
 			boolean success = servicesPage.isSuccessPopupVisible();
@@ -85,6 +83,52 @@ public class ServicesTestNG {
 			throw e;
 		}
 	}
+
+	@Test(priority = 2)
+	public void testEmptyThresholds() {
+		test = extent.createTest("🚫 Empty Threshold Values Test");
+		servicesPage = new ServicesPage(driver, test);
+		try {
+			servicesPage.testEmptyThresholds();
+			test.pass("✅ Validation message displayed for empty thresholds.");
+		} catch (AssertionError e) {
+			test.fail(e.getMessage());
+			throw e;
+		}
+	}
+
+	@Test(priority = 3)
+	public void testNegativeThresholds() {
+		test = extent.createTest("🚫 Negative Threshold Values Test");
+		servicesPage = new ServicesPage(driver, test);
+		try {
+			servicesPage.testNegativeThresholds();
+			test.pass("✅ Negative values not accepted or auto-corrected by the field.");
+		} catch (AssertionError e) {
+			test.fail(e.getMessage());
+			throw e;
+		}
+	}
+
+	/*
+	 * @Test(priority = 4) public void testInvalidOTP() { test =
+	 * extent.createTest("🚫 Invalid OTP Test"); servicesPage = new
+	 * ServicesPage(driver, test); try { servicesPage.testInvalidOTPFlow();
+	 * test.pass("✅ Proper error handled for invalid OTP."); } catch (AssertionError
+	 * e) { test.fail(e.getMessage()); throw e; } }
+	 * 
+	 * @Test(priority = 5) public void testProceedWithoutOTP() { test =
+	 * extent.createTest("🚫 Proceed Without OTP Test"); servicesPage = new
+	 * ServicesPage(driver, test); try { servicesPage.testProceedWithoutOTP();
+	 * test.pass("✅ Proper validation handled for missing OTP."); } catch
+	 * (AssertionError e) { test.fail(e.getMessage()); throw e; } }
+	 * 
+	 * @Test(priority = 6) public void testProceedWithoutSave() { test =
+	 * extent.createTest("🚫 Proceed Without Saving Test"); servicesPage = new
+	 * ServicesPage(driver, test); try { servicesPage.testProceedWithoutSave();
+	 * test.pass("✅ Proper validation handled for missing Save step."); } catch
+	 * (AssertionError e) { test.fail(e.getMessage()); throw e; } }
+	 */
 
 	@AfterMethod
 	public void captureFailureScreenshot(ITestResult result) {
@@ -126,7 +170,8 @@ public class ServicesTestNG {
 		}
 
 		if (driver != null) {
-			LoggerUtil.log("🛑 Browser not closed.");
+		//	driver.quit();
+			LoggerUtil.log("✅ dont close Browser .");
 		}
 	}
 }

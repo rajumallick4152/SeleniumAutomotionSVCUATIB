@@ -1,32 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-18T16:10:26 IST" name="Default suite" finished-at="2025-06-18T16:12:39 IST" duration-ms="133282">
+  <suite started-at="2025-06-18T19:00:25 IST" name="Default suite" finished-at="2025-06-18T19:04:36 IST" duration-ms="251118">
     <groups>
     </groups>
-    <test started-at="2025-06-18T16:10:26 IST" name="Default test" finished-at="2025-06-18T16:12:39 IST" duration-ms="133282">
+    <test started-at="2025-06-18T19:00:25 IST" name="Default test" finished-at="2025-06-18T19:04:36 IST" duration-ms="251118">
       <class name="automationFramework.tests.ServicesTestNG">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:automationFramework.tests.ServicesTestNG@6e9a5ed8]" started-at="2025-06-18T16:10:26 IST" name="setUp" finished-at="2025-06-18T16:10:54 IST" duration-ms="28381" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:automationFramework.tests.ServicesTestNG@6c284af]" started-at="2025-06-18T19:00:25 IST" name="setUp" finished-at="2025-06-18T19:00:43 IST" duration-ms="18387" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testManageSMSFlow()[pri:1, instance:automationFramework.tests.ServicesTestNG@6e9a5ed8]" started-at="2025-06-18T16:10:54 IST" name="testManageSMSFlow" finished-at="2025-06-18T16:12:31 IST" duration-ms="97220" status="PASS">
+        <test-method signature="testManageSMSFlow()[pri:1, instance:automationFramework.tests.ServicesTestNG@6c284af]" started-at="2025-06-18T19:00:43 IST" name="testManageSMSFlow" finished-at="2025-06-18T19:02:30 IST" duration-ms="107317" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testManageSMSFlow -->
-        <test-method is-config="true" signature="captureFailureScreenshot(org.testng.ITestResult)[pri:0, instance:automationFramework.tests.ServicesTestNG@6e9a5ed8]" started-at="2025-06-18T16:12:31 IST" name="captureFailureScreenshot" finished-at="2025-06-18T16:12:31 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="captureFailureScreenshot(org.testng.ITestResult)[pri:0, instance:automationFramework.tests.ServicesTestNG@6c284af]" started-at="2025-06-18T19:02:30 IST" name="captureFailureScreenshot" finished-at="2025-06-18T19:02:30 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testManageSMSFlow status=SUCCESS method=ServicesTestNG.testManageSMSFlow()[pri:1, instance:automationFramework.tests.ServicesTestNG@6e9a5ed8] output={null}]]]>
+                <![CDATA[[TestResult name=testManageSMSFlow status=SUCCESS method=ServicesTestNG.testManageSMSFlow()[pri:1, instance:automationFramework.tests.ServicesTestNG@6c284af] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- captureFailureScreenshot -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationFramework.tests.ServicesTestNG@6e9a5ed8]" started-at="2025-06-18T16:12:31 IST" name="tearDown" finished-at="2025-06-18T16:12:39 IST" duration-ms="7612" status="PASS">
+        <test-method signature="testEmptyThresholds()[pri:2, instance:automationFramework.tests.ServicesTestNG@6c284af]" started-at="2025-06-18T19:02:30 IST" name="testEmptyThresholds" finished-at="2025-06-18T19:03:52 IST" duration-ms="81365" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEmptyThresholds -->
+        <test-method is-config="true" signature="captureFailureScreenshot(org.testng.ITestResult)[pri:0, instance:automationFramework.tests.ServicesTestNG@6c284af]" started-at="2025-06-18T19:03:52 IST" name="captureFailureScreenshot" finished-at="2025-06-18T19:03:52 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testEmptyThresholds status=SUCCESS method=ServicesTestNG.testEmptyThresholds()[pri:2, instance:automationFramework.tests.ServicesTestNG@6c284af] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureFailureScreenshot -->
+        <test-method signature="testNegativeThresholds()[pri:3, instance:automationFramework.tests.ServicesTestNG@6c284af]" started-at="2025-06-18T19:03:52 IST" name="testNegativeThresholds" finished-at="2025-06-18T19:04:30 IST" duration-ms="38675" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNegativeThresholds -->
+        <test-method is-config="true" signature="captureFailureScreenshot(org.testng.ITestResult)[pri:0, instance:automationFramework.tests.ServicesTestNG@6c284af]" started-at="2025-06-18T19:04:30 IST" name="captureFailureScreenshot" finished-at="2025-06-18T19:04:30 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testNegativeThresholds status=SUCCESS method=ServicesTestNG.testNegativeThresholds()[pri:3, instance:automationFramework.tests.ServicesTestNG@6c284af] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captureFailureScreenshot -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationFramework.tests.ServicesTestNG@6c284af]" started-at="2025-06-18T19:04:30 IST" name="tearDown" finished-at="2025-06-18T19:04:36 IST" duration-ms="5289" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

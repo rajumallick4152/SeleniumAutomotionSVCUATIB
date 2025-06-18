@@ -5,8 +5,9 @@
     <classes>
       <class name="automationFramework.tests.ServicesTestNG">
         <methods>
+          <include name="testEmptyThresholds"/>
           <include name="captureFailureScreenshot"/>
-          <include name="testManageSMSFlow"/>
+          <include name="testNegativeThresholds"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>

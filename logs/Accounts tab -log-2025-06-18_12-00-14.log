@@ -1,0 +1,39 @@
+2025-06-18 12:00:15 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 2 ms.
+2025-06-18 12:00:15 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 2 ms.
+2025-06-18 12:00:15 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-18 12:00:15 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-18 12:00:15 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-18 12:00:15 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-18 12:00:15 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-18 12:00:15 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-18 12:00:15 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 7 ms.
+2025-06-18 12:00:15 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 27 ms.
+2025-06-18 12:00:15 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
+2025-06-18 12:00:15 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+2025-06-18 12:00:15 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-18 12:00:15 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-18 12:00:15 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-18 12:00:15 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-18 12:00:15 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-18 12:00:15 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-18 12:00:15 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
+2025-06-18 12:00:15 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+2025-06-18 12:00:15 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-18 12:00:15 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-18 12:00:15 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-18 12:00:15 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-18 12:00:15 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
+2025-06-18 12:00:15 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-18 12:00:15 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-18 12:00:15 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-18 12:00:15 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-18 12:00:15 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-18 12:00:15 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\rajum\AppData\Local\Temp\testng-eclipse-1203518532\testng-customsuite.xml
+
+2025-06-18 12:00:15 [main] INFO  org.testng.internal.Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 10 ms.
+2025-06-18 12:00:15 [main] INFO  automationFramework.utils.LoggerUtil - 🔧 Launching browser and loading properties...
+2025-06-18 12:00:23 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 137.0.7151.119 (resolved driver for Chrome 137)
+2025-06-18 12:00:23 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\rajum\.cache\selenium\chromedriver\win64\137.0.7151.119\chromedriver.exe
+2025-06-18 12:00:26 [main] INFO  automationFramework.pages.LoginPage - ✅ Captcha wait time loaded: 10 seconds
+2025-06-18 12:00:51 [main] INFO  automationFramework.pages.LoginPage - 🟦 Navigated to URL: https://uatnet.svcbank.com/ReachSVCInet/SVC-web/inet/netbanking

@@ -1,0 +1,374 @@
+2025-06-17 18:29:12 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
+2025-06-17 18:29:12 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 2 ms.
+2025-06-17 18:29:12 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-17 18:29:12 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-17 18:29:12 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-17 18:29:12 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-17 18:29:12 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-17 18:29:12 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-17 18:29:12 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 6 ms.
+2025-06-17 18:29:12 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 18 ms.
+2025-06-17 18:29:12 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-17 18:29:12 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-17 18:29:12 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-17 18:29:12 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-17 18:29:12 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-17 18:29:12 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-17 18:29:12 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-17 18:29:12 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+2025-06-17 18:29:12 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-17 18:29:12 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-17 18:29:12 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-17 18:29:12 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-17 18:29:12 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-17 18:29:12 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-17 18:29:12 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
+2025-06-17 18:29:12 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 11 ms.
+2025-06-17 18:29:12 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-17 18:29:12 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-17 18:29:12 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-17 18:29:12 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-17 18:29:12 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\rajum\AppData\Local\Temp\testng-eclipse-1929295328\testng-customsuite.xml
+
+2025-06-17 18:29:12 [main] INFO  org.testng.internal.Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 11 ms.
+2025-06-17 18:29:12 [main] INFO  automationFramework.utils.LoggerUtil - 🔧 Starting browser and loading properties...
+2025-06-17 18:29:13 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 137.0.7151.70 (resolved driver for Chrome 137)
+2025-06-17 18:29:13 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\rajum\.cache\selenium\chromedriver\win64\137.0.7151.70\chromedriver.exe
+2025-06-17 18:29:15 [main] INFO  automationFramework.pages.LoginPage - ✅ Captcha wait time loaded: 10 seconds
+2025-06-17 18:29:21 [main] INFO  automationFramework.pages.LoginPage - 🟦 Navigated to URL: https://uatnet.svcbank.com/ReachSVCInet/SVC-web/inet/netbanking
+2025-06-17 18:29:21 [main] INFO  automationFramework.pages.LoginPage - ✅ Entered username: TEST001
+2025-06-17 18:29:21 [main] INFO  automationFramework.pages.LoginPage - ⏳ Waiting for manual captcha input (10 seconds)
+2025-06-17 18:29:31 [main] INFO  automationFramework.pages.LoginPage - ✅ Clicked first Login button
+2025-06-17 18:29:33 [main] INFO  automationFramework.pages.LoginPage - ✅ Entered password
+2025-06-17 18:29:33 [main] INFO  automationFramework.pages.LoginPage - ✅ Clicked final Login button
+2025-06-17 18:29:35 [main] INFO  automationFramework.pages.LoginPage - 🎉 Login successful for user: TEST001
+2025-06-17 18:29:35 [main] INFO  automationFramework.utils.LoggerUtil - ✅ Setup complete.
+2025-06-17 18:29:35 [main] INFO  a.pages.AccountsPage - Clicking Accounts Tab
+2025-06-17 18:29:35 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:29:51 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:29:51 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:30:06 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:30:06 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:30:17 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:30:37 [main] INFO  a.pages.AccountsPage - ✅ Accounts Tab Clicked
+2025-06-17 18:30:37 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:30:47 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:31:08 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:31:18 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:31:38 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:31:49 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:31:49 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:31:59 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:31:59 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:32:18 [main] WARN  a.pages.AccountsPage - ⚠️ Spinner wait skipped or failed gracefully.
+2025-06-17 18:32:18 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:32:33 [main] WARN  a.pages.AccountsPage - ⚠️ Spinner wait skipped or failed gracefully.
+2025-06-17 18:32:53 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:33:03 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:33:03 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:33:14 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:33:14 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:33:24 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:33:24 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:33:35 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:33:55 [main] INFO  a.pages.AccountsPage - 🔍 Checking if 'Detailed Statement' is visible.
+2025-06-17 18:33:55 [main] INFO  a.pages.AccountsPage - ✅ 'Detailed Statement' is visible.
+2025-06-17 18:33:55 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:34:05 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:34:06 [main] WARN  a.pages.AccountsPage - ⚠️ Click intercepted attempt 1/3: element click intercepted: Element <span _ngcontent-ng-c1284850809="" class="text-blue-500 font-semibold">...</span> is not clickable at point (1423, 182). Other element would receive the click: <div class="ng-tns-c4033847114-18 p-dialog-mask p-component-overlay p-component-overlay-enter p-dialog-mask-scrollblocker p-component-overlay-leave" style="z-index: 11101;">...</div>
+  (Session info: chrome=137.0.7151.104)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1dfd1d700e480817b18f55c1856239e7, clickElement {id=f.AEF686021905D27B05DB3966A6513C33.d.59B81E893638F236E783FE635FAA35C2.e.175}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\rajum\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58290}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58290/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (1dfd1d700e480817b18f55c1856239e7)] -> xpath: //span[contains(text(),'Detailed Statement')]]
+Session ID: 1dfd1d700e480817b18f55c1856239e7
+2025-06-17 18:34:07 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:34:17 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:34:17 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:34:28 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:34:28 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:34:39 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:34:59 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:35:09 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:35:09 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:35:20 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:35:20 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:35:30 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:35:30 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:35:40 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:35:41 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:35:42 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:35:42 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:35:58 [main] WARN  a.pages.AccountsPage - ⚠️ Spinner wait skipped or failed gracefully.
+2025-06-17 18:35:58 [main] INFO  a.pages.AccountsPage - 🔍 Checking if 'Detailed Statement' is visible.
+2025-06-17 18:36:03 [main] WARN  a.pages.AccountsPage - ⚠️ 'Detailed Statement' not visible. Clicking Accounts Tab first.
+2025-06-17 18:36:03 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:36:13 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:36:13 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:36:14 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:36:14 [main] INFO  a.pages.AccountsPage - ✅ 'Detailed Statement' found after clicking Accounts Tab.
+2025-06-17 18:36:14 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:36:26 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:36:26 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:36:27 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:36:27 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:36:39 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:36:59 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:37:10 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:37:10 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:37:11 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:37:11 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:37:23 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:37:43 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:37:54 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:37:54 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:38:04 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:38:04 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:38:15 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:38:15 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:38:25 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:38:25 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:38:26 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:38:26 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:38:41 [main] WARN  a.pages.AccountsPage - ⚠️ Spinner wait skipped or failed gracefully.
+2025-06-17 18:38:41 [main] INFO  a.pages.AccountsPage - 🔍 Checking if 'Detailed Statement' is visible.
+2025-06-17 18:38:46 [main] WARN  a.pages.AccountsPage - ⚠️ 'Detailed Statement' not visible. Clicking Accounts Tab first.
+2025-06-17 18:38:46 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:38:57 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:38:57 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:38:58 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:38:58 [main] INFO  a.pages.AccountsPage - ✅ 'Detailed Statement' found after clicking Accounts Tab.
+2025-06-17 18:38:58 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:39:10 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:39:10 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:39:11 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:39:11 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:39:22 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:39:42 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:39:52 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:39:53 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:40:03 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:40:03 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:40:13 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:40:13 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:40:24 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:40:24 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:40:34 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:40:34 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:40:45 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:40:45 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:40:55 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:40:55 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:41:11 [main] WARN  a.pages.AccountsPage - ⚠️ Spinner wait skipped or failed gracefully.
+2025-06-17 18:41:11 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:41:22 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:41:22 [main] INFO  a.pages.AccountsPage - 🔍 Checking if 'Detailed Statement' is visible.
+2025-06-17 18:41:27 [main] WARN  a.pages.AccountsPage - ⚠️ 'Detailed Statement' not visible. Clicking Accounts Tab first.
+2025-06-17 18:41:27 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:41:37 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:41:38 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:41:38 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:41:39 [main] INFO  a.pages.AccountsPage - ✅ 'Detailed Statement' found after clicking Accounts Tab.
+2025-06-17 18:41:39 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:41:50 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:41:50 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:41:51 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:41:51 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:42:02 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:42:22 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:42:32 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:42:33 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:42:45 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:42:45 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:42:55 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:43:15 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:43:25 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:43:26 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:43:36 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:43:36 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:43:46 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:43:46 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:43:57 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:43:57 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:44:07 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:44:07 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:44:18 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:44:18 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:44:28 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:44:28 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:44:29 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:44:29 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:44:54 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:44:54 [main] INFO  a.pages.AccountsPage - 🔍 Checking if 'Detailed Statement' is visible.
+2025-06-17 18:45:00 [main] WARN  a.pages.AccountsPage - ⚠️ 'Detailed Statement' not visible. Clicking Accounts Tab first.
+2025-06-17 18:45:00 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:45:10 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:45:10 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:45:11 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:45:11 [main] INFO  a.pages.AccountsPage - ✅ 'Detailed Statement' found after clicking Accounts Tab.
+2025-06-17 18:45:11 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:45:24 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:45:24 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:45:36 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:45:56 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:46:07 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:46:07 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:46:17 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:46:17 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:46:28 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:46:48 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:46:58 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:46:58 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:47:09 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:47:29 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:47:39 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:47:39 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:47:57 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:48:22 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:48:33 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:48:58 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:49:08 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:49:08 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:49:19 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:49:19 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:49:29 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:49:29 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:49:39 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:49:56 [main] WARN  a.pages.AccountsPage - ⚠️ Click failed attempt 1/3: Expected condition failed: waiting for element to be clickable: By.xpath: //img[contains(@src,'ic_excel_file.svg') and @alt='excel'] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\rajum\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58290}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58290/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1dfd1d700e480817b18f55c1856239e7
+2025-06-17 18:49:56 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:50:06 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:50:23 [main] WARN  a.pages.AccountsPage - ⚠️ Click failed attempt 2/3: Expected condition failed: waiting for element to be clickable: By.xpath: //img[contains(@src,'ic_excel_file.svg') and @alt='excel'] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\rajum\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58290}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58290/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1dfd1d700e480817b18f55c1856239e7
+2025-06-17 18:50:23 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:50:34 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:50:50 [main] WARN  a.pages.AccountsPage - ⚠️ Click failed attempt 3/3: Expected condition failed: waiting for element to be clickable: By.xpath: //img[contains(@src,'ic_excel_file.svg') and @alt='excel'] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\rajum\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58290}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58290/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1dfd1d700e480817b18f55c1856239e7
+2025-06-17 18:50:50 [main] INFO  a.pages.AccountsPage - 🔍 Checking if 'Detailed Statement' is visible.
+2025-06-17 18:50:56 [main] WARN  a.pages.AccountsPage - ⚠️ 'Detailed Statement' not visible. Clicking Accounts Tab first.
+2025-06-17 18:50:56 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:51:06 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:51:07 [main] WARN  a.pages.AccountsPage - ⚠️ Click intercepted attempt 1/3: element click intercepted: Element <span class="p-menuitem-text">...</span> is not clickable at point (153, 100). Other element would receive the click: <div class="ng-tns-c4033847114-68 p-dialog-mask p-component-overlay p-component-overlay-enter p-dialog-mask-scrollblocker" style="z-index: 11101;">...</div>
+  (Session info: chrome=137.0.7151.104)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1dfd1d700e480817b18f55c1856239e7, clickElement {id=f.AEF686021905D27B05DB3966A6513C33.d.59B81E893638F236E783FE635FAA35C2.e.112}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\rajum\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58290}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58290/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (1dfd1d700e480817b18f55c1856239e7)] -> xpath: //span[@class='p-menuitem-text' and text()='Accounts']]
+Session ID: 1dfd1d700e480817b18f55c1856239e7
+2025-06-17 18:51:08 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:51:18 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:51:19 [main] WARN  a.pages.AccountsPage - ⚠️ Click intercepted attempt 2/3: element click intercepted: Element <span class="p-menuitem-text">...</span> is not clickable at point (153, 100). Other element would receive the click: <div class="ng-tns-c4033847114-68 p-dialog-mask p-component-overlay p-component-overlay-enter p-dialog-mask-scrollblocker" style="z-index: 11101;">...</div>
+  (Session info: chrome=137.0.7151.104)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1dfd1d700e480817b18f55c1856239e7, clickElement {id=f.AEF686021905D27B05DB3966A6513C33.d.59B81E893638F236E783FE635FAA35C2.e.112}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\rajum\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58290}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58290/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (1dfd1d700e480817b18f55c1856239e7)] -> xpath: //span[@class='p-menuitem-text' and text()='Accounts']]
+Session ID: 1dfd1d700e480817b18f55c1856239e7
+2025-06-17 18:51:20 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:51:30 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:51:31 [main] WARN  a.pages.AccountsPage - ⚠️ Click intercepted attempt 3/3: element click intercepted: Element <span class="p-menuitem-text">...</span> is not clickable at point (153, 100). Other element would receive the click: <div class="ng-tns-c4033847114-68 p-dialog-mask p-component-overlay p-component-overlay-enter p-dialog-mask-scrollblocker" style="z-index: 11101;">...</div>
+  (Session info: chrome=137.0.7151.104)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1dfd1d700e480817b18f55c1856239e7, clickElement {id=f.AEF686021905D27B05DB3966A6513C33.d.59B81E893638F236E783FE635FAA35C2.e.112}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\rajum\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58290}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58290/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (1dfd1d700e480817b18f55c1856239e7)] -> xpath: //span[@class='p-menuitem-text' and text()='Accounts']]
+Session ID: 1dfd1d700e480817b18f55c1856239e7
+2025-06-17 18:51:32 [main] INFO  a.pages.AccountsPage - 🔍 Checking if 'Detailed Statement' is visible.
+2025-06-17 18:51:37 [main] WARN  a.pages.AccountsPage - ⚠️ 'Detailed Statement' not visible. Clicking Accounts Tab first.
+2025-06-17 18:51:37 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:51:47 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:51:48 [main] WARN  a.pages.AccountsPage - ⚠️ Click intercepted attempt 1/3: element click intercepted: Element <span class="p-menuitem-text">...</span> is not clickable at point (153, 100). Other element would receive the click: <div class="ng-tns-c4033847114-68 p-dialog-mask p-component-overlay p-component-overlay-enter p-dialog-mask-scrollblocker" style="z-index: 11101;">...</div>
+  (Session info: chrome=137.0.7151.104)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1dfd1d700e480817b18f55c1856239e7, clickElement {id=f.AEF686021905D27B05DB3966A6513C33.d.59B81E893638F236E783FE635FAA35C2.e.112}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\rajum\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58290}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58290/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (1dfd1d700e480817b18f55c1856239e7)] -> xpath: //span[@class='p-menuitem-text' and text()='Accounts']]
+Session ID: 1dfd1d700e480817b18f55c1856239e7
+2025-06-17 18:51:49 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:51:59 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:52:00 [main] WARN  a.pages.AccountsPage - ⚠️ Click intercepted attempt 2/3: element click intercepted: Element <span class="p-menuitem-text">...</span> is not clickable at point (153, 100). Other element would receive the click: <div class="ng-tns-c4033847114-68 p-dialog-mask p-component-overlay p-component-overlay-enter p-dialog-mask-scrollblocker" style="z-index: 11101;">...</div>
+  (Session info: chrome=137.0.7151.104)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1dfd1d700e480817b18f55c1856239e7, clickElement {id=f.AEF686021905D27B05DB3966A6513C33.d.59B81E893638F236E783FE635FAA35C2.e.112}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\rajum\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58290}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58290/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (1dfd1d700e480817b18f55c1856239e7)] -> xpath: //span[@class='p-menuitem-text' and text()='Accounts']]
+Session ID: 1dfd1d700e480817b18f55c1856239e7
+2025-06-17 18:52:01 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:52:11 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:52:12 [main] WARN  a.pages.AccountsPage - ⚠️ Click intercepted attempt 3/3: element click intercepted: Element <span class="p-menuitem-text">...</span> is not clickable at point (153, 100). Other element would receive the click: <div class="ng-tns-c4033847114-68 p-dialog-mask p-component-overlay p-component-overlay-enter p-dialog-mask-scrollblocker" style="z-index: 11101;">...</div>
+  (Session info: chrome=137.0.7151.104)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1dfd1d700e480817b18f55c1856239e7, clickElement {id=f.AEF686021905D27B05DB3966A6513C33.d.59B81E893638F236E783FE635FAA35C2.e.112}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\rajum\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58290}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58290/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (1dfd1d700e480817b18f55c1856239e7)] -> xpath: //span[@class='p-menuitem-text' and text()='Accounts']]
+Session ID: 1dfd1d700e480817b18f55c1856239e7
+2025-06-17 18:52:13 [main] INFO  a.pages.AccountsPage - 🔍 Checking if 'Detailed Statement' is visible.
+2025-06-17 18:52:18 [main] WARN  a.pages.AccountsPage - ⚠️ 'Detailed Statement' not visible. Clicking Accounts Tab first.
+2025-06-17 18:52:18 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:52:29 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:52:30 [main] WARN  a.pages.AccountsPage - ⚠️ Click intercepted attempt 1/3: element click intercepted: Element <span class="p-menuitem-text">...</span> is not clickable at point (153, 100). Other element would receive the click: <div class="ng-tns-c4033847114-68 p-dialog-mask p-component-overlay p-component-overlay-enter p-dialog-mask-scrollblocker" style="z-index: 11101;">...</div>
+  (Session info: chrome=137.0.7151.104)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1dfd1d700e480817b18f55c1856239e7, clickElement {id=f.AEF686021905D27B05DB3966A6513C33.d.59B81E893638F236E783FE635FAA35C2.e.112}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\rajum\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58290}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58290/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (1dfd1d700e480817b18f55c1856239e7)] -> xpath: //span[@class='p-menuitem-text' and text()='Accounts']]
+Session ID: 1dfd1d700e480817b18f55c1856239e7
+2025-06-17 18:52:30 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:52:41 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:52:42 [main] WARN  a.pages.AccountsPage - ⚠️ Click intercepted attempt 2/3: element click intercepted: Element <span class="p-menuitem-text">...</span> is not clickable at point (153, 100). Other element would receive the click: <div class="ng-tns-c4033847114-68 p-dialog-mask p-component-overlay p-component-overlay-enter p-dialog-mask-scrollblocker" style="z-index: 11101;">...</div>
+  (Session info: chrome=137.0.7151.104)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1dfd1d700e480817b18f55c1856239e7, clickElement {id=f.AEF686021905D27B05DB3966A6513C33.d.59B81E893638F236E783FE635FAA35C2.e.112}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\rajum\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58290}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58290/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (1dfd1d700e480817b18f55c1856239e7)] -> xpath: //span[@class='p-menuitem-text' and text()='Accounts']]
+Session ID: 1dfd1d700e480817b18f55c1856239e7
+2025-06-17 18:52:42 [main] INFO  a.pages.AccountsPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-17 18:52:53 [main] INFO  a.pages.AccountsPage - ✅ Spinner disappeared.
+2025-06-17 18:52:54 [main] WARN  a.pages.AccountsPage - ⚠️ Click intercepted attempt 3/3: element click intercepted: Element <span class="p-menuitem-text">...</span> is not clickable at point (153, 100). Other element would receive the click: <div class="ng-tns-c4033847114-68 p-dialog-mask p-component-overlay p-component-overlay-enter p-dialog-mask-scrollblocker" style="z-index: 11101;">...</div>
+  (Session info: chrome=137.0.7151.104)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1dfd1d700e480817b18f55c1856239e7, clickElement {id=f.AEF686021905D27B05DB3966A6513C33.d.59B81E893638F236E783FE635FAA35C2.e.112}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\rajum\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58290}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58290/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (1dfd1d700e480817b18f55c1856239e7)] -> xpath: //span[@class='p-menuitem-text' and text()='Accounts']]
+Session ID: 1dfd1d700e480817b18f55c1856239e7
+2025-06-17 18:52:55 [main] INFO  automationFramework.utils.LoggerUtil - 🧹 Finalizing report...
+2025-06-17 18:52:55 [main] INFO  automationFramework.utils.LoggerUtil - 📧 Sending report via email...
+2025-06-17 18:53:04 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.jq.Main@467421cc: 100 ms
+2025-06-17 18:53:04 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.FailedReporter@4964d801: 30 ms
+2025-06-17 18:53:04 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.XMLReporter@5af1b221: 23 ms
+2025-06-17 18:53:04 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@6dc7b7f: 12 ms
+2025-06-17 18:53:04 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@1372696b: 21 ms
+2025-06-17 18:53:04 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@7ca7bddd: 0 ms

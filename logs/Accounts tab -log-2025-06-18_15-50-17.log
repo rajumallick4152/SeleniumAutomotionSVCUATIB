@@ -1,0 +1,107 @@
+2025-06-18 15:50:17 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-18 15:50:17 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 2 ms.
+2025-06-18 15:50:17 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-18 15:50:17 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-18 15:50:17 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
+2025-06-18 15:50:17 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-18 15:50:17 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-18 15:50:17 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-18 15:50:17 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 5 ms.
+2025-06-18 15:50:17 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 17 ms.
+2025-06-18 15:50:17 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-18 15:50:17 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+2025-06-18 15:50:17 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-18 15:50:17 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-18 15:50:17 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-18 15:50:17 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-18 15:50:17 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-18 15:50:17 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-18 15:50:17 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-18 15:50:17 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-18 15:50:17 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-18 15:50:17 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-18 15:50:17 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-18 15:50:17 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-18 15:50:17 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
+2025-06-18 15:50:17 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+2025-06-18 15:50:17 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-18 15:50:17 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-18 15:50:17 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-18 15:50:17 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-18 15:50:17 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\rajum\AppData\Local\Temp\testng-eclipse--1743135294\testng-customsuite.xml
+
+2025-06-18 15:50:17 [main] INFO  org.testng.internal.Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 9 ms.
+2025-06-18 15:50:18 [main] INFO  automationFramework.utils.LoggerUtil - 🔧 Launching browser and loading properties...
+2025-06-18 15:50:18 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 137.0.7151.119 (resolved driver for Chrome 137)
+2025-06-18 15:50:18 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\rajum\.cache\selenium\chromedriver\win64\137.0.7151.119\chromedriver.exe
+2025-06-18 15:50:21 [main] INFO  automationFramework.pages.LoginPage - ✅ Captcha wait time loaded: 10 seconds
+2025-06-18 15:50:27 [main] INFO  automationFramework.pages.LoginPage - 🟦 Navigated to URL: https://uatnet.svcbank.com/ReachSVCInet/SVC-web/inet/netbanking
+2025-06-18 15:50:27 [main] INFO  automationFramework.pages.LoginPage - ✅ Entered username: TEST001
+2025-06-18 15:50:27 [main] INFO  automationFramework.pages.LoginPage - ⏳ Waiting for manual captcha input (10 seconds)
+2025-06-18 15:50:37 [main] INFO  automationFramework.pages.LoginPage - ✅ Clicked first Login button
+2025-06-18 15:50:39 [main] INFO  automationFramework.pages.LoginPage - ✅ Entered password
+2025-06-18 15:50:39 [main] INFO  automationFramework.pages.LoginPage - ✅ Clicked final Login button
+2025-06-18 15:50:41 [main] INFO  automationFramework.pages.LoginPage - 🎉 Login successful for user: TEST001
+2025-06-18 15:50:41 [main] INFO  automationFramework.utils.LoggerUtil - ✅ Login successful
+2025-06-18 15:50:41 [main] INFO  automationFramework.utils.LoggerUtil - ✅ Setup complete.
+2025-06-18 15:50:41 [main] INFO  a.pages.ServicesPage - 🔄 Navigating to Services > Manage SMS...
+2025-06-18 15:50:41 [main] INFO  a.pages.ServicesPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-18 15:50:56 [main] INFO  a.pages.ServicesPage - ✅ Spinner disappeared.
+2025-06-18 15:50:56 [main] INFO  a.pages.ServicesPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-18 15:51:10 [main] INFO  a.pages.ServicesPage - ✅ Spinner disappeared.
+2025-06-18 15:51:10 [main] INFO  a.pages.ServicesPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-18 15:51:20 [main] INFO  a.pages.ServicesPage - ✅ Spinner disappeared.
+2025-06-18 15:51:20 [main] INFO  a.pages.ServicesPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-18 15:51:33 [main] INFO  a.pages.ServicesPage - ✅ Spinner disappeared.
+2025-06-18 15:51:33 [main] INFO  a.pages.ServicesPage - ✅ Reached Manage SMS section.
+2025-06-18 15:51:33 [main] INFO  a.pages.ServicesPage - 🔄 Generating random credit and debit amounts...
+2025-06-18 15:51:33 [main] INFO  a.pages.ServicesPage - ✏️ Entering SMS thresholds - Credit: 2452, Debit: 1512
+2025-06-18 15:51:33 [main] ERROR automationFramework.utils.LoggerUtil - ❌ Exception in testManageSMSFlow: 
+java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at automationFramework.pages.ServicesPage.lambda$1(ServicesPage.java:51)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at automationFramework.pages.ServicesPage.enterAmountThresholds(ServicesPage.java:51)
+	at automationFramework.tests.ServicesTestNG.testManageSMSFlow(ServicesTestNG.java:66)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+2025-06-18 15:51:33 [main] INFO  automationFramework.utils.LoggerUtil - 🧹 Finalizing report...
+2025-06-18 15:51:33 [main] INFO  automationFramework.utils.LoggerUtil - 📧 Sending report via email...
+2025-06-18 15:51:41 [main] INFO  automationFramework.utils.LoggerUtil - 🛑 Browser not closed.
+2025-06-18 15:51:41 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.jq.Main@3610f277: 91 ms
+2025-06-18 15:51:41 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.FailedReporter@6baf25d7: 25 ms
+2025-06-18 15:51:41 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.XMLReporter@64f9f455: 13 ms
+2025-06-18 15:51:41 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@56c8e6f0: 11 ms
+2025-06-18 15:51:41 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@733ec58b: 13 ms
+2025-06-18 15:51:41 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@723877dd: 0 ms

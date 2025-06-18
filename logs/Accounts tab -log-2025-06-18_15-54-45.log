@@ -1,0 +1,91 @@
+2025-06-18 15:54:46 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
+2025-06-18 15:54:46 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 2 ms.
+2025-06-18 15:54:46 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-18 15:54:46 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-18 15:54:46 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-18 15:54:46 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-18 15:54:46 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-18 15:54:46 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-18 15:54:46 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 7 ms.
+2025-06-18 15:54:46 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 19 ms.
+2025-06-18 15:54:46 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-18 15:54:46 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-18 15:54:46 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-18 15:54:46 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-18 15:54:46 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-18 15:54:46 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-18 15:54:46 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-18 15:54:46 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-18 15:54:46 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-18 15:54:46 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-18 15:54:46 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-18 15:54:46 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-18 15:54:46 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-18 15:54:46 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-18 15:54:46 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
+2025-06-18 15:54:46 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-18 15:54:46 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-18 15:54:46 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+2025-06-18 15:54:46 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-18 15:54:46 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-18 15:54:46 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\rajum\AppData\Local\Temp\testng-eclipse--30807287\testng-customsuite.xml
+
+2025-06-18 15:54:46 [main] INFO  org.testng.internal.Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 8 ms.
+2025-06-18 15:54:46 [main] INFO  automationFramework.utils.LoggerUtil - 🔧 Launching browser and loading properties...
+2025-06-18 15:54:47 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 137.0.7151.119 (resolved driver for Chrome 137)
+2025-06-18 15:54:47 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\rajum\.cache\selenium\chromedriver\win64\137.0.7151.119\chromedriver.exe
+2025-06-18 15:54:50 [main] INFO  automationFramework.pages.LoginPage - ✅ Captcha wait time loaded: 10 seconds
+2025-06-18 15:54:55 [main] INFO  automationFramework.pages.LoginPage - 🟦 Navigated to URL: https://uatnet.svcbank.com/ReachSVCInet/SVC-web/inet/netbanking
+2025-06-18 15:54:55 [main] INFO  automationFramework.pages.LoginPage - ✅ Entered username: TEST001
+2025-06-18 15:54:55 [main] INFO  automationFramework.pages.LoginPage - ⏳ Waiting for manual captcha input (10 seconds)
+2025-06-18 15:55:05 [main] INFO  automationFramework.pages.LoginPage - ✅ Clicked first Login button
+2025-06-18 15:55:06 [main] INFO  automationFramework.pages.LoginPage - ✅ Entered password
+2025-06-18 15:55:07 [main] INFO  automationFramework.pages.LoginPage - ✅ Clicked final Login button
+2025-06-18 15:55:10 [main] INFO  automationFramework.pages.LoginPage - 🎉 Login successful for user: TEST001
+2025-06-18 15:55:10 [main] INFO  automationFramework.utils.LoggerUtil - ✅ Login successful
+2025-06-18 15:55:10 [main] INFO  automationFramework.utils.LoggerUtil - ✅ Setup complete.
+2025-06-18 15:55:10 [main] INFO  a.pages.ServicesPage - 🔄 Navigating to Services > Manage SMS...
+2025-06-18 15:55:10 [main] INFO  a.pages.ServicesPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-18 15:55:26 [main] INFO  a.pages.ServicesPage - ✅ Spinner disappeared.
+2025-06-18 15:55:26 [main] INFO  a.pages.ServicesPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-18 15:55:39 [main] INFO  a.pages.ServicesPage - ✅ Spinner disappeared.
+2025-06-18 15:55:39 [main] INFO  a.pages.ServicesPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-18 15:55:49 [main] INFO  a.pages.ServicesPage - ✅ Spinner disappeared.
+2025-06-18 15:55:49 [main] INFO  a.pages.ServicesPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-18 15:56:02 [main] INFO  a.pages.ServicesPage - ✅ Spinner disappeared.
+2025-06-18 15:56:02 [main] INFO  a.pages.ServicesPage - ✅ Reached Manage SMS section.
+2025-06-18 15:56:02 [main] INFO  a.pages.ServicesPage - 🔄 Generating random credit and debit amounts...
+2025-06-18 15:56:02 [main] INFO  a.pages.ServicesPage - ✏️ Entering SMS thresholds - Credit: 5047, Debit: 6815
+2025-06-18 15:56:02 [main] INFO  a.pages.ServicesPage - ✅ Amounts entered successfully with Credit: 5047, Debit: 6815
+2025-06-18 15:56:02 [main] INFO  a.pages.ServicesPage - 💾 Clicking Save button...
+2025-06-18 15:56:02 [main] INFO  a.pages.ServicesPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-18 15:56:13 [main] INFO  a.pages.ServicesPage - ✅ Spinner disappeared.
+2025-06-18 15:56:13 [main] INFO  a.pages.ServicesPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-18 15:56:25 [main] INFO  a.pages.ServicesPage - ✅ Spinner disappeared.
+2025-06-18 15:56:25 [main] INFO  a.pages.ServicesPage - 🔐 Entering OTP: 123456
+2025-06-18 15:56:25 [main] INFO  a.pages.ServicesPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-18 15:56:35 [main] INFO  a.pages.ServicesPage - ✅ Spinner disappeared.
+2025-06-18 15:56:35 [main] INFO  a.pages.ServicesPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-18 15:56:46 [main] INFO  a.pages.ServicesPage - ✅ Spinner disappeared.
+2025-06-18 15:56:46 [main] INFO  a.pages.ServicesPage - ✅ OTP entered.
+2025-06-18 15:56:46 [main] INFO  a.pages.ServicesPage - ➡️ Clicking Proceed...
+2025-06-18 15:56:46 [main] INFO  a.pages.ServicesPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-18 15:56:56 [main] INFO  a.pages.ServicesPage - ✅ Spinner disappeared.
+2025-06-18 15:56:56 [main] INFO  a.pages.ServicesPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-18 15:56:57 [main] INFO  a.pages.ServicesPage - ✅ Spinner disappeared.
+2025-06-18 15:56:58 [main] INFO  a.pages.ServicesPage - ✅ Success popup visibility: false
+2025-06-18 15:56:58 [main] INFO  a.pages.ServicesPage - 🆗 Clicking Okay on success popup...
+2025-06-18 15:56:58 [main] INFO  a.pages.ServicesPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-18 15:57:09 [main] INFO  a.pages.ServicesPage - ✅ Spinner disappeared.
+2025-06-18 15:57:09 [main] INFO  a.pages.ServicesPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-18 15:57:19 [main] INFO  a.pages.ServicesPage - ✅ Spinner disappeared.
+2025-06-18 15:57:20 [main] INFO  automationFramework.utils.LoggerUtil - 🧹 Finalizing report...
+2025-06-18 15:57:20 [main] INFO  automationFramework.utils.LoggerUtil - 📧 Sending report via email...
+2025-06-18 15:57:27 [main] INFO  automationFramework.utils.LoggerUtil - 🛑 Browser not closed.
+2025-06-18 15:57:27 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.jq.Main@2c26ba07: 72 ms
+2025-06-18 15:57:27 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.FailedReporter@1b7f06c7: 19 ms
+2025-06-18 15:57:27 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.XMLReporter@6661d8c0: 16 ms
+2025-06-18 15:57:27 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@41bfa9e9: 13 ms
+2025-06-18 15:57:27 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@6d6ac396: 10 ms
+2025-06-18 15:57:27 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@432af457: 0 ms

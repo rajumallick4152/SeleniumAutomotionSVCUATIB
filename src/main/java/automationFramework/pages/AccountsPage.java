@@ -37,37 +37,46 @@ public class AccountsPage extends BasePage {
 	}
 
 	public void waitForDataToLoad(ExtentTest test) {
+		logger.info("Waiting for data to load...");
 		test.info("⌛ Waiting for data to load...");
 		waitForSpinnerToFullyDisappear();
 		detectAndLogServiceErrors();
+		logger.info("✅ Data load completed.");
 		test.pass("✅ Data loaded successfully.");
 	}
 
 	public void scrollToViewBalanceButton(ExtentTest test) {
+		logger.info("Scrolling to 'View Balance Components' button.");
 		test.info("📜 Scrolling to 'View Balance Components' button");
 		waitForSpinnerToFullyDisappear();
 		detectAndLogServiceErrors();
 		WebElement viewBalanceBtn = wait.until(presenceOf(VIEW_BALANCE_BUTTON));
 		scrollIntoView(viewBalanceBtn);
+		logger.info("✅ Scrolled to 'View Balance Components' button.");
 		test.pass("✅ Scrolled to View Balance button.");
 	}
 
 	public void clickViewBalanceButton(ExtentTest test) {
+		logger.info("Clicking 'View Balance Components' button.");
 		test.info("🖱️ Clicking 'View Balance Components' button");
 		waitForSpinnerToFullyDisappear();
 		clickWithRetry(VIEW_BALANCE_BUTTON);
 		waitForSpinnerToFullyDisappear();
 		detectAndLogServiceErrors();
+		logger.info("✅ View Balance modal opened.");
 		test.pass("✅ View Balance modal opened.");
 	}
 
 	public void closeBalanceModal(ExtentTest test) {
+		logger.info("Attempting to close balance modal.");
 		test.info("🧩 Closing balance modal");
 		waitForSpinnerToFullyDisappear();
 		try {
 			clickWithRetry(CLOSE_BALANCE_MODAL);
+			logger.info("✅ Balance modal closed.");
 			test.pass("✅ Modal closed.");
 		} catch (Exception ex) {
+			logger.error("❌ Failed to close balance modal: " + ex.getMessage());
 			test.fail("❌ Failed to close balance modal: " + ex.getMessage());
 		}
 		waitForSpinnerToFullyDisappear();
@@ -89,6 +98,7 @@ public class AccountsPage extends BasePage {
 
 	public void downloadStatement(String duration, FileType fileType, ExtentTest test) {
 		try {
+			logger.info("Initiating statement download for: " + duration + " in format: " + fileType.name());
 			test.info("▶️ Downloading " + duration + " statement in " + fileType.name());
 			ensureDetailedStatementVisible();
 			clickWithRetry(DETAILED_STATEMENT);
@@ -96,25 +106,30 @@ public class AccountsPage extends BasePage {
 			detectAndLogServiceErrors();
 
 			if (!"1 Month".equalsIgnoreCase(duration)) {
+				logger.info("Selecting duration button: " + duration);
 				clickWithRetry(By.xpath("//button[contains(text(),'" + duration + "')]"));
 				waitForSpinnerToFullyDisappear();
 				detectAndLogServiceErrors();
 			}
 
 			clickWithRetry(DOWNLOAD_BUTTON);
+			logger.info("Clicked Download button.");
 			waitForSpinnerToFullyDisappear();
 
 			if (fileType == FileType.XLS) {
+				logger.info("Clicking XLS icon.");
 				clickWithRetry(XLS_ICON);
 				waitForSpinnerToFullyDisappear();
 			}
 
 			clickWithRetry(DOWNLOAD_STATEMENT_BUTTON);
+			logger.info("Triggered statement download.");
 			waitForSpinnerToFullyDisappear();
 
 			test.pass("🎉 " + duration + " Statement (" + fileType.name() + ") download triggered.");
 
 		} catch (Exception e) {
+			logger.error("❌ Error downloading " + duration + " statement: " + e.getMessage());
 			test.fail(
 					"❌ Error during " + duration + " statement download (" + fileType.name() + "): " + e.getMessage());
 			throw new RuntimeException("Failed to download " + duration + " statement in " + fileType.name(), e);
@@ -123,6 +138,7 @@ public class AccountsPage extends BasePage {
 
 	public void downloadCustomStatement(String months, FileType fileType, ExtentTest test) {
 		try {
+			logger.info("Starting custom statement download for " + months + " months in format: " + fileType.name());
 			test.info("▶️ Starting Custom Statement download for " + months + " months in " + fileType.name());
 
 			ensureDetailedStatementVisible();
@@ -140,6 +156,7 @@ public class AccountsPage extends BasePage {
 			boolean dataFound = false;
 
 			for (int attempt = 1; attempt <= 3; attempt++) {
+				logger.info("Attempt " + attempt + " for custom data fetch.");
 				test.info("🔁 Attempt " + attempt + " to fetch custom statement data");
 
 				clickWithRetry(customButton);
@@ -156,13 +173,16 @@ public class AccountsPage extends BasePage {
 				detectAndLogServiceErrors();
 
 				if (isElementPresent(noRecordsText)) {
+					logger.warn("⚠️ No records found on attempt " + attempt);
 					test.warning("⚠️ No records found on attempt " + attempt);
 
 					if (attempt < 3) {
+						logger.info("Clicking Okay to dismiss toast.");
 						clickWithRetry(okayButton);
 						waitForSpinnerToFullyDisappear();
 						detectAndLogServiceErrors();
 					} else {
+						logger.error("❌ No data found after 3 attempts.");
 						test.fail("❌ No data found after 3 attempts. Aborting download.");
 						return;
 					}
@@ -173,6 +193,7 @@ public class AccountsPage extends BasePage {
 			}
 
 			if (!dataFound) {
+				logger.warn("⚠️ No data found after all retries.");
 				test.warning("⚠️ No records found after 3 retries. Exiting.");
 				return;
 			}
@@ -181,13 +202,16 @@ public class AccountsPage extends BasePage {
 			waitForSpinnerToFullyDisappear();
 
 			if (fileType == FileType.XLS) {
+				logger.info("Clicking XLS icon for custom statement.");
 				clickWithRetry(XLS_ICON);
 			}
 
 			clickWithRetry(DOWNLOAD_STATEMENT_BUTTON);
+			logger.info("✅ Custom statement download triggered.");
 			test.pass("🎉 Custom statement download triggered for " + months + " months in " + fileType.name());
 
 		} catch (Exception e) {
+			logger.error("❌ Custom statement download failed: " + e.getMessage());
 			test.fail("❌ Custom statement download failed (" + months + " months - " + fileType.name() + "): "
 					+ e.getMessage());
 			throw new RuntimeException("Custom statement download failed for " + months + " months", e);

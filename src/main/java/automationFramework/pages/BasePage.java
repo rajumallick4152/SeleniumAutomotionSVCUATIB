@@ -184,4 +184,36 @@ public abstract class BasePage {
 		}
 	}
 
+	// ✅ Click using By locator
+	protected void click(By locator) {
+		clickWithRetry(locator); // uses your robust retry logic
+	}
+
+	// ✅ Type into an input field(used in otp enter)
+	protected void type(By locator, String text) {
+		waitForSpinnerToFullyDisappear();
+		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+		element.clear();
+		element.sendKeys(text);
+		waitForSpinnerToFullyDisappear();
+	}
+
+	// ✅ Find single element
+	protected WebElement findElement(By locator) {
+		return wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+	}
+
+	// ✅ Find multiple elements
+	protected java.util.List<WebElement> findElements(By locator) {
+		return wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(locator));
+	}
+
+	// ✅ Check visibility
+	protected boolean isDisplayed(By locator) {
+		try {
+			return driver.findElement(locator).isDisplayed();
+		} catch (NoSuchElementException e) {
+			return false;
+		}
+	}
 }

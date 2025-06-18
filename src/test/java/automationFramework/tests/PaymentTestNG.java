@@ -129,8 +129,7 @@ public class PaymentTestNG {
 			if (reportFile.exists()) {
 				LoggerUtil.log("📧 Sending report via email...");
 
-				String[] recipients = { "rm4577302@gmail.com", "rajumallick4152@live.com", "raju@lcodetechnologies.com",
-						"abhishek@lcodetechnologies.com" };
+				String[] recipients = { "rm4577302@gmail.com", "rajumallick4152@live.com", "raju@lcodetechnologies.com" };
 
 				// add the main report file to attachments
 				attachments.add(reportFile);

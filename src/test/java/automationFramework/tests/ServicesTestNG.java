@@ -110,25 +110,18 @@ public class ServicesTestNG {
 		}
 	}
 
-	/*
-	 * @Test(priority = 4) public void testInvalidOTP() { test =
-	 * extent.createTest("🚫 Invalid OTP Test"); servicesPage = new
-	 * ServicesPage(driver, test); try { servicesPage.testInvalidOTPFlow();
-	 * test.pass("✅ Proper error handled for invalid OTP."); } catch (AssertionError
-	 * e) { test.fail(e.getMessage()); throw e; } }
-	 * 
-	 * @Test(priority = 5) public void testProceedWithoutOTP() { test =
-	 * extent.createTest("🚫 Proceed Without OTP Test"); servicesPage = new
-	 * ServicesPage(driver, test); try { servicesPage.testProceedWithoutOTP();
-	 * test.pass("✅ Proper validation handled for missing OTP."); } catch
-	 * (AssertionError e) { test.fail(e.getMessage()); throw e; } }
-	 * 
-	 * @Test(priority = 6) public void testProceedWithoutSave() { test =
-	 * extent.createTest("🚫 Proceed Without Saving Test"); servicesPage = new
-	 * ServicesPage(driver, test); try { servicesPage.testProceedWithoutSave();
-	 * test.pass("✅ Proper validation handled for missing Save step."); } catch
-	 * (AssertionError e) { test.fail(e.getMessage()); throw e; } }
-	 */
+	@Test(priority = 4)
+	public void testInvalidOTP() {
+		test = extent.createTest("🚫 Invalid OTP Test");
+		servicesPage = new ServicesPage(driver, test);
+		try {
+			servicesPage.testInvalidOTPFlow();
+			test.pass("✅ Proper error handled for invalid OTP.");
+		} catch (AssertionError e) {
+			test.fail(e.getMessage());
+			throw e;
+		}
+	}
 
 	@AfterMethod
 	public void captureFailureScreenshot(ITestResult result) {
@@ -170,7 +163,7 @@ public class ServicesTestNG {
 		}
 
 		if (driver != null) {
-		//	driver.quit();
+			// driver.quit();
 			LoggerUtil.log("✅ dont close Browser .");
 		}
 	}

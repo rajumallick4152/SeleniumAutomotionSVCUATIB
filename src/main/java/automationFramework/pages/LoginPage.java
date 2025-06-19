@@ -74,6 +74,30 @@ public class LoginPage {
 			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[.//span[text()='Login']]"))).click();
 			logger.info("✅ Clicked final Login button");
 			test.pass("✅ Clicked final Login button");
+             // here new code will be added---
+			// 🔄 New Step: Handle Residential Pincode Prompt (enter '1' and click Proceed)
+			// 🔄 Generic Step: Always enter '1' if pincode input field is present
+			try {
+				By pincodeInputLocator = By.xpath("//input[@formcontrolname='frm']");
+				By proceedButtonLocator = By.xpath("//span[text()='Proceed']/ancestor::button");
+
+				// Check if the input is visible
+				if (wait.until(ExpectedConditions.visibilityOfElementLocated(pincodeInputLocator)).isDisplayed()) {
+					logger.info("🔐 Pin code input field detected.");
+					test.info("🔐 Pin code input field detected.");
+
+					wait.until(ExpectedConditions.elementToBeClickable(pincodeInputLocator)).sendKeys("1");
+					logger.info("✅ Entered pin code: 1");
+					test.pass("✅ Entered pin code: 1");
+
+					wait.until(ExpectedConditions.elementToBeClickable(proceedButtonLocator)).click();
+					logger.info("➡️ Clicked Proceed.");
+					test.pass("➡️ Clicked Proceed.");
+				}
+			} catch (TimeoutException e) {
+				logger.info("ℹ️ Pin code input not found, continuing without it.");
+				test.info("ℹ️ Pin code input not found, continuing without it.");
+			}
 
 			By dashboardLocator = By.xpath("//span[@class='p-menuitem-text' and text()='Payment']");
 			wait.until(ExpectedConditions.visibilityOfElementLocated(dashboardLocator));

@@ -1,0 +1,81 @@
+2025-06-19 10:32:30 [main] WARN  org.testng.xml.TestNGContentHandler - Failed to read [/C:/Users/rajum/eclipse-workspace/ToolsQA/SeleniumAutomotionSVCUATIB/testng-1.1.dtd] from CLASSPATH. Attempting to read from [file:///C:/Users/rajum/eclipse-workspace/ToolsQA/SeleniumAutomotionSVCUATIB/testng-1.1.dtd].
+2025-06-19 10:32:30 [main] WARN  org.testng.xml.TestNGContentHandler - It is strongly recommended to add "<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.1.dtd" >" at the top of the suite file [C:\Users\rajum\eclipse-workspace\ToolsQA\SeleniumAutomotionSVCUATIB\src\main\resources\testng.xml] otherwise TestNG may fail or not work as expected.
+2025-06-19 10:32:31 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\rajum\eclipse-workspace\ToolsQA\SeleniumAutomotionSVCUATIB\src\main\resources\testng.xml
+
+2025-06-19 10:32:31 [main] INFO  automationFramework.utils.LoggerUtil - Initializing browser and report...
+2025-06-19 10:32:33 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 137.0.7151.119 (resolved driver for Chrome 137)
+2025-06-19 10:32:33 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\rajum\.cache\selenium\chromedriver\win64\137.0.7151.119\chromedriver.exe
+2025-06-19 10:32:36 [main] INFO  automationFramework.utils.LoggerUtil - Setup complete.
+2025-06-19 10:32:36 [main] INFO  automationFramework.pages.LoginPage - ✅ Captcha wait time loaded: 10 seconds
+2025-06-19 10:32:41 [main] INFO  automationFramework.pages.LoginPage - 🟦 Navigated to URL: https://uatnet.svcbank.com/ReachSVCInet/SVC-web/inet/netbanking
+2025-06-19 10:32:41 [main] INFO  automationFramework.pages.LoginPage - ✅ Entered username: TEST001
+2025-06-19 10:32:41 [main] INFO  automationFramework.pages.LoginPage - ⏳ Waiting for manual captcha input (10 seconds)
+2025-06-19 10:32:51 [main] INFO  automationFramework.pages.LoginPage - ✅ Clicked first Login button
+2025-06-19 10:32:52 [main] INFO  automationFramework.pages.LoginPage - ✅ Entered password
+2025-06-19 10:32:53 [main] INFO  automationFramework.pages.LoginPage - ✅ Clicked final Login button
+2025-06-19 10:32:55 [main] INFO  automationFramework.pages.LoginPage - 🎉 Login successful for user: TEST001
+2025-06-19 10:32:55 [main] INFO  a.pages.PaymentHistoryPage - 🟦 [STEP] Clicking on the Payment tab.
+2025-06-19 10:32:55 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-19 10:32:59 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.
+2025-06-19 10:32:59 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-19 10:33:00 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.
+2025-06-19 10:33:00 [main] INFO  a.pages.PaymentHistoryPage - ✅ [SUCCESS] Payment tab clicked.
+2025-06-19 10:33:00 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-19 10:33:01 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.
+2025-06-19 10:33:01 [main] INFO  a.pages.PaymentHistoryPage - 🧪=== Starting Positive Test Cases for NEFT transaction for Payment to Payee ===
+2025-06-19 10:33:01 [main] INFO  a.pages.PaymentHistoryPage - 🚀 [START] Initiating payment to payee: DXFCHGV
+2025-06-19 10:33:01 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-19 10:33:01 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.
+2025-06-19 10:33:01 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-19 10:33:02 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.
+2025-06-19 10:33:02 [main] INFO  a.pages.PaymentHistoryPage - ✅ [SUCCESS] Payee selected: DXFCHGV
+2025-06-19 10:33:02 [main] INFO  a.pages.PaymentHistoryPage - ✅ [SUCCESS] Entered amount: ₹1
+2025-06-19 10:33:02 [main] INFO  a.pages.PaymentHistoryPage - ✅ Amount '1' entered successfully.
+2025-06-19 10:33:02 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-19 10:33:03 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.
+2025-06-19 10:33:03 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared after entering amount.
+2025-06-19 10:33:03 [main] INFO  a.pages.PaymentHistoryPage - ✅ No critical service errors detected.
+2025-06-19 10:33:03 [main] INFO  a.pages.PaymentHistoryPage - 🟦 [STEP] Selecting NEFT option
+2025-06-19 10:33:03 [main] INFO  a.pages.PaymentHistoryPage - Attempting to click NEFT option (Attempt 1)
+2025-06-19 10:33:04 [main] INFO  a.pages.PaymentHistoryPage - 🔄 NEFT clicked via Actions.
+2025-06-19 10:33:04 [main] INFO  a.pages.PaymentHistoryPage - ✅ NEFT option selected successfully.
+2025-06-19 10:33:04 [main] INFO  a.pages.PaymentHistoryPage - ✅ NEFT option selected.
+2025-06-19 10:33:05 [main] INFO  a.pages.PaymentHistoryPage - ✅ [SUCCESS] Entered remarks: test value
+2025-06-19 10:33:05 [main] INFO  a.pages.PaymentHistoryPage - ✅ Remarks entered.
+2025-06-19 10:33:05 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-19 10:33:05 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.
+2025-06-19 10:33:05 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-19 10:33:05 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.
+2025-06-19 10:33:05 [main] INFO  a.pages.PaymentHistoryPage - ✅ [SUCCESS] Clicked Proceed after remarks.
+2025-06-19 10:33:05 [main] INFO  a.pages.PaymentHistoryPage - ✅ Clicked on Proceed button after entering remarks.
+2025-06-19 10:33:05 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-19 10:33:06 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.
+2025-06-19 10:33:06 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-19 10:33:07 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.
+2025-06-19 10:33:07 [main] INFO  a.pages.PaymentHistoryPage - ✅ [SUCCESS] Confirm button clicked.
+2025-06-19 10:33:07 [main] INFO  a.pages.PaymentHistoryPage - ✅ Confirm button clicked.
+2025-06-19 10:33:07 [main] INFO  a.pages.PaymentHistoryPage - ✅ [SUCCESS] OTP entered.
+2025-06-19 10:33:07 [main] INFO  a.pages.PaymentHistoryPage - ✅ OTP entered.
+2025-06-19 10:33:07 [main] INFO  a.pages.PaymentHistoryPage - Waiting for any overlay/spinner to disappear.
+2025-06-19 10:33:07 [main] INFO  a.pages.PaymentHistoryPage - ✅ [SUCCESS] Final Proceed clicked after OTP.
+2025-06-19 10:33:07 [main] INFO  a.pages.PaymentHistoryPage - ✅ Final Proceed button clicked.
+2025-06-19 10:33:23 [main] WARN  a.pages.PaymentHistoryPage - ⚠️ [WARN] Close button not found or failed to click: Expected condition failed: waiting for element to be clickable: By.xpath: (//img[@alt='close' and contains(@src,'ic_closeCircle')])[last()] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\rajum\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61116}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61116/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 858950b3086afd1ee94a719da76c08cd
+2025-06-19 10:33:23 [main] INFO  a.pages.PaymentHistoryPage - ✅ Close button clicked after transaction.
+2025-06-19 10:33:23 [main] INFO  a.pages.PaymentHistoryPage - 🎉 [DONE] ✅ Positive test case for Payment to payee 'DXFCHGV' successfully executed.
+2025-06-19 10:33:23 [main] INFO  a.pages.PaymentHistoryPage - 🟦 [STEP] Clicking on the Payment tab.
+2025-06-19 10:33:23 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-19 10:33:23 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.
+2025-06-19 10:33:38 [main] WARN  a.pages.PaymentHistoryPage - ⚠️ Click failed attempt 1/3: Expected condition failed: waiting for element to be clickable: By.xpath: //span[@class='p-menuitem-text' and text()='Payment'] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\rajum\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61116}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61116/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 858950b3086afd1ee94a719da76c08cd
+2025-06-19 10:33:39 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-19 10:33:39 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.

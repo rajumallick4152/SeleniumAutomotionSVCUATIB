@@ -17,7 +17,7 @@ import com.aventstack.extentreports.ExtentTest;
 public class PaymentHistoryPage extends BasePage {
 
 	private static final By PAYMENT_TAB = By.xpath("//span[@class='p-menuitem-text' and text()='Payment']");
-	private static final By PAYEE_NAME = By.xpath("//span[contains(@class, 'font-semibold') and text()='DXFCHGV']");
+	private static final By PAYEE_NAME = By.xpath("//span[@class='font-semibold mb-1' and text()='RAJATH CANARA']");
 	private static final By AMOUNT_INPUT = By.id("custom-amount-input");
 	private static final By REMARKS_INPUT = By.xpath("//input[@placeholder='Add Remarks']");
 	private static final By PROCEED_BUTTON_REMARKS = By.xpath("(//span[text()='Proceed'])[1]");

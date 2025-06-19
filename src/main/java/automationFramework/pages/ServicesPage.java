@@ -2,10 +2,14 @@ package automationFramework.pages;
 
 import com.aventstack.extentreports.ExtentTest;
 import org.openqa.selenium.By;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 import java.util.Random;
 
 public class ServicesPage extends BasePage {
@@ -28,6 +32,10 @@ public class ServicesPage extends BasePage {
 	private static final By DEBIT_ERROR_MESSAGE = By
 			.xpath("//small[contains(text(),'Valid Debited Amount is required')]");
 	private static final By CLOSE_ERROR_POPUP = By.xpath("//img[@alt='close' and contains(@src, 'ic_closeCircle')]");
+	private static final By CANCEL_BUTTON = By.xpath("//span[contains(@class, 'p-button-label') and text()='Cancel']");
+	// private static final By INVALID_OTP_MESSAGE =
+	// By.xpath("//div[contains(@class, 'flex-1') and text()='OTP Validation
+	// Failed']");
 
 	private ExtentTest test;
 
@@ -172,36 +180,51 @@ public class ServicesPage extends BasePage {
 		} else {
 			throw new AssertionError("❌ Unexpected input behavior: " + creditValue + ", " + debitValue);
 		}
+		click(CLOSE_ERROR_POPUP);
+		logStep("❎ Closed the popup for Next Test.");
 	}
 
 	public void testInvalidOTPFlow() {
 		navigateToManageSMS();
 		enterAmountThresholds();
 		clickSave();
-		enterOTP("000000");
+		enterOTP("000000"); // Invalid OTP
 		clickProceed();
-		if (isSuccessPopupVisible()) {
-			throw new AssertionError("❌ Success popup appeared with invalid OTP.");
+
+		try {
+			WebElement errorMsg = wait.until(
+					ExpectedConditions.presenceOfElementLocated(By.xpath("//*[contains(text(),'OTP Validation')]"))); // Loose
+																														// match
+
+			String actualMsg = errorMsg.getText().trim();
+			logger.info("❌ Error Message Shown: " + actualMsg);
+			test.pass("❌ Error Message Shown: " + actualMsg);
+
+			if (actualMsg.toLowerCase().contains("otp")) {
+				logger.info("✅ OTP validation error appeared as expected.");
+				test.pass("✅ OTP validation error appeared as expected.");
+			} else {
+				throw new AssertionError("❌ Unexpected error message: " + actualMsg);
+			}
+
+		} catch (TimeoutException e) {
+			logger.error("❌ OTP validation error message not found.");
+			test.fail("❌ OTP validation error message not found.");
 		}
+
+		// Continue with cleanup
+		clickCancelButton();
+		clickCloseArrow();
 	}
 
-	public void testProceedWithoutOTP() {
-		navigateToManageSMS();
-		enterAmountThresholds();
-		clickSave();
-		clickProceed();
-		if (isSuccessPopupVisible()) {
-			throw new AssertionError("❌ Proceeded without OTP.");
-		}
+	private void clickCancelButton() {
+		logStep("❎ Clicking Cancel button...");
+		click(CANCEL_BUTTON);
 	}
 
-	public void testProceedWithoutSave() {
-		navigateToManageSMS();
-		enterAmountThresholds();
-		enterOTP("123456");
-		clickProceed();
-		if (isSuccessPopupVisible()) {
-			throw new AssertionError("❌ Proceeded without Save click.");
-		}
+	private void clickCloseArrow() {
+		logStep("❎ Clicking Close Arrow...");
+		click(CLOSE_ERROR_POPUP);
 	}
+
 }

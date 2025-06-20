@@ -8,372 +8,80 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num attn">15</td><td class="num">0</td><td class="num attn">1</td><td class="num">59,940</td><td></td><td></td></tr>
+<tr><th colspan="8">MySuite</th></tr>
+<tr><td><a href="#t0">MultipleTest</a></td><td class="num">11</td><td class="num">0</td><td class="num">0</td><td class="num attn">5</td><td class="num">1,534,381</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">automationFramework.tests.CombinedTestNGSuite</td><td><a href="#m0">loginToApplication</a></td><td rowspan="1">1750414323141</td><td rowspan="1">42383</td></tr><tr><th colspan="4">Default test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="15">automationFramework.tests.CombinedTestNGSuite</td><td><a href="#m1">downloadCustom12MonthsPdf</a></td><td rowspan="1">1750414366151</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m2">downloadCustom12MonthsXsl</a></td><td rowspan="1">1750414366158</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m3">downloadCustom6MonthsPdf</a></td><td rowspan="1">1750414366155</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m4">downloadCustom6MonthsXsl</a></td><td rowspan="1">1750414366147</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m5">downloadOneMonthStatementPdf</a></td><td rowspan="1">1750414366130</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m6">downloadOneMonthStatementXls</a></td><td rowspan="1">1750414366138</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m7">downloadThreeMonthStatementPdf</a></td><td rowspan="1">1750414366134</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m8">downloadThreeMonthStatementXls</a></td><td rowspan="1">1750414366142</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m9">testAccountSummary</a></td><td rowspan="1">1750414366125</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m10">testEmptyThresholds</a></td><td rowspan="1">1750414366103</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m11">testInvalidAmountScenarios</a></td><td rowspan="1">1750414366120</td><td rowspan="1">1</td></tr><tr class="skippedeven"><td><a href="#m12">testInvalidOTP</a></td><td rowspan="1">1750414366111</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m13">testManageSMSFlow</a></td><td rowspan="1">1750414366098</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m14">testNegativeThresholds</a></td><td rowspan="1">1750414366107</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m15">testValidPaymentFlow</a></td><td rowspan="1">1750414366117</td><td rowspan="1">0</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">MySuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">MultipleTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="5">automationFramework.tests.AccountsTestNG</td><td><a href="#m0">downloadCustom12MonthsPdf</a></td><td rowspan="1">1750417410512</td><td rowspan="1">41088</td></tr><tr class="failedeven"><td><a href="#m1">downloadCustom12MonthsXsl</a></td><td rowspan="1">1750417493735</td><td rowspan="1">41094</td></tr><tr class="failedeven"><td><a href="#m2">downloadCustom6MonthsPdf</a></td><td rowspan="1">1750417452120</td><td rowspan="1">41046</td></tr><tr class="failedeven"><td><a href="#m3">downloadCustom6MonthsXsl</a></td><td rowspan="1">1750417115012</td><td rowspan="1">294945</td></tr><tr class="failedeven"><td><a href="#m4">downloadOneMonthStatementXls</a></td><td rowspan="1">1750416828694</td><td rowspan="1">67115</td></tr><tr><th colspan="4">MultipleTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">automationFramework.tests.AccountsTestNG</td><td><a href="#m5">downloadOneMonthStatementPdf</a></td><td rowspan="1">1750416612497</td><td rowspan="1">78441</td></tr><tr class="passedeven"><td><a href="#m6">downloadThreeMonthStatementPdf</a></td><td rowspan="1">1750416690940</td><td rowspan="1">137751</td></tr><tr class="passedeven"><td><a href="#m7">downloadThreeMonthStatementXls</a></td><td rowspan="1">1750416896390</td><td rowspan="1">218618</td></tr><tr class="passedeven"><td><a href="#m8">testAccountSummary</a></td><td rowspan="1">1750416400832</td><td rowspan="1">211663</td></tr><tr class="passedodd"><td rowspan="3">automationFramework.tests.PaymentTestNG</td><td><a href="#m9">loginBeforePayment</a></td><td rowspan="1">1750416019089</td><td rowspan="1">28830</td></tr><tr class="passedodd"><td><a href="#m10">testInvalidAmountScenarios</a></td><td rowspan="1">1750416059254</td><td rowspan="1">21840</td></tr><tr class="passedodd"><td><a href="#m11">testPayment</a></td><td rowspan="1">1750416047935</td><td rowspan="1">11315</td></tr><tr class="passedeven"><td rowspan="4">automationFramework.tests.ServicesTestNG</td><td><a href="#m12">testEmptyThresholds</a></td><td rowspan="1">1750416193487</td><td rowspan="1">39961</td></tr><tr class="passedeven"><td><a href="#m13">testInvalidOTP</a></td><td rowspan="1">1750416263004</td><td rowspan="1">96193</td></tr><tr class="passedeven"><td><a href="#m14">testManageSMSFlow</a></td><td rowspan="1">1750416118187</td><td rowspan="1">75284</td></tr><tr class="passedeven"><td><a href="#m15">testNegativeThresholds</a></td><td rowspan="1">1750416233454</td><td rowspan="1">29545</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">automationFramework.tests.CombinedTestNGSuite#loginToApplication</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Login unsuccessful.
-	at org.testng.Assert.fail(Assert.java:111)
-	at automationFramework.tests.CombinedTestNGSuite.loginToApplication(CombinedTestNGSuite.java:70)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+<h2>MultipleTest</h2><h3 id="m0">automationFramework.tests.AccountsTestNG#downloadCustom12MonthsPdf</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: Custom statement download failed for 12 months
+	at automationFramework.pages.AccountsPage.downloadCustomStatement(AccountsPage.java:217)
+	at automationFramework.tests.AccountsTestNG.lambda$6(AccountsTestNG.java:111)
+	at automationFramework.tests.AccountsTestNG.runDownloadTest(AccountsTestNG.java:67)
+	at automationFramework.tests.AccountsTestNG.downloadCustom12MonthsPdf(AccountsTestNG.java:110)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">automationFramework.tests.CombinedTestNGSuite#downloadCustom12MonthsPdf</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method automationFramework.tests.CombinedTestNGSuite.downloadCustom12MonthsPdf() on instance automationFramework.tests.CombinedTestNGSuite@496bc455 depends on not successfully finished methods 
-[automationFramework.tests.CombinedTestNGSuite.loginToApplication() on instance automationFramework.tests.CombinedTestNGSuite@496bc455]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+Caused by: java.lang.RuntimeException: ❌ Click failed after 3 attempts: By.xpath: //span[@class=&apos;p-menuitem-text&apos; and text()=&apos;Accounts&apos;]
+	at automationFramework.pages.BasePage.clickWithRetry(BasePage.java:75)
+	at automationFramework.pages.AccountsPage.ensureDetailedStatementVisible(AccountsPage.java:93)
+	at automationFramework.pages.AccountsPage.downloadCustomStatement(AccountsPage.java:144)
+	... 31 more
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">automationFramework.tests.AccountsTestNG#downloadCustom12MonthsXsl</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: Custom statement download failed for 12 months
+	at automationFramework.pages.AccountsPage.downloadCustomStatement(AccountsPage.java:217)
+	at automationFramework.tests.AccountsTestNG.lambda$8(AccountsTestNG.java:123)
+	at automationFramework.tests.AccountsTestNG.runDownloadTest(AccountsTestNG.java:67)
+	at automationFramework.tests.AccountsTestNG.downloadCustom12MonthsXsl(AccountsTestNG.java:122)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">automationFramework.tests.CombinedTestNGSuite#downloadCustom12MonthsXsl</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method automationFramework.tests.CombinedTestNGSuite.downloadCustom12MonthsXsl() on instance automationFramework.tests.CombinedTestNGSuite@496bc455 depends on not successfully finished methods 
-[automationFramework.tests.CombinedTestNGSuite.loginToApplication() on instance automationFramework.tests.CombinedTestNGSuite@496bc455]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+Caused by: java.lang.RuntimeException: ❌ Click failed after 3 attempts: By.xpath: //span[@class=&apos;p-menuitem-text&apos; and text()=&apos;Accounts&apos;]
+	at automationFramework.pages.BasePage.clickWithRetry(BasePage.java:75)
+	at automationFramework.pages.AccountsPage.ensureDetailedStatementVisible(AccountsPage.java:93)
+	at automationFramework.pages.AccountsPage.downloadCustomStatement(AccountsPage.java:144)
+	... 31 more
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">automationFramework.tests.AccountsTestNG#downloadCustom6MonthsPdf</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: Custom statement download failed for 6 months
+	at automationFramework.pages.AccountsPage.downloadCustomStatement(AccountsPage.java:217)
+	at automationFramework.tests.AccountsTestNG.lambda$7(AccountsTestNG.java:117)
+	at automationFramework.tests.AccountsTestNG.runDownloadTest(AccountsTestNG.java:67)
+	at automationFramework.tests.AccountsTestNG.downloadCustom6MonthsPdf(AccountsTestNG.java:116)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">automationFramework.tests.CombinedTestNGSuite#downloadCustom6MonthsPdf</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method automationFramework.tests.CombinedTestNGSuite.downloadCustom6MonthsPdf() on instance automationFramework.tests.CombinedTestNGSuite@496bc455 depends on not successfully finished methods 
-[automationFramework.tests.CombinedTestNGSuite.loginToApplication() on instance automationFramework.tests.CombinedTestNGSuite@496bc455]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+Caused by: java.lang.RuntimeException: ❌ Click failed after 3 attempts: By.xpath: //span[@class=&apos;p-menuitem-text&apos; and text()=&apos;Accounts&apos;]
+	at automationFramework.pages.BasePage.clickWithRetry(BasePage.java:75)
+	at automationFramework.pages.AccountsPage.ensureDetailedStatementVisible(AccountsPage.java:93)
+	at automationFramework.pages.AccountsPage.downloadCustomStatement(AccountsPage.java:144)
+	... 31 more
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">automationFramework.tests.AccountsTestNG#downloadCustom6MonthsXsl</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: Custom statement download failed for 6 months
+	at automationFramework.pages.AccountsPage.downloadCustomStatement(AccountsPage.java:217)
+	at automationFramework.tests.AccountsTestNG.lambda$5(AccountsTestNG.java:105)
+	at automationFramework.tests.AccountsTestNG.runDownloadTest(AccountsTestNG.java:67)
+	at automationFramework.tests.AccountsTestNG.downloadCustom6MonthsXsl(AccountsTestNG.java:104)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">automationFramework.tests.CombinedTestNGSuite#downloadCustom6MonthsXsl</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method automationFramework.tests.CombinedTestNGSuite.downloadCustom6MonthsXsl() on instance automationFramework.tests.CombinedTestNGSuite@496bc455 depends on not successfully finished methods 
-[automationFramework.tests.CombinedTestNGSuite.loginToApplication() on instance automationFramework.tests.CombinedTestNGSuite@496bc455]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+Caused by: java.lang.RuntimeException: ❌ Click failed after 3 attempts: By.xpath: //img[contains(@src,&apos;ic_excel_file.svg&apos;) and @alt=&apos;excel&apos;]
+	at automationFramework.pages.BasePage.clickWithRetry(BasePage.java:75)
+	at automationFramework.pages.AccountsPage.downloadCustomStatement(AccountsPage.java:206)
+	... 31 more
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">automationFramework.tests.AccountsTestNG#downloadOneMonthStatementXls</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: Failed to download 1 Month statement in XLS
+	at automationFramework.pages.AccountsPage.downloadStatement(AccountsPage.java:135)
+	at automationFramework.tests.AccountsTestNG.lambda$3(AccountsTestNG.java:94)
+	at automationFramework.tests.AccountsTestNG.runDownloadTest(AccountsTestNG.java:67)
+	at automationFramework.tests.AccountsTestNG.downloadOneMonthStatementXls(AccountsTestNG.java:94)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">automationFramework.tests.CombinedTestNGSuite#downloadOneMonthStatementPdf</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method automationFramework.tests.CombinedTestNGSuite.downloadOneMonthStatementPdf() on instance automationFramework.tests.CombinedTestNGSuite@496bc455 depends on not successfully finished methods 
-[automationFramework.tests.CombinedTestNGSuite.loginToApplication() on instance automationFramework.tests.CombinedTestNGSuite@496bc455]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">automationFramework.tests.CombinedTestNGSuite#downloadOneMonthStatementXls</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method automationFramework.tests.CombinedTestNGSuite.downloadOneMonthStatementXls() on instance automationFramework.tests.CombinedTestNGSuite@496bc455 depends on not successfully finished methods 
-[automationFramework.tests.CombinedTestNGSuite.loginToApplication() on instance automationFramework.tests.CombinedTestNGSuite@496bc455]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">automationFramework.tests.CombinedTestNGSuite#downloadThreeMonthStatementPdf</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method automationFramework.tests.CombinedTestNGSuite.downloadThreeMonthStatementPdf() on instance automationFramework.tests.CombinedTestNGSuite@496bc455 depends on not successfully finished methods 
-[automationFramework.tests.CombinedTestNGSuite.loginToApplication() on instance automationFramework.tests.CombinedTestNGSuite@496bc455]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m8">automationFramework.tests.CombinedTestNGSuite#downloadThreeMonthStatementXls</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method automationFramework.tests.CombinedTestNGSuite.downloadThreeMonthStatementXls() on instance automationFramework.tests.CombinedTestNGSuite@496bc455 depends on not successfully finished methods 
-[automationFramework.tests.CombinedTestNGSuite.loginToApplication() on instance automationFramework.tests.CombinedTestNGSuite@496bc455]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m9">automationFramework.tests.CombinedTestNGSuite#testAccountSummary</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method automationFramework.tests.CombinedTestNGSuite.testAccountSummary() on instance automationFramework.tests.CombinedTestNGSuite@496bc455 depends on not successfully finished methods 
-[automationFramework.tests.CombinedTestNGSuite.loginToApplication() on instance automationFramework.tests.CombinedTestNGSuite@496bc455]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m10">automationFramework.tests.CombinedTestNGSuite#testEmptyThresholds</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method automationFramework.tests.CombinedTestNGSuite.testEmptyThresholds() on instance automationFramework.tests.CombinedTestNGSuite@496bc455 depends on not successfully finished methods 
-[automationFramework.tests.CombinedTestNGSuite.loginToApplication() on instance automationFramework.tests.CombinedTestNGSuite@496bc455]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m11">automationFramework.tests.CombinedTestNGSuite#testInvalidAmountScenarios</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method automationFramework.tests.CombinedTestNGSuite.testInvalidAmountScenarios() on instance automationFramework.tests.CombinedTestNGSuite@496bc455 depends on not successfully finished methods 
-[automationFramework.tests.CombinedTestNGSuite.loginToApplication() on instance automationFramework.tests.CombinedTestNGSuite@496bc455]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m12">automationFramework.tests.CombinedTestNGSuite#testInvalidOTP</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method automationFramework.tests.CombinedTestNGSuite.testInvalidOTP() on instance automationFramework.tests.CombinedTestNGSuite@496bc455 depends on not successfully finished methods 
-[automationFramework.tests.CombinedTestNGSuite.loginToApplication() on instance automationFramework.tests.CombinedTestNGSuite@496bc455]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m13">automationFramework.tests.CombinedTestNGSuite#testManageSMSFlow</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method automationFramework.tests.CombinedTestNGSuite.testManageSMSFlow() on instance automationFramework.tests.CombinedTestNGSuite@496bc455 depends on not successfully finished methods 
-[automationFramework.tests.CombinedTestNGSuite.loginToApplication() on instance automationFramework.tests.CombinedTestNGSuite@496bc455]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m14">automationFramework.tests.CombinedTestNGSuite#testNegativeThresholds</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method automationFramework.tests.CombinedTestNGSuite.testNegativeThresholds() on instance automationFramework.tests.CombinedTestNGSuite@496bc455 depends on not successfully finished methods 
-[automationFramework.tests.CombinedTestNGSuite.loginToApplication() on instance automationFramework.tests.CombinedTestNGSuite@496bc455]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m15">automationFramework.tests.CombinedTestNGSuite#testValidPaymentFlow</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method automationFramework.tests.CombinedTestNGSuite.testValidPaymentFlow() on instance automationFramework.tests.CombinedTestNGSuite@496bc455 depends on not successfully finished methods 
-[automationFramework.tests.CombinedTestNGSuite.loginToApplication() on instance automationFramework.tests.CombinedTestNGSuite@496bc455]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+Caused by: java.lang.RuntimeException: ❌ Click failed after 3 attempts: By.xpath: //span[@class=&apos;p-menuitem-text&apos; and text()=&apos;Accounts&apos;]
+	at automationFramework.pages.BasePage.clickWithRetry(BasePage.java:75)
+	at automationFramework.pages.AccountsPage.ensureDetailedStatementVisible(AccountsPage.java:93)
+	at automationFramework.pages.AccountsPage.downloadStatement(AccountsPage.java:103)
+	... 31 more
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">automationFramework.tests.AccountsTestNG#downloadOneMonthStatementPdf</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">automationFramework.tests.AccountsTestNG#downloadThreeMonthStatementPdf</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">automationFramework.tests.AccountsTestNG#downloadThreeMonthStatementXls</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">automationFramework.tests.AccountsTestNG#testAccountSummary</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">automationFramework.tests.PaymentTestNG#loginBeforePayment</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">automationFramework.tests.PaymentTestNG#testInvalidAmountScenarios</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">automationFramework.tests.PaymentTestNG#testPayment</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">automationFramework.tests.ServicesTestNG#testEmptyThresholds</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">automationFramework.tests.ServicesTestNG#testInvalidOTP</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">automationFramework.tests.ServicesTestNG#testManageSMSFlow</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">automationFramework.tests.ServicesTestNG#testNegativeThresholds</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

@@ -20,6 +20,8 @@ import org.testng.annotations.*;
 import java.io.File;
 import java.io.InputStream;
 import java.time.Duration;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Properties;
 
 public class AccountsTestNG {
@@ -29,6 +31,7 @@ public class AccountsTestNG {
 	private AccountsPage accountsPage;
 	private ExtentReports extent;
 	private ExtentTest test;
+	private List<File> attachments = new ArrayList<>();
 
 	@BeforeClass
 	public void setUp() throws Exception {
@@ -121,14 +124,18 @@ public class AccountsTestNG {
 	}
 
 	@AfterMethod
-	public void captureFailureScreenshot(ITestResult result) {
+	public void handleTestResult(ITestResult result) {
 		if (result.getStatus() == ITestResult.FAILURE) {
-			String screenshotPath = ScreenshotUtil.captureScreenshot(driver, result.getName());
+			String screenshotPath = ScreenshotUtil.captureScreenshotAsFile(driver, result.getName());
+			String base64Screenshot = ScreenshotUtil.captureScreenshotAsBase64(driver);
+
+			attachments.add(new File(screenshotPath));
+
 			try {
 				test.fail("❌ Test Failed: " + result.getThrowable(),
-						MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
+						MediaEntityBuilder.createScreenCaptureFromBase64String(base64Screenshot).build());
 			} catch (Exception e) {
-				test.fail("❌ Test Failed: " + result.getThrowable());
+				test.fail("❌ Could not attach screenshot: " + e.getMessage());
 			}
 		} else if (result.getStatus() == ITestResult.SKIP) {
 			test.skip("⚠️ Test Skipped: " + result.getThrowable());
@@ -141,22 +148,39 @@ public class AccountsTestNG {
 		extent.flush();
 
 		try {
-			File reportFile = new File(System.getProperty("user.dir") + "/test-output/ExtentReports/ExtentReport.html");
-			for (int i = 0; i < 10 && !reportFile.exists(); i++)
+			String reportPath = System.getProperty("user.dir") + "/test-output/ExtentReports/ExtentReport.html";
+			File reportFile = new File(reportPath);
+
+			int wait = 0;
+			while (!reportFile.exists() && wait < 5000) {
 				Thread.sleep(500);
+				wait += 500;
+			}
 
 			if (reportFile.exists()) {
 				LoggerUtil.log("📧 Sending report via email...");
+
 				String[] recipients = { "rm4577302@gmail.com", "rajumallick4152@live.com",
-						"raju@lcodetechnologies.com" };
-				EmailSender.sendEmailWithAttachment(recipients, "Accounts Automation Report",
-						"Hi,\n\nPlease find the attached Accounts module automation report.\n\nThanks,\nSupriya",
-						reportFile);
+						"raju@lcodetechnologies.com", };
+				attachments.add(reportFile);
+
+				String body = "Hi,\n\nPlease find the attached automation test report.\n\nThanks,\nSupriya\n\n"
+						+ "DISCLAIMER : This message contains information that may be privileged and/or confidential, "
+						+ "and is the property of LCode Technologies Private Limited. It is intended only for the person to whom it is addressed. "
+						+ "If you are not the intended recipient of this message, you are not authorized to read, print, retain, copy, disseminate, "
+						+ "distribute, or use this message in full or in part. In such a case, please notify the sender immediately, and delete all copies of this message.";
+
+				EmailSender.sendEmailWithMultipleAttachments(recipients, "Automation Test Report", body, attachments);
 			} else {
-				LoggerUtil.log("❌ Report file not found.");
+				LoggerUtil.log("❌ Report file not found at: " + reportPath);
 			}
 		} catch (Exception e) {
-			LoggerUtil.log("❌ Email sending failed: " + e.getMessage());
+			LoggerUtil.log("❌ Failed to send email: " + e.getMessage());
+		}
+
+		if (driver != null) {
+			LoggerUtil.log("✅ Browser session complete. (Not quitting for debug)");
+			// driver.quit(); // Uncomment if needed
 		}
 	}
 }

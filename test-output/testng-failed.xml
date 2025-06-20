@@ -3,14 +3,29 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="automationFramework.tests.ServicesTestNG">
+      <class name="automationFramework.tests.CombinedTestNGSuite">
         <methods>
-          <include name="captureFailureScreenshot"/>
           <include name="testInvalidOTP"/>
-          <include name="setUp"/>
+          <include name="handleTestResult"/>
+          <include name="testNegativeThresholds"/>
+          <include name="downloadOneMonthStatementPdf"/>
+          <include name="testAccountSummary"/>
+          <include name="loginToApplication"/>
+          <include name="downloadThreeMonthStatementPdf"/>
+          <include name="downloadCustom12MonthsXsl"/>
+          <include name="downloadCustom6MonthsXsl"/>
+          <include name="downloadCustom6MonthsPdf"/>
+          <include name="testManageSMSFlow"/>
+          <include name="downloadThreeMonthStatementXls"/>
+          <include name="testEmptyThresholds"/>
           <include name="tearDown"/>
+          <include name="testValidPaymentFlow"/>
+          <include name="downloadCustom12MonthsPdf"/>
+          <include name="downloadOneMonthStatementXls"/>
+          <include name="testInvalidAmountScenarios"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- automationFramework.tests.ServicesTestNG -->
+      </class> <!-- automationFramework.tests.CombinedTestNGSuite -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -2,6 +2,7 @@ package automationFramework.pages;
 
 import org.openqa.selenium.*;
 import automationFramework.utils.ConfigReader;
+import automationFramework.utils.ScreenshotUtil;
 
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -9,7 +10,12 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.MediaEntityBuilder;
+
+import java.io.File;
 import java.time.Duration;
+import java.util.List;
 
 public abstract class BasePage {
 
@@ -57,7 +63,7 @@ public abstract class BasePage {
 				WebElement element = wait.until(ExpectedConditions.elementToBeClickable(locator));
 				scrollIntoView(element);
 				element.click();
-				waitForSpinnerToFullyDisappear();
+				// waitForSpinnerToFullyDisappear();
 				return;
 			} catch (ElementClickInterceptedException e) {
 				logger.warn("⚠️ Click intercepted attempt {}/3: {}", i, e.getMessage());
@@ -112,6 +118,58 @@ public abstract class BasePage {
 			logger.error("❌ Error Detection Triggered: {}", e.getMessage());
 			throw e;
 		}
+	}
+
+	public boolean handlePaymentFailurePopupIfPresent() {
+		try {
+			By errorMessageLocator = By
+					.xpath("//span[contains(text(),'We are currently facing some technical issue')]");
+			By okButtonLocator = By.xpath("//span[text()='Okay']/ancestor::button");
+
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(3));
+			WebElement popup = wait.until(ExpectedConditions.visibilityOfElementLocated(errorMessageLocator));
+
+			if (popup != null) {
+				logger.error("❌ NEFT transaction failed: " + popup.getText());
+
+				WebElement okButton = driver.findElement(okButtonLocator);
+				okButton.click();
+				logger.info("ℹ️ Clicked on 'Okay' button to dismiss the error popup.");
+				return true;
+			}
+		} catch (TimeoutException e) {
+			// No popup found, safe to continue
+		} catch (Exception e) {
+			logger.error("❌ Unexpected error during payment failure popup handling: {}", e.getMessage());
+			throw e;
+		}
+		return false;
+	}
+	
+	public boolean handleloginFailureCBSPopupIfPresent() {
+		try {
+			By errorMessageLocator = By
+					.xpath("//div[contains(text(), 'We are unable to retrieve a response from CBS')]");
+			By okButtonLocator = By.xpath("//span[contains(@class, 'p-button-label') and text()='Okay']");
+
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(3));
+			WebElement popup = wait.until(ExpectedConditions.visibilityOfElementLocated(errorMessageLocator));
+
+			if (popup != null) {
+				logger.error("❌ Login failed: " + popup.getText());
+
+				WebElement okButton = driver.findElement(okButtonLocator);
+				okButton.click();
+				logger.info("ℹ️ Clicked on 'Okay' button to dismiss the error popup.");
+				return true;
+			}
+		} catch (TimeoutException e) {
+			// No popup found, safe to continue
+		} catch (Exception e) {
+			logger.error("❌ Unexpected error during Login failure popup handling: {}", e.getMessage());
+			throw e;
+		}
+		return false;
 	}
 
 	// ✅ JavaScript Click
@@ -215,7 +273,6 @@ public abstract class BasePage {
 		} catch (NoSuchElementException e) {
 			return false;
 		}
-		
-		
+
 	}
 }

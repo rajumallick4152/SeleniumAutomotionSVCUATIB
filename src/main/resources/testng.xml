@@ -12,8 +12,9 @@
 		<classes>
 
 			<!-- <class name="automationFramework.tests.AccountsTestNG" /> -->
-			<class name="automationFramework.tests.ServicesTestNG" />
 			<class name="automationFramework.tests.PaymentTestNG" />
+			<class name="automationFramework.tests.ServicesTestNG" />
+			<class name="automationFramework.tests.AccountsTestNG" />
 
 		</classes>
 	</test>

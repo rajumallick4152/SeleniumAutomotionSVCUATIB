@@ -1,5 +1,7 @@
+
 package automationFramework.pages;
 
+import automationFramework.utils.ScreenshotUtil;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.*;
 
@@ -12,8 +14,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.MediaEntityBuilder;
 
-public class LoginPage {
+public class LoginPage extends BasePage {
 	private static final Logger logger = LoggerFactory.getLogger(LoginPage.class);
 
 	WebDriver driver;
@@ -21,6 +24,7 @@ public class LoginPage {
 	private int captchaWaitSeconds;
 
 	public LoginPage(WebDriver driver) {
+		super(driver); // ✅ Needed for BasePage methods
 		this.driver = driver;
 		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		loadConfig();
@@ -44,10 +48,6 @@ public class LoginPage {
 		}
 	}
 
-	/**
-	 * Modified performLogin method that returns true if login is successful, false
-	 * otherwise.
-	 */
 	public boolean performLogin(String url, String username, String password, ExtentTest test) {
 		try {
 			driver.get(url);
@@ -74,42 +74,57 @@ public class LoginPage {
 			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[.//span[text()='Login']]"))).click();
 			logger.info("✅ Clicked final Login button");
 			test.pass("✅ Clicked final Login button");
-             // here new code will be added---
-			// 🔄 New Step: Handle Residential Pincode Prompt (enter '1' and click Proceed)
-			// 🔄 Generic Step: Always enter '1' if pincode input field is present
-			try {
-				By pincodeInputLocator = By.xpath("//input[@formcontrolname='frm']");
-				By proceedButtonLocator = By.xpath("//span[text()='Proceed']/ancestor::button");
 
-				// Check if the input is visible
-				if (wait.until(ExpectedConditions.visibilityOfElementLocated(pincodeInputLocator)).isDisplayed()) {
-					logger.info("🔐 Pin code input field detected.");
-					test.info("🔐 Pin code input field detected.");
-
-					wait.until(ExpectedConditions.elementToBeClickable(pincodeInputLocator)).sendKeys("1");
-					logger.info("✅ Entered pin code: 1");
-					test.pass("✅ Entered pin code: 1");
-
-					wait.until(ExpectedConditions.elementToBeClickable(proceedButtonLocator)).click();
-					logger.info("➡️ Clicked Proceed.");
-					test.pass("➡️ Clicked Proceed.");
-				}
-			} catch (TimeoutException e) {
-				logger.info("ℹ️ Pin code input not found, continuing without it.");
-				test.info("ℹ️ Pin code input not found, continuing without it.");
+			// 🛑 Check CBS failure popup
+			if (handleloginFailureCBSPopupIfPresent()) {
+				logger.error("❌ CBS login failure popup detected.");
+				String screenshot = ScreenshotUtil.captureScreenshot(driver, "CBS_Login_Failure");
+				test.fail("❌ CBS login failure popup detected.",
+						MediaEntityBuilder.createScreenCaptureFromPath(screenshot).build());
+				return false;
 			}
 
+			if (handleloginFailureCBSPopupIfPresent()) {
+				String screenshot = ScreenshotUtil.captureScreenshot(driver, "CBS_Login_Error");
+				test.fail("❌ CBS login failure popup detected.",
+						MediaEntityBuilder.createScreenCaptureFromPath(screenshot).build());
+				return false;
+			}
+
+			/*
+			 * // 🔄 Handle Residential Pincode Prompt (enter '1' and click Proceed) try {
+			 * By pincodeInputLocator = By.xpath("//input[@formcontrolname='frm']"); By
+			 * proceedButtonLocator = By.xpath("//span[text()='Proceed']/ancestor::button");
+			 * 
+			 * WebElement pincodeInput =
+			 * wait.until(ExpectedConditions.visibilityOfElementLocated(pincodeInputLocator)
+			 * ); if (pincodeInput.isDisplayed()) {
+			 * logger.info("🔐 Pin code input field detected.");
+			 * test.info("🔐 Pin code input field detected.");
+			 * 
+			 * wait.until(ExpectedConditions.elementToBeClickable(pincodeInputLocator)).
+			 * sendKeys("1"); logger.info("✅ Entered pin code: 1");
+			 * test.pass("✅ Entered pin code: 1");
+			 * 
+			 * wait.until(ExpectedConditions.elementToBeClickable(proceedButtonLocator)).
+			 * click(); logger.info("➡️ Clicked Proceed.");
+			 * test.pass("➡️ Clicked Proceed."); } } catch (TimeoutException e) {
+			 * logger.info("ℹ️ Pin code input not found, continuing without it.");
+			 * test.info("ℹ️ Pin code input not found, continuing without it."); }
+			 */
+
+			// ✅ Wait for dashboard
 			By dashboardLocator = By.xpath("//span[@class='p-menuitem-text' and text()='Payment']");
 			wait.until(ExpectedConditions.visibilityOfElementLocated(dashboardLocator));
 
 			logger.info("🎉 Login successful for user: {}", username);
 			test.pass("🎉 Login successful for user: " + username);
 			return true;
+
 		} catch (Exception e) {
 			logger.error("❌ Login failed: {}", e.getMessage());
 			test.fail("❌ Login failed: " + e.getMessage());
 			return false;
 		}
 	}
-
 }

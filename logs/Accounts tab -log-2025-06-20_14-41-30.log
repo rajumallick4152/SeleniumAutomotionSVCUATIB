@@ -1,0 +1,280 @@
+2025-06-20 14:41:31 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
+2025-06-20 14:41:31 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 3 ms.
+2025-06-20 14:41:31 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-20 14:41:31 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-20 14:41:31 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-20 14:41:31 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-20 14:41:31 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-20 14:41:31 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-20 14:41:31 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 8 ms.
+2025-06-20 14:41:31 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 29 ms.
+2025-06-20 14:41:31 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-20 14:41:31 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+2025-06-20 14:41:31 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-20 14:41:31 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-20 14:41:31 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-20 14:41:31 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-20 14:41:31 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-20 14:41:31 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-20 14:41:31 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-20 14:41:31 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+2025-06-20 14:41:31 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-20 14:41:31 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-20 14:41:31 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-20 14:41:31 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-20 14:41:31 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 3 ms.
+2025-06-20 14:41:31 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 36 ms.
+2025-06-20 14:41:31 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-20 14:41:31 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-20 14:41:31 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-20 14:41:31 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-20 14:41:31 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\rajum\AppData\Local\Temp\testng-eclipse--1225104477\testng-customsuite.xml
+
+2025-06-20 14:41:32 [main] INFO  org.testng.internal.Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 21 ms.
+2025-06-20 14:41:32 [main] INFO  automationFramework.utils.LoggerUtil - 🔧 Initializing browser and loading configuration...
+2025-06-20 14:41:33 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 137.0.7151.119 (resolved driver for Chrome 137)
+2025-06-20 14:41:33 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\rajum\.cache\selenium\chromedriver\win64\137.0.7151.119\chromedriver.exe
+2025-06-20 14:41:37 [main] INFO  automationFramework.utils.LoggerUtil - ✅ Setup complete.
+2025-06-20 14:41:37 [main] INFO  automationFramework.pages.LoginPage - ✅ Captcha wait time loaded: 10 seconds
+2025-06-20 14:41:41 [main] INFO  automationFramework.pages.LoginPage - 🟦 Navigated to URL: https://uatnet.svcbank.com/ReachSVCInet/SVC-web/inet/netbanking
+2025-06-20 14:41:42 [main] INFO  automationFramework.pages.LoginPage - ✅ Entered username: TEST001
+2025-06-20 14:41:42 [main] INFO  automationFramework.pages.LoginPage - ⏳ Waiting for manual captcha input (10 seconds)
+2025-06-20 14:41:52 [main] INFO  automationFramework.pages.LoginPage - ✅ Clicked first Login button
+2025-06-20 14:41:53 [main] INFO  automationFramework.pages.LoginPage - ✅ Entered password
+2025-06-20 14:41:53 [main] INFO  automationFramework.pages.LoginPage - ✅ Clicked final Login button
+2025-06-20 14:42:03 [main] INFO  automationFramework.pages.LoginPage - 🎉 Login successful for user: TEST001
+2025-06-20 14:42:03 [main] INFO  a.pages.ServicesPage - 🔄 Navigating to Services > Manage SMS...
+2025-06-20 14:42:03 [main] INFO  a.pages.ServicesPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-20 14:42:13 [main] INFO  a.pages.ServicesPage - ✅ Spinner disappeared.
+2025-06-20 14:42:14 [main] INFO  a.pages.ServicesPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-20 14:42:26 [main] INFO  a.pages.ServicesPage - ✅ Spinner disappeared.
+2025-06-20 14:42:26 [main] INFO  a.pages.ServicesPage - ✅ Reached Manage SMS section.
+2025-06-20 14:42:26 [main] INFO  a.pages.ServicesPage - 🔄 Generating random credit and debit amounts...
+2025-06-20 14:42:26 [main] INFO  a.pages.ServicesPage - ✏️ Entering SMS thresholds - Credit: 4785, Debit: 3215
+2025-06-20 14:42:27 [main] INFO  a.pages.ServicesPage - ✅ Amounts entered successfully with Credit: 4785, Debit: 3215
+2025-06-20 14:42:27 [main] INFO  a.pages.ServicesPage - 💾 Clicking Save button...
+2025-06-20 14:42:27 [main] INFO  a.pages.ServicesPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-20 14:42:37 [main] INFO  a.pages.ServicesPage - ✅ Spinner disappeared.
+2025-06-20 14:42:37 [main] INFO  a.pages.ServicesPage - 🔐 Entering OTP: 123456
+2025-06-20 14:42:37 [main] INFO  a.pages.ServicesPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-20 14:42:49 [main] INFO  a.pages.ServicesPage - ✅ Spinner disappeared.
+2025-06-20 14:42:49 [main] INFO  a.pages.ServicesPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-20 14:43:00 [main] INFO  a.pages.ServicesPage - ✅ Spinner disappeared.
+2025-06-20 14:43:00 [main] INFO  a.pages.ServicesPage - ✅ OTP entered.
+2025-06-20 14:43:00 [main] INFO  a.pages.ServicesPage - ➡️ Clicking Proceed...
+2025-06-20 14:43:00 [main] INFO  a.pages.ServicesPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-20 14:43:10 [main] INFO  a.pages.ServicesPage - ✅ Spinner disappeared.
+2025-06-20 14:43:11 [main] INFO  a.pages.ServicesPage - ✅ Success popup visibility: true
+2025-06-20 14:43:11 [main] INFO  a.pages.ServicesPage - 🆗 Clicking Okay on success popup...
+2025-06-20 14:43:11 [main] INFO  a.pages.ServicesPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-20 14:43:22 [main] INFO  a.pages.ServicesPage - ✅ Spinner disappeared.
+2025-06-20 14:43:22 [main] INFO  a.pages.ServicesPage - 🔄 Navigating to Services > Manage SMS...
+2025-06-20 14:43:22 [main] INFO  a.pages.ServicesPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-20 14:43:33 [main] INFO  a.pages.ServicesPage - ✅ Spinner disappeared.
+2025-06-20 14:43:33 [main] INFO  a.pages.ServicesPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-20 14:43:39 [main] INFO  a.pages.ServicesPage - ✅ Spinner disappeared.
+2025-06-20 14:43:39 [main] INFO  a.pages.ServicesPage - ✅ Reached Manage SMS section.
+2025-06-20 14:43:39 [main] INFO  a.pages.ServicesPage - 🔄 Setting invalid threshold values: empty=true, negative=false
+2025-06-20 14:43:41 [main] INFO  a.pages.ServicesPage - ✏️ Invalid thresholds set - Credit: , Debit: 
+2025-06-20 14:43:41 [main] INFO  a.pages.ServicesPage - 💾 Clicking Save button...
+2025-06-20 14:43:41 [main] INFO  a.pages.ServicesPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-20 14:43:51 [main] INFO  a.pages.ServicesPage - ✅ Spinner disappeared.
+2025-06-20 14:43:51 [main] INFO  a.pages.ServicesPage - ✅ Validation messages found for both empty thresholds.
+2025-06-20 14:43:51 [main] INFO  a.pages.ServicesPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-20 14:44:02 [main] INFO  a.pages.ServicesPage - ✅ Spinner disappeared.
+2025-06-20 14:44:02 [main] INFO  a.pages.ServicesPage - ❎ Closed the validation popup.
+2025-06-20 14:44:02 [main] INFO  a.pages.ServicesPage - 🔄 Navigating to Services > Manage SMS...
+2025-06-20 14:44:02 [main] INFO  a.pages.ServicesPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-20 14:44:12 [main] INFO  a.pages.ServicesPage - ✅ Spinner disappeared.
+2025-06-20 14:44:12 [main] INFO  a.pages.ServicesPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-20 14:44:33 [main] INFO  a.pages.ServicesPage - ✅ Spinner disappeared.
+2025-06-20 14:44:33 [main] INFO  a.pages.ServicesPage - ✅ Reached Manage SMS section.
+2025-06-20 14:44:44 [main] INFO  a.pages.ServicesPage - ✅ Negative input converted to positive as expected.
+2025-06-20 14:44:44 [main] INFO  a.pages.ServicesPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-20 14:44:59 [main] WARN  a.pages.ServicesPage - ⚠️ Spinner wait skipped or failed gracefully.
+2025-06-20 14:45:00 [main] WARN  a.pages.ServicesPage - ⚠️ Click intercepted attempt 1/3: element click intercepted: Element <img appblockdblclick="" src="assets/images/ic_closeCircle.svg" alt="close" class="cursor-pointer h-2rem"> is not clickable at point (941, 163). Other element would receive the click: <div _ngcontent-ng-c587276320="" class="ngx-spinner-overlay ng-tns-c587276320-1 ng-trigger ng-trigger-fadeIn ng-star-inserted ng-animating" style="background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed;">...</div>
+  (Session info: chrome=137.0.7151.104)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1bce054cf974efce9af74844f8018856, clickElement {id=f.4D89F466EA38B98DD340F484F2347563.d.081869FFE280331F877C4BD7F9902E7A.e.216}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\rajum\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58950}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58950/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (1bce054cf974efce9af74844f8018856)] -> xpath: //img[@alt='close' and contains(@src, 'ic_closeCircle')]]
+Session ID: 1bce054cf974efce9af74844f8018856
+2025-06-20 14:45:01 [main] INFO  a.pages.ServicesPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-20 14:45:10 [main] INFO  a.pages.ServicesPage - ✅ Spinner disappeared.
+2025-06-20 14:45:10 [main] INFO  a.pages.ServicesPage - ❎ Closed the popup for Next Test.
+2025-06-20 14:45:10 [main] INFO  a.pages.ServicesPage - 🔄 Navigating to Services > Manage SMS...
+2025-06-20 14:45:10 [main] INFO  a.pages.ServicesPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-20 14:45:20 [main] INFO  a.pages.ServicesPage - ✅ Spinner disappeared.
+2025-06-20 14:45:20 [main] INFO  a.pages.ServicesPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-20 14:45:36 [main] WARN  a.pages.ServicesPage - ⚠️ Spinner wait skipped or failed gracefully.
+2025-06-20 14:45:37 [main] WARN  a.pages.ServicesPage - ⚠️ Click intercepted attempt 1/3: element click intercepted: Element <span class="font-semibold cursor-pointer h-fit align-self-center text-large">...</span> is not clickable at point (163, 291). Other element would receive the click: <div _ngcontent-ng-c587276320="" class="ngx-spinner-overlay ng-tns-c587276320-1 ng-trigger ng-trigger-fadeIn ng-star-inserted ng-animating" style="background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed;">...</div>
+  (Session info: chrome=137.0.7151.104)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1bce054cf974efce9af74844f8018856, clickElement {id=f.4D89F466EA38B98DD340F484F2347563.d.081869FFE280331F877C4BD7F9902E7A.e.221}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\rajum\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58950}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58950/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (1bce054cf974efce9af74844f8018856)] -> xpath: //span[text()='Manage SMS']]
+Session ID: 1bce054cf974efce9af74844f8018856
+2025-06-20 14:45:38 [main] INFO  a.pages.ServicesPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-20 14:45:53 [main] WARN  a.pages.ServicesPage - ⚠️ Spinner wait skipped or failed gracefully.
+2025-06-20 14:45:54 [main] WARN  a.pages.ServicesPage - ⚠️ Click intercepted attempt 2/3: element click intercepted: Element <span class="font-semibold cursor-pointer h-fit align-self-center text-large">...</span> is not clickable at point (163, 291). Other element would receive the click: <div _ngcontent-ng-c587276320="" class="ngx-spinner-overlay ng-tns-c587276320-1 ng-trigger ng-trigger-fadeIn ng-star-inserted ng-animating" style="background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed;">...</div>
+  (Session info: chrome=137.0.7151.104)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1bce054cf974efce9af74844f8018856, clickElement {id=f.4D89F466EA38B98DD340F484F2347563.d.081869FFE280331F877C4BD7F9902E7A.e.221}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\rajum\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58950}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58950/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (1bce054cf974efce9af74844f8018856)] -> xpath: //span[text()='Manage SMS']]
+Session ID: 1bce054cf974efce9af74844f8018856
+2025-06-20 14:45:55 [main] INFO  a.pages.ServicesPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-20 14:46:02 [main] INFO  a.pages.ServicesPage - ✅ Spinner disappeared.
+2025-06-20 14:46:02 [main] INFO  a.pages.ServicesPage - ✅ Reached Manage SMS section.
+2025-06-20 14:46:02 [main] INFO  a.pages.ServicesPage - 🔄 Generating random credit and debit amounts...
+2025-06-20 14:46:02 [main] INFO  a.pages.ServicesPage - ✏️ Entering SMS thresholds - Credit: 5993, Debit: 6241
+2025-06-20 14:46:05 [main] INFO  a.pages.ServicesPage - ✅ Amounts entered successfully with Credit: 5993, Debit: 6241
+2025-06-20 14:46:05 [main] INFO  a.pages.ServicesPage - 💾 Clicking Save button...
+2025-06-20 14:46:05 [main] INFO  a.pages.ServicesPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-20 14:46:15 [main] INFO  a.pages.ServicesPage - ✅ Spinner disappeared.
+2025-06-20 14:46:15 [main] INFO  a.pages.ServicesPage - 🔐 Entering OTP: 000000
+2025-06-20 14:46:15 [main] INFO  a.pages.ServicesPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-20 14:46:31 [main] WARN  a.pages.ServicesPage - ⚠️ Spinner wait skipped or failed gracefully.
+2025-06-20 14:46:31 [main] INFO  a.pages.ServicesPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-20 14:46:46 [main] WARN  a.pages.ServicesPage - ⚠️ Spinner wait skipped or failed gracefully.
+2025-06-20 14:46:46 [main] INFO  a.pages.ServicesPage - ✅ OTP entered.
+2025-06-20 14:46:46 [main] INFO  a.pages.ServicesPage - ➡️ Clicking Proceed...
+2025-06-20 14:46:46 [main] INFO  a.pages.ServicesPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-20 14:46:57 [main] INFO  a.pages.ServicesPage - ✅ Spinner disappeared.
+2025-06-20 14:46:57 [main] INFO  a.pages.ServicesPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-20 14:47:13 [main] WARN  a.pages.ServicesPage - ⚠️ Spinner wait skipped or failed gracefully.
+2025-06-20 14:47:13 [main] INFO  a.pages.ServicesPage - ❌ Error Message Shown: Enter Mobile OTP
+2025-06-20 14:47:13 [main] INFO  a.pages.ServicesPage - ✅ OTP validation error appeared as expected.
+2025-06-20 14:47:13 [main] INFO  a.pages.ServicesPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-20 14:47:28 [main] WARN  a.pages.ServicesPage - ⚠️ Spinner wait skipped or failed gracefully.
+2025-06-20 14:47:28 [main] INFO  a.pages.ServicesPage - ❎ Clicking Cancel button...
+2025-06-20 14:47:28 [main] INFO  a.pages.ServicesPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-20 14:47:36 [main] INFO  a.pages.ServicesPage - ✅ Spinner disappeared.
+2025-06-20 14:47:36 [main] INFO  a.pages.ServicesPage - ❎ Clicking Close Arrow...
+2025-06-20 14:47:36 [main] INFO  a.pages.ServicesPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-20 14:47:47 [main] INFO  a.pages.ServicesPage - ✅ Spinner disappeared.
+2025-06-20 14:47:47 [main] INFO  a.pages.PaymentHistoryPage - 🟦 [STEP] Clicking on the Payment tab.
+2025-06-20 14:47:47 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-20 14:47:57 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.
+2025-06-20 14:47:57 [main] INFO  a.pages.PaymentHistoryPage - ✅ [SUCCESS] Payment tab clicked.
+2025-06-20 14:47:57 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-20 14:48:09 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.
+2025-06-20 14:48:09 [main] INFO  a.pages.PaymentHistoryPage - 🧪=== Starting Positive Test Cases for NEFT transaction for Payment to Payee ===
+2025-06-20 14:48:09 [main] INFO  a.pages.PaymentHistoryPage - 🚀 [START] Initiating payment to payee: DXFCHGV
+2025-06-20 14:48:09 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-20 14:48:19 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.
+2025-06-20 14:48:19 [main] INFO  a.pages.PaymentHistoryPage - ✅ [SUCCESS] Payee selected: DXFCHGV
+2025-06-20 14:48:20 [main] INFO  a.pages.PaymentHistoryPage - ✅ [SUCCESS] Entered amount: ₹1
+2025-06-20 14:48:20 [main] INFO  a.pages.PaymentHistoryPage - ✅ Amount '1' entered successfully.
+2025-06-20 14:48:20 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-20 14:48:32 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.
+2025-06-20 14:48:32 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared after entering amount.
+2025-06-20 14:48:52 [main] INFO  a.pages.PaymentHistoryPage - ✅ No critical service errors detected.
+2025-06-20 14:48:52 [main] INFO  a.pages.PaymentHistoryPage - 🟦 [STEP] Selecting NEFT option
+2025-06-20 14:48:52 [main] INFO  a.pages.PaymentHistoryPage - Attempting to click NEFT option (Attempt 1)
+2025-06-20 14:48:52 [main] INFO  a.pages.PaymentHistoryPage - 🔄 NEFT clicked via Actions.
+2025-06-20 14:48:53 [main] INFO  a.pages.PaymentHistoryPage - ✅ NEFT option selected successfully.
+2025-06-20 14:48:53 [main] INFO  a.pages.PaymentHistoryPage - ✅ NEFT option selected.
+2025-06-20 14:48:53 [main] INFO  a.pages.PaymentHistoryPage - ✅ [SUCCESS] Entered remarks: test value
+2025-06-20 14:48:53 [main] INFO  a.pages.PaymentHistoryPage - ✅ Remarks entered.
+2025-06-20 14:48:53 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-20 14:49:04 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.
+2025-06-20 14:49:04 [main] INFO  a.pages.PaymentHistoryPage - ✅ [SUCCESS] Clicked Proceed after remarks.
+2025-06-20 14:49:04 [main] INFO  a.pages.PaymentHistoryPage - ✅ Clicked on Proceed button after entering remarks.
+2025-06-20 14:49:04 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-20 14:49:15 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.
+2025-06-20 14:49:15 [main] INFO  a.pages.PaymentHistoryPage - ✅ [SUCCESS] Confirm button clicked.
+2025-06-20 14:49:15 [main] INFO  a.pages.PaymentHistoryPage - ✅ Confirm button clicked.
+2025-06-20 14:49:16 [main] INFO  a.pages.PaymentHistoryPage - ✅ [SUCCESS] OTP entered.
+2025-06-20 14:49:16 [main] INFO  a.pages.PaymentHistoryPage - ✅ OTP entered.
+2025-06-20 14:49:16 [main] INFO  a.pages.PaymentHistoryPage - Waiting for any overlay/spinner to disappear.
+2025-06-20 14:49:21 [main] INFO  a.pages.PaymentHistoryPage - ✅ [SUCCESS] Final Proceed clicked after OTP.
+2025-06-20 14:49:21 [main] INFO  a.pages.PaymentHistoryPage - ✅ Final Proceed button clicked.
+2025-06-20 14:49:21 [main] ERROR a.pages.PaymentHistoryPage - ❌ NEFT transaction failed: We are currently facing some technical issue.Please try in sometime
+2025-06-20 14:49:21 [main] INFO  a.pages.PaymentHistoryPage - ℹ️ Clicked on 'Okay' button to dismiss the error popup.
+2025-06-20 14:49:21 [main] INFO  a.pages.PaymentHistoryPage - 🟦 [STEP] Clicking on the Payment tab.
+2025-06-20 14:49:21 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-20 14:49:32 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.
+2025-06-20 14:49:32 [main] INFO  a.pages.PaymentHistoryPage - ✅ [SUCCESS] Payment tab clicked.
+2025-06-20 14:49:32 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-20 14:49:33 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.
+2025-06-20 14:49:33 [main] INFO  a.pages.PaymentHistoryPage - 🧪=== Starting Negative Test Cases for NETF transaction for Payment to payee ===
+2025-06-20 14:49:33 [main] INFO  a.pages.PaymentHistoryPage - 🔹 Step : Selecting payee: DXFCHGV
+2025-06-20 14:49:33 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-20 14:49:44 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.
+2025-06-20 14:49:44 [main] INFO  a.pages.PaymentHistoryPage - ✅ Payee selected successfully.
+2025-06-20 14:49:44 [main] INFO  a.pages.PaymentHistoryPage - 
+🔸 Test Case 1: Blank Amount
+2025-06-20 14:49:44 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-20 14:49:58 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.
+2025-06-20 14:49:59 [main] INFO  a.pages.PaymentHistoryPage - [SUCCESS] ✅ Correct error displayed: 'Amount is required'
+2025-06-20 14:49:59 [main] INFO  a.pages.PaymentHistoryPage - 
+🔸 Test Case 2: Special Characters (@#$%)
+2025-06-20 14:49:59 [main] INFO  a.pages.PaymentHistoryPage - [SUCCESS] ✅ Special characters were blocked as expected.
+2025-06-20 14:49:59 [main] INFO  a.pages.PaymentHistoryPage - 
+🔸 Test Case 3: Alphanumeric Characters (123abc)
+2025-06-20 14:49:59 [main] INFO  a.pages.PaymentHistoryPage - [SUCCESS] ✅ Field blocked alphanumeric input completely.
+2025-06-20 14:49:59 [main] INFO  a.pages.PaymentHistoryPage - 
+🔸 Test Case 4: Zero Amount (0)
+2025-06-20 14:49:59 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-20 14:50:09 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.
+2025-06-20 14:50:10 [main] INFO  a.pages.PaymentHistoryPage - [SUCCESS] ✅ Correct validation message shown: 'Minimum amount is 1.00'
+2025-06-20 14:50:10 [main] INFO  a.pages.PaymentHistoryPage - 
+🔸 Test Case 5: Amount Greater Than Account Balance
+2025-06-20 14:50:10 [main] INFO  a.pages.PaymentHistoryPage - Fetched account balance: ₹2791791
+2025-06-20 14:50:11 [main] INFO  a.pages.PaymentHistoryPage - ✅ Over-limit amount typed: '2792291'
+2025-06-20 14:50:17 [main] INFO  a.pages.PaymentHistoryPage - ✅ 'Insufficient balance' popup displayed.
+2025-06-20 14:50:17 [main] INFO  a.pages.PaymentHistoryPage - ✅ Clicked OK.
+2025-06-20 14:50:17 [main] INFO  a.pages.PaymentHistoryPage - 
+🔸 Test Case 6: Leave Remarks Field Blank and Proceed
+2025-06-20 14:50:17 [main] INFO  a.pages.PaymentHistoryPage - ✅ Remarks field cleared.
+2025-06-20 14:50:17 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-20 14:50:24 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.
+2025-06-20 14:50:44 [main] INFO  a.pages.PaymentHistoryPage - 🟦 [STEP] Selecting NEFT option
+2025-06-20 14:50:44 [main] INFO  a.pages.PaymentHistoryPage - Attempting to click NEFT option (Attempt 1)
+2025-06-20 14:50:45 [main] INFO  a.pages.PaymentHistoryPage - 🔄 NEFT clicked via Actions.
+2025-06-20 14:50:45 [main] INFO  a.pages.PaymentHistoryPage - ✅ NEFT option selected successfully.
+2025-06-20 14:50:45 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-20 14:50:56 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.
+2025-06-20 14:50:56 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-20 14:51:07 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.
+2025-06-20 14:51:07 [main] INFO  a.pages.PaymentHistoryPage - ✅ [SUCCESS] OTP entered.
+2025-06-20 14:51:07 [main] INFO  a.pages.PaymentHistoryPage - Waiting for any overlay/spinner to disappear.
+2025-06-20 14:51:12 [main] INFO  a.pages.PaymentHistoryPage - ✅ Final Proceed clicked.
+2025-06-20 14:51:13 [main] ERROR a.pages.PaymentHistoryPage - ❌ NEFT transaction failed: We are currently facing some technical issue.Please try in sometime
+2025-06-20 14:51:14 [main] ERROR a.pages.PaymentHistoryPage - ❌ Unexpected error during payment failure popup handling: element click intercepted: Element <button pripple="" pautofocus="" class="p-ripple p-element p-button p-component bg-blue-700 font-bold border-none focus:shadow-none" type="button" data-pc-name="button" data-pc-section="root">...</button> is not clickable at point (766, 427). Other element would receive the click: <div _ngcontent-ng-c587276320="" class="ngx-spinner-overlay ng-tns-c587276320-1 ng-trigger ng-trigger-fadeIn ng-star-inserted ng-animating" style="background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed;">...</div>
+  (Session info: chrome=137.0.7151.104)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1bce054cf974efce9af74844f8018856, clickElement {id=f.4D89F466EA38B98DD340F484F2347563.d.081869FFE280331F877C4BD7F9902E7A.e.428}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\rajum\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58950}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58950/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (1bce054cf974efce9af74844f8018856)] -> xpath: //span[text()='Okay']/ancestor::button]
+Session ID: 1bce054cf974efce9af74844f8018856
+2025-06-20 14:51:14 [main] ERROR a.pages.PaymentHistoryPage - ❌ Error in Remarks Blank Test: element click intercepted: Element <button pripple="" pautofocus="" class="p-ripple p-element p-button p-component bg-blue-700 font-bold border-none focus:shadow-none" type="button" data-pc-name="button" data-pc-section="root">...</button> is not clickable at point (766, 427). Other element would receive the click: <div _ngcontent-ng-c587276320="" class="ngx-spinner-overlay ng-tns-c587276320-1 ng-trigger ng-trigger-fadeIn ng-star-inserted ng-animating" style="background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed;">...</div>
+  (Session info: chrome=137.0.7151.104)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1bce054cf974efce9af74844f8018856, clickElement {id=f.4D89F466EA38B98DD340F484F2347563.d.081869FFE280331F877C4BD7F9902E7A.e.428}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\rajum\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58950}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58950/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (1bce054cf974efce9af74844f8018856)] -> xpath: //span[text()='Okay']/ancestor::button]
+Session ID: 1bce054cf974efce9af74844f8018856
+2025-06-20 14:51:14 [main] INFO  a.pages.PaymentHistoryPage - 
+🔸 Test Case 7: Invalid OTP
+2025-06-20 14:51:14 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-20 14:51:22 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.
+2025-06-20 14:51:38 [main] WARN  a.pages.PaymentHistoryPage - ⚠️ Click failed attempt 1/3: Expected condition failed: waiting for element to be clickable: By.xpath: //span[contains(@class, 'font-semibold') and text()='DXFCHGV'] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\rajum\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58950}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58950/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1bce054cf974efce9af74844f8018856
+2025-06-20 14:51:38 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...

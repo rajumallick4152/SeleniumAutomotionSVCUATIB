@@ -1,136 +1,585 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+<testng-results ignored="0" total="16" passed="0" failed="1" skipped="15">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-19T16:29:49 IST" name="MySuite" finished-at="2025-06-19T16:40:01 IST" duration-ms="612055">
+  <suite started-at="2025-06-20T15:41:58 IST" name="Default suite" finished-at="2025-06-20T15:42:58 IST" duration-ms="59940">
     <groups>
     </groups>
-    <test started-at="2025-06-19T16:29:49 IST" name="MultipleTest" finished-at="2025-06-19T16:40:01 IST" duration-ms="612055">
-      <class name="automationFramework.tests.ServicesTestNG">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:automationFramework.tests.ServicesTestNG@1a20270e]" started-at="2025-06-19T16:29:49 IST" name="setUp" finished-at="2025-06-19T16:30:30 IST" duration-ms="40351" status="PASS">
+    <test started-at="2025-06-20T15:41:58 IST" name="Default test" finished-at="2025-06-20T15:42:58 IST" duration-ms="59940">
+      <class name="automationFramework.tests.CombinedTestNGSuite">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:automationFramework.tests.CombinedTestNGSuite@496bc455]" started-at="2025-06-20T15:41:58 IST" name="setUp" finished-at="2025-06-20T15:42:03 IST" duration-ms="4244" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testManageSMSFlow()[pri:1, instance:automationFramework.tests.ServicesTestNG@1a20270e]" started-at="2025-06-19T16:30:30 IST" name="testManageSMSFlow" finished-at="2025-06-19T16:32:28 IST" duration-ms="118497" status="PASS">
+        <test-method signature="loginToApplication()[pri:0, instance:automationFramework.tests.CombinedTestNGSuite@496bc455]" started-at="2025-06-20T15:42:03 IST" name="loginToApplication" finished-at="2025-06-20T15:42:45 IST" duration-ms="42383" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Login unsuccessful.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Login unsuccessful.
+at org.testng.Assert.fail(Assert.java:111)
+at automationFramework.tests.CombinedTestNGSuite.loginToApplication(CombinedTestNGSuite.java:70)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToApplication -->
+        <test-method is-config="true" signature="handleTestResult(org.testng.ITestResult)[pri:0, instance:automationFramework.tests.CombinedTestNGSuite@496bc455]" started-at="2025-06-20T15:42:45 IST" name="handleTestResult" finished-at="2025-06-20T15:42:46 IST" duration-ms="560" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginToApplication status=FAILURE method=CombinedTestNGSuite.loginToApplication()[pri:0, instance:automationFramework.tests.CombinedTestNGSuite@496bc455] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- handleTestResult -->
+        <test-method signature="testManageSMSFlow()[pri:1, instance:automationFramework.tests.CombinedTestNGSuite@496bc455]" started-at="2025-06-20T15:42:46 IST" name="testManageSMSFlow" finished-at="2025-06-20T15:42:46 IST" depends-on-methods="automationFramework.tests.CombinedTestNGSuite.loginToApplication" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method automationFramework.tests.CombinedTestNGSuite.testManageSMSFlow() on instance automationFramework.tests.CombinedTestNGSuite@496bc455 depends on not successfully finished methods 
+[automationFramework.tests.CombinedTestNGSuite.loginToApplication() on instance automationFramework.tests.CombinedTestNGSuite@496bc455]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method automationFramework.tests.CombinedTestNGSuite.testManageSMSFlow() on instance automationFramework.tests.CombinedTestNGSuite@496bc455 depends on not successfully finished methods 
+[automationFramework.tests.CombinedTestNGSuite.loginToApplication() on instance automationFramework.tests.CombinedTestNGSuite@496bc455]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testManageSMSFlow -->
-        <test-method is-config="true" signature="captureFailureScreenshot(org.testng.ITestResult)[pri:0, instance:automationFramework.tests.ServicesTestNG@1a20270e]" started-at="2025-06-19T16:32:28 IST" name="captureFailureScreenshot" finished-at="2025-06-19T16:32:28 IST" duration-ms="4" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testManageSMSFlow status=SUCCESS method=ServicesTestNG.testManageSMSFlow()[pri:1, instance:automationFramework.tests.ServicesTestNG@1a20270e] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- captureFailureScreenshot -->
-        <test-method signature="testEmptyThresholds()[pri:2, instance:automationFramework.tests.ServicesTestNG@1a20270e]" started-at="2025-06-19T16:32:28 IST" name="testEmptyThresholds" finished-at="2025-06-19T16:33:40 IST" duration-ms="71549" status="PASS">
+        <test-method signature="testEmptyThresholds()[pri:2, instance:automationFramework.tests.CombinedTestNGSuite@496bc455]" started-at="2025-06-20T15:42:46 IST" name="testEmptyThresholds" finished-at="2025-06-20T15:42:46 IST" depends-on-methods="automationFramework.tests.CombinedTestNGSuite.loginToApplication" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method automationFramework.tests.CombinedTestNGSuite.testEmptyThresholds() on instance automationFramework.tests.CombinedTestNGSuite@496bc455 depends on not successfully finished methods 
+[automationFramework.tests.CombinedTestNGSuite.loginToApplication() on instance automationFramework.tests.CombinedTestNGSuite@496bc455]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method automationFramework.tests.CombinedTestNGSuite.testEmptyThresholds() on instance automationFramework.tests.CombinedTestNGSuite@496bc455 depends on not successfully finished methods 
+[automationFramework.tests.CombinedTestNGSuite.loginToApplication() on instance automationFramework.tests.CombinedTestNGSuite@496bc455]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testEmptyThresholds -->
-        <test-method is-config="true" signature="captureFailureScreenshot(org.testng.ITestResult)[pri:0, instance:automationFramework.tests.ServicesTestNG@1a20270e]" started-at="2025-06-19T16:33:40 IST" name="captureFailureScreenshot" finished-at="2025-06-19T16:33:40 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testEmptyThresholds status=SUCCESS method=ServicesTestNG.testEmptyThresholds()[pri:2, instance:automationFramework.tests.ServicesTestNG@1a20270e] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- captureFailureScreenshot -->
-        <test-method signature="testNegativeThresholds()[pri:3, instance:automationFramework.tests.ServicesTestNG@1a20270e]" started-at="2025-06-19T16:33:40 IST" name="testNegativeThresholds" finished-at="2025-06-19T16:34:40 IST" duration-ms="60678" status="PASS">
+        <test-method signature="testNegativeThresholds()[pri:3, instance:automationFramework.tests.CombinedTestNGSuite@496bc455]" started-at="2025-06-20T15:42:46 IST" name="testNegativeThresholds" finished-at="2025-06-20T15:42:46 IST" depends-on-methods="automationFramework.tests.CombinedTestNGSuite.loginToApplication" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method automationFramework.tests.CombinedTestNGSuite.testNegativeThresholds() on instance automationFramework.tests.CombinedTestNGSuite@496bc455 depends on not successfully finished methods 
+[automationFramework.tests.CombinedTestNGSuite.loginToApplication() on instance automationFramework.tests.CombinedTestNGSuite@496bc455]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method automationFramework.tests.CombinedTestNGSuite.testNegativeThresholds() on instance automationFramework.tests.CombinedTestNGSuite@496bc455 depends on not successfully finished methods 
+[automationFramework.tests.CombinedTestNGSuite.loginToApplication() on instance automationFramework.tests.CombinedTestNGSuite@496bc455]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testNegativeThresholds -->
-        <test-method is-config="true" signature="captureFailureScreenshot(org.testng.ITestResult)[pri:0, instance:automationFramework.tests.ServicesTestNG@1a20270e]" started-at="2025-06-19T16:34:40 IST" name="captureFailureScreenshot" finished-at="2025-06-19T16:34:40 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testNegativeThresholds status=SUCCESS method=ServicesTestNG.testNegativeThresholds()[pri:3, instance:automationFramework.tests.ServicesTestNG@1a20270e] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- captureFailureScreenshot -->
-        <test-method signature="testInvalidOTP()[pri:4, instance:automationFramework.tests.ServicesTestNG@1a20270e]" started-at="2025-06-19T16:34:40 IST" name="testInvalidOTP" finished-at="2025-06-19T16:37:35 IST" duration-ms="174939" status="PASS">
+        <test-method signature="testInvalidOTP()[pri:4, instance:automationFramework.tests.CombinedTestNGSuite@496bc455]" started-at="2025-06-20T15:42:46 IST" name="testInvalidOTP" finished-at="2025-06-20T15:42:46 IST" depends-on-methods="automationFramework.tests.CombinedTestNGSuite.loginToApplication" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method automationFramework.tests.CombinedTestNGSuite.testInvalidOTP() on instance automationFramework.tests.CombinedTestNGSuite@496bc455 depends on not successfully finished methods 
+[automationFramework.tests.CombinedTestNGSuite.loginToApplication() on instance automationFramework.tests.CombinedTestNGSuite@496bc455]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method automationFramework.tests.CombinedTestNGSuite.testInvalidOTP() on instance automationFramework.tests.CombinedTestNGSuite@496bc455 depends on not successfully finished methods 
+[automationFramework.tests.CombinedTestNGSuite.loginToApplication() on instance automationFramework.tests.CombinedTestNGSuite@496bc455]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testInvalidOTP -->
-        <test-method is-config="true" signature="captureFailureScreenshot(org.testng.ITestResult)[pri:0, instance:automationFramework.tests.ServicesTestNG@1a20270e]" started-at="2025-06-19T16:37:35 IST" name="captureFailureScreenshot" finished-at="2025-06-19T16:37:35 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testInvalidOTP status=SUCCESS method=ServicesTestNG.testInvalidOTP()[pri:4, instance:automationFramework.tests.ServicesTestNG@1a20270e] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="testValidPaymentFlow()[pri:5, instance:automationFramework.tests.CombinedTestNGSuite@496bc455]" started-at="2025-06-20T15:42:46 IST" name="testValidPaymentFlow" finished-at="2025-06-20T15:42:46 IST" depends-on-methods="automationFramework.tests.CombinedTestNGSuite.loginToApplication" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method automationFramework.tests.CombinedTestNGSuite.testValidPaymentFlow() on instance automationFramework.tests.CombinedTestNGSuite@496bc455 depends on not successfully finished methods 
+[automationFramework.tests.CombinedTestNGSuite.loginToApplication() on instance automationFramework.tests.CombinedTestNGSuite@496bc455]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method automationFramework.tests.CombinedTestNGSuite.testValidPaymentFlow() on instance automationFramework.tests.CombinedTestNGSuite@496bc455 depends on not successfully finished methods 
+[automationFramework.tests.CombinedTestNGSuite.loginToApplication() on instance automationFramework.tests.CombinedTestNGSuite@496bc455]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- captureFailureScreenshot -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationFramework.tests.ServicesTestNG@1a20270e]" started-at="2025-06-19T16:37:35 IST" name="tearDown" finished-at="2025-06-19T16:37:44 IST" duration-ms="8334" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- automationFramework.tests.ServicesTestNG -->
-      <class name="automationFramework.tests.PaymentTestNG">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:automationFramework.tests.PaymentTestNG@53941c2f]" started-at="2025-06-19T16:37:44 IST" name="setUp" finished-at="2025-06-19T16:37:45 IST" duration-ms="1498" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="loginBeforePayment()[pri:0, instance:automationFramework.tests.PaymentTestNG@53941c2f]" started-at="2025-06-19T16:37:45 IST" name="loginBeforePayment" finished-at="2025-06-19T16:38:09 IST" duration-ms="23407" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginBeforePayment -->
-        <test-method is-config="true" signature="logResult(org.testng.ITestResult)[pri:0, instance:automationFramework.tests.PaymentTestNG@53941c2f]" started-at="2025-06-19T16:38:09 IST" name="logResult" finished-at="2025-06-19T16:38:09 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=loginBeforePayment status=SUCCESS method=PaymentTestNG.loginBeforePayment()[pri:0, instance:automationFramework.tests.PaymentTestNG@53941c2f] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logResult -->
-        <test-method signature="testPayment()[pri:1, instance:automationFramework.tests.PaymentTestNG@53941c2f]" started-at="2025-06-19T16:38:09 IST" name="testPayment" finished-at="2025-06-19T16:38:37 IST" depends-on-methods="automationFramework.tests.PaymentTestNG.loginBeforePayment" duration-ms="28267" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testPayment -->
-        <test-method is-config="true" signature="logResult(org.testng.ITestResult)[pri:0, instance:automationFramework.tests.PaymentTestNG@53941c2f]" started-at="2025-06-19T16:38:37 IST" name="logResult" finished-at="2025-06-19T16:38:37 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testPayment status=SUCCESS method=PaymentTestNG.testPayment()[pri:1, instance:automationFramework.tests.PaymentTestNG@53941c2f] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logResult -->
-        <test-method signature="testInvalidAmountScenarios()[pri:2, instance:automationFramework.tests.PaymentTestNG@53941c2f]" started-at="2025-06-19T16:38:37 IST" name="testInvalidAmountScenarios" finished-at="2025-06-19T16:39:54 IST" depends-on-methods="automationFramework.tests.PaymentTestNG.loginBeforePayment" duration-ms="77026" status="PASS">
+        </test-method> <!-- testValidPaymentFlow -->
+        <test-method signature="testInvalidAmountScenarios()[pri:6, instance:automationFramework.tests.CombinedTestNGSuite@496bc455]" started-at="2025-06-20T15:42:46 IST" name="testInvalidAmountScenarios" finished-at="2025-06-20T15:42:46 IST" depends-on-methods="automationFramework.tests.CombinedTestNGSuite.loginToApplication" duration-ms="1" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method automationFramework.tests.CombinedTestNGSuite.testInvalidAmountScenarios() on instance automationFramework.tests.CombinedTestNGSuite@496bc455 depends on not successfully finished methods 
+[automationFramework.tests.CombinedTestNGSuite.loginToApplication() on instance automationFramework.tests.CombinedTestNGSuite@496bc455]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method automationFramework.tests.CombinedTestNGSuite.testInvalidAmountScenarios() on instance automationFramework.tests.CombinedTestNGSuite@496bc455 depends on not successfully finished methods 
+[automationFramework.tests.CombinedTestNGSuite.loginToApplication() on instance automationFramework.tests.CombinedTestNGSuite@496bc455]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testInvalidAmountScenarios -->
-        <test-method is-config="true" signature="logResult(org.testng.ITestResult)[pri:0, instance:automationFramework.tests.PaymentTestNG@53941c2f]" started-at="2025-06-19T16:39:54 IST" name="logResult" finished-at="2025-06-19T16:39:54 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testInvalidAmountScenarios status=SUCCESS method=PaymentTestNG.testInvalidAmountScenarios()[pri:2, instance:automationFramework.tests.PaymentTestNG@53941c2f] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="testAccountSummary()[pri:7, instance:automationFramework.tests.CombinedTestNGSuite@496bc455]" started-at="2025-06-20T15:42:46 IST" name="testAccountSummary" finished-at="2025-06-20T15:42:46 IST" depends-on-methods="automationFramework.tests.CombinedTestNGSuite.loginToApplication" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method automationFramework.tests.CombinedTestNGSuite.testAccountSummary() on instance automationFramework.tests.CombinedTestNGSuite@496bc455 depends on not successfully finished methods 
+[automationFramework.tests.CombinedTestNGSuite.loginToApplication() on instance automationFramework.tests.CombinedTestNGSuite@496bc455]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method automationFramework.tests.CombinedTestNGSuite.testAccountSummary() on instance automationFramework.tests.CombinedTestNGSuite@496bc455 depends on not successfully finished methods 
+[automationFramework.tests.CombinedTestNGSuite.loginToApplication() on instance automationFramework.tests.CombinedTestNGSuite@496bc455]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logResult -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationFramework.tests.PaymentTestNG@53941c2f]" started-at="2025-06-19T16:39:54 IST" name="tearDown" finished-at="2025-06-19T16:40:01 IST" duration-ms="7410" status="PASS">
+        </test-method> <!-- testAccountSummary -->
+        <test-method signature="downloadOneMonthStatementPdf()[pri:8, instance:automationFramework.tests.CombinedTestNGSuite@496bc455]" started-at="2025-06-20T15:42:46 IST" name="downloadOneMonthStatementPdf" finished-at="2025-06-20T15:42:46 IST" depends-on-methods="automationFramework.tests.CombinedTestNGSuite.loginToApplication" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method automationFramework.tests.CombinedTestNGSuite.downloadOneMonthStatementPdf() on instance automationFramework.tests.CombinedTestNGSuite@496bc455 depends on not successfully finished methods 
+[automationFramework.tests.CombinedTestNGSuite.loginToApplication() on instance automationFramework.tests.CombinedTestNGSuite@496bc455]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method automationFramework.tests.CombinedTestNGSuite.downloadOneMonthStatementPdf() on instance automationFramework.tests.CombinedTestNGSuite@496bc455 depends on not successfully finished methods 
+[automationFramework.tests.CombinedTestNGSuite.loginToApplication() on instance automationFramework.tests.CombinedTestNGSuite@496bc455]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- downloadOneMonthStatementPdf -->
+        <test-method signature="downloadThreeMonthStatementPdf()[pri:9, instance:automationFramework.tests.CombinedTestNGSuite@496bc455]" started-at="2025-06-20T15:42:46 IST" name="downloadThreeMonthStatementPdf" finished-at="2025-06-20T15:42:46 IST" depends-on-methods="automationFramework.tests.CombinedTestNGSuite.loginToApplication" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method automationFramework.tests.CombinedTestNGSuite.downloadThreeMonthStatementPdf() on instance automationFramework.tests.CombinedTestNGSuite@496bc455 depends on not successfully finished methods 
+[automationFramework.tests.CombinedTestNGSuite.loginToApplication() on instance automationFramework.tests.CombinedTestNGSuite@496bc455]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method automationFramework.tests.CombinedTestNGSuite.downloadThreeMonthStatementPdf() on instance automationFramework.tests.CombinedTestNGSuite@496bc455 depends on not successfully finished methods 
+[automationFramework.tests.CombinedTestNGSuite.loginToApplication() on instance automationFramework.tests.CombinedTestNGSuite@496bc455]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- downloadThreeMonthStatementPdf -->
+        <test-method signature="downloadOneMonthStatementXls()[pri:10, instance:automationFramework.tests.CombinedTestNGSuite@496bc455]" started-at="2025-06-20T15:42:46 IST" name="downloadOneMonthStatementXls" finished-at="2025-06-20T15:42:46 IST" depends-on-methods="automationFramework.tests.CombinedTestNGSuite.loginToApplication" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method automationFramework.tests.CombinedTestNGSuite.downloadOneMonthStatementXls() on instance automationFramework.tests.CombinedTestNGSuite@496bc455 depends on not successfully finished methods 
+[automationFramework.tests.CombinedTestNGSuite.loginToApplication() on instance automationFramework.tests.CombinedTestNGSuite@496bc455]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method automationFramework.tests.CombinedTestNGSuite.downloadOneMonthStatementXls() on instance automationFramework.tests.CombinedTestNGSuite@496bc455 depends on not successfully finished methods 
+[automationFramework.tests.CombinedTestNGSuite.loginToApplication() on instance automationFramework.tests.CombinedTestNGSuite@496bc455]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- downloadOneMonthStatementXls -->
+        <test-method signature="downloadThreeMonthStatementXls()[pri:11, instance:automationFramework.tests.CombinedTestNGSuite@496bc455]" started-at="2025-06-20T15:42:46 IST" name="downloadThreeMonthStatementXls" finished-at="2025-06-20T15:42:46 IST" depends-on-methods="automationFramework.tests.CombinedTestNGSuite.loginToApplication" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method automationFramework.tests.CombinedTestNGSuite.downloadThreeMonthStatementXls() on instance automationFramework.tests.CombinedTestNGSuite@496bc455 depends on not successfully finished methods 
+[automationFramework.tests.CombinedTestNGSuite.loginToApplication() on instance automationFramework.tests.CombinedTestNGSuite@496bc455]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method automationFramework.tests.CombinedTestNGSuite.downloadThreeMonthStatementXls() on instance automationFramework.tests.CombinedTestNGSuite@496bc455 depends on not successfully finished methods 
+[automationFramework.tests.CombinedTestNGSuite.loginToApplication() on instance automationFramework.tests.CombinedTestNGSuite@496bc455]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- downloadThreeMonthStatementXls -->
+        <test-method signature="downloadCustom6MonthsXsl()[pri:12, instance:automationFramework.tests.CombinedTestNGSuite@496bc455]" started-at="2025-06-20T15:42:46 IST" name="downloadCustom6MonthsXsl" finished-at="2025-06-20T15:42:46 IST" depends-on-methods="automationFramework.tests.CombinedTestNGSuite.loginToApplication" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method automationFramework.tests.CombinedTestNGSuite.downloadCustom6MonthsXsl() on instance automationFramework.tests.CombinedTestNGSuite@496bc455 depends on not successfully finished methods 
+[automationFramework.tests.CombinedTestNGSuite.loginToApplication() on instance automationFramework.tests.CombinedTestNGSuite@496bc455]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method automationFramework.tests.CombinedTestNGSuite.downloadCustom6MonthsXsl() on instance automationFramework.tests.CombinedTestNGSuite@496bc455 depends on not successfully finished methods 
+[automationFramework.tests.CombinedTestNGSuite.loginToApplication() on instance automationFramework.tests.CombinedTestNGSuite@496bc455]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- downloadCustom6MonthsXsl -->
+        <test-method signature="downloadCustom12MonthsPdf()[pri:13, instance:automationFramework.tests.CombinedTestNGSuite@496bc455]" started-at="2025-06-20T15:42:46 IST" name="downloadCustom12MonthsPdf" finished-at="2025-06-20T15:42:46 IST" depends-on-methods="automationFramework.tests.CombinedTestNGSuite.loginToApplication" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method automationFramework.tests.CombinedTestNGSuite.downloadCustom12MonthsPdf() on instance automationFramework.tests.CombinedTestNGSuite@496bc455 depends on not successfully finished methods 
+[automationFramework.tests.CombinedTestNGSuite.loginToApplication() on instance automationFramework.tests.CombinedTestNGSuite@496bc455]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method automationFramework.tests.CombinedTestNGSuite.downloadCustom12MonthsPdf() on instance automationFramework.tests.CombinedTestNGSuite@496bc455 depends on not successfully finished methods 
+[automationFramework.tests.CombinedTestNGSuite.loginToApplication() on instance automationFramework.tests.CombinedTestNGSuite@496bc455]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- downloadCustom12MonthsPdf -->
+        <test-method signature="downloadCustom6MonthsPdf()[pri:14, instance:automationFramework.tests.CombinedTestNGSuite@496bc455]" started-at="2025-06-20T15:42:46 IST" name="downloadCustom6MonthsPdf" finished-at="2025-06-20T15:42:46 IST" depends-on-methods="automationFramework.tests.CombinedTestNGSuite.loginToApplication" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method automationFramework.tests.CombinedTestNGSuite.downloadCustom6MonthsPdf() on instance automationFramework.tests.CombinedTestNGSuite@496bc455 depends on not successfully finished methods 
+[automationFramework.tests.CombinedTestNGSuite.loginToApplication() on instance automationFramework.tests.CombinedTestNGSuite@496bc455]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method automationFramework.tests.CombinedTestNGSuite.downloadCustom6MonthsPdf() on instance automationFramework.tests.CombinedTestNGSuite@496bc455 depends on not successfully finished methods 
+[automationFramework.tests.CombinedTestNGSuite.loginToApplication() on instance automationFramework.tests.CombinedTestNGSuite@496bc455]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- downloadCustom6MonthsPdf -->
+        <test-method signature="downloadCustom12MonthsXsl()[pri:15, instance:automationFramework.tests.CombinedTestNGSuite@496bc455]" started-at="2025-06-20T15:42:46 IST" name="downloadCustom12MonthsXsl" finished-at="2025-06-20T15:42:46 IST" depends-on-methods="automationFramework.tests.CombinedTestNGSuite.loginToApplication" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method automationFramework.tests.CombinedTestNGSuite.downloadCustom12MonthsXsl() on instance automationFramework.tests.CombinedTestNGSuite@496bc455 depends on not successfully finished methods 
+[automationFramework.tests.CombinedTestNGSuite.loginToApplication() on instance automationFramework.tests.CombinedTestNGSuite@496bc455]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method automationFramework.tests.CombinedTestNGSuite.downloadCustom12MonthsXsl() on instance automationFramework.tests.CombinedTestNGSuite@496bc455 depends on not successfully finished methods 
+[automationFramework.tests.CombinedTestNGSuite.loginToApplication() on instance automationFramework.tests.CombinedTestNGSuite@496bc455]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- downloadCustom12MonthsXsl -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationFramework.tests.CombinedTestNGSuite@496bc455]" started-at="2025-06-20T15:42:46 IST" name="tearDown" finished-at="2025-06-20T15:42:58 IST" duration-ms="12556" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- automationFramework.tests.PaymentTestNG -->
-    </test> <!-- MultipleTest -->
-  </suite> <!-- MySuite -->
+      </class> <!-- automationFramework.tests.CombinedTestNGSuite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

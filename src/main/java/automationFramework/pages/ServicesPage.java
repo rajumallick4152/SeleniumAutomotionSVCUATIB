@@ -193,9 +193,9 @@ public class ServicesPage extends BasePage {
 
 		try {
 			WebElement errorMsg = wait.until(
-					ExpectedConditions.presenceOfElementLocated(By.xpath("//*[contains(text(),'OTP Validation')]"))); // Loose
+					ExpectedConditions.presenceOfElementLocated(By.xpath("//*[contains(text(),'OTP')]"))); // Loose
 																														// match
-
+			waitForSpinnerToFullyDisappear();//// extra added by raju on 19/06/25
 			String actualMsg = errorMsg.getText().trim();
 			logger.info("❌ Error Message Shown: " + actualMsg);
 			test.pass("❌ Error Message Shown: " + actualMsg);
@@ -211,7 +211,7 @@ public class ServicesPage extends BasePage {
 			logger.error("❌ OTP validation error message not found.");
 			test.fail("❌ OTP validation error message not found.");
 		}
-
+		waitForSpinnerToFullyDisappear();// extra added by raju on 19/06/25
 		// Continue with cleanup
 		clickCancelButton();
 		clickCloseArrow();

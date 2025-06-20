@@ -1,0 +1,116 @@
+2025-06-19 18:47:31 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
+2025-06-19 18:47:31 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 2 ms.
+2025-06-19 18:47:31 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-19 18:47:31 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-19 18:47:31 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-19 18:47:31 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+2025-06-19 18:47:31 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-19 18:47:31 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-19 18:47:31 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 5 ms.
+2025-06-19 18:47:31 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 17 ms.
+2025-06-19 18:47:31 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
+2025-06-19 18:47:31 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+2025-06-19 18:47:31 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-19 18:47:31 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-19 18:47:31 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-19 18:47:31 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-19 18:47:31 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-19 18:47:31 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-19 18:47:31 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
+2025-06-19 18:47:31 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+2025-06-19 18:47:31 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-19 18:47:31 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-19 18:47:31 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-19 18:47:31 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-19 18:47:31 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 2 ms.
+2025-06-19 18:47:31 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 20 ms.
+2025-06-19 18:47:31 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-19 18:47:31 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-19 18:47:31 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-19 18:47:31 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-19 18:47:31 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\rajum\AppData\Local\Temp\testng-eclipse--949295216\testng-customsuite.xml
+
+2025-06-19 18:47:31 [main] INFO  org.testng.internal.Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 11 ms.
+2025-06-19 18:47:31 [main] INFO  automationFramework.utils.LoggerUtil - Initializing browser and report...
+2025-06-19 18:47:32 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 137.0.7151.119 (resolved driver for Chrome 137)
+2025-06-19 18:47:32 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\rajum\.cache\selenium\chromedriver\win64\137.0.7151.119\chromedriver.exe
+2025-06-19 18:47:34 [main] INFO  automationFramework.utils.LoggerUtil - Setup complete.
+2025-06-19 18:47:35 [main] INFO  automationFramework.pages.LoginPage - ✅ Captcha wait time loaded: 10 seconds
+2025-06-19 18:47:44 [main] INFO  automationFramework.pages.LoginPage - 🟦 Navigated to URL: https://uatnet.svcbank.com/ReachSVCInet/SVC-web/inet/netbanking
+2025-06-19 18:47:44 [main] INFO  automationFramework.pages.LoginPage - ✅ Entered username: TEST001
+2025-06-19 18:47:44 [main] INFO  automationFramework.pages.LoginPage - ⏳ Waiting for manual captcha input (10 seconds)
+2025-06-19 18:47:54 [main] INFO  automationFramework.pages.LoginPage - ✅ Clicked first Login button
+2025-06-19 18:47:55 [main] INFO  automationFramework.pages.LoginPage - ✅ Entered password
+2025-06-19 18:47:55 [main] INFO  automationFramework.pages.LoginPage - ✅ Clicked final Login button
+2025-06-19 18:47:58 [main] INFO  automationFramework.pages.LoginPage - 🎉 Login successful for user: TEST001
+2025-06-19 18:47:58 [main] INFO  a.pages.PaymentHistoryPage - 🟦 [STEP] Clicking on the Payment tab.
+2025-06-19 18:47:58 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-19 18:48:13 [main] WARN  a.pages.PaymentHistoryPage - ⚠️ Spinner wait skipped or failed gracefully.
+2025-06-19 18:48:14 [main] WARN  a.pages.PaymentHistoryPage - ⚠️ Click intercepted attempt 1/3: element click intercepted: Element <span class="p-menuitem-text">...</span> is not clickable at point (255, 101). Other element would receive the click: <div _ngcontent-ng-c587276320="" class="ngx-spinner-overlay ng-tns-c587276320-1 ng-trigger ng-trigger-fadeIn ng-star-inserted ng-animating" style="background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed;">...</div>
+  (Session info: chrome=137.0.7151.104)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [df8de47cff958df46c4ed09dfdabedfb, clickElement {id=f.C93BF95ACBAD4BB3ADFF06B55449C295.d.751E1883A591697F8AD7946FF8501F1B.e.75}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\rajum\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54241}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54241/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (df8de47cff958df46c4ed09dfdabedfb)] -> xpath: //span[@class='p-menuitem-text' and text()='Payment']]
+Session ID: df8de47cff958df46c4ed09dfdabedfb
+2025-06-19 18:48:15 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-19 18:48:23 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.
+2025-06-19 18:48:23 [main] INFO  a.pages.PaymentHistoryPage - ✅ [SUCCESS] Payment tab clicked.
+2025-06-19 18:48:23 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-19 18:48:24 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.
+2025-06-19 18:48:24 [main] INFO  a.pages.PaymentHistoryPage - 🧪=== Starting Positive Test Cases for NEFT transaction for Payment to Payee ===
+2025-06-19 18:48:24 [main] INFO  a.pages.PaymentHistoryPage - 🚀 [START] Initiating payment to payee: DXFCHGV
+2025-06-19 18:48:24 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-19 18:48:25 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.
+2025-06-19 18:48:25 [main] INFO  a.pages.PaymentHistoryPage - ✅ [SUCCESS] Payee selected: DXFCHGV
+2025-06-19 18:48:25 [main] INFO  a.pages.PaymentHistoryPage - ✅ [SUCCESS] Entered amount: ₹1
+2025-06-19 18:48:25 [main] INFO  a.pages.PaymentHistoryPage - ✅ Amount '1' entered successfully.
+2025-06-19 18:48:25 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-19 18:48:42 [main] WARN  a.pages.PaymentHistoryPage - ⚠️ Spinner wait skipped or failed gracefully.
+2025-06-19 18:48:42 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared after entering amount.
+2025-06-19 18:48:42 [main] INFO  a.pages.PaymentHistoryPage - 🟦 [STEP] Selecting NEFT option
+2025-06-19 18:48:42 [main] INFO  a.pages.PaymentHistoryPage - Attempting to click NEFT option (Attempt 1)
+2025-06-19 18:48:48 [main] INFO  a.pages.PaymentHistoryPage - 🔄 NEFT clicked via Actions.
+2025-06-19 18:48:49 [main] WARN  a.pages.PaymentHistoryPage - ⚠️ NEFT not selected yet. Retrying...
+2025-06-19 18:48:49 [main] INFO  a.pages.PaymentHistoryPage - Attempting to click NEFT option (Attempt 2)
+2025-06-19 18:48:54 [main] INFO  a.pages.PaymentHistoryPage - 🔄 NEFT clicked via Actions.
+2025-06-19 18:48:54 [main] INFO  a.pages.PaymentHistoryPage - ✅ NEFT option selected successfully.
+2025-06-19 18:48:54 [main] INFO  a.pages.PaymentHistoryPage - ✅ NEFT option selected.
+2025-06-19 18:48:55 [main] INFO  a.pages.PaymentHistoryPage - ✅ [SUCCESS] Entered remarks: test value
+2025-06-19 18:48:55 [main] INFO  a.pages.PaymentHistoryPage - ✅ Remarks entered.
+2025-06-19 18:48:55 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-19 18:48:55 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.
+2025-06-19 18:48:55 [main] INFO  a.pages.PaymentHistoryPage - ✅ [SUCCESS] Clicked Proceed after remarks.
+2025-06-19 18:48:55 [main] INFO  a.pages.PaymentHistoryPage - ✅ Clicked on Proceed button after entering remarks.
+2025-06-19 18:48:55 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-19 18:48:56 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.
+2025-06-19 18:48:56 [main] INFO  a.pages.PaymentHistoryPage - ✅ [SUCCESS] Confirm button clicked.
+2025-06-19 18:48:56 [main] INFO  a.pages.PaymentHistoryPage - ✅ Confirm button clicked.
+2025-06-19 18:48:57 [main] INFO  a.pages.PaymentHistoryPage - ✅ [SUCCESS] OTP entered.
+2025-06-19 18:48:57 [main] INFO  a.pages.PaymentHistoryPage - ✅ OTP entered.
+2025-06-19 18:48:57 [main] INFO  a.pages.PaymentHistoryPage - Waiting for any overlay/spinner to disappear.
+2025-06-19 18:48:57 [main] INFO  a.pages.PaymentHistoryPage - ✅ [SUCCESS] Final Proceed clicked after OTP.
+2025-06-19 18:48:57 [main] INFO  a.pages.PaymentHistoryPage - ✅ Final Proceed button clicked.
+2025-06-19 18:48:57 [main] INFO  a.pages.PaymentHistoryPage - ✅ No critical service errors detected.
+2025-06-19 18:49:12 [main] WARN  a.pages.PaymentHistoryPage - ⚠️ [WARN] Close button not found or failed to click: Expected condition failed: waiting for element to be clickable: By.xpath: (//img[@alt='close' and contains(@src,'ic_closeCircle')])[last()] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\rajum\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54241}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54241/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: df8de47cff958df46c4ed09dfdabedfb
+2025-06-19 18:49:12 [main] INFO  a.pages.PaymentHistoryPage - ✅ Close button clicked after transaction.
+2025-06-19 18:49:12 [main] INFO  a.pages.PaymentHistoryPage - 🎉 [DONE] ✅ Positive test case for Payment to payee 'DXFCHGV' successfully executed.
+2025-06-19 18:49:12 [main] INFO  a.pages.PaymentHistoryPage - 🟦 [STEP] Clicking on the Payment tab.
+2025-06-19 18:49:12 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-19 18:49:12 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.
+2025-06-19 18:49:28 [main] WARN  a.pages.PaymentHistoryPage - ⚠️ Click failed attempt 1/3: Expected condition failed: waiting for element to be clickable: By.xpath: //span[@class='p-menuitem-text' and text()='Payment'] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\rajum\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54241}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54241/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: df8de47cff958df46c4ed09dfdabedfb
+2025-06-19 18:49:28 [main] INFO  a.pages.PaymentHistoryPage - ⏳ Waiting for spinner to fully disappear...
+2025-06-19 18:49:28 [main] INFO  a.pages.PaymentHistoryPage - ✅ Spinner disappeared.

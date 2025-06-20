@@ -15,9 +15,11 @@ import com.aventstack.extentreports.ExtentTest;
 //import java.time.Duration;
 
 public class PaymentHistoryPage extends BasePage {
+	private boolean isRemarksNEFTFailed = false;
 
 	private static final By PAYMENT_TAB = By.xpath("//span[@class='p-menuitem-text' and text()='Payment']");
-	private static final By PAYEE_NAME = By.xpath("//span[@class='font-semibold mb-1' and text()='RAJATH CANARA']");
+	private static final By ACCOUNTS_TAB = By.xpath("//span[@class='p-menuitem-text' and text()='Accounts']");
+	private static final By PAYEE_NAME = By.xpath("//span[contains(@class, 'font-semibold') and text()='DXFCHGV']");
 	private static final By AMOUNT_INPUT = By.id("custom-amount-input");
 	private static final By REMARKS_INPUT = By.xpath("//input[@placeholder='Add Remarks']");
 	private static final By PROCEED_BUTTON_REMARKS = By.xpath("(//span[text()='Proceed'])[1]");
@@ -238,6 +240,11 @@ public class PaymentHistoryPage extends BasePage {
 			clickFinalProceedButton();
 			logger.info("✅ Final Proceed button clicked.");
 			test.pass("✅ Final Proceed button clicked.");
+
+			if (handlePaymentFailurePopupIfPresent()) {
+				test.fail("❌ NEFT transaction failed due to technical issue. Error popup handled.");
+				return; // stop execution after error handled
+			}
 
 			clickCloseButton();
 			logger.info("✅ Close button clicked after transaction.");
@@ -498,7 +505,12 @@ public class PaymentHistoryPage extends BasePage {
 			logger.info("✅ Final Proceed clicked.");
 			test.info("✅ Final Proceed clicked.");
 
-			Thread.sleep(2000);
+			// Check for payment failure popup
+			if (handlePaymentFailurePopupIfPresent()) {
+				test.fail("❌ NEFT transaction failed due to technical issue.");
+				isRemarksNEFTFailed = true;
+				return;
+			}
 
 			logger.info("[SUCCESS] ✅ Transaction succeeded.");
 			test.pass("✅ Transaction succeeded with blank remarks.");
@@ -512,11 +524,16 @@ public class PaymentHistoryPage extends BasePage {
 
 	private void testInvalidOTP(ExtentTest test) {
 		try {
-			logger.info("\n🔸 Test Case 7: Invalid OTP");
 			test.info("🔸 Test Case 7: Invalid OTP");
+			logger.info("\n🔸 Test Case 7: Invalid OTP");
 
-			clickWithRetry(PAYEE_NAME);
+			// Skip payee click if last NEFT failed
+			if (!isRemarksNEFTFailed) {
+				clickWithRetry(PAYEE_NAME);
+			}
+
 			enterAmount("3");
+			// ... rest remains same
 
 			waitForSpinnerToFullyDisappear();
 			detectAndLogServiceErrors();
@@ -542,6 +559,7 @@ public class PaymentHistoryPage extends BasePage {
 			Thread.sleep(500);
 			clickWithRetry(CANCEL_BUTTON);
 			clickWithRetry(CANCEL_BUTTON);
+			clickWithRetry(ACCOUNTS_TAB);
 		} catch (Exception e) {
 			logger.error("❌ Error in Invalid OTP Test: {}", e.getMessage());
 			test.fail("❌ Error in Invalid OTP Test: " + e.getMessage());

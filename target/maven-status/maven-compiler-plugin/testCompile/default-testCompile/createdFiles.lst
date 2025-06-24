@@ -1,0 +1,6 @@
+automationFramework\tests\CombinedTestNGSuite.class
+automationFramework\tests\PaymentTestNG.class
+automationFramework\tests\ServicesTestNG.class
+automationFramework\utils\LoggerUtil.class
+automationFramework\tests\AccountsTestNG.class
+automationFramework\listeners\TestListener.class

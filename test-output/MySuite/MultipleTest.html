@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>MultipleTest</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>11/5/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/16</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Jun 20 16:10:16 IST 2025</td>
+<td>Started on:</td><td>Wed Jun 25 18:52:44 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>1534 seconds (1534381 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (823 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -68,7 +68,7 @@ function toggleAllBoxes() {
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
 <table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,36 +76,25 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='automationFramework.tests.AccountsTestNG.downloadCustom12MonthsPdf()'><b>downloadCustom12MonthsPdf</b><br>Test class: automationFramework.tests.AccountsTestNG</td>
-<td><div><pre>java.lang.RuntimeException: Custom statement download failed for 12 months
-	at automationFramework.pages.AccountsPage.downloadCustomStatement(AccountsPage.java:217)
-	at automationFramework.tests.AccountsTestNG.lambda$6(AccountsTestNG.java:111)
-	at automationFramework.tests.AccountsTestNG.runDownloadTest(AccountsTestNG.java:67)
-	at automationFramework.tests.AccountsTestNG.downloadCustom12MonthsPdf(AccountsTestNG.java:110)
+<td title='automationFramework.tests.ServicesTestNG.setUp()'><b>setUp</b><br>Test class: automationFramework.tests.ServicesTestNG</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;String.toLowerCase()&quot; because &quot;browserName&quot; is null
+	at automationFramework.BrowserFactory.startBrowser(BrowserFactory.java:16)
+	at automationFramework.tests.ServicesTestNG.setUp(ServicesTestNG.java:38)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: java.lang.RuntimeException: ❌ Click failed after 3 attempts: By.xpath: //span[@class=&apos;p-menuitem-text&apos; and text()=&apos;Accounts&apos;]
-	at automationFramework.pages.BasePage.clickWithRetry(BasePage.java:75)
-	at automationFramework.pages.AccountsPage.ensureDetailedStatementVisible(AccountsPage.java:93)
-	at automationFramework.pages.AccountsPage.downloadCustomStatement(AccountsPage.java:144)
-	... 31 more
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1717580721", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1717580721'><pre>java.lang.RuntimeException: Custom statement download failed for 12 months
-	at automationFramework.pages.AccountsPage.downloadCustomStatement(AccountsPage.java:217)
-	at automationFramework.tests.AccountsTestNG.lambda$6(AccountsTestNG.java:111)
-	at automationFramework.tests.AccountsTestNG.runDownloadTest(AccountsTestNG.java:67)
-	at automationFramework.tests.AccountsTestNG.downloadCustom12MonthsPdf(AccountsTestNG.java:110)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1154821602", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1154821602'><pre>java.lang.NullPointerException: Cannot invoke &quot;String.toLowerCase()&quot; because &quot;browserName&quot; is null
+	at automationFramework.BrowserFactory.startBrowser(BrowserFactory.java:16)
+	at automationFramework.tests.ServicesTestNG.setUp(ServicesTestNG.java:38)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at org.testng.TestRunner.privateRun(TestRunner.java:741)
 	at org.testng.TestRunner.run(TestRunner.java:616)
@@ -122,45 +111,29 @@ Caused by: java.lang.RuntimeException: ❌ Click failed after 3 attempts: By.xpa
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: java.lang.RuntimeException: ❌ Click failed after 3 attempts: By.xpath: //span[@class=&apos;p-menuitem-text&apos; and text()=&apos;Accounts&apos;]
-	at automationFramework.pages.BasePage.clickWithRetry(BasePage.java:75)
-	at automationFramework.pages.AccountsPage.ensureDetailedStatementVisible(AccountsPage.java:93)
-	at automationFramework.pages.AccountsPage.downloadCustomStatement(AccountsPage.java:144)
-	... 31 more
 </pre></div></td>
-<td>41</td>
-<td>automationFramework.tests.AccountsTestNG@1c481ff2</td></tr>
+<td>0</td>
+<td>automationFramework.tests.ServicesTestNG@3cce57c7</td></tr>
 <tr>
-<td title='automationFramework.tests.AccountsTestNG.downloadOneMonthStatementXls()'><b>downloadOneMonthStatementXls</b><br>Test class: automationFramework.tests.AccountsTestNG</td>
-<td><div><pre>java.lang.RuntimeException: Failed to download 1 Month statement in XLS
-	at automationFramework.pages.AccountsPage.downloadStatement(AccountsPage.java:135)
-	at automationFramework.tests.AccountsTestNG.lambda$3(AccountsTestNG.java:94)
-	at automationFramework.tests.AccountsTestNG.runDownloadTest(AccountsTestNG.java:67)
-	at automationFramework.tests.AccountsTestNG.downloadOneMonthStatementXls(AccountsTestNG.java:94)
+<td title='automationFramework.tests.AccountsTestNG.setUp()'><b>setUp</b><br>Test class: automationFramework.tests.AccountsTestNG</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;String.toLowerCase()&quot; because &quot;browserName&quot; is null
+	at automationFramework.BrowserFactory.startBrowser(BrowserFactory.java:16)
+	at automationFramework.tests.AccountsTestNG.setUp(AccountsTestNG.java:38)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: java.lang.RuntimeException: ❌ Click failed after 3 attempts: By.xpath: //span[@class=&apos;p-menuitem-text&apos; and text()=&apos;Accounts&apos;]
-	at automationFramework.pages.BasePage.clickWithRetry(BasePage.java:75)
-	at automationFramework.pages.AccountsPage.ensureDetailedStatementVisible(AccountsPage.java:93)
-	at automationFramework.pages.AccountsPage.downloadStatement(AccountsPage.java:103)
-	... 31 more
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace900958598", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace900958598'><pre>java.lang.RuntimeException: Failed to download 1 Month statement in XLS
-	at automationFramework.pages.AccountsPage.downloadStatement(AccountsPage.java:135)
-	at automationFramework.tests.AccountsTestNG.lambda$3(AccountsTestNG.java:94)
-	at automationFramework.tests.AccountsTestNG.runDownloadTest(AccountsTestNG.java:67)
-	at automationFramework.tests.AccountsTestNG.downloadOneMonthStatementXls(AccountsTestNG.java:94)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1181815135", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1181815135'><pre>java.lang.NullPointerException: Cannot invoke &quot;String.toLowerCase()&quot; because &quot;browserName&quot; is null
+	at automationFramework.BrowserFactory.startBrowser(BrowserFactory.java:16)
+	at automationFramework.tests.AccountsTestNG.setUp(AccountsTestNG.java:38)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at org.testng.TestRunner.privateRun(TestRunner.java:741)
 	at org.testng.TestRunner.run(TestRunner.java:616)
@@ -177,44 +150,29 @@ Caused by: java.lang.RuntimeException: ❌ Click failed after 3 attempts: By.xpa
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: java.lang.RuntimeException: ❌ Click failed after 3 attempts: By.xpath: //span[@class=&apos;p-menuitem-text&apos; and text()=&apos;Accounts&apos;]
-	at automationFramework.pages.BasePage.clickWithRetry(BasePage.java:75)
-	at automationFramework.pages.AccountsPage.ensureDetailedStatementVisible(AccountsPage.java:93)
-	at automationFramework.pages.AccountsPage.downloadStatement(AccountsPage.java:103)
-	... 31 more
 </pre></div></td>
-<td>67</td>
-<td>automationFramework.tests.AccountsTestNG@1c481ff2</td></tr>
+<td>0</td>
+<td>automationFramework.tests.AccountsTestNG@1cf56a1c</td></tr>
 <tr>
-<td title='automationFramework.tests.AccountsTestNG.downloadCustom6MonthsXsl()'><b>downloadCustom6MonthsXsl</b><br>Test class: automationFramework.tests.AccountsTestNG</td>
-<td><div><pre>java.lang.RuntimeException: Custom statement download failed for 6 months
-	at automationFramework.pages.AccountsPage.downloadCustomStatement(AccountsPage.java:217)
-	at automationFramework.tests.AccountsTestNG.lambda$5(AccountsTestNG.java:105)
-	at automationFramework.tests.AccountsTestNG.runDownloadTest(AccountsTestNG.java:67)
-	at automationFramework.tests.AccountsTestNG.downloadCustom6MonthsXsl(AccountsTestNG.java:104)
+<td title='automationFramework.tests.PaymentTestNG.setUp()'><b>setUp</b><br>Test class: automationFramework.tests.PaymentTestNG</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;String.toLowerCase()&quot; because &quot;browserName&quot; is null
+	at automationFramework.BrowserFactory.startBrowser(BrowserFactory.java:16)
+	at automationFramework.tests.PaymentTestNG.setUp(PaymentTestNG.java:33)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: java.lang.RuntimeException: ❌ Click failed after 3 attempts: By.xpath: //img[contains(@src,&apos;ic_excel_file.svg&apos;) and @alt=&apos;excel&apos;]
-	at automationFramework.pages.BasePage.clickWithRetry(BasePage.java:75)
-	at automationFramework.pages.AccountsPage.downloadCustomStatement(AccountsPage.java:206)
-	... 31 more
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2082099346", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2082099346'><pre>java.lang.RuntimeException: Custom statement download failed for 6 months
-	at automationFramework.pages.AccountsPage.downloadCustomStatement(AccountsPage.java:217)
-	at automationFramework.tests.AccountsTestNG.lambda$5(AccountsTestNG.java:105)
-	at automationFramework.tests.AccountsTestNG.runDownloadTest(AccountsTestNG.java:67)
-	at automationFramework.tests.AccountsTestNG.downloadCustom6MonthsXsl(AccountsTestNG.java:104)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace154449611", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace154449611'><pre>java.lang.NullPointerException: Cannot invoke &quot;String.toLowerCase()&quot; because &quot;browserName&quot; is null
+	at automationFramework.BrowserFactory.startBrowser(BrowserFactory.java:16)
+	at automationFramework.tests.PaymentTestNG.setUp(PaymentTestNG.java:33)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at org.testng.TestRunner.privateRun(TestRunner.java:741)
 	at org.testng.TestRunner.run(TestRunner.java:616)
@@ -231,126 +189,12 @@ Caused by: java.lang.RuntimeException: ❌ Click failed after 3 attempts: By.xpa
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: java.lang.RuntimeException: ❌ Click failed after 3 attempts: By.xpath: //img[contains(@src,&apos;ic_excel_file.svg&apos;) and @alt=&apos;excel&apos;]
-	at automationFramework.pages.BasePage.clickWithRetry(BasePage.java:75)
-	at automationFramework.pages.AccountsPage.downloadCustomStatement(AccountsPage.java:206)
-	... 31 more
 </pre></div></td>
-<td>294</td>
-<td>automationFramework.tests.AccountsTestNG@1c481ff2</td></tr>
-<tr>
-<td title='automationFramework.tests.AccountsTestNG.downloadCustom12MonthsXsl()'><b>downloadCustom12MonthsXsl</b><br>Test class: automationFramework.tests.AccountsTestNG</td>
-<td><div><pre>java.lang.RuntimeException: Custom statement download failed for 12 months
-	at automationFramework.pages.AccountsPage.downloadCustomStatement(AccountsPage.java:217)
-	at automationFramework.tests.AccountsTestNG.lambda$8(AccountsTestNG.java:123)
-	at automationFramework.tests.AccountsTestNG.runDownloadTest(AccountsTestNG.java:67)
-	at automationFramework.tests.AccountsTestNG.downloadCustom12MonthsXsl(AccountsTestNG.java:122)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: java.lang.RuntimeException: ❌ Click failed after 3 attempts: By.xpath: //span[@class=&apos;p-menuitem-text&apos; and text()=&apos;Accounts&apos;]
-	at automationFramework.pages.BasePage.clickWithRetry(BasePage.java:75)
-	at automationFramework.pages.AccountsPage.ensureDetailedStatementVisible(AccountsPage.java:93)
-	at automationFramework.pages.AccountsPage.downloadCustomStatement(AccountsPage.java:144)
-	... 31 more
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace7318052", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace7318052'><pre>java.lang.RuntimeException: Custom statement download failed for 12 months
-	at automationFramework.pages.AccountsPage.downloadCustomStatement(AccountsPage.java:217)
-	at automationFramework.tests.AccountsTestNG.lambda$8(AccountsTestNG.java:123)
-	at automationFramework.tests.AccountsTestNG.runDownloadTest(AccountsTestNG.java:67)
-	at automationFramework.tests.AccountsTestNG.downloadCustom12MonthsXsl(AccountsTestNG.java:122)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: java.lang.RuntimeException: ❌ Click failed after 3 attempts: By.xpath: //span[@class=&apos;p-menuitem-text&apos; and text()=&apos;Accounts&apos;]
-	at automationFramework.pages.BasePage.clickWithRetry(BasePage.java:75)
-	at automationFramework.pages.AccountsPage.ensureDetailedStatementVisible(AccountsPage.java:93)
-	at automationFramework.pages.AccountsPage.downloadCustomStatement(AccountsPage.java:144)
-	... 31 more
-</pre></div></td>
-<td>41</td>
-<td>automationFramework.tests.AccountsTestNG@1c481ff2</td></tr>
-<tr>
-<td title='automationFramework.tests.AccountsTestNG.downloadCustom6MonthsPdf()'><b>downloadCustom6MonthsPdf</b><br>Test class: automationFramework.tests.AccountsTestNG</td>
-<td><div><pre>java.lang.RuntimeException: Custom statement download failed for 6 months
-	at automationFramework.pages.AccountsPage.downloadCustomStatement(AccountsPage.java:217)
-	at automationFramework.tests.AccountsTestNG.lambda$7(AccountsTestNG.java:117)
-	at automationFramework.tests.AccountsTestNG.runDownloadTest(AccountsTestNG.java:67)
-	at automationFramework.tests.AccountsTestNG.downloadCustom6MonthsPdf(AccountsTestNG.java:116)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: java.lang.RuntimeException: ❌ Click failed after 3 attempts: By.xpath: //span[@class=&apos;p-menuitem-text&apos; and text()=&apos;Accounts&apos;]
-	at automationFramework.pages.BasePage.clickWithRetry(BasePage.java:75)
-	at automationFramework.pages.AccountsPage.ensureDetailedStatementVisible(AccountsPage.java:93)
-	at automationFramework.pages.AccountsPage.downloadCustomStatement(AccountsPage.java:144)
-	... 31 more
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace617043515", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace617043515'><pre>java.lang.RuntimeException: Custom statement download failed for 6 months
-	at automationFramework.pages.AccountsPage.downloadCustomStatement(AccountsPage.java:217)
-	at automationFramework.tests.AccountsTestNG.lambda$7(AccountsTestNG.java:117)
-	at automationFramework.tests.AccountsTestNG.runDownloadTest(AccountsTestNG.java:67)
-	at automationFramework.tests.AccountsTestNG.downloadCustom6MonthsPdf(AccountsTestNG.java:116)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: java.lang.RuntimeException: ❌ Click failed after 3 attempts: By.xpath: //span[@class=&apos;p-menuitem-text&apos; and text()=&apos;Accounts&apos;]
-	at automationFramework.pages.BasePage.clickWithRetry(BasePage.java:75)
-	at automationFramework.pages.AccountsPage.ensureDetailedStatementVisible(AccountsPage.java:93)
-	at automationFramework.pages.AccountsPage.downloadCustomStatement(AccountsPage.java:144)
-	... 31 more
-</pre></div></td>
-<td>41</td>
-<td>automationFramework.tests.AccountsTestNG@1c481ff2</td></tr>
+<td>0</td>
+<td>automationFramework.tests.PaymentTestNG@536dbea0</td></tr>
 </table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -358,60 +202,705 @@ Caused by: java.lang.RuntimeException: ❌ Click failed after 3 attempts: By.xpa
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='automationFramework.tests.AccountsTestNG.testAccountSummary()'><b>testAccountSummary</b><br>Test class: automationFramework.tests.AccountsTestNG</td>
+<td title='automationFramework.tests.ServicesTestNG.handleTestResult()'><b>handleTestResult</b><br>Test class: automationFramework.tests.ServicesTestNG</td>
 <td></td>
-<td>211</td>
-<td>automationFramework.tests.AccountsTestNG@1c481ff2</td></tr>
+<td>0</td>
+<td>automationFramework.tests.ServicesTestNG@3cce57c7</td></tr>
 <tr>
-<td title='automationFramework.tests.AccountsTestNG.downloadThreeMonthStatementPdf()'><b>downloadThreeMonthStatementPdf</b><br>Test class: automationFramework.tests.AccountsTestNG</td>
+<td title='automationFramework.tests.AccountsTestNG.logResult()'><b>logResult</b><br>Test class: automationFramework.tests.AccountsTestNG</td>
 <td></td>
-<td>137</td>
-<td>automationFramework.tests.AccountsTestNG@1c481ff2</td></tr>
+<td>0</td>
+<td>automationFramework.tests.AccountsTestNG@1cf56a1c</td></tr>
 <tr>
-<td title='automationFramework.tests.AccountsTestNG.downloadOneMonthStatementPdf()'><b>downloadOneMonthStatementPdf</b><br>Test class: automationFramework.tests.AccountsTestNG</td>
+<td title='automationFramework.tests.ServicesTestNG.handleTestResult()'><b>handleTestResult</b><br>Test class: automationFramework.tests.ServicesTestNG</td>
 <td></td>
-<td>78</td>
-<td>automationFramework.tests.AccountsTestNG@1c481ff2</td></tr>
+<td>0</td>
+<td>automationFramework.tests.ServicesTestNG@3cce57c7</td></tr>
 <tr>
-<td title='automationFramework.tests.AccountsTestNG.downloadThreeMonthStatementXls()'><b>downloadThreeMonthStatementXls</b><br>Test class: automationFramework.tests.AccountsTestNG</td>
+<td title='automationFramework.tests.AccountsTestNG.logResult()'><b>logResult</b><br>Test class: automationFramework.tests.AccountsTestNG</td>
 <td></td>
-<td>218</td>
-<td>automationFramework.tests.AccountsTestNG@1c481ff2</td></tr>
+<td>0</td>
+<td>automationFramework.tests.AccountsTestNG@1cf56a1c</td></tr>
+<tr>
+<td title='automationFramework.tests.AccountsTestNG.logResult()'><b>logResult</b><br>Test class: automationFramework.tests.AccountsTestNG</td>
+<td></td>
+<td>0</td>
+<td>automationFramework.tests.AccountsTestNG@1cf56a1c</td></tr>
+<tr>
+<td title='automationFramework.tests.AccountsTestNG.logResult()'><b>logResult</b><br>Test class: automationFramework.tests.AccountsTestNG</td>
+<td></td>
+<td>0</td>
+<td>automationFramework.tests.AccountsTestNG@1cf56a1c</td></tr>
+<tr>
+<td title='automationFramework.tests.PaymentTestNG.logResult()'><b>logResult</b><br>Test class: automationFramework.tests.PaymentTestNG</td>
+<td></td>
+<td>0</td>
+<td>automationFramework.tests.PaymentTestNG@536dbea0</td></tr>
+<tr>
+<td title='automationFramework.tests.PaymentTestNG.tearDown()'><b>tearDown</b><br>Test class: automationFramework.tests.PaymentTestNG</td>
+<td></td>
+<td>0</td>
+<td>automationFramework.tests.PaymentTestNG@536dbea0</td></tr>
+<tr>
+<td title='automationFramework.tests.AccountsTestNG.logResult()'><b>logResult</b><br>Test class: automationFramework.tests.AccountsTestNG</td>
+<td></td>
+<td>0</td>
+<td>automationFramework.tests.AccountsTestNG@1cf56a1c</td></tr>
+<tr>
+<td title='automationFramework.tests.ServicesTestNG.handleTestResult()'><b>handleTestResult</b><br>Test class: automationFramework.tests.ServicesTestNG</td>
+<td></td>
+<td>0</td>
+<td>automationFramework.tests.ServicesTestNG@3cce57c7</td></tr>
+<tr>
+<td title='automationFramework.tests.AccountsTestNG.logResult()'><b>logResult</b><br>Test class: automationFramework.tests.AccountsTestNG</td>
+<td></td>
+<td>0</td>
+<td>automationFramework.tests.AccountsTestNG@1cf56a1c</td></tr>
+<tr>
+<td title='automationFramework.tests.AccountsTestNG.logResult()'><b>logResult</b><br>Test class: automationFramework.tests.AccountsTestNG</td>
+<td></td>
+<td>0</td>
+<td>automationFramework.tests.AccountsTestNG@1cf56a1c</td></tr>
+<tr>
+<td title='automationFramework.tests.AccountsTestNG.logResult()'><b>logResult</b><br>Test class: automationFramework.tests.AccountsTestNG</td>
+<td></td>
+<td>0</td>
+<td>automationFramework.tests.AccountsTestNG@1cf56a1c</td></tr>
+<tr>
+<td title='automationFramework.tests.ServicesTestNG.handleTestResult()'><b>handleTestResult</b><br>Test class: automationFramework.tests.ServicesTestNG</td>
+<td></td>
+<td>0</td>
+<td>automationFramework.tests.ServicesTestNG@3cce57c7</td></tr>
+<tr>
+<td title='automationFramework.tests.AccountsTestNG.logResult()'><b>logResult</b><br>Test class: automationFramework.tests.AccountsTestNG</td>
+<td></td>
+<td>0</td>
+<td>automationFramework.tests.AccountsTestNG@1cf56a1c</td></tr>
+<tr>
+<td title='automationFramework.tests.AccountsTestNG.tearDown()'><b>tearDown</b><br>Test class: automationFramework.tests.AccountsTestNG</td>
+<td></td>
+<td>0</td>
+<td>automationFramework.tests.AccountsTestNG@1cf56a1c</td></tr>
+<tr>
+<td title='automationFramework.tests.ServicesTestNG.tearDown()'><b>tearDown</b><br>Test class: automationFramework.tests.ServicesTestNG</td>
+<td></td>
+<td>0</td>
+<td>automationFramework.tests.ServicesTestNG@3cce57c7</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
 <tr>
 <td title='automationFramework.tests.PaymentTestNG.testPayment()'><b>testPayment</b><br>Test class: automationFramework.tests.PaymentTestNG</td>
-<td></td>
-<td>11</td>
-<td>automationFramework.tests.PaymentTestNG@2e6a5539</td></tr>
-<tr>
-<td title='automationFramework.tests.ServicesTestNG.testEmptyThresholds()'><b>testEmptyThresholds</b><br>Test class: automationFramework.tests.ServicesTestNG</td>
-<td></td>
-<td>39</td>
-<td>automationFramework.tests.ServicesTestNG@740d2e78</td></tr>
-<tr>
-<td title='automationFramework.tests.PaymentTestNG.loginBeforePayment()'><b>loginBeforePayment</b><br>Test class: automationFramework.tests.PaymentTestNG</td>
-<td></td>
-<td>28</td>
-<td>automationFramework.tests.PaymentTestNG@2e6a5539</td></tr>
+<td><div><pre>java.lang.Throwable: Method automationFramework.tests.PaymentTestNG.testPayment() on instance automationFramework.tests.PaymentTestNG@536dbea0 depends on not successfully finished methods 
+[automationFramework.tests.PaymentTestNG.loginBeforePayment() on instance automationFramework.tests.PaymentTestNG@536dbea0]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace252738640", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace252738640'><pre>java.lang.Throwable: Method automationFramework.tests.PaymentTestNG.testPayment() on instance automationFramework.tests.PaymentTestNG@536dbea0 depends on not successfully finished methods 
+[automationFramework.tests.PaymentTestNG.loginBeforePayment() on instance automationFramework.tests.PaymentTestNG@536dbea0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>automationFramework.tests.PaymentTestNG@536dbea0</td></tr>
 <tr>
 <td title='automationFramework.tests.ServicesTestNG.testInvalidOTP()'><b>testInvalidOTP</b><br>Test class: automationFramework.tests.ServicesTestNG</td>
-<td></td>
-<td>96</td>
-<td>automationFramework.tests.ServicesTestNG@740d2e78</td></tr>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;String.toLowerCase()&quot; because &quot;browserName&quot; is null
+	at automationFramework.BrowserFactory.startBrowser(BrowserFactory.java:16)
+	at automationFramework.tests.ServicesTestNG.setUp(ServicesTestNG.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace384617262", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace384617262'><pre>java.lang.NullPointerException: Cannot invoke &quot;String.toLowerCase()&quot; because &quot;browserName&quot; is null
+	at automationFramework.BrowserFactory.startBrowser(BrowserFactory.java:16)
+	at automationFramework.tests.ServicesTestNG.setUp(ServicesTestNG.java:38)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>automationFramework.tests.ServicesTestNG@3cce57c7</td></tr>
+<tr>
+<td title='automationFramework.tests.AccountsTestNG.downloadOneMonthStatementXls()'><b>downloadOneMonthStatementXls</b><br>Test class: automationFramework.tests.AccountsTestNG</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;String.toLowerCase()&quot; because &quot;browserName&quot; is null
+	at automationFramework.BrowserFactory.startBrowser(BrowserFactory.java:16)
+	at automationFramework.tests.AccountsTestNG.setUp(AccountsTestNG.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace776484396", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace776484396'><pre>java.lang.NullPointerException: Cannot invoke &quot;String.toLowerCase()&quot; because &quot;browserName&quot; is null
+	at automationFramework.BrowserFactory.startBrowser(BrowserFactory.java:16)
+	at automationFramework.tests.AccountsTestNG.setUp(AccountsTestNG.java:38)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>automationFramework.tests.AccountsTestNG@1cf56a1c</td></tr>
+<tr>
+<td title='automationFramework.tests.PaymentTestNG.loginBeforePayment()'><b>loginBeforePayment</b><br>Test class: automationFramework.tests.PaymentTestNG</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;String.toLowerCase()&quot; because &quot;browserName&quot; is null
+	at automationFramework.BrowserFactory.startBrowser(BrowserFactory.java:16)
+	at automationFramework.tests.PaymentTestNG.setUp(PaymentTestNG.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace988850650", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace988850650'><pre>java.lang.NullPointerException: Cannot invoke &quot;String.toLowerCase()&quot; because &quot;browserName&quot; is null
+	at automationFramework.BrowserFactory.startBrowser(BrowserFactory.java:16)
+	at automationFramework.tests.PaymentTestNG.setUp(PaymentTestNG.java:33)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>automationFramework.tests.PaymentTestNG@536dbea0</td></tr>
 <tr>
 <td title='automationFramework.tests.ServicesTestNG.testNegativeThresholds()'><b>testNegativeThresholds</b><br>Test class: automationFramework.tests.ServicesTestNG</td>
-<td></td>
-<td>29</td>
-<td>automationFramework.tests.ServicesTestNG@740d2e78</td></tr>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;String.toLowerCase()&quot; because &quot;browserName&quot; is null
+	at automationFramework.BrowserFactory.startBrowser(BrowserFactory.java:16)
+	at automationFramework.tests.ServicesTestNG.setUp(ServicesTestNG.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace400064818", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace400064818'><pre>java.lang.NullPointerException: Cannot invoke &quot;String.toLowerCase()&quot; because &quot;browserName&quot; is null
+	at automationFramework.BrowserFactory.startBrowser(BrowserFactory.java:16)
+	at automationFramework.tests.ServicesTestNG.setUp(ServicesTestNG.java:38)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>automationFramework.tests.ServicesTestNG@3cce57c7</td></tr>
+<tr>
+<td title='automationFramework.tests.AccountsTestNG.downloadOneMonthStatementPdf()'><b>downloadOneMonthStatementPdf</b><br>Test class: automationFramework.tests.AccountsTestNG</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;String.toLowerCase()&quot; because &quot;browserName&quot; is null
+	at automationFramework.BrowserFactory.startBrowser(BrowserFactory.java:16)
+	at automationFramework.tests.AccountsTestNG.setUp(AccountsTestNG.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1530295320", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1530295320'><pre>java.lang.NullPointerException: Cannot invoke &quot;String.toLowerCase()&quot; because &quot;browserName&quot; is null
+	at automationFramework.BrowserFactory.startBrowser(BrowserFactory.java:16)
+	at automationFramework.tests.AccountsTestNG.setUp(AccountsTestNG.java:38)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>automationFramework.tests.AccountsTestNG@1cf56a1c</td></tr>
+<tr>
+<td title='automationFramework.tests.AccountsTestNG.testAccountSummary()'><b>testAccountSummary</b><br>Test class: automationFramework.tests.AccountsTestNG</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;String.toLowerCase()&quot; because &quot;browserName&quot; is null
+	at automationFramework.BrowserFactory.startBrowser(BrowserFactory.java:16)
+	at automationFramework.tests.AccountsTestNG.setUp(AccountsTestNG.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace57241990", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace57241990'><pre>java.lang.NullPointerException: Cannot invoke &quot;String.toLowerCase()&quot; because &quot;browserName&quot; is null
+	at automationFramework.BrowserFactory.startBrowser(BrowserFactory.java:16)
+	at automationFramework.tests.AccountsTestNG.setUp(AccountsTestNG.java:38)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>automationFramework.tests.AccountsTestNG@1cf56a1c</td></tr>
 <tr>
 <td title='automationFramework.tests.PaymentTestNG.testInvalidAmountScenarios()'><b>testInvalidAmountScenarios</b><br>Test class: automationFramework.tests.PaymentTestNG</td>
-<td></td>
-<td>21</td>
-<td>automationFramework.tests.PaymentTestNG@2e6a5539</td></tr>
+<td><div><pre>java.lang.Throwable: Method automationFramework.tests.PaymentTestNG.testInvalidAmountScenarios() on instance automationFramework.tests.PaymentTestNG@536dbea0 depends on not successfully finished methods 
+[automationFramework.tests.PaymentTestNG.loginBeforePayment() on instance automationFramework.tests.PaymentTestNG@536dbea0]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1260467793", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1260467793'><pre>java.lang.Throwable: Method automationFramework.tests.PaymentTestNG.testInvalidAmountScenarios() on instance automationFramework.tests.PaymentTestNG@536dbea0 depends on not successfully finished methods 
+[automationFramework.tests.PaymentTestNG.loginBeforePayment() on instance automationFramework.tests.PaymentTestNG@536dbea0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>automationFramework.tests.PaymentTestNG@536dbea0</td></tr>
+<tr>
+<td title='automationFramework.tests.AccountsTestNG.downloadThreeMonthStatementXls()'><b>downloadThreeMonthStatementXls</b><br>Test class: automationFramework.tests.AccountsTestNG</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;String.toLowerCase()&quot; because &quot;browserName&quot; is null
+	at automationFramework.BrowserFactory.startBrowser(BrowserFactory.java:16)
+	at automationFramework.tests.AccountsTestNG.setUp(AccountsTestNG.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace199657303", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace199657303'><pre>java.lang.NullPointerException: Cannot invoke &quot;String.toLowerCase()&quot; because &quot;browserName&quot; is null
+	at automationFramework.BrowserFactory.startBrowser(BrowserFactory.java:16)
+	at automationFramework.tests.AccountsTestNG.setUp(AccountsTestNG.java:38)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>automationFramework.tests.AccountsTestNG@1cf56a1c</td></tr>
+<tr>
+<td title='automationFramework.tests.AccountsTestNG.downloadCustom6MonthsXsl()'><b>downloadCustom6MonthsXsl</b><br>Test class: automationFramework.tests.AccountsTestNG</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;String.toLowerCase()&quot; because &quot;browserName&quot; is null
+	at automationFramework.BrowserFactory.startBrowser(BrowserFactory.java:16)
+	at automationFramework.tests.AccountsTestNG.setUp(AccountsTestNG.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace315805187", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace315805187'><pre>java.lang.NullPointerException: Cannot invoke &quot;String.toLowerCase()&quot; because &quot;browserName&quot; is null
+	at automationFramework.BrowserFactory.startBrowser(BrowserFactory.java:16)
+	at automationFramework.tests.AccountsTestNG.setUp(AccountsTestNG.java:38)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>automationFramework.tests.AccountsTestNG@1cf56a1c</td></tr>
+<tr>
+<td title='automationFramework.tests.AccountsTestNG.downloadCustom12MonthsPdf()'><b>downloadCustom12MonthsPdf</b><br>Test class: automationFramework.tests.AccountsTestNG</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;String.toLowerCase()&quot; because &quot;browserName&quot; is null
+	at automationFramework.BrowserFactory.startBrowser(BrowserFactory.java:16)
+	at automationFramework.tests.AccountsTestNG.setUp(AccountsTestNG.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1094674892", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1094674892'><pre>java.lang.NullPointerException: Cannot invoke &quot;String.toLowerCase()&quot; because &quot;browserName&quot; is null
+	at automationFramework.BrowserFactory.startBrowser(BrowserFactory.java:16)
+	at automationFramework.tests.AccountsTestNG.setUp(AccountsTestNG.java:38)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>automationFramework.tests.AccountsTestNG@1cf56a1c</td></tr>
+<tr>
+<td title='automationFramework.tests.AccountsTestNG.downloadThreeMonthStatementPdf()'><b>downloadThreeMonthStatementPdf</b><br>Test class: automationFramework.tests.AccountsTestNG</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;String.toLowerCase()&quot; because &quot;browserName&quot; is null
+	at automationFramework.BrowserFactory.startBrowser(BrowserFactory.java:16)
+	at automationFramework.tests.AccountsTestNG.setUp(AccountsTestNG.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1209770703", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1209770703'><pre>java.lang.NullPointerException: Cannot invoke &quot;String.toLowerCase()&quot; because &quot;browserName&quot; is null
+	at automationFramework.BrowserFactory.startBrowser(BrowserFactory.java:16)
+	at automationFramework.tests.AccountsTestNG.setUp(AccountsTestNG.java:38)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>automationFramework.tests.AccountsTestNG@1cf56a1c</td></tr>
 <tr>
 <td title='automationFramework.tests.ServicesTestNG.testManageSMSFlow()'><b>testManageSMSFlow</b><br>Test class: automationFramework.tests.ServicesTestNG</td>
-<td></td>
-<td>75</td>
-<td>automationFramework.tests.ServicesTestNG@740d2e78</td></tr>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;String.toLowerCase()&quot; because &quot;browserName&quot; is null
+	at automationFramework.BrowserFactory.startBrowser(BrowserFactory.java:16)
+	at automationFramework.tests.ServicesTestNG.setUp(ServicesTestNG.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1513867245", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1513867245'><pre>java.lang.NullPointerException: Cannot invoke &quot;String.toLowerCase()&quot; because &quot;browserName&quot; is null
+	at automationFramework.BrowserFactory.startBrowser(BrowserFactory.java:16)
+	at automationFramework.tests.ServicesTestNG.setUp(ServicesTestNG.java:38)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>automationFramework.tests.ServicesTestNG@3cce57c7</td></tr>
+<tr>
+<td title='automationFramework.tests.AccountsTestNG.downloadCustom6MonthsPdf()'><b>downloadCustom6MonthsPdf</b><br>Test class: automationFramework.tests.AccountsTestNG</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;String.toLowerCase()&quot; because &quot;browserName&quot; is null
+	at automationFramework.BrowserFactory.startBrowser(BrowserFactory.java:16)
+	at automationFramework.tests.AccountsTestNG.setUp(AccountsTestNG.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace460702435", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace460702435'><pre>java.lang.NullPointerException: Cannot invoke &quot;String.toLowerCase()&quot; because &quot;browserName&quot; is null
+	at automationFramework.BrowserFactory.startBrowser(BrowserFactory.java:16)
+	at automationFramework.tests.AccountsTestNG.setUp(AccountsTestNG.java:38)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>automationFramework.tests.AccountsTestNG@1cf56a1c</td></tr>
+<tr>
+<td title='automationFramework.tests.ServicesTestNG.testEmptyThresholds()'><b>testEmptyThresholds</b><br>Test class: automationFramework.tests.ServicesTestNG</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;String.toLowerCase()&quot; because &quot;browserName&quot; is null
+	at automationFramework.BrowserFactory.startBrowser(BrowserFactory.java:16)
+	at automationFramework.tests.ServicesTestNG.setUp(ServicesTestNG.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1808009213", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1808009213'><pre>java.lang.NullPointerException: Cannot invoke &quot;String.toLowerCase()&quot; because &quot;browserName&quot; is null
+	at automationFramework.BrowserFactory.startBrowser(BrowserFactory.java:16)
+	at automationFramework.tests.ServicesTestNG.setUp(ServicesTestNG.java:38)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>automationFramework.tests.ServicesTestNG@3cce57c7</td></tr>
+<tr>
+<td title='automationFramework.tests.AccountsTestNG.downloadCustom12MonthsXsl()'><b>downloadCustom12MonthsXsl</b><br>Test class: automationFramework.tests.AccountsTestNG</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;String.toLowerCase()&quot; because &quot;browserName&quot; is null
+	at automationFramework.BrowserFactory.startBrowser(BrowserFactory.java:16)
+	at automationFramework.tests.AccountsTestNG.setUp(AccountsTestNG.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1003693033", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1003693033'><pre>java.lang.NullPointerException: Cannot invoke &quot;String.toLowerCase()&quot; because &quot;browserName&quot; is null
+	at automationFramework.BrowserFactory.startBrowser(BrowserFactory.java:16)
+	at automationFramework.tests.AccountsTestNG.setUp(AccountsTestNG.java:38)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>automationFramework.tests.AccountsTestNG@1cf56a1c</td></tr>
 </table><p>
 </body>
 </html>

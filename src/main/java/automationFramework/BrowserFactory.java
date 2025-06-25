@@ -1,6 +1,6 @@
-
 package automationFramework;
 
+import automationFramework.utils.ConfigReader;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -8,7 +8,9 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BrowserFactory {
-	public static WebDriver startBrowser(String browserName) {
+
+	public static WebDriver startBrowser() {
+		String browserName = ConfigReader.getBrowser();
 		WebDriver driver = null;
 
 		switch (browserName.toLowerCase()) {
@@ -25,7 +27,7 @@ public class BrowserFactory {
 			driver = new EdgeDriver();
 			break;
 		default:
-			System.out.println("Unsupported browser: " + browserName);
+			throw new RuntimeException("❌ Unsupported browser in config.properties: " + browserName);
 		}
 
 		return driver;

@@ -7,9 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.time.Duration;
 import java.util.Random;
 
 public class ServicesPage extends BasePage {
@@ -192,9 +190,9 @@ public class ServicesPage extends BasePage {
 		clickProceed();
 
 		try {
-			WebElement errorMsg = wait.until(
-					ExpectedConditions.presenceOfElementLocated(By.xpath("//*[contains(text(),'OTP')]"))); // Loose
-																														// match
+			WebElement errorMsg = wait
+					.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[contains(text(),'OTP')]"))); // Loose
+																													// match
 			waitForSpinnerToFullyDisappear();//// extra added by raju on 19/06/25
 			String actualMsg = errorMsg.getText().trim();
 			logger.info("❌ Error Message Shown: " + actualMsg);

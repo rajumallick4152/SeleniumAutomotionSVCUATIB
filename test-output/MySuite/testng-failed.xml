@@ -6,16 +6,41 @@
   </listeners>
   <test thread-count="5" name="MultipleTest(failed)">
     <classes>
+      <class name="automationFramework.tests.ServicesTestNG">
+        <methods>
+          <include name="testEmptyThresholds"/>
+          <include name="testManageSMSFlow"/>
+          <include name="testInvalidOTP"/>
+          <include name="handleTestResult"/>
+          <include name="testNegativeThresholds"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- automationFramework.tests.ServicesTestNG -->
+      <class name="automationFramework.tests.PaymentTestNG">
+        <methods>
+          <include name="logResult"/>
+          <include name="testInvalidAmountScenarios"/>
+          <include name="testPayment"/>
+          <include name="loginBeforePayment"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- automationFramework.tests.PaymentTestNG -->
       <class name="automationFramework.tests.AccountsTestNG">
         <methods>
-          <include name="downloadCustom12MonthsPdf"/>
-          <include name="downloadCustom6MonthsXsl"/>
+          <include name="downloadThreeMonthStatementPdf"/>
           <include name="tearDown"/>
+          <include name="downloadCustom6MonthsXsl"/>
+          <include name="downloadCustom12MonthsPdf"/>
+          <include name="downloadOneMonthStatementPdf"/>
           <include name="downloadCustom6MonthsPdf"/>
-          <include name="handleTestResult"/>
+          <include name="downloadThreeMonthStatementXls"/>
           <include name="setUp"/>
           <include name="downloadOneMonthStatementXls"/>
           <include name="downloadCustom12MonthsXsl"/>
+          <include name="logResult"/>
+          <include name="testAccountSummary"/>
         </methods>
       </class> <!-- automationFramework.tests.AccountsTestNG -->
     </classes>

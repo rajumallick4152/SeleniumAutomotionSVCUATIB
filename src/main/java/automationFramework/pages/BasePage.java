@@ -2,7 +2,6 @@ package automationFramework.pages;
 
 import org.openqa.selenium.*;
 import automationFramework.utils.ConfigReader;
-import automationFramework.utils.ScreenshotUtil;
 
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -10,12 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.MediaEntityBuilder;
-
-import java.io.File;
 import java.time.Duration;
-import java.util.List;
 
 public abstract class BasePage {
 
@@ -145,7 +139,7 @@ public abstract class BasePage {
 		}
 		return false;
 	}
-	
+
 	public boolean handleloginFailureCBSPopupIfPresent() {
 		try {
 			By errorMessageLocator = By

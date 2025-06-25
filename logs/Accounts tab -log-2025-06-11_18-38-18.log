@@ -1,1 +1,0 @@
-2025-06-11 18:38:18 [main] WARN  org.testng.xml.TestNGContentHandler - It is strongly recommended to add "<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.1.dtd" >" at the top of the suite file [C:\Users\rajum\eclipse-workspace\ToolsQA\SeleniumAutomotionSVCUATIB\target\classes\testng.xml] otherwise TestNG may fail or not work as expected.

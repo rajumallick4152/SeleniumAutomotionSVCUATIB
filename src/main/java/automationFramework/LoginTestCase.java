@@ -1,28 +1,43 @@
 /*
- * package automationFramework;
+ * package automationFramework.tests;
  * 
- * import automationFramework.pages.LoginPage; import
- * org.openqa.selenium.WebDriver; import java.io.IOException; import
- * java.io.InputStream; import java.util.Properties;
+ * import automationFramework.BrowserFactory; import
+ * automationFramework.pages.LoginPage; import
+ * automationFramework.utils.ExtentReportManager; import
+ * automationFramework.utils.LoggerUtil;
  * 
- * public class LoginTestCase { private WebDriver driver; private Properties
- * prop;
+ * import com.aventstack.extentreports.ExtentReports; import
+ * com.aventstack.extentreports.ExtentTest;
  * 
- * public LoginTestCase(WebDriver driver) { this.driver = driver; this.prop =
- * new Properties(); this.driver.manage().window().maximize();
+ * import org.openqa.selenium.WebDriver; import org.testng.Assert; import
+ * org.testng.annotations.*;
  * 
- * try { InputStream input =
- * getClass().getClassLoader().getResourceAsStream("config.properties"); if
- * (input == null) { throw new
- * IOException("config.properties not found in classpath"); } prop.load(input);
- * } catch (IOException e) { e.printStackTrace(); } }
+ * import java.time.Duration;
  * 
- * public void LoginTest() { try { String url = prop.getProperty("appURL");
- * String username = prop.getProperty("username"); String password =
- * prop.getProperty("password");
+ * public class LoginTestNG {
  * 
- * LoginPage loginPage = new LoginPage(driver); loginPage.performLogin(url,
- * username, password,test);
+ * private WebDriver driver; private ExtentReports extent; private ExtentTest
+ * test; private LoginPage loginPage;
  * 
- * } catch (Exception e) { e.printStackTrace(); } } }
+ * @BeforeClass public void setUp() {
+ * LoggerUtil.log("🔧 Launching browser for login test...");
+ * 
+ * driver = BrowserFactory.startBrowser(); // ✅ Class-level driver
+ * driver.manage().window().maximize();
+ * driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+ * 
+ * extent = ExtentReportManager.getReportInstance(); loginPage = new
+ * LoginPage(driver); }
+ * 
+ * @Test(priority = 0) public void testLogin() { test =
+ * extent.createTest("🔐 Login Test");
+ * 
+ * boolean loginSuccess = loginPage.performLogin(test);
+ * 
+ * if (loginSuccess) { test.pass("✅ Login successful"); } else {
+ * test.fail("❌ Login failed"); Assert.fail("Login failed."); } }
+ * 
+ * @AfterClass public void tearDown() { extent.flush();
+ * LoggerUtil.log("🧹 Extent report flushed."); // Optionally quit browser:
+ * driver.quit(); } }
  */

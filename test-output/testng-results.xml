@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="0" failed="1" skipped="2">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-25T19:11:15 IST" name="Default suite" finished-at="2025-06-25T19:11:58 IST" duration-ms="42447">
+  <suite started-at="2025-06-27T11:49:40 IST" name="Default suite" finished-at="2025-06-27T11:50:16 IST" duration-ms="36481">
     <groups>
     </groups>
-    <test started-at="2025-06-25T19:11:15 IST" name="Default test" finished-at="2025-06-25T19:11:58 IST" duration-ms="42447">
-      <class name="automationFramework.tests.PaymentTestNG">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:automationFramework.tests.PaymentTestNG@2aceadd4]" started-at="2025-06-25T19:11:16 IST" name="setUp" finished-at="2025-06-25T19:11:29 IST" duration-ms="13036" status="PASS">
+    <test started-at="2025-06-27T11:49:40 IST" name="Default test" finished-at="2025-06-27T11:50:16 IST" duration-ms="36481">
+      <class name="automationFramework.tests.LoginTestNG">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:automationFramework.tests.LoginTestNG@13bc8645]" started-at="2025-06-27T11:49:40 IST" name="setUp" finished-at="2025-06-27T11:49:48 IST" duration-ms="8384" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginBeforePayment()[pri:0, instance:automationFramework.tests.PaymentTestNG@2aceadd4]" started-at="2025-06-25T19:11:29 IST" name="loginBeforePayment" finished-at="2025-06-25T19:11:54 IST" duration-ms="25670" status="FAIL">
+        <test-method signature="testLogin()[pri:0, instance:automationFramework.tests.LoginTestNG@13bc8645]" started-at="2025-06-27T11:49:48 IST" name="testLogin" finished-at="2025-06-27T11:50:15 IST" duration-ms="26736" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Login unsuccessful.]]>
+              <![CDATA[Login failed.]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Login unsuccessful.
+              <![CDATA[java.lang.AssertionError: Login failed.
 at org.testng.Assert.fail(Assert.java:111)
-at automationFramework.tests.PaymentTestNG.loginBeforePayment(PaymentTestNG.java:49)
+at automationFramework.tests.LoginTestNG.testLogin(LoginTestNG.java:46)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -53,91 +53,12 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginBeforePayment -->
-        <test-method is-config="true" signature="logResult(org.testng.ITestResult)[pri:0, instance:automationFramework.tests.PaymentTestNG@2aceadd4]" started-at="2025-06-25T19:11:54 IST" name="logResult" finished-at="2025-06-25T19:11:55 IST" duration-ms="274" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=loginBeforePayment status=FAILURE method=PaymentTestNG.loginBeforePayment()[pri:0, instance:automationFramework.tests.PaymentTestNG@2aceadd4] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logResult -->
-        <test-method signature="testPayment()[pri:1, instance:automationFramework.tests.PaymentTestNG@2aceadd4]" started-at="2025-06-25T19:11:55 IST" name="testPayment" finished-at="2025-06-25T19:11:55 IST" depends-on-methods="automationFramework.tests.PaymentTestNG.loginBeforePayment" duration-ms="1" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method automationFramework.tests.PaymentTestNG.testPayment() on instance automationFramework.tests.PaymentTestNG@2aceadd4 depends on not successfully finished methods 
-[automationFramework.tests.PaymentTestNG.loginBeforePayment() on instance automationFramework.tests.PaymentTestNG@2aceadd4]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method automationFramework.tests.PaymentTestNG.testPayment() on instance automationFramework.tests.PaymentTestNG@2aceadd4 depends on not successfully finished methods 
-[automationFramework.tests.PaymentTestNG.loginBeforePayment() on instance automationFramework.tests.PaymentTestNG@2aceadd4]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testPayment -->
-        <test-method signature="testInvalidAmountScenarios()[pri:2, instance:automationFramework.tests.PaymentTestNG@2aceadd4]" started-at="2025-06-25T19:11:55 IST" name="testInvalidAmountScenarios" finished-at="2025-06-25T19:11:55 IST" depends-on-methods="automationFramework.tests.PaymentTestNG.loginBeforePayment" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method automationFramework.tests.PaymentTestNG.testInvalidAmountScenarios() on instance automationFramework.tests.PaymentTestNG@2aceadd4 depends on not successfully finished methods 
-[automationFramework.tests.PaymentTestNG.loginBeforePayment() on instance automationFramework.tests.PaymentTestNG@2aceadd4]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method automationFramework.tests.PaymentTestNG.testInvalidAmountScenarios() on instance automationFramework.tests.PaymentTestNG@2aceadd4 depends on not successfully finished methods 
-[automationFramework.tests.PaymentTestNG.loginBeforePayment() on instance automationFramework.tests.PaymentTestNG@2aceadd4]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testInvalidAmountScenarios -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationFramework.tests.PaymentTestNG@2aceadd4]" started-at="2025-06-25T19:11:55 IST" name="tearDown" finished-at="2025-06-25T19:11:58 IST" duration-ms="3236" status="PASS">
+        </test-method> <!-- testLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationFramework.tests.LoginTestNG@13bc8645]" started-at="2025-06-27T11:50:15 IST" name="tearDown" finished-at="2025-06-27T11:50:16 IST" duration-ms="1192" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- automationFramework.tests.PaymentTestNG -->
+      </class> <!-- automationFramework.tests.LoginTestNG -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

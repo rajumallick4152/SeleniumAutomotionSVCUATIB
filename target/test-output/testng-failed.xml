@@ -6,6 +6,22 @@
   </listeners>
   <test thread-count="5" name="MultipleTest(failed)">
     <classes>
+      <class name="automationFramework.tests.AccountsTestNG">
+        <methods>
+          <include name="downloadThreeMonthStatementPdf"/>
+          <include name="downloadCustom12MonthsPdf"/>
+          <include name="tearDown"/>
+          <include name="downloadCustom6MonthsXsl"/>
+          <include name="downloadOneMonthStatementPdf"/>
+          <include name="downloadCustom6MonthsPdf"/>
+          <include name="downloadThreeMonthStatementXls"/>
+          <include name="setUp"/>
+          <include name="downloadOneMonthStatementXls"/>
+          <include name="downloadCustom12MonthsXsl"/>
+          <include name="logResult"/>
+          <include name="testAccountSummary"/>
+        </methods>
+      </class> <!-- automationFramework.tests.AccountsTestNG -->
       <class name="automationFramework.tests.PaymentTestNG">
         <methods>
           <include name="logResult"/>
@@ -16,30 +32,14 @@
           <include name="tearDown"/>
         </methods>
       </class> <!-- automationFramework.tests.PaymentTestNG -->
-      <class name="automationFramework.tests.AccountsTestNG">
-        <methods>
-          <include name="downloadThreeMonthStatementPdf"/>
-          <include name="downloadCustom12MonthsPdf"/>
-          <include name="downloadCustom6MonthsXsl"/>
-          <include name="tearDown"/>
-          <include name="downloadOneMonthStatementPdf"/>
-          <include name="downloadCustom6MonthsPdf"/>
-          <include name="downloadThreeMonthStatementXls"/>
-          <include name="setUp"/>
-          <include name="downloadOneMonthStatementXls"/>
-          <include name="logResult"/>
-          <include name="downloadCustom12MonthsXsl"/>
-          <include name="testAccountSummary"/>
-        </methods>
-      </class> <!-- automationFramework.tests.AccountsTestNG -->
       <class name="automationFramework.tests.ServicesTestNG">
         <methods>
           <include name="testEmptyThresholds"/>
           <include name="testManageSMSFlow"/>
           <include name="testInvalidOTP"/>
-          <include name="handleTestResult"/>
           <include name="setUp"/>
           <include name="testNegativeThresholds"/>
+          <include name="handleTestResult"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- automationFramework.tests.ServicesTestNG -->

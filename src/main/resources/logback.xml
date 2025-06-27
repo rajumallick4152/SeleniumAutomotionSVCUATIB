@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE configuration>
-
 <configuration>
 
 	<!-- Timestamp for file name -->
@@ -11,8 +9,8 @@
 		value="%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %cyan(%logger{36}) - %msg%n" />
 	<property name="FILE_LOG_PATTERN"
 		value="%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n" />
-	<property name="LOG_FILE"
-		value="logs/Accounts tab -log-${LOG_TIME}.log" />
+	<property name="LOG_FILE" value="logs/SvcAutomotion_log_${LOG_TIME}.log" />
+	
 
 	<!-- Console appender -->
 	<appender name="STDOUT"

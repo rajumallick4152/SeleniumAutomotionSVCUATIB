@@ -3,16 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="automationFramework.tests.PaymentTestNG">
+      <class name="automationFramework.tests.LoginTestNG">
         <methods>
-          <include name="logResult"/>
-          <include name="testInvalidAmountScenarios"/>
-          <include name="testPayment"/>
-          <include name="loginBeforePayment"/>
-          <include name="setUp"/>
           <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="testLogin"/>
         </methods>
-      </class> <!-- automationFramework.tests.PaymentTestNG -->
+      </class> <!-- automationFramework.tests.LoginTestNG -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

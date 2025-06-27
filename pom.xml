@@ -1,136 +1,3 @@
-<!--<project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-
-	 Basic project information 
-	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.lcode.Automation</groupId>
-	<artifactId>SvcIBAutomation</artifactId>
-	<version>1.0</version>
-
-	 Java compiler properties 
-	<properties>
-		<maven.compiler.source>17</maven.compiler.source>    Java version 
-		<maven.compiler.target>17</maven.compiler.target>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-	</properties>
-
-	 Project dependencies 
-	<dependencies>
-		 Selenium WebDriver 
-		<dependency>
-			<groupId>org.seleniumhq.selenium</groupId>
-			<artifactId>selenium-java</artifactId>
-			<version>4.20.0</version>
-		</dependency>
-
-		 TestNG framework 
-		<dependency>
-			<groupId>org.testng</groupId>
-			<artifactId>testng</artifactId>
-			<version>7.11.0</version>
-		</dependency>
-
-		 WebDriverManager for automatic driver setup 
-		<dependency>
-			<groupId>io.github.bonigarcia</groupId>
-			<artifactId>webdrivermanager</artifactId>
-			<version>5.8.0</version>
-		</dependency>
-
-		 ExtentReports for reporting 
-		<dependency>
-			<groupId>com.aventstack</groupId>
-			<artifactId>extentreports</artifactId>
-			<version>5.1.2</version>
-		</dependency>
-
-		 Logback for logging 
-		<dependency>
-			<groupId>ch.qos.logback</groupId>
-			<artifactId>logback-classic</artifactId>
-			<version>1.2.11</version>
-		</dependency>
-
-		 SLF4J Simple binding (for quick logging) 
-		<dependency>
-			<groupId>org.slf4j</groupId>
-			<artifactId>slf4j-simple</artifactId>
-			<version>2.0.9</version>
-		</dependency>
-
-		 Jakarta Mail API (for email notifications if used) 
-		<dependency>
-			<groupId>com.sun.mail</groupId>
-			<artifactId>jakarta.mail</artifactId>
-			<version>2.0.1</version>
-		</dependency>
-	</dependencies>
-
-	 Build configuration 
-	<build>
-		<plugins>
-
-			 Java Compiler Plugin 
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.12.1</version>
-			</plugin>
-
-			 Maven Shade Plugin: Used to create a fat JAR (includes all
-			dependencies) 
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-shade-plugin</artifactId>
-				<version>3.5.0</version>
-				<executions>
-					<execution>
-						<phase>package</phase>
-						<goals>
-							<goal>shade</goal>
-						</goals>
-						<configuration>
-							 Prevent generation of reduced pom 
-							<createDependencyReducedPom>false</createDependencyReducedPom>
-
-							 Remove signatures from shaded JAR (avoid
-							SecurityException) 
-							<filters>
-								<filter>
-									<artifact>*:*</artifact>
-									<excludes>
-										<exclude>META-INF/*.SF</exclude>
-										<exclude>META-INF/*.DSA</exclude>
-										<exclude>META-INF/*.RSA</exclude>
-									</excludes>
-								</filter>
-							</filters>
-
-							 Specify the main class to run when executing
-							the JAR 
-							<transformers>
-								<transformer
-									implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-									<mainClass>
-										automationFramework.runner.TestNGRunner</mainClass>
-								</transformer>
-							</transformers>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
-
-		</plugins>
-	</build>
-
-</project>
--->
-
-
-
-
-
 <project xmlns="http://maven.apache.org/POM/4.0.0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
@@ -179,15 +46,16 @@
 		<dependency>
 			<groupId>ch.qos.logback</groupId>
 			<artifactId>logback-classic</artifactId>
-			<version>1.2.11</version>
+			<version>1.4.14</version>
 		</dependency>
 
-		<!-- SLF4J -->
+		<!-- jansi Colour console logs -->
 		<dependency>
-			<groupId>org.slf4j</groupId>
-			<artifactId>slf4j-simple</artifactId>
-			<version>2.0.9</version>
+			<groupId>org.fusesource.jansi</groupId>
+			<artifactId>jansi</artifactId>
+			<version>2.4.0</version> <!-- latest compatible version -->
 		</dependency>
+
 
 		<!-- Mail API -->
 		<dependency>
@@ -201,8 +69,11 @@
 		<resources>
 			<resource>
 				<directory>src/main/resources</directory>
+				<includes>
+					<include>**/*.xml</include>
+				</includes>
 				<excludes>
-					<exclude>config.properties</exclude> <!-- ✅ Do NOT include in JAR -->
+					<exclude>config.properties</exclude> <!-- This is okay -->
 				</excludes>
 			</resource>
 		</resources>
@@ -239,8 +110,10 @@
 								</filter>
 							</filters>
 							<transformers>
-								<transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-									<mainClass>automationFramework.runner.TestNGRunner</mainClass>
+								<transformer
+									implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+									<mainClass>
+										automationFramework.runner.TestNGRunner</mainClass>
 								</transformer>
 							</transformers>
 						</configuration>

@@ -11,27 +11,17 @@
           <include name="testEmptyThresholds"/>
           <include name="testManageSMSFlow"/>
           <include name="testInvalidOTP"/>
+          <include name="setUp"/>
           <include name="handleTestResult"/>
           <include name="testNegativeThresholds"/>
-          <include name="setUp"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- automationFramework.tests.ServicesTestNG -->
-      <class name="automationFramework.tests.PaymentTestNG">
-        <methods>
-          <include name="logResult"/>
-          <include name="testInvalidAmountScenarios"/>
-          <include name="testPayment"/>
-          <include name="loginBeforePayment"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- automationFramework.tests.PaymentTestNG -->
       <class name="automationFramework.tests.AccountsTestNG">
         <methods>
           <include name="downloadThreeMonthStatementPdf"/>
-          <include name="tearDown"/>
           <include name="downloadCustom6MonthsXsl"/>
+          <include name="tearDown"/>
           <include name="downloadCustom12MonthsPdf"/>
           <include name="downloadOneMonthStatementPdf"/>
           <include name="downloadCustom6MonthsPdf"/>
@@ -43,6 +33,16 @@
           <include name="testAccountSummary"/>
         </methods>
       </class> <!-- automationFramework.tests.AccountsTestNG -->
+      <class name="automationFramework.tests.PaymentTestNG">
+        <methods>
+          <include name="logResult"/>
+          <include name="testInvalidAmountScenarios"/>
+          <include name="testPayment"/>
+          <include name="loginBeforePayment"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- automationFramework.tests.PaymentTestNG -->
     </classes>
   </test> <!-- MultipleTest(failed) -->
 </suite> <!-- Failed suite [MySuite] -->

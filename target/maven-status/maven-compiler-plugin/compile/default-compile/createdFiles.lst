@@ -25,6 +25,7 @@ automationFramework\utils\LoggerUtil.class
 automationFramework\tests\AccountsTestNG.class
 automationFramework\runner\TestNGRunner.class
 automationFramework\pages\HelpPage.class
+TestLog.class
 automationFramework\pages\MorePage.class
 automationFramework\MyChequesTest.class
 automationFramework\utils\ConfigReader.class

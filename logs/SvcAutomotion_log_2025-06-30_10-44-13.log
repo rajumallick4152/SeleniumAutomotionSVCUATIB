@@ -1,0 +1,49 @@
+2025-06-30 10:44:15 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 5 ms.
+2025-06-30 10:44:15 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 10 ms.
+2025-06-30 10:44:15 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-30 10:44:15 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-30 10:44:15 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-30 10:44:15 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-30 10:44:15 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-30 10:44:15 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-30 10:44:15 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 23 ms.
+2025-06-30 10:44:15 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 63 ms.
+2025-06-30 10:44:15 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-30 10:44:15 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 2 ms.
+2025-06-30 10:44:15 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-30 10:44:15 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-30 10:44:15 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-30 10:44:15 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-30 10:44:15 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-30 10:44:15 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-30 10:44:15 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-30 10:44:15 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-30 10:44:15 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-30 10:44:15 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-30 10:44:15 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-30 10:44:15 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-30 10:44:15 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 2 ms.
+2025-06-30 10:44:15 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+2025-06-30 10:44:15 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-30 10:44:15 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-30 10:44:15 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2025-06-30 10:44:15 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2025-06-30 10:44:15 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\rajum\AppData\Local\Temp\testng-eclipse-1698782680\testng-customsuite.xml
+
+2025-06-30 10:44:15 [main] INFO  org.testng.internal.Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 26 ms.
+2025-06-30 10:44:15 [main] INFO  a.utils.LoggerUtil - 🔧 Launching browser for login test...
+2025-06-30 10:44:22 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 138.0.7204.49 (resolved driver for Chrome 138)
+2025-06-30 10:44:23 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\rajum\.cache\selenium\chromedriver\win64\138.0.7204.49\chromedriver.exe
+2025-06-30 10:44:31 [main] ERROR automationFramework.pages.LoginPage - ❌ Attempt 1: Detected error page (503 or Rejected URL)
+2025-06-30 10:44:38 [main] ERROR automationFramework.pages.LoginPage - ❌ Attempt 2: Detected error page (503 or Rejected URL)
+2025-06-30 10:44:45 [main] ERROR automationFramework.pages.LoginPage - ❌ Attempt 3: Detected error page (503 or Rejected URL)
+2025-06-30 10:44:51 [main] ERROR automationFramework.pages.LoginPage - ❌ Attempt 4: Detected error page (503 or Rejected URL)
+2025-06-30 10:44:57 [main] ERROR automationFramework.pages.LoginPage - ❌ Attempt 5: Detected error page (503 or Rejected URL)
+2025-06-30 10:45:01 [main] INFO  a.utils.LoggerUtil - 🧹 Extent report flushed.
+2025-06-30 10:45:02 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.jq.Main@3aaa3c39: 487 ms
+2025-06-30 10:45:02 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.FailedReporter@18b74ea: 142 ms
+2025-06-30 10:45:02 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.XMLReporter@7112ce6: 58 ms
+2025-06-30 10:45:02 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@3440e9cd: 56 ms
+2025-06-30 10:45:02 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@64e1377c: 23 ms
+2025-06-30 10:45:03 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@b0fd744: 2 ms

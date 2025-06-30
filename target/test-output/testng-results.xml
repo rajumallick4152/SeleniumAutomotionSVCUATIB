@@ -1,21 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="16" passed="0" failed="0" skipped="16">
+<testng-results ignored="0" total="16" passed="0" failed="1" skipped="15">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-26T12:32:27 IST" name="MySuite" finished-at="2025-06-26T12:32:28 IST" duration-ms="266">
+  <suite started-at="2025-06-30T11:17:30 IST" name="MySuite" finished-at="2025-06-30T11:19:04 IST" duration-ms="94440">
     <groups>
     </groups>
-    <test started-at="2025-06-26T12:32:27 IST" name="MultipleTest" finished-at="2025-06-26T12:32:28 IST" duration-ms="266">
+    <test started-at="2025-06-30T11:17:30 IST" name="MultipleTest" finished-at="2025-06-30T11:19:04 IST" duration-ms="94440">
       <class name="automationFramework.tests.ServicesTestNG">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:automationFramework.tests.ServicesTestNG@503d687a]" started-at="2025-06-26T12:32:27 IST" name="setUp" finished-at="2025-06-26T12:32:28 IST" duration-ms="25" status="FAIL">
-          <exception class="java.lang.NullPointerException">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:automationFramework.tests.ServicesTestNG@7c51f34b]" started-at="2025-06-30T11:18:06 IST" name="setUp" finished-at="2025-06-30T11:18:35 IST" duration-ms="28791" status="FAIL">
+          <exception class="java.lang.RuntimeException">
             <message>
-              <![CDATA[Cannot invoke "String.toLowerCase()" because "browserName" is null]]>
+              <![CDATA[Login failed. Cannot continue tests.]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.toLowerCase()" because "browserName" is null
-at automationFramework.BrowserFactory.startBrowser(BrowserFactory.java:16)
-at automationFramework.tests.ServicesTestNG.setUp(ServicesTestNG.java:38)
+              <![CDATA[java.lang.RuntimeException: Login failed. Cannot continue tests.
+at automationFramework.tests.ServicesTestNG.setUp(ServicesTestNG.java:55)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -39,22 +38,21 @@ at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
 at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
 at org.testng.TestNG.runSuites(TestNG.java:1112)
 at org.testng.TestNG.run(TestNG.java:1079)
-at automationFramework.runner.TestNGRunner.main(TestNGRunner.java:37)
+at automationFramework.runner.TestNGRunner.main(TestNGRunner.java:67)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- java.lang.RuntimeException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testManageSMSFlow()[pri:1, instance:automationFramework.tests.ServicesTestNG@503d687a]" started-at="2025-06-26T12:32:28 IST" name="testManageSMSFlow" finished-at="2025-06-26T12:32:28 IST" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
+        <test-method signature="testManageSMSFlow()[pri:1, instance:automationFramework.tests.ServicesTestNG@7c51f34b]" started-at="2025-06-30T11:18:35 IST" name="testManageSMSFlow" finished-at="2025-06-30T11:18:35 IST" duration-ms="2" status="SKIP">
+          <exception class="java.lang.RuntimeException">
             <message>
-              <![CDATA[Cannot invoke "String.toLowerCase()" because "browserName" is null]]>
+              <![CDATA[Login failed. Cannot continue tests.]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.toLowerCase()" because "browserName" is null
-at automationFramework.BrowserFactory.startBrowser(BrowserFactory.java:16)
-at automationFramework.tests.ServicesTestNG.setUp(ServicesTestNG.java:38)
+              <![CDATA[java.lang.RuntimeException: Login failed. Cannot continue tests.
+at automationFramework.tests.ServicesTestNG.setUp(ServicesTestNG.java:55)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -78,26 +76,21 @@ at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
 at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
 at org.testng.TestNG.runSuites(TestNG.java:1112)
 at org.testng.TestNG.run(TestNG.java:1079)
-at automationFramework.runner.TestNGRunner.main(TestNGRunner.java:37)
+at automationFramework.runner.TestNGRunner.main(TestNGRunner.java:67)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- java.lang.RuntimeException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testManageSMSFlow -->
-        <test-method is-config="true" signature="handleTestResult(org.testng.ITestResult)[pri:0, instance:automationFramework.tests.ServicesTestNG@503d687a]" started-at="2025-06-26T12:32:28 IST" name="handleTestResult" finished-at="2025-06-26T12:32:28 IST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- handleTestResult -->
-        <test-method signature="testEmptyThresholds()[pri:2, instance:automationFramework.tests.ServicesTestNG@503d687a]" started-at="2025-06-26T12:32:28 IST" name="testEmptyThresholds" finished-at="2025-06-26T12:32:28 IST" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
+        <test-method signature="testEmptyThresholds()[pri:2, instance:automationFramework.tests.ServicesTestNG@7c51f34b]" started-at="2025-06-30T11:18:35 IST" name="testEmptyThresholds" finished-at="2025-06-30T11:18:35 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.RuntimeException">
             <message>
-              <![CDATA[Cannot invoke "String.toLowerCase()" because "browserName" is null]]>
+              <![CDATA[Login failed. Cannot continue tests.]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.toLowerCase()" because "browserName" is null
-at automationFramework.BrowserFactory.startBrowser(BrowserFactory.java:16)
-at automationFramework.tests.ServicesTestNG.setUp(ServicesTestNG.java:38)
+              <![CDATA[java.lang.RuntimeException: Login failed. Cannot continue tests.
+at automationFramework.tests.ServicesTestNG.setUp(ServicesTestNG.java:55)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -121,26 +114,21 @@ at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
 at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
 at org.testng.TestNG.runSuites(TestNG.java:1112)
 at org.testng.TestNG.run(TestNG.java:1079)
-at automationFramework.runner.TestNGRunner.main(TestNGRunner.java:37)
+at automationFramework.runner.TestNGRunner.main(TestNGRunner.java:67)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- java.lang.RuntimeException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testEmptyThresholds -->
-        <test-method is-config="true" signature="handleTestResult(org.testng.ITestResult)[pri:0, instance:automationFramework.tests.ServicesTestNG@503d687a]" started-at="2025-06-26T12:32:28 IST" name="handleTestResult" finished-at="2025-06-26T12:32:28 IST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- handleTestResult -->
-        <test-method signature="testNegativeThresholds()[pri:3, instance:automationFramework.tests.ServicesTestNG@503d687a]" started-at="2025-06-26T12:32:28 IST" name="testNegativeThresholds" finished-at="2025-06-26T12:32:28 IST" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
+        <test-method signature="testNegativeThresholds()[pri:3, instance:automationFramework.tests.ServicesTestNG@7c51f34b]" started-at="2025-06-30T11:18:35 IST" name="testNegativeThresholds" finished-at="2025-06-30T11:18:35 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.RuntimeException">
             <message>
-              <![CDATA[Cannot invoke "String.toLowerCase()" because "browserName" is null]]>
+              <![CDATA[Login failed. Cannot continue tests.]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.toLowerCase()" because "browserName" is null
-at automationFramework.BrowserFactory.startBrowser(BrowserFactory.java:16)
-at automationFramework.tests.ServicesTestNG.setUp(ServicesTestNG.java:38)
+              <![CDATA[java.lang.RuntimeException: Login failed. Cannot continue tests.
+at automationFramework.tests.ServicesTestNG.setUp(ServicesTestNG.java:55)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -164,26 +152,33 @@ at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
 at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
 at org.testng.TestNG.runSuites(TestNG.java:1112)
 at org.testng.TestNG.run(TestNG.java:1079)
-at automationFramework.runner.TestNGRunner.main(TestNGRunner.java:37)
+at automationFramework.runner.TestNGRunner.main(TestNGRunner.java:67)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- java.lang.RuntimeException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testNegativeThresholds -->
-        <test-method is-config="true" signature="handleTestResult(org.testng.ITestResult)[pri:0, instance:automationFramework.tests.ServicesTestNG@503d687a]" started-at="2025-06-26T12:32:28 IST" name="handleTestResult" finished-at="2025-06-26T12:32:28 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="handleTestResult(org.testng.ITestResult)[pri:0, instance:automationFramework.tests.ServicesTestNG@7c51f34b]" started-at="2025-06-30T11:18:35 IST" name="handleTestResult" finished-at="2025-06-30T11:18:35 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- handleTestResult -->
-        <test-method signature="testInvalidOTP()[pri:4, instance:automationFramework.tests.ServicesTestNG@503d687a]" started-at="2025-06-26T12:32:28 IST" name="testInvalidOTP" finished-at="2025-06-26T12:32:28 IST" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
+        <test-method is-config="true" signature="handleTestResult(org.testng.ITestResult)[pri:0, instance:automationFramework.tests.ServicesTestNG@7c51f34b]" started-at="2025-06-30T11:18:35 IST" name="handleTestResult" finished-at="2025-06-30T11:18:35 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- handleTestResult -->
+        <test-method is-config="true" signature="handleTestResult(org.testng.ITestResult)[pri:0, instance:automationFramework.tests.ServicesTestNG@7c51f34b]" started-at="2025-06-30T11:18:35 IST" name="handleTestResult" finished-at="2025-06-30T11:18:35 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- handleTestResult -->
+        <test-method signature="testInvalidOTP()[pri:4, instance:automationFramework.tests.ServicesTestNG@7c51f34b]" started-at="2025-06-30T11:18:35 IST" name="testInvalidOTP" finished-at="2025-06-30T11:18:35 IST" duration-ms="2" status="SKIP">
+          <exception class="java.lang.RuntimeException">
             <message>
-              <![CDATA[Cannot invoke "String.toLowerCase()" because "browserName" is null]]>
+              <![CDATA[Login failed. Cannot continue tests.]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.toLowerCase()" because "browserName" is null
-at automationFramework.BrowserFactory.startBrowser(BrowserFactory.java:16)
-at automationFramework.tests.ServicesTestNG.setUp(ServicesTestNG.java:38)
+              <![CDATA[java.lang.RuntimeException: Login failed. Cannot continue tests.
+at automationFramework.tests.ServicesTestNG.setUp(ServicesTestNG.java:55)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -207,81 +202,48 @@ at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
 at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
 at org.testng.TestNG.runSuites(TestNG.java:1112)
 at org.testng.TestNG.run(TestNG.java:1079)
-at automationFramework.runner.TestNGRunner.main(TestNGRunner.java:37)
+at automationFramework.runner.TestNGRunner.main(TestNGRunner.java:67)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- java.lang.RuntimeException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testInvalidOTP -->
-        <test-method is-config="true" signature="handleTestResult(org.testng.ITestResult)[pri:0, instance:automationFramework.tests.ServicesTestNG@503d687a]" started-at="2025-06-26T12:32:28 IST" name="handleTestResult" finished-at="2025-06-26T12:32:28 IST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- handleTestResult -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationFramework.tests.ServicesTestNG@503d687a]" started-at="2025-06-26T12:32:28 IST" name="tearDown" finished-at="2025-06-26T12:32:28 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationFramework.tests.ServicesTestNG@7c51f34b]" started-at="2025-06-30T11:18:35 IST" name="tearDown" finished-at="2025-06-30T11:18:35 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="handleTestResult(org.testng.ITestResult)[pri:0, instance:automationFramework.tests.ServicesTestNG@7c51f34b]" started-at="2025-06-30T11:18:35 IST" name="handleTestResult" finished-at="2025-06-30T11:18:35 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- handleTestResult -->
       </class> <!-- automationFramework.tests.ServicesTestNG -->
       <class name="automationFramework.tests.PaymentTestNG">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:automationFramework.tests.PaymentTestNG@6a6afff2]" started-at="2025-06-26T12:32:27 IST" name="setUp" finished-at="2025-06-26T12:32:27 IST" duration-ms="43" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "String.toLowerCase()" because "browserName" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.toLowerCase()" because "browserName" is null
-at automationFramework.BrowserFactory.startBrowser(BrowserFactory.java:16)
-at automationFramework.tests.PaymentTestNG.setUp(PaymentTestNG.java:33)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at automationFramework.runner.TestNGRunner.main(TestNGRunner.java:37)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:automationFramework.tests.PaymentTestNG@12a94400]" started-at="2025-06-30T11:17:30 IST" name="setUp" finished-at="2025-06-30T11:17:37 IST" duration-ms="6515" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginBeforePayment()[pri:0, instance:automationFramework.tests.PaymentTestNG@6a6afff2]" started-at="2025-06-26T12:32:27 IST" name="loginBeforePayment" finished-at="2025-06-26T12:32:27 IST" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
+        <test-method signature="loginBeforePayment()[pri:0, instance:automationFramework.tests.PaymentTestNG@12a94400]" started-at="2025-06-30T11:17:37 IST" name="loginBeforePayment" finished-at="2025-06-30T11:18:02 IST" duration-ms="25232" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Cannot invoke "String.toLowerCase()" because "browserName" is null]]>
+              <![CDATA[Login unsuccessful.]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.toLowerCase()" because "browserName" is null
-at automationFramework.BrowserFactory.startBrowser(BrowserFactory.java:16)
-at automationFramework.tests.PaymentTestNG.setUp(PaymentTestNG.java:33)
+              <![CDATA[java.lang.AssertionError: Login unsuccessful.
+at org.testng.Assert.fail(Assert.java:111)
+at automationFramework.tests.PaymentTestNG.loginBeforePayment(PaymentTestNG.java:49)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 at org.testng.TestRunner.privateRun(TestRunner.java:741)
 at org.testng.TestRunner.run(TestRunner.java:616)
@@ -295,26 +257,33 @@ at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
 at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
 at org.testng.TestNG.runSuites(TestNG.java:1112)
 at org.testng.TestNG.run(TestNG.java:1079)
-at automationFramework.runner.TestNGRunner.main(TestNGRunner.java:37)
+at automationFramework.runner.TestNGRunner.main(TestNGRunner.java:67)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginBeforePayment -->
-        <test-method is-config="true" signature="logResult(org.testng.ITestResult)[pri:0, instance:automationFramework.tests.PaymentTestNG@6a6afff2]" started-at="2025-06-26T12:32:27 IST" name="logResult" finished-at="2025-06-26T12:32:27 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="logResult(org.testng.ITestResult)[pri:0, instance:automationFramework.tests.PaymentTestNG@12a94400]" started-at="2025-06-30T11:18:02 IST" name="logResult" finished-at="2025-06-30T11:18:02 IST" duration-ms="187" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginBeforePayment status=FAILURE method=PaymentTestNG.loginBeforePayment()[pri:0, instance:automationFramework.tests.PaymentTestNG@12a94400] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logResult -->
-        <test-method signature="testPayment()[pri:1, instance:automationFramework.tests.PaymentTestNG@6a6afff2]" started-at="2025-06-26T12:32:27 IST" name="testPayment" finished-at="2025-06-26T12:32:27 IST" depends-on-methods="automationFramework.tests.PaymentTestNG.loginBeforePayment" duration-ms="0" status="SKIP">
+        <test-method signature="testPayment()[pri:1, instance:automationFramework.tests.PaymentTestNG@12a94400]" started-at="2025-06-30T11:18:02 IST" name="testPayment" finished-at="2025-06-30T11:18:02 IST" depends-on-methods="automationFramework.tests.PaymentTestNG.loginBeforePayment" duration-ms="0" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method automationFramework.tests.PaymentTestNG.testPayment() on instance automationFramework.tests.PaymentTestNG@6a6afff2 depends on not successfully finished methods 
-[automationFramework.tests.PaymentTestNG.loginBeforePayment() on instance automationFramework.tests.PaymentTestNG@6a6afff2]]]>
+              <![CDATA[Method automationFramework.tests.PaymentTestNG.testPayment() on instance automationFramework.tests.PaymentTestNG@12a94400 depends on not successfully finished methods 
+[automationFramework.tests.PaymentTestNG.loginBeforePayment() on instance automationFramework.tests.PaymentTestNG@12a94400]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method automationFramework.tests.PaymentTestNG.testPayment() on instance automationFramework.tests.PaymentTestNG@6a6afff2 depends on not successfully finished methods 
-[automationFramework.tests.PaymentTestNG.loginBeforePayment() on instance automationFramework.tests.PaymentTestNG@6a6afff2]
+              <![CDATA[java.lang.Throwable: Method automationFramework.tests.PaymentTestNG.testPayment() on instance automationFramework.tests.PaymentTestNG@12a94400 depends on not successfully finished methods 
+[automationFramework.tests.PaymentTestNG.loginBeforePayment() on instance automationFramework.tests.PaymentTestNG@12a94400]
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
@@ -331,22 +300,22 @@ at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
 at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
 at org.testng.TestNG.runSuites(TestNG.java:1112)
 at org.testng.TestNG.run(TestNG.java:1079)
-at automationFramework.runner.TestNGRunner.main(TestNGRunner.java:37)
+at automationFramework.runner.TestNGRunner.main(TestNGRunner.java:67)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPayment -->
-        <test-method signature="testInvalidAmountScenarios()[pri:2, instance:automationFramework.tests.PaymentTestNG@6a6afff2]" started-at="2025-06-26T12:32:27 IST" name="testInvalidAmountScenarios" finished-at="2025-06-26T12:32:27 IST" depends-on-methods="automationFramework.tests.PaymentTestNG.loginBeforePayment" duration-ms="0" status="SKIP">
+        <test-method signature="testInvalidAmountScenarios()[pri:2, instance:automationFramework.tests.PaymentTestNG@12a94400]" started-at="2025-06-30T11:18:02 IST" name="testInvalidAmountScenarios" finished-at="2025-06-30T11:18:02 IST" depends-on-methods="automationFramework.tests.PaymentTestNG.loginBeforePayment" duration-ms="0" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method automationFramework.tests.PaymentTestNG.testInvalidAmountScenarios() on instance automationFramework.tests.PaymentTestNG@6a6afff2 depends on not successfully finished methods 
-[automationFramework.tests.PaymentTestNG.loginBeforePayment() on instance automationFramework.tests.PaymentTestNG@6a6afff2]]]>
+              <![CDATA[Method automationFramework.tests.PaymentTestNG.testInvalidAmountScenarios() on instance automationFramework.tests.PaymentTestNG@12a94400 depends on not successfully finished methods 
+[automationFramework.tests.PaymentTestNG.loginBeforePayment() on instance automationFramework.tests.PaymentTestNG@12a94400]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method automationFramework.tests.PaymentTestNG.testInvalidAmountScenarios() on instance automationFramework.tests.PaymentTestNG@6a6afff2 depends on not successfully finished methods 
-[automationFramework.tests.PaymentTestNG.loginBeforePayment() on instance automationFramework.tests.PaymentTestNG@6a6afff2]
+              <![CDATA[java.lang.Throwable: Method automationFramework.tests.PaymentTestNG.testInvalidAmountScenarios() on instance automationFramework.tests.PaymentTestNG@12a94400 depends on not successfully finished methods 
+[automationFramework.tests.PaymentTestNG.loginBeforePayment() on instance automationFramework.tests.PaymentTestNG@12a94400]
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
@@ -363,28 +332,28 @@ at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
 at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
 at org.testng.TestNG.runSuites(TestNG.java:1112)
 at org.testng.TestNG.run(TestNG.java:1079)
-at automationFramework.runner.TestNGRunner.main(TestNGRunner.java:37)
+at automationFramework.runner.TestNGRunner.main(TestNGRunner.java:67)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testInvalidAmountScenarios -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationFramework.tests.PaymentTestNG@6a6afff2]" started-at="2025-06-26T12:32:27 IST" name="tearDown" finished-at="2025-06-26T12:32:27 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationFramework.tests.PaymentTestNG@12a94400]" started-at="2025-06-30T11:18:02 IST" name="tearDown" finished-at="2025-06-30T11:18:06 IST" duration-ms="3783" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- automationFramework.tests.PaymentTestNG -->
       <class name="automationFramework.tests.AccountsTestNG">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:automationFramework.tests.AccountsTestNG@6a370f4]" started-at="2025-06-26T12:32:28 IST" name="setUp" finished-at="2025-06-26T12:32:28 IST" duration-ms="3" status="FAIL">
-          <exception class="java.lang.NullPointerException">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:automationFramework.tests.AccountsTestNG@5495333e]" started-at="2025-06-30T11:18:35 IST" name="setUp" finished-at="2025-06-30T11:19:04 IST" duration-ms="29706" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Cannot invoke "String.toLowerCase()" because "browserName" is null]]>
+              <![CDATA[Login failed. Stopping execution.]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.toLowerCase()" because "browserName" is null
-at automationFramework.BrowserFactory.startBrowser(BrowserFactory.java:16)
-at automationFramework.tests.AccountsTestNG.setUp(AccountsTestNG.java:38)
+              <![CDATA[java.lang.AssertionError: Login failed. Stopping execution.
+at org.testng.Assert.fail(Assert.java:111)
+at automationFramework.tests.AccountsTestNG.setUp(AccountsTestNG.java:53)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -408,22 +377,22 @@ at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
 at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
 at org.testng.TestNG.runSuites(TestNG.java:1112)
 at org.testng.TestNG.run(TestNG.java:1079)
-at automationFramework.runner.TestNGRunner.main(TestNGRunner.java:37)
+at automationFramework.runner.TestNGRunner.main(TestNGRunner.java:67)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testAccountSummary()[pri:1, instance:automationFramework.tests.AccountsTestNG@6a370f4]" started-at="2025-06-26T12:32:28 IST" name="testAccountSummary" finished-at="2025-06-26T12:32:28 IST" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
+        <test-method signature="testAccountSummary()[pri:1, instance:automationFramework.tests.AccountsTestNG@5495333e]" started-at="2025-06-30T11:19:04 IST" name="testAccountSummary" finished-at="2025-06-30T11:19:04 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Cannot invoke "String.toLowerCase()" because "browserName" is null]]>
+              <![CDATA[Login failed. Stopping execution.]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.toLowerCase()" because "browserName" is null
-at automationFramework.BrowserFactory.startBrowser(BrowserFactory.java:16)
-at automationFramework.tests.AccountsTestNG.setUp(AccountsTestNG.java:38)
+              <![CDATA[java.lang.AssertionError: Login failed. Stopping execution.
+at org.testng.Assert.fail(Assert.java:111)
+at automationFramework.tests.AccountsTestNG.setUp(AccountsTestNG.java:53)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -447,26 +416,26 @@ at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
 at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
 at org.testng.TestNG.runSuites(TestNG.java:1112)
 at org.testng.TestNG.run(TestNG.java:1079)
-at automationFramework.runner.TestNGRunner.main(TestNGRunner.java:37)
+at automationFramework.runner.TestNGRunner.main(TestNGRunner.java:67)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAccountSummary -->
-        <test-method is-config="true" signature="logResult(org.testng.ITestResult)[pri:0, instance:automationFramework.tests.AccountsTestNG@6a370f4]" started-at="2025-06-26T12:32:28 IST" name="logResult" finished-at="2025-06-26T12:32:28 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="logResult(org.testng.ITestResult)[pri:0, instance:automationFramework.tests.AccountsTestNG@5495333e]" started-at="2025-06-30T11:19:04 IST" name="logResult" finished-at="2025-06-30T11:19:04 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logResult -->
-        <test-method signature="downloadOneMonthStatementPdf()[pri:2, instance:automationFramework.tests.AccountsTestNG@6a370f4]" started-at="2025-06-26T12:32:28 IST" name="downloadOneMonthStatementPdf" finished-at="2025-06-26T12:32:28 IST" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
+        <test-method signature="downloadOneMonthStatementPdf()[pri:2, instance:automationFramework.tests.AccountsTestNG@5495333e]" started-at="2025-06-30T11:19:04 IST" name="downloadOneMonthStatementPdf" finished-at="2025-06-30T11:19:04 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Cannot invoke "String.toLowerCase()" because "browserName" is null]]>
+              <![CDATA[Login failed. Stopping execution.]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.toLowerCase()" because "browserName" is null
-at automationFramework.BrowserFactory.startBrowser(BrowserFactory.java:16)
-at automationFramework.tests.AccountsTestNG.setUp(AccountsTestNG.java:38)
+              <![CDATA[java.lang.AssertionError: Login failed. Stopping execution.
+at org.testng.Assert.fail(Assert.java:111)
+at automationFramework.tests.AccountsTestNG.setUp(AccountsTestNG.java:53)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -490,26 +459,26 @@ at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
 at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
 at org.testng.TestNG.runSuites(TestNG.java:1112)
 at org.testng.TestNG.run(TestNG.java:1079)
-at automationFramework.runner.TestNGRunner.main(TestNGRunner.java:37)
+at automationFramework.runner.TestNGRunner.main(TestNGRunner.java:67)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- downloadOneMonthStatementPdf -->
-        <test-method is-config="true" signature="logResult(org.testng.ITestResult)[pri:0, instance:automationFramework.tests.AccountsTestNG@6a370f4]" started-at="2025-06-26T12:32:28 IST" name="logResult" finished-at="2025-06-26T12:32:28 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="logResult(org.testng.ITestResult)[pri:0, instance:automationFramework.tests.AccountsTestNG@5495333e]" started-at="2025-06-30T11:19:04 IST" name="logResult" finished-at="2025-06-30T11:19:04 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logResult -->
-        <test-method signature="downloadThreeMonthStatementPdf()[pri:3, instance:automationFramework.tests.AccountsTestNG@6a370f4]" started-at="2025-06-26T12:32:28 IST" name="downloadThreeMonthStatementPdf" finished-at="2025-06-26T12:32:28 IST" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
+        <test-method signature="downloadThreeMonthStatementPdf()[pri:3, instance:automationFramework.tests.AccountsTestNG@5495333e]" started-at="2025-06-30T11:19:04 IST" name="downloadThreeMonthStatementPdf" finished-at="2025-06-30T11:19:04 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Cannot invoke "String.toLowerCase()" because "browserName" is null]]>
+              <![CDATA[Login failed. Stopping execution.]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.toLowerCase()" because "browserName" is null
-at automationFramework.BrowserFactory.startBrowser(BrowserFactory.java:16)
-at automationFramework.tests.AccountsTestNG.setUp(AccountsTestNG.java:38)
+              <![CDATA[java.lang.AssertionError: Login failed. Stopping execution.
+at org.testng.Assert.fail(Assert.java:111)
+at automationFramework.tests.AccountsTestNG.setUp(AccountsTestNG.java:53)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -533,26 +502,26 @@ at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
 at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
 at org.testng.TestNG.runSuites(TestNG.java:1112)
 at org.testng.TestNG.run(TestNG.java:1079)
-at automationFramework.runner.TestNGRunner.main(TestNGRunner.java:37)
+at automationFramework.runner.TestNGRunner.main(TestNGRunner.java:67)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- downloadThreeMonthStatementPdf -->
-        <test-method is-config="true" signature="logResult(org.testng.ITestResult)[pri:0, instance:automationFramework.tests.AccountsTestNG@6a370f4]" started-at="2025-06-26T12:32:28 IST" name="logResult" finished-at="2025-06-26T12:32:28 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="logResult(org.testng.ITestResult)[pri:0, instance:automationFramework.tests.AccountsTestNG@5495333e]" started-at="2025-06-30T11:19:04 IST" name="logResult" finished-at="2025-06-30T11:19:04 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logResult -->
-        <test-method signature="downloadOneMonthStatementXls()[pri:4, instance:automationFramework.tests.AccountsTestNG@6a370f4]" started-at="2025-06-26T12:32:28 IST" name="downloadOneMonthStatementXls" finished-at="2025-06-26T12:32:28 IST" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
+        <test-method signature="downloadOneMonthStatementXls()[pri:4, instance:automationFramework.tests.AccountsTestNG@5495333e]" started-at="2025-06-30T11:19:04 IST" name="downloadOneMonthStatementXls" finished-at="2025-06-30T11:19:04 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Cannot invoke "String.toLowerCase()" because "browserName" is null]]>
+              <![CDATA[Login failed. Stopping execution.]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.toLowerCase()" because "browserName" is null
-at automationFramework.BrowserFactory.startBrowser(BrowserFactory.java:16)
-at automationFramework.tests.AccountsTestNG.setUp(AccountsTestNG.java:38)
+              <![CDATA[java.lang.AssertionError: Login failed. Stopping execution.
+at org.testng.Assert.fail(Assert.java:111)
+at automationFramework.tests.AccountsTestNG.setUp(AccountsTestNG.java:53)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -576,26 +545,26 @@ at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
 at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
 at org.testng.TestNG.runSuites(TestNG.java:1112)
 at org.testng.TestNG.run(TestNG.java:1079)
-at automationFramework.runner.TestNGRunner.main(TestNGRunner.java:37)
+at automationFramework.runner.TestNGRunner.main(TestNGRunner.java:67)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- downloadOneMonthStatementXls -->
-        <test-method is-config="true" signature="logResult(org.testng.ITestResult)[pri:0, instance:automationFramework.tests.AccountsTestNG@6a370f4]" started-at="2025-06-26T12:32:28 IST" name="logResult" finished-at="2025-06-26T12:32:28 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="logResult(org.testng.ITestResult)[pri:0, instance:automationFramework.tests.AccountsTestNG@5495333e]" started-at="2025-06-30T11:19:04 IST" name="logResult" finished-at="2025-06-30T11:19:04 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logResult -->
-        <test-method signature="downloadThreeMonthStatementXls()[pri:5, instance:automationFramework.tests.AccountsTestNG@6a370f4]" started-at="2025-06-26T12:32:28 IST" name="downloadThreeMonthStatementXls" finished-at="2025-06-26T12:32:28 IST" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
+        <test-method signature="downloadThreeMonthStatementXls()[pri:5, instance:automationFramework.tests.AccountsTestNG@5495333e]" started-at="2025-06-30T11:19:04 IST" name="downloadThreeMonthStatementXls" finished-at="2025-06-30T11:19:04 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Cannot invoke "String.toLowerCase()" because "browserName" is null]]>
+              <![CDATA[Login failed. Stopping execution.]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.toLowerCase()" because "browserName" is null
-at automationFramework.BrowserFactory.startBrowser(BrowserFactory.java:16)
-at automationFramework.tests.AccountsTestNG.setUp(AccountsTestNG.java:38)
+              <![CDATA[java.lang.AssertionError: Login failed. Stopping execution.
+at org.testng.Assert.fail(Assert.java:111)
+at automationFramework.tests.AccountsTestNG.setUp(AccountsTestNG.java:53)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -619,26 +588,26 @@ at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
 at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
 at org.testng.TestNG.runSuites(TestNG.java:1112)
 at org.testng.TestNG.run(TestNG.java:1079)
-at automationFramework.runner.TestNGRunner.main(TestNGRunner.java:37)
+at automationFramework.runner.TestNGRunner.main(TestNGRunner.java:67)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- downloadThreeMonthStatementXls -->
-        <test-method is-config="true" signature="logResult(org.testng.ITestResult)[pri:0, instance:automationFramework.tests.AccountsTestNG@6a370f4]" started-at="2025-06-26T12:32:28 IST" name="logResult" finished-at="2025-06-26T12:32:28 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="logResult(org.testng.ITestResult)[pri:0, instance:automationFramework.tests.AccountsTestNG@5495333e]" started-at="2025-06-30T11:19:04 IST" name="logResult" finished-at="2025-06-30T11:19:04 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logResult -->
-        <test-method signature="downloadCustom6MonthsXsl()[pri:6, instance:automationFramework.tests.AccountsTestNG@6a370f4]" started-at="2025-06-26T12:32:28 IST" name="downloadCustom6MonthsXsl" finished-at="2025-06-26T12:32:28 IST" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
+        <test-method signature="downloadCustom6MonthsXsl()[pri:6, instance:automationFramework.tests.AccountsTestNG@5495333e]" started-at="2025-06-30T11:19:04 IST" name="downloadCustom6MonthsXsl" finished-at="2025-06-30T11:19:04 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Cannot invoke "String.toLowerCase()" because "browserName" is null]]>
+              <![CDATA[Login failed. Stopping execution.]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.toLowerCase()" because "browserName" is null
-at automationFramework.BrowserFactory.startBrowser(BrowserFactory.java:16)
-at automationFramework.tests.AccountsTestNG.setUp(AccountsTestNG.java:38)
+              <![CDATA[java.lang.AssertionError: Login failed. Stopping execution.
+at org.testng.Assert.fail(Assert.java:111)
+at automationFramework.tests.AccountsTestNG.setUp(AccountsTestNG.java:53)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -662,26 +631,26 @@ at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
 at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
 at org.testng.TestNG.runSuites(TestNG.java:1112)
 at org.testng.TestNG.run(TestNG.java:1079)
-at automationFramework.runner.TestNGRunner.main(TestNGRunner.java:37)
+at automationFramework.runner.TestNGRunner.main(TestNGRunner.java:67)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- downloadCustom6MonthsXsl -->
-        <test-method is-config="true" signature="logResult(org.testng.ITestResult)[pri:0, instance:automationFramework.tests.AccountsTestNG@6a370f4]" started-at="2025-06-26T12:32:28 IST" name="logResult" finished-at="2025-06-26T12:32:28 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="logResult(org.testng.ITestResult)[pri:0, instance:automationFramework.tests.AccountsTestNG@5495333e]" started-at="2025-06-30T11:19:04 IST" name="logResult" finished-at="2025-06-30T11:19:04 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logResult -->
-        <test-method signature="downloadCustom12MonthsPdf()[pri:7, instance:automationFramework.tests.AccountsTestNG@6a370f4]" started-at="2025-06-26T12:32:28 IST" name="downloadCustom12MonthsPdf" finished-at="2025-06-26T12:32:28 IST" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
+        <test-method signature="downloadCustom12MonthsPdf()[pri:7, instance:automationFramework.tests.AccountsTestNG@5495333e]" started-at="2025-06-30T11:19:04 IST" name="downloadCustom12MonthsPdf" finished-at="2025-06-30T11:19:04 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Cannot invoke "String.toLowerCase()" because "browserName" is null]]>
+              <![CDATA[Login failed. Stopping execution.]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.toLowerCase()" because "browserName" is null
-at automationFramework.BrowserFactory.startBrowser(BrowserFactory.java:16)
-at automationFramework.tests.AccountsTestNG.setUp(AccountsTestNG.java:38)
+              <![CDATA[java.lang.AssertionError: Login failed. Stopping execution.
+at org.testng.Assert.fail(Assert.java:111)
+at automationFramework.tests.AccountsTestNG.setUp(AccountsTestNG.java:53)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -705,26 +674,26 @@ at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
 at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
 at org.testng.TestNG.runSuites(TestNG.java:1112)
 at org.testng.TestNG.run(TestNG.java:1079)
-at automationFramework.runner.TestNGRunner.main(TestNGRunner.java:37)
+at automationFramework.runner.TestNGRunner.main(TestNGRunner.java:67)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- downloadCustom12MonthsPdf -->
-        <test-method is-config="true" signature="logResult(org.testng.ITestResult)[pri:0, instance:automationFramework.tests.AccountsTestNG@6a370f4]" started-at="2025-06-26T12:32:28 IST" name="logResult" finished-at="2025-06-26T12:32:28 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="logResult(org.testng.ITestResult)[pri:0, instance:automationFramework.tests.AccountsTestNG@5495333e]" started-at="2025-06-30T11:19:04 IST" name="logResult" finished-at="2025-06-30T11:19:04 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logResult -->
-        <test-method signature="downloadCustom6MonthsPdf()[pri:8, instance:automationFramework.tests.AccountsTestNG@6a370f4]" started-at="2025-06-26T12:32:28 IST" name="downloadCustom6MonthsPdf" finished-at="2025-06-26T12:32:28 IST" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
+        <test-method signature="downloadCustom6MonthsPdf()[pri:8, instance:automationFramework.tests.AccountsTestNG@5495333e]" started-at="2025-06-30T11:19:04 IST" name="downloadCustom6MonthsPdf" finished-at="2025-06-30T11:19:04 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Cannot invoke "String.toLowerCase()" because "browserName" is null]]>
+              <![CDATA[Login failed. Stopping execution.]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.toLowerCase()" because "browserName" is null
-at automationFramework.BrowserFactory.startBrowser(BrowserFactory.java:16)
-at automationFramework.tests.AccountsTestNG.setUp(AccountsTestNG.java:38)
+              <![CDATA[java.lang.AssertionError: Login failed. Stopping execution.
+at org.testng.Assert.fail(Assert.java:111)
+at automationFramework.tests.AccountsTestNG.setUp(AccountsTestNG.java:53)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -748,26 +717,26 @@ at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
 at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
 at org.testng.TestNG.runSuites(TestNG.java:1112)
 at org.testng.TestNG.run(TestNG.java:1079)
-at automationFramework.runner.TestNGRunner.main(TestNGRunner.java:37)
+at automationFramework.runner.TestNGRunner.main(TestNGRunner.java:67)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- downloadCustom6MonthsPdf -->
-        <test-method is-config="true" signature="logResult(org.testng.ITestResult)[pri:0, instance:automationFramework.tests.AccountsTestNG@6a370f4]" started-at="2025-06-26T12:32:28 IST" name="logResult" finished-at="2025-06-26T12:32:28 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="logResult(org.testng.ITestResult)[pri:0, instance:automationFramework.tests.AccountsTestNG@5495333e]" started-at="2025-06-30T11:19:04 IST" name="logResult" finished-at="2025-06-30T11:19:04 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logResult -->
-        <test-method signature="downloadCustom12MonthsXsl()[pri:9, instance:automationFramework.tests.AccountsTestNG@6a370f4]" started-at="2025-06-26T12:32:28 IST" name="downloadCustom12MonthsXsl" finished-at="2025-06-26T12:32:28 IST" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
+        <test-method signature="downloadCustom12MonthsXsl()[pri:9, instance:automationFramework.tests.AccountsTestNG@5495333e]" started-at="2025-06-30T11:19:04 IST" name="downloadCustom12MonthsXsl" finished-at="2025-06-30T11:19:04 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Cannot invoke "String.toLowerCase()" because "browserName" is null]]>
+              <![CDATA[Login failed. Stopping execution.]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.toLowerCase()" because "browserName" is null
-at automationFramework.BrowserFactory.startBrowser(BrowserFactory.java:16)
-at automationFramework.tests.AccountsTestNG.setUp(AccountsTestNG.java:38)
+              <![CDATA[java.lang.AssertionError: Login failed. Stopping execution.
+at org.testng.Assert.fail(Assert.java:111)
+at automationFramework.tests.AccountsTestNG.setUp(AccountsTestNG.java:53)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -791,18 +760,18 @@ at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
 at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
 at org.testng.TestNG.runSuites(TestNG.java:1112)
 at org.testng.TestNG.run(TestNG.java:1079)
-at automationFramework.runner.TestNGRunner.main(TestNGRunner.java:37)
+at automationFramework.runner.TestNGRunner.main(TestNGRunner.java:67)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- downloadCustom12MonthsXsl -->
-        <test-method is-config="true" signature="logResult(org.testng.ITestResult)[pri:0, instance:automationFramework.tests.AccountsTestNG@6a370f4]" started-at="2025-06-26T12:32:28 IST" name="logResult" finished-at="2025-06-26T12:32:28 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="logResult(org.testng.ITestResult)[pri:0, instance:automationFramework.tests.AccountsTestNG@5495333e]" started-at="2025-06-30T11:19:04 IST" name="logResult" finished-at="2025-06-30T11:19:04 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logResult -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationFramework.tests.AccountsTestNG@6a370f4]" started-at="2025-06-26T12:32:28 IST" name="tearDown" finished-at="2025-06-26T12:32:28 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationFramework.tests.AccountsTestNG@5495333e]" started-at="2025-06-30T11:19:04 IST" name="tearDown" finished-at="2025-06-30T11:19:04 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

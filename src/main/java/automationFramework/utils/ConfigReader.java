@@ -1,9 +1,9 @@
 package automationFramework.utils;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.InputStream;
-import java.util.Properties;
+import java.io.File; // read data from external file
+import java.io.FileInputStream; // read data from external file
+import java.io.InputStream; // read data from classpath
+import java.util.Properties; // read key-value pair data from properties file
 
 public class ConfigReader {
 	private static final String CONFIG_FILE_NAME = "config.properties";
@@ -42,6 +42,7 @@ public class ConfigReader {
 			System.err.println("❌ config.properties not found in external or classpath!");
 		}
 	}
+//   Methods for fetching data
 
 	public static String get(String key) {
 		return properties.getProperty(key);

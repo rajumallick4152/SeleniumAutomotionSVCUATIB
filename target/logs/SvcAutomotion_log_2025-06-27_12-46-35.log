@@ -1,0 +1,34 @@
+2025-06-27 12:46:35 [main] WARN  org.testng.xml.TestNGContentHandler - Failed to read [/C:/Users/rajum/eclipse-workspace/ToolsQA/SeleniumAutomotionSVCUATIB/testng-1.1.dtd] from CLASSPATH. Attempting to read from [file:///C:/Users/rajum/eclipse-workspace/ToolsQA/SeleniumAutomotionSVCUATIB/testng-1.1.dtd].
+2025-06-27 12:46:35 [main] WARN  org.testng.xml.TestNGContentHandler - It is strongly recommended to add "<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.1.dtd" >" at the top of the suite file [C:\Users\rajum\AppData\Local\Temp\testng14158097562191704925.xml] otherwise TestNG may fail or not work as expected.
+2025-06-27 12:46:37 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\rajum\AppData\Local\Temp\testng14158097562191704925.xml
+
+2025-06-27 12:46:37 [main] INFO  a.utils.LoggerUtil - ? Initializing browser and extent report...
+2025-06-27 12:46:38 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 137.0.7151.119 (resolved driver for Chrome 137)
+2025-06-27 12:46:38 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\rajum\.cache\selenium\chromedriver\win64\137.0.7151.119\chromedriver.exe
+2025-06-27 12:46:43 [main] INFO  a.utils.LoggerUtil - ? Setup complete.
+2025-06-27 12:46:46 [main] ERROR automationFramework.pages.LoginPage - ? Attempt 1: Detected error page (503 or Rejected URL)
+2025-06-27 12:46:52 [main] ERROR automationFramework.pages.LoginPage - ? Attempt 2: Detected error page (503 or Rejected URL)
+2025-06-27 12:46:58 [main] ERROR automationFramework.pages.LoginPage - ? Attempt 3: Detected error page (503 or Rejected URL)
+2025-06-27 12:47:04 [main] ERROR automationFramework.pages.LoginPage - ? Attempt 4: Detected error page (503 or Rejected URL)
+2025-06-27 12:47:10 [main] ERROR automationFramework.pages.LoginPage - ? Attempt 5: Detected error page (503 or Rejected URL)
+2025-06-27 12:47:10 [main] INFO  a.utils.LoggerUtil - ? Flushing extent report...
+2025-06-27 12:47:11 [main] INFO  a.utils.LoggerUtil - ? Sending report via email...
+2025-06-27 12:47:14 [main] INFO  a.utils.LoggerUtil - ? Launching browser...
+2025-06-27 12:47:14 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 137.0.7151.119 (resolved driver for Chrome 137)
+2025-06-27 12:47:14 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\rajum\.cache\selenium\chromedriver\win64\137.0.7151.119\chromedriver.exe
+2025-06-27 12:47:20 [main] ERROR automationFramework.pages.LoginPage - ? Attempt 1: Detected error page (503 or Rejected URL)
+2025-06-27 12:47:26 [main] ERROR automationFramework.pages.LoginPage - ? Attempt 2: Detected error page (503 or Rejected URL)
+2025-06-27 12:47:31 [main] ERROR automationFramework.pages.LoginPage - ? Attempt 3: Detected error page (503 or Rejected URL)
+2025-06-27 12:47:37 [main] ERROR automationFramework.pages.LoginPage - ? Attempt 4: Detected error page (503 or Rejected URL)
+2025-06-27 12:47:43 [main] ERROR automationFramework.pages.LoginPage - ? Attempt 5: Detected error page (503 or Rejected URL)
+2025-06-27 12:47:43 [main] INFO  a.utils.LoggerUtil - ? Login failed.
+2025-06-27 12:47:43 [main] INFO  a.utils.LoggerUtil - ? Launching browser and initializing report...
+2025-06-27 12:47:43 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 137.0.7151.119 (resolved driver for Chrome 137)
+2025-06-27 12:47:43 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\rajum\.cache\selenium\chromedriver\win64\137.0.7151.119\chromedriver.exe
+2025-06-27 12:47:46 [main] INFO  a.utils.LoggerUtil - ? Navigating to application URL...
+2025-06-27 12:47:50 [main] ERROR automationFramework.pages.LoginPage - ? Attempt 1: Detected error page (503 or Rejected URL)
+2025-06-27 12:47:56 [main] ERROR automationFramework.pages.LoginPage - ? Attempt 2: Detected error page (503 or Rejected URL)
+2025-06-27 12:48:02 [main] ERROR automationFramework.pages.LoginPage - ? Attempt 3: Detected error page (503 or Rejected URL)
+2025-06-27 12:48:07 [main] ERROR automationFramework.pages.LoginPage - ? Attempt 4: Detected error page (503 or Rejected URL)
+2025-06-27 12:48:13 [main] ERROR automationFramework.pages.LoginPage - ? Attempt 5: Detected error page (503 or Rejected URL)

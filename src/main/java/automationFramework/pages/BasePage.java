@@ -13,10 +13,10 @@ import java.time.Duration;
 
 public abstract class BasePage {
 
-	protected WebDriver driver;
-	protected WebDriverWait wait;
-	protected final Logger logger;
-
+	protected WebDriver driver; // WebDriver instance for browser interaction
+	protected WebDriverWait wait;// WebDriverWait for explicit waits
+	protected final Logger logger;// Logger for logging messages
+	// Locator for the spinner overlay
 	private static final By SPINNER = By.className("ngx-spinner-overlay");
 
 	public BasePage(WebDriver driver) {

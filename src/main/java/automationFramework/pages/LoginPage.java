@@ -5,16 +5,15 @@ import automationFramework.utils.ScreenshotUtil;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
 import org.openqa.selenium.*;
-import org.openqa.selenium.support.ui.WebDriverWait;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import java.time.Duration;
 
 public class LoginPage extends BasePage {
 
 	private static final Logger logger = LoggerFactory.getLogger(LoginPage.class);
-	private final WebDriver driver;
-	private final WebDriverWait wait;
+	// private final WebDriver driver;
+	// private final WebDriverWait wait;
 
 	private final int captchaWaitSeconds = ConfigReader.getInt("captcha.wait.seconds");
 	private final int retryWaitSeconds = ConfigReader.getInt("retry.wait.seconds");
@@ -24,9 +23,7 @@ public class LoginPage extends BasePage {
 	private final String password = ConfigReader.get("password");
 
 	public LoginPage(WebDriver driver) {
-		super(driver);
-		this.driver = driver;
-		this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		super(driver); // BasePage will set the default wait time (15 seconds)
 	}
 
 	public boolean performLogin(ExtentTest test) {
